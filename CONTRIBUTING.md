@@ -10,6 +10,11 @@ Do not commit ROMs, extracted files, game scripts, saves, encryption keys,
 credentials, emulator binaries, personal paths, or compiled mod archives.
 Ignore rules are a convenience, not a security check: review the staged diff.
 
+The `release/` directory is the exception for reviewed, generated delta patches
+and their hash manifest. Never replace those deltas with complete game archives.
+Rebuild them with `tools/make_release.py`, test reconstruction against your own
+inputs, and review the release inventory before committing.
+
 Use synthetic examples when reporting parser bugs. For layout issues, describe
 the screen, font settings, input length, and observed wrapping without uploading
 large portions of game dialogue. Include whether a normal save or a save state
