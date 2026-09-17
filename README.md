@@ -17,7 +17,7 @@ The patch cannot be used by itself without matching original inputs.
 ## What you need
 
 - Your own **decrypted Japanese game**, title ID `0004000000199200`.
-- Windows x64 and Python 3.10 or newer for the easy builder.
+- Windows x64. **The standalone EXE does not require Python.**
 - Several GB of free disk space for private extraction.
 - An emulator with compatible LayeredFS and ExeFS IPS mod support.
 
@@ -26,7 +26,27 @@ an already-patched input, or an incompatible update will be rejected. Do not
 bypass the checks. No ROM downloader, encryption keys, or decryption service is
 included.
 
-## Build on Windows
+## Standalone Windows app — no Python required
+
+Use `DQXI-English-Translation-Builder.exe` from the repository's release assets
+when available. The EXE includes the runtime, graphical interface, and translation
+patches. Source ZIP downloads do not contain the executable.
+
+1. Open the EXE and choose your decrypted Japanese ROM.
+2. Choose an output folder.
+3. Leave the verified extractor download enabled, or select your own CTRTool.
+4. Click **Build translation** and watch the progress.
+5. When verification succeeds, click **Open built mod** and follow **Installation help**.
+
+The app supports safe cancellation and displays build errors in the window.
+It creates a new mod subfolder; it does not replace your ROM or saves. Private
+extracted files are kept under `.dqxi-private` beside the generated mod folders.
+Do not share that private folder or the generated mod.
+
+The executable is unsigned, so Windows may show an unrecognized-app warning.
+Do not disable security software; use only the maintainer's trusted download.
+
+## Run from source (developers; Python required)
 
 1. Download this repository using **Code → Download ZIP**, then extract it.
 2. Install Python from [python.org](https://www.python.org/downloads/) if needed.
@@ -121,6 +141,14 @@ sufficient; no machine-translation model is downloaded.
 ```sh
 python -m unittest discover -s tests -v
 ```
+
+To build the standalone Windows EXE yourself, install `pyinstaller==6.22.3` in
+your Python environment and run `Build-Windows-Exe.ps1`. Alternatively, run the
+**Build Windows app** workflow in GitHub Actions and download its artifact.
+Maintainers can attach the EXE to a GitHub Release; it is not stored in Git.
+The GUI and runtime are bundled with PyInstaller; see its
+[packaging documentation](https://pyinstaller.org/en/stable/usage.html).
+Third-party runtime notices are included under `licenses/`.
 
 Maintainers can regenerate a release from their own originals and reviewed mod:
 

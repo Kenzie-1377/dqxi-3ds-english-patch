@@ -16,3 +16,24 @@ the game has been fully translated or every scene has been tested. The original
 game and saved progress were not changed. The new builder's `.cci`, `.3ds`, and
 `.cxi` container paths have not all received end-to-end tests. Their extracted
 files must pass the same mandatory hash checks.
+
+## Standalone Windows application
+
+The Windows x64 windowed EXE bundles Python 3.13, Tcl/Tk, and the 379 patch
+payloads. It does not require users to install Python. It downloads the pinned
+extractor with consent, or accepts an existing extractor.
+
+- 16 automated tests passed, including cancellation before I/O and rejection of
+  incorrect inputs without creating output.
+- The frozen executable successfully created its graphical interface and verified
+  all embedded payload hashes in a hidden startup smoke test.
+- The frozen executable completed both extracted-input and decrypted `.app`
+  ROM-to-mod builds. The final ROM-to-mod build's 379 output hashes matched the
+  release manifest.
+- The bundled-file inventory contained no ROM, extracted PACK archive, or save.
+- Runtime license notices are bundled. The executable is unsigned.
+
+The UI was instantiated in the smoke test; interactive clicking and all Windows
+display-scaling configurations have not been exhaustively tested. Automated tests
+were run on a development machine; a separate clean Windows machine test remains
+recommended before promoting the release as stable.

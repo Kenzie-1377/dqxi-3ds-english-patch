@@ -5,11 +5,13 @@ import json
 import subprocess
 import urllib.request
 import zipfile
+import sys
+import threading
 from pathlib import Path, PurePosixPath
 from delta import apply, sha
 from make_release import normalize
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(sys._MEIPASS) if getattr(sys, 'frozen', False) else Path(__file__).resolve().parents[1]
 CTR_URL = 'https://github.com/3DSGuy/Project_CTR/releases/download/ctrtool-v1.3.0/ctrtool-v1.3.0-win_x64.zip'
 CTR_SHA = '8031dff3be72d0adb250fae1f969f27627e12a89ebc6dd074a15a75f87ddc949'
 
@@ -24,8 +26,8 @@ def safe(root, name):
     return result
 
 
-def fetch_ctrtool():
-    folder = ROOT/'private/ctrtool-v1.3.0'
+def fetch_ctrtool(folder=None):
+    folder = folder or ROOT/'private/ctrtool-v1.3.0'
     folder.mkdir(parents=True, exist_ok=True)
     archive = folder/'download.zip'
     with urllib.request.urlopen(CTR_URL, timeout=60) as response:
@@ -46,38 +48,54 @@ def fetch_ctrtool():
     return matches[0]
 
 
-def main():
-    parser = argparse.ArgumentParser(description=__doc__)
-    source = parser.add_mutually_exclusive_group(required=True)
-    source.add_argument('--rom', type=Path, help='Decrypted .3ds/.cci/.cxi/.app file')
-    source.add_argument('--extracted', type=Path, help='Folder containing romfs/ and exefs/code.bin')
-    parser.add_argument('--ctrtool', type=Path)
-    parser.add_argument('--download-ctrtool', action='store_true', help='Download the pinned official Windows x64 extractor')
-    parser.add_argument('--release', type=Path, default=ROOT/'release')
-    parser.add_argument('--output', type=Path, default=ROOT/'output/english-mod')
-    args = parser.parse_args()
+class BuildCancelled(Exception):
+    pass
+
+
+def build(args, notify=None, cancel=None, work_root=None):
+    notify = notify or (lambda message, progress: print(message, flush=True))
+    cancel = cancel or threading.Event()
+    work_root = work_root or ROOT/'private'
+    def check():
+        if cancel.is_set():
+            raise BuildCancelled('Build cancelled. Do not install partial output.')
+    check()
+    notify('Checking translation package...', 0)
     manifest = json.loads((args.release/'manifest.json').read_text(encoding='utf8'))
     if manifest.get('format') != 'dqxi-translation-deltas-v1' or manifest.get('title_id') != '0004000000199200':
-        parser.error('Unsupported release')
+        raise ValueError('Unsupported release')
     if args.output.exists():
-        parser.error('Output already exists; choose a new directory to avoid overwriting files')
+        raise ValueError('Output already exists; choose a new directory')
     if args.rom:
-        if args.rom.suffix.lower() not in {'.3ds', '.cci', '.cxi', '.app'}:
-            parser.error('Use a decrypted .3ds, .cci, .cxi, or .app file; CIA is not supported by this launcher')
-        tool = fetch_ctrtool() if args.download_ctrtool else args.ctrtool
+        if args.rom.suffix.lower() not in {'.3ds', '.cci', '.cxi', '.app'} or not args.rom.is_file():
+            raise ValueError('Select a decrypted .3ds, .cci, .cxi, or .app file')
+        notify('Downloading and verifying the official extractor...', 3)
+        tool = fetch_ctrtool(work_root/'ctrtool-v1.3.0') if args.download_ctrtool else args.ctrtool
+        check()
         if tool is None or not tool.is_file():
-            parser.error('Specify --ctrtool or --download-ctrtool')
+            raise ValueError('An extractor is required')
         import uuid
-        extracted = ROOT/'private'/('extract-'+uuid.uuid4().hex)
+        extracted = work_root/('extract-'+uuid.uuid4().hex)
         extracted.mkdir(parents=True)
-        subprocess.run([str(tool.resolve()), '-p', '-n', '0',
+        notify('Extracting your game. This may take several minutes...', 8)
+        with (extracted/'extractor.log').open('wb') as log:
+            process = subprocess.Popen([str(tool.resolve()), '-p', '-n', '0',
                         '--romfsdir='+str(extracted/'romfs'), '--exefsdir='+str(extracted/'exefs'),
-                        str(args.rom.resolve())], check=True, stdout=subprocess.DEVNULL)
+                        str(args.rom.resolve())], stdout=log, stderr=log,
+                        creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
+            while process.poll() is None:
+                if cancel.wait(0.2):
+                    process.terminate()
+                    process.wait()
+                    check()
+            if process.returncode:
+                raise ValueError('Extraction failed. Confirm the ROM is decrypted. Details: '+str(extracted/'extractor.log'))
     else:
         extracted = args.extracted.resolve()
-    # Preflight every input and payload before creating any output.
     paths = set()
-    for row in manifest['files']:
+    count = len(manifest['files'])
+    for i, row in enumerate(manifest['files'], 1):
+        check()
         dest = safe(args.output, row['path'])
         if dest in paths:
             raise ValueError('Duplicate output path')
@@ -91,8 +109,12 @@ def main():
             raise ValueError('Game version/input mismatch: '+row['source'])
         if sha(safe(args.release, row['payload']).read_bytes()) != row['payload_sha256']:
             raise ValueError('Damaged release payload')
+        if i % 10 == 0 or i == count:
+            notify(f'Checking game version: {i}/{count} files', 15+int(30*i/count))
+    check()
     args.output.mkdir(parents=True, exist_ok=False)
     for i, row in enumerate(manifest['files'], 1):
+        check()
         patch = safe(args.release, row['payload']).read_bytes()
         if row['kind'] == 'delta':
             result = apply(normalize(safe(extracted, row['source']).read_bytes()), patch)
@@ -106,11 +128,24 @@ def main():
         dest.parent.mkdir(parents=True, exist_ok=True)
         with dest.open('xb') as stream:
             stream.write(result)
-        if i % 100 == 0:
-            print('Built', i, 'files', flush=True)
-    print('Verified mod created at:', args.output.resolve())
-    print('ROM and saves unchanged. Private extracted files remain under private/; do not share them.')
+        if i % 10 == 0 or i == count:
+            notify(f'Building and verifying: {i}/{count} files', 45+int(55*i/count))
+    notify('Complete. Your ROM and saves have not been changed.', 100)
+    return args.output
 
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument('--rom', type=Path, help='Decrypted .3ds/.cci/.cxi/.app file')
+    source.add_argument('--extracted', type=Path, help='Folder containing romfs/ and exefs/code.bin')
+    parser.add_argument('--ctrtool', type=Path)
+    parser.add_argument('--download-ctrtool', action='store_true', help='Download the pinned official Windows x64 extractor')
+    parser.add_argument('--release', type=Path, default=ROOT/'release')
+    parser.add_argument('--output', type=Path, default=ROOT/'output/english-mod')
+    args = parser.parse_args()
+    build(args)
+    print('Verified mod created at:', args.output.resolve())
 
 if __name__ == '__main__':
     main()
