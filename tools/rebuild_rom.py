@@ -96,10 +96,10 @@ def hash_range(path, offset, length):
     return digest.digest()
 
 
-def verify_ncch(path):
+def verify_ncch(path, require_decrypted=True):
     with path.open('rb') as stream:
         header = stream.read(512)
-    if header[256:260] != b'NCCH' or not header[0x18f] & 4:
+    if len(header) != 512 or header[256:260] != b'NCCH' or (require_decrypted and not header[0x18f] & 4):
         raise ValueError('Rebuilt game is not a decrypted NCCH')
     exheader_size = struct.unpack_from('<I', header, 0x180)[0]
     if hash_range(path, 512, exheader_size) != header[0x160:0x180]:
@@ -108,6 +108,21 @@ def verify_ncch(path):
         offset, size, hash_size = struct.unpack_from('<III', header, base)
         if hash_size and hash_range(path, offset*512, hash_size*512) != header[digest_offset:digest_offset+32]:
             raise ValueError('Filesystem header hash verification failed')
+
+
+def normalize_private_header(path):
+    """Fix stale encryption flags only on a verified plaintext private copy."""
+    # Hashes must match the raw plaintext before changing any flag. This is not
+    # decryption, and encrypted or damaged inputs must never be relabelled.
+    verify_ncch(path, require_decrypted=False)
+    with path.open('r+b') as stream:
+        stream.seek(0x18f)
+        flags = stream.read(1)[0]
+        if flags & 4:
+            return False
+        stream.seek(0x18f)
+        stream.write(bytes([flags | 4]))
+    return True
 
 
 def rebuild(rom, extracted, mod, notify, cancel, tool=None):
@@ -121,6 +136,8 @@ def rebuild(rom, extracted, mod, notify, cancel, tool=None):
     def run(arguments):
         check()
         with (folder/'rebuild.log').open('ab') as log:
+            log.write(('\nCommand: '+subprocess.list2cmdline(list(map(str, arguments)))+'\n').encode('utf8'))
+            log.flush()
             process = subprocess.Popen([str(tool.resolve()), *map(str, arguments)],
                                        cwd=folder, stdout=log, stderr=log,
                                        creationflags=getattr(subprocess, 'CREATE_NO_WINDOW', 0))
@@ -140,6 +157,8 @@ def rebuild(rom, extracted, mod, notify, cancel, tool=None):
         arguments += [f'--partition{i}', path]
     notify('Preserving the original cartridge partitions...', 69)
     run(arguments)
+    if normalize_private_header(parts[0]):
+        notify('Corrected a stale encryption flag in the private working copy.', 71)
     run(['-x', '-t', 'cxi', '-f', parts[0], '--header', folder/'ncch.bin', '--exh', folder/'exheader.bin',
          '--logo', folder/'logo.bin', '--plain', folder/'plain.bin', '--exefs', folder/'original-exefs.bin'])
     run(['-x', '-t', 'exefs', '-f', folder/'original-exefs.bin', '--header', folder/'exefs-header.bin'])

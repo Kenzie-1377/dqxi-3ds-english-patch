@@ -44,6 +44,10 @@ preserved and verified. The original ROM is never overwritten. Rebuilt ROMs are
 decrypted/unsigned and are intended for compatible emulators; real hardware
 compatibility has not been validated. Do not distribute the rebuilt ROM.
 
+Decrypted cartridges with a stale encryption flag are handled automatically:
+the builder verifies the plaintext hashes, then corrects only its private
+working copy. It does not decrypt encrypted ROMs or change your original file.
+
 The app supports safe cancellation and displays build errors in the window.
 It creates a new mod subfolder; it does not replace your ROM or saves. Private
 extracted files are kept under `.dqxi-private` beside the generated mod folders.
