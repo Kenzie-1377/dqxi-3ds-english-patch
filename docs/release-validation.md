@@ -37,3 +37,23 @@ The UI was instantiated in the smoke test; interactive clicking and all Windows
 display-scaling configurations have not been exhaustively tested. Automated tests
 were run on a development machine; a separate clean Windows machine test remains
 recommended before promoting the release as stable.
+
+## Single .3ds output
+
+The GUI now defaults to a translated `.3ds` cartridge output; mod folders remain
+an option. Validation completed September 16, 2026:
+
+- 19 unit tests passed, including IPS literal/run records and malformed-patch rejection.
+- The pinned official 3dstool v1.2.6 download was checksum-verified.
+- A full decrypted NCSD cartridge was rebuilt to a separate `.3ds`.
+- The original non-game partitions were preserved and verified by SHA-256.
+- Rebuilt NCCH extended-header, ExeFS, and RomFS header hashes passed verification.
+- Re-extraction of the rebuilt cartridge reproduced all 378 translated archive
+  hashes and the expected IPS-patched executable bytes.
+- The packaged EXE independently completed a full `.3ds` input-to-output build,
+  without an external Python interpreter.
+
+The generated image is decrypted and unsigned. These are structural and content
+checks, not a full emulator gameplay test or a real-hardware compatibility claim.
+The input cartridge and saves were not modified. Generated ROMs and intermediate
+files remain private and must not be uploaded to the public repository.

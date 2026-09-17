@@ -60,6 +60,12 @@ def build(args, notify=None, cancel=None, work_root=None):
         if cancel.is_set():
             raise BuildCancelled('Build cancelled. Do not install partial output.')
     check()
+    rom_output = getattr(args, 'output_format', 'mod') == 'rom'
+    if rom_output:
+        from rebuild_rom import partitions
+        if not args.rom:
+            raise ValueError('ROM rebuilding requires the original .3ds/.cci cartridge input')
+        partitions(args.rom)
     notify('Checking translation package...', 0)
     manifest = json.loads((args.release/'manifest.json').read_text(encoding='utf8'))
     if manifest.get('format') != 'dqxi-translation-deltas-v1' or manifest.get('title_id') != '0004000000199200':
@@ -129,7 +135,12 @@ def build(args, notify=None, cancel=None, work_root=None):
         with dest.open('xb') as stream:
             stream.write(result)
         if i % 10 == 0 or i == count:
-            notify(f'Building and verifying: {i}/{count} files', 45+int(55*i/count))
+            notify(f'Building and verifying: {i}/{count} files', 45+int((20 if rom_output else 55)*i/count))
+    if rom_output:
+        from rebuild_rom import rebuild
+        result = rebuild(args.rom.resolve(), extracted.resolve(), args.output.resolve(), notify, cancel, getattr(args, 'rebuild_tool', None))
+        notify('Complete. Your translated .3ds file is ready. Original ROM unchanged.', 100)
+        return result
     notify('Complete. Your ROM and saves have not been changed.', 100)
     return args.output
 
@@ -140,12 +151,14 @@ def main():
     source.add_argument('--rom', type=Path, help='Decrypted .3ds/.cci/.cxi/.app file')
     source.add_argument('--extracted', type=Path, help='Folder containing romfs/ and exefs/code.bin')
     parser.add_argument('--ctrtool', type=Path)
+    parser.add_argument('--output-format', choices=['mod', 'rom'], default='mod')
+    parser.add_argument('--rebuild-tool', type=Path, help='Optional local 3dstool executable for ROM output')
     parser.add_argument('--download-ctrtool', action='store_true', help='Download the pinned official Windows x64 extractor')
     parser.add_argument('--release', type=Path, default=ROOT/'release')
     parser.add_argument('--output', type=Path, default=ROOT/'output/english-mod')
     args = parser.parse_args()
-    build(args)
-    print('Verified mod created at:', args.output.resolve())
+    result = build(args)
+    print('Verified output created at:', result.resolve())
 
 if __name__ == '__main__':
     main()

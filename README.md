@@ -18,7 +18,7 @@ The patch cannot be used by itself without matching original inputs.
 
 - Your own **decrypted Japanese game**, title ID `0004000000199200`.
 - Windows x64. **The standalone EXE does not require Python.**
-- Several GB of free disk space for private extraction.
+- At least 20 GB free for ROM rebuilding, or several GB for mod-folder output.
 - An emulator with compatible LayeredFS and ExeFS IPS mod support.
 
 The builder checks every required source file's SHA-256. A different revision,
@@ -33,10 +33,16 @@ when available. The EXE includes the runtime, graphical interface, and translati
 patches. Source ZIP downloads do not contain the executable.
 
 1. Open the EXE and choose your decrypted Japanese ROM.
-2. Choose an output folder.
-3. Leave the verified extractor download enabled, or select your own CTRTool.
+2. Choose an output folder and select **Translated .3ds file** (default), or **Mod folders**.
+3. Leave the verified extractor download enabled, or select your own CTRTool. ROM output also asks permission to download the pinned 3dstool rebuilder.
 4. Click **Build translation** and watch the progress.
-5. When verification succeeds, click **Open built mod** and follow **Installation help**.
+5. When verification succeeds, click **Open output folder**. For ROM output, open **DQXI-English.3ds** directly in your emulator. For mod folders, follow **Installation help**.
+
+Single-ROM output requires a genuine decrypted `.3ds`/`.cci` cartridge image,
+not a renamed `.app`/`.cxi`. The original cartridge's other partitions are
+preserved and verified. The original ROM is never overwritten. Rebuilt ROMs are
+decrypted/unsigned and are intended for compatible emulators; real hardware
+compatibility has not been validated. Do not distribute the rebuilt ROM.
 
 The app supports safe cancellation and displays build errors in the window.
 It creates a new mod subfolder; it does not replace your ROM or saves. Private
@@ -59,6 +65,10 @@ The builder creates a new folder under `output/` containing `romfs/` and
 `exefs/code.ips`. It never rewrites your ROM or saves and does not automatically
 overwrite an existing mod installation.
 
+The source GUI now defaults to a single translated `.3ds`. Command-line builds
+retain the original mod-folder default; add `--output-format rom` to rebuild a
+cartridge. Temporary and generated game data remain private and Git-ignored.
+
 **CIA input is not supported by this launcher.** Supply the decrypted game
 application/content file or use the extracted-files option below.
 
@@ -69,6 +79,18 @@ From the repository root:
 ```sh
 python tools/build_translation.py --rom "YOUR_GAME.cci" --download-ctrtool
 ```
+
+To produce a translated cartridge file:
+
+```sh
+python tools/build_translation.py --rom "YOUR_GAME.cci" --download-ctrtool --output-format rom
+```
+
+The rebuilding helper is downloaded from the
+[official 3dstool v1.2.6 release](https://github.com/dnasdw/3dstool/releases/tag/v1.2.6)
+and verified against a pinned SHA-256. Only the executable is installed; optional
+upstream key databases are not installed or used. `--rebuild-tool PATH` can supply
+a local executable instead.
 
 To use your own CTRTool executable instead of downloading it:
 

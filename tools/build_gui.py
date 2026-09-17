@@ -18,8 +18,8 @@ class Application:
         self.root, self.busy, self.built = root, False, None
         self.events, self.cancel = queue.Queue(), threading.Event()
         root.title('DQXI 3DS — English Translation Builder')
-        root.geometry('800x610')
-        root.minsize(720, 590)
+        root.geometry('800x670')
+        root.minsize(720, 650)
         style = ttk.Style(root)
         if 'vista' in style.theme_names():
             style.theme_use('vista')
@@ -34,28 +34,35 @@ class Application:
         self.output = tk.StringVar(value=str(Path.home()/'DQXI Translation Builds'))
         self.extractor = tk.StringVar()
         self.download = tk.BooleanVar(value=True)
+        self.output_mode = tk.StringVar(value='rom')
         self.controls = []
         self.path_row(panel, 3, '1. Your decrypted Japanese game (.3ds, .cci, .cxi, .app)', self.rom, self.pick_rom)
         self.path_row(panel, 5, '2. Output folder (a new mod subfolder will be created)', self.output, self.pick_output)
-        check = ttk.Checkbutton(panel, text='Download the verified official extractor from GitHub (internet required)', variable=self.download)
-        check.grid(row=7, column=0, sticky='w', pady=(14, 6))
+        modes = ttk.Frame(panel)
+        modes.grid(row=7, column=0, sticky='w', pady=(14, 4))
+        for label, value in [('Translated .3ds file', 'rom'), ('Mod folders (romfs + exefs)', 'mod')]:
+            button = ttk.Radiobutton(modes, text=label, value=value, variable=self.output_mode)
+            button.pack(side='left', padx=(0, 18))
+            self.controls.append(button)
+        check = ttk.Checkbutton(panel, text='Download the verified extractor from GitHub (ROM output also downloads 3dstool)', variable=self.download)
+        check.grid(row=8, column=0, sticky='w', pady=(8, 6))
         self.controls.append(check)
-        self.path_row(panel, 8, 'Optional: use your own ctrtool.exe instead of downloading', self.extractor, self.pick_extractor)
+        self.path_row(panel, 9, 'Optional: use your own ctrtool.exe instead of downloading', self.extractor, self.pick_extractor)
         self.status = tk.StringVar(value='Ready. Select your game to begin.')
-        ttk.Label(panel, textvariable=self.status, wraplength=700).grid(row=10, column=0, sticky='w', pady=(20, 8))
+        ttk.Label(panel, textvariable=self.status, wraplength=700).grid(row=11, column=0, sticky='w', pady=(20, 8))
         self.progress = ttk.Progressbar(panel, maximum=100)
-        self.progress.grid(row=11, column=0, sticky='ew')
+        self.progress.grid(row=12, column=0, sticky='ew')
         buttons = ttk.Frame(panel)
-        buttons.grid(row=12, column=0, sticky='ew', pady=(18, 10))
+        buttons.grid(row=13, column=0, sticky='ew', pady=(18, 10))
         start = ttk.Button(buttons, text='Build translation', command=self.start)
         start.pack(side='left')
         self.controls.append(start)
         self.cancel_button = ttk.Button(buttons, text='Cancel', command=self.request_cancel, state='disabled')
         self.cancel_button.pack(side='left', padx=8)
-        self.open_button = ttk.Button(buttons, text='Open built mod', command=self.open_output, state='disabled')
+        self.open_button = ttk.Button(buttons, text='Open output folder', command=self.open_output, state='disabled')
         self.open_button.pack(side='right')
         ttk.Button(buttons, text='Installation help', command=self.help).pack(side='right', padx=8)
-        ttk.Label(panel, text='Requires your own supported, decrypted ROM. No ROMs or keys are downloaded.\nAllow several GB of disk space. CIA files are not supported.', wraplength=700).grid(row=13, column=0, sticky='w', pady=(10, 0))
+        ttk.Label(panel, text='Supply your own decrypted game. ROM output requires a .3ds/.cci cartridge image.\nAllow at least 20 GB free for rebuilding. CIA files are not supported.', wraplength=700).grid(row=14, column=0, sticky='w', pady=(10, 0))
         root.protocol('WM_DELETE_WINDOW', self.close)
         root.after(100, self.poll)
 
@@ -93,11 +100,21 @@ class Application:
         if not self.output.get().strip() or (not self.download.get() and not Path(self.extractor.get()).is_file()):
             messagebox.showerror('Missing input', 'Choose an output folder and an extractor, or enable the download.')
             return
+        if self.output_mode.get() == 'rom':
+            from rebuild_rom import partitions
+            try:
+                partitions(Path(self.rom.get()))
+            except ValueError as error:
+                messagebox.showerror('Cartridge ROM required', str(error))
+                return
+            if not messagebox.askyesno('Build a translated .3ds?', 'This will download the verified 3dstool rebuilder and create a new .3ds file. Allow at least 20 GB free. Your original ROM stays unchanged. Continue?'):
+                return
         parent = Path(self.output.get()).resolve()
         output = parent/('English-mod-'+datetime.now().strftime('%Y%m%d-%H%M%S-%f'))
         args = SimpleNamespace(rom=Path(self.rom.get()), extracted=None,
                                ctrtool=Path(self.extractor.get()) if self.extractor.get() else None,
-                               download_ctrtool=self.download.get(), release=ROOT/'release', output=output)
+                               download_ctrtool=self.download.get(), release=ROOT/'release', output=output,
+                               output_format=self.output_mode.get())
         self.busy = True
         self.cancel.clear()
         self.progress['value'] = 0
@@ -135,7 +152,7 @@ class Application:
             if event[0] == 'done':
                 self.built = event[1]
                 self.open_button.configure(state='normal')
-                self.status.set('Success! Your verified mod is ready. Open it below, then follow Installation help.')
+                self.status.set('Success! Your translated .3ds file is ready to open in your emulator.' if self.built.is_file() else 'Success! Your verified mod is ready. See Installation help.')
             elif event[0] == 'cancelled':
                 self.status.set('Cancelled. Do not install partial output. Your ROM and saves are unchanged.')
             else:
@@ -145,10 +162,12 @@ class Application:
 
     def open_output(self):
         if self.built:
-            os.startfile(self.built)
+            os.startfile(self.built.parent if self.built.is_file() else self.built)
 
     def help(self):
         messagebox.showinfo('Installing your generated mod',
+            'For .3ds output: open DQXI-English.3ds in your emulator. No mod folders need to be installed. Do not distribute the rebuilt ROM.\n\n'
+            'For mod-folder output:\n'
             '1. Close the game and back up existing mods and saves.\n\n'
             '2. Open the game’s Mods Location in your emulator.\n\n'
             '3. Copy the generated romfs and exefs folders into:\nload/mods/0004000000199200/\n\n'
@@ -187,6 +206,10 @@ def main():
             args = SimpleNamespace(rom=Path(sys.argv[4]), extracted=None, output=Path(sys.argv[5]), release=ROOT/'release', ctrtool=Path(sys.argv[6]), download_ctrtool=False)
             build(args, lambda *_:None, work_root=args.output.parent/'exe-test-private')
             result['rom_build'] = True
+        elif len(sys.argv) == 8 and sys.argv[3] == '--rom-rebuild':
+            args = SimpleNamespace(rom=Path(sys.argv[4]), extracted=None, output=Path(sys.argv[5]), release=ROOT/'release', ctrtool=Path(sys.argv[6]), download_ctrtool=False, output_format='rom', rebuild_tool=Path(sys.argv[7]))
+            output = build(args, lambda *_:None, work_root=args.output.parent/'exe-rebuild-private')
+            result['rebuilt_rom'] = str(output)
         report.write_text(json.dumps(result), encoding='utf8')
         return
     root = tk.Tk()
