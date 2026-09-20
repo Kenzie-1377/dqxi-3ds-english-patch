@@ -158,6 +158,17 @@ The extractor is fetched from the
 and checked against a pinned SHA-256. Its upstream license and notices remain
 with that tool; it is not relicensed by this repository.
 
+## Current progress
+
+The **0.2.0 experimental prerelease** updates 518 patch targets with the audited
+quest/journal, battle-message, tutorial, forge, speaker-name and item corrections.
+See the [changelog](CHANGELOG.md) for completed scopes and remaining work, and
+[validation notes](docs/release-validation.md) for the checks performed.
+
+This is not a complete translation. Broader character dialogue and some graphics
+remain Japanese. The latest monster-list spacing correction still needs in-game
+confirmation, and text readability is not yet finished on every screen.
+
 ## Development
 
 Original Python source is included for archive handling, guarded text edits,

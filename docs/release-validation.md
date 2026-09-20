@@ -1,4 +1,31 @@
-# Initial player-build validation
+# Release validation
+
+## 0.2.0 — September 20, 2026
+
+- Regenerated the release from the current installed mod, including the final
+  normal-spacing correction rather than the superseded overlapping-text experiment.
+- 518 patch targets: 517 archive deltas and one executable IPS payload.
+- Every archive delta reconstructed its target byte for byte. All 518 target
+  hashes were independently compared with the installed mod after packaging.
+- Release payloads and manifest total 2,079,129 bytes.
+- All 21 automated tests passed. Initial sandboxed runs hit Windows temporary-folder
+  permission errors; rerunning outside that restriction passed without code changes.
+- The frozen Windows executable instantiated its GUI, verified all 518 embedded
+  payload hashes, and completed an extracted-input-to-mod build with mandatory
+  output hash and size verification.
+- The unsigned Windows EXE is 14,195,512 bytes. Its SHA-256 is
+  `3fa7d4677e039491f671f0e2ba14a69009e421b274fdb69b62ac25cf997a6415`.
+- The same frozen executable completed a decrypted `.3ds` input-to-output build,
+  checking rebuilt partition/header hashes and preservation of non-game partitions.
+  An initial attempt used an incorrect local tool path; the corrected-path retry
+  completed successfully. Test ROMs and extracted files remain private.
+
+The [changelog](../CHANGELOG.md) distinguishes completed text audits from remaining
+translation and visual checks. In particular, the newest monster-list spacing fix
+has not yet been confirmed in game. These checks do not establish full translation,
+all-screen readability, or real-hardware compatibility.
+
+## Historical initial player-build validation
 
 Validated September 16, 2026:
 
