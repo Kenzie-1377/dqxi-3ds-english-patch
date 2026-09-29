@@ -1,5 +1,47 @@
 # Changelog
 
+## 0.3.0 — September 29, 2026 (experimental prerelease)
+
+This patch has **566 targets** (565 archive deltas and one executable IPS
+payload), up from 518 in 0.2.0. It is still a partial translation.
+
+### Changes since 0.2.0
+
+- Translated and reviewed the Tickington opening, its book-world cutscenes and
+  party talk, and ordinary Tickington NPC and book dialogue in the covered text
+  archives. Twenty identical internal dummy-label fields were deliberately left
+  untouched; they are not ordinary dialogue.
+- Added reviewed story, regional NPC, book and party conversations across the
+  main game, including previously missing cutscenes and scripts. All 314
+  cutscene fields missed because their archives were absent from the earlier mod
+  overlay are now English in the covered text audit.
+- Shortened and reflowed accolade titles and descriptions, including the
+  "You Shall Not Escape Me!" screen. Adjusted campfire time labels, Pep Power
+  selection and descriptions, and several battle lower-screen labels to fit
+  their boxes. The player confirmed the latest Pep/battle follow-up looked good.
+- Preserved original game logic and control tokens in reviewed replacements;
+  rebuilt archive entries and installed hashes were checked before packaging.
+
+### Remaining work and limitations
+
+- A fresh effective-overlay audit finds **12,472 Japanese-containing text
+  fields** in the covered BXON/BFLYT formats: 7,526 in modded packs and 4,946
+  in original packs not yet overlaid. The largest groups are party talk (5,376),
+  UI layout text (4,524), other scenario/cutscene text (2,434), scripts (116),
+  and region fields (22, including the 20 dummy labels). These are audit hits,
+  not a claim that every field is independently player-visible.
+- Image-embedded and executable text have not had a comprehensive audit.
+  Untranslated text may therefore exist outside those counts.
+- The Tickington, accolade and later story changes still need wider in-game
+  visual testing. Text wrapping, display transitions, names cached in saves,
+  translation accuracy and real-hardware compatibility remain open checks.
+- The old bulk machine-translation draft was not included because spot checks
+  found serious errors. This release is not a promise of full-game English.
+
+Use your own supported decrypted Japanese game. Back up saves and load a normal
+in-game save instead of an old save state. No ROM, complete game archive,
+emulator or save is distributed.
+
 ## 0.2.0 — September 20, 2026 (experimental prerelease)
 
 This release updates the translation data, not just the builder. It contains

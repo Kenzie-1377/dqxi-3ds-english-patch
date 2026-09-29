@@ -9,6 +9,12 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
+The current experimental patch is **0.3.0**. It includes the recent Tickington
+NPC and book-world pass, more story and party dialogue, and battle/menu text-fit
+repairs. A fresh text audit still finds **12,472 Japanese-containing fields** in
+the covered game archives, so this is not a complete English release. See the
+[changelog](CHANGELOG.md) for changes and work still to do.
+
 This repository now includes the **translation differences and tools needed to
 build an installable mod from your own supported game files**. It contains no ROM,
 complete extracted game archives, encryption keys, saves, or emulator.
@@ -160,9 +166,11 @@ with that tool; it is not relicensed by this repository.
 
 ## Current progress
 
-The **0.2.0 experimental prerelease** updates 518 patch targets with the audited
-quest/journal, battle-message, tutorial, forge, speaker-name and item corrections.
-See the [changelog](CHANGELOG.md) for completed scopes and remaining work, and
+The **0.3.0 experimental prerelease** updates 566 patch targets, including the
+earlier quest/journal, battle-message, tutorial, forge, speaker-name and item
+corrections plus newer Tickington, dialogue and screen-fit work. The fresh
+covered-format audit still finds 12,472 Japanese-containing fields. See the
+[changelog](CHANGELOG.md) for completed scopes and remaining work, and
 [validation notes](docs/release-validation.md) for the checks performed.
 
 This is not a complete translation. Broader character dialogue and some graphics

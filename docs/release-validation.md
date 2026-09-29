@@ -1,5 +1,28 @@
 # Release validation
 
+## 0.3.0 — September 29, 2026
+
+- Built 566 patch targets from the current mod: 565 archive deltas and one
+  executable IPS payload. All deltas reconstructed their targets byte for byte.
+- Independently compared every target hash against the current mod: 566/566
+  matched. A separate extracted-input build checked all 566 original source
+  hashes and verified all 566 output files.
+- All 21 automated tests passed. Restricted test runs initially failed to
+  create Windows temporary directories; the same tests passed outside that
+  restriction without code changes.
+- A fresh effective-overlay BXON/BFLYT scan found 12,472 Japanese-containing
+  fields and zero parse errors. This is evidence of incompleteness, not a
+  comprehensive image/executable-text or gameplay audit.
+- The release payloads and manifest total 2,662,326 bytes and contain no ROM,
+  complete game archive or save. All 567 files exactly match the validated
+  release candidate.
+- The rebuilt standalone Windows EXE is 14,765,221 bytes, SHA-256
+  `16e4af1147e64d7e666a83cfb70f17aa6f0651f61a45444d1962d38ee376c66f`.
+  Its frozen self-test created the GUI, verified all 566 embedded payloads,
+  and built a mod from extracted originals with output verification.
+- Broader in-game testing of this exact release and a clean-Windows test remain
+  pending; structural checks do not establish that every screen fits.
+
 ## 0.2.0 — September 20, 2026
 
 - Regenerated the release from the current installed mod, including the final
