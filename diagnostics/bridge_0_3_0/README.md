@@ -6,6 +6,19 @@ Only small delta files are distributed here. They require the exact translated
 `romfs/gamecmn.pack` from the 0.3.0 release build; no complete game archive is
 included. No tool in this folder edits saves.
 
+### Windows: one-click builder
+
+Download [DQXI-Bridge-Diagnostics-0.3.0.exe](DQXI-Bridge-Diagnostics-0.3.0.exe)
+and run it on a Windows PC. Choose the exact **0.3.0**
+`romfs/gamecmn.pack` from your own patch installation, then choose a folder
+for the three test files. No Python or command line is needed. The program
+rejects the 0.3.1 PACK, never installs anything, and never touches saves.
+The executable is unsigned; if Windows warns about it, you can instead use
+the auditable Python method below. Its SHA-256 is
+`ebb99639952a11d0fde63b14faa4a7f67bca3cc6b7e87734560ef6c194c31a45`.
+
+### Python method
+
 Run from the repository root, using Python 3.10 or newer:
 
 ```sh
