@@ -15,14 +15,15 @@ Substantial Japanese text remains, and image/executable text and real-hardware
 gameplay are not fully audited. This is not a complete English release. See the
 [changelog](CHANGELOG.md) for changes and work still to do.
 
-**Known New 3DS hardware issue (0.2.0 and 0.3.0; 0.3.2 unverified):** A repeatable crash has
-been reported in 3D mode when crossing the bridge toward Heliodor, and the
-first Heliodor visit may show corrupted graphics. Removing the translated
-`romfs/gamecmn.pack` reportedly allows the crossing and restores normal
-graphics. An original-data `gamecmn.pack` control passed a tester's bridge and
-Heliodor checks, and a compact translated variant crossed the bridge in Azahar.
-**The 0.3.2 contents have not been hardware-validated as a crash fix.** Do not
-treat this prerelease as a crash repair.
+**Known New 3DS hardware issue (including 0.3.2):** A hardware tester confirms
+that **0.3.2 still crashes** in 3D mode when crossing the bridge toward
+Heliodor, and also crashes when leaving the Church of Guidance. The tester
+reports that the earlier Heliodor rendering error is no longer visible in
+0.3.2; that improvement has not been broadly validated. Removing the
+translated `romfs/gamecmn.pack` and using an original-data PACK control
+allowed an earlier bridge/Heliodor test to pass. A compact translated variant
+crossed the bridge in Azahar, but that did not predict hardware behavior.
+**Do not treat 0.3.2 as a crash repair.**
 Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
 and the [patch-only diagnostic tests](diagnostics/bridge_0_3_0/README.md).
 The diagnostic files are not a release or a permanent workaround.

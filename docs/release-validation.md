@@ -1,6 +1,6 @@
 # Release validation
 
-## 0.3.2 — September 30, 2026 (experimental; hardware unverified)
+## 0.3.2 — September 30, 2026 (experimental; hardware crash confirmed)
 
 - Generated 577 patch targets from the reviewed local installation: 575 PACK
   deltas, one standalone BCH delta, and one executable IPS. All 577 targets
@@ -11,8 +11,11 @@
   `8bb4772ccc1622ed5b2d8c72b33ed3a3c5dbf9937eb8253a95bcd1d9923702b6`).
   Its frozen runtime self-test has not completed, so clean-Windows execution is
   not verified.
-- The exact build has not passed the New 3DS bridge/Heliodor hardware test.
-  Hotto first-visit image and saved Tockle-name checks remain open. The 8,708
+- A New 3DS tester confirms that the exact 0.3.2 build still crashes at the
+  bridge toward Heliodor and when leaving the Church of Guidance. The tester
+  reports that the earlier Heliodor rendering error is no longer visible;
+  broader validation remains open. Hotto first-visit image and saved Tockle-name
+  checks remain open. The 8,708
   Japanese-field covered audit omits 8,658 regional secondary candidate refs;
   neither number is a complete count of active untranslated dialogue.
 

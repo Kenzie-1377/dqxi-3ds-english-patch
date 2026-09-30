@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.3.2 — September 30, 2026 (experimental; hardware-unverified prerelease)
+## 0.3.2 — September 30, 2026 (experimental; hardware crash confirmed)
 
 This updates the public builder to the latest locally installed translation
 snapshot: **577 patch targets** (575 archive deltas, one Hotto location-image
@@ -10,10 +10,12 @@ and screenshot-led corrections. The builder now includes standalone `.bch` image
 patches. All targets rebuilt from matching original inputs and matched the local
 installed files by SHA-256.
 
-**This is not a validated bridge-crash repair or a complete translation.** The
-reported New 3DS bridge crash and first-visit Heliodor rendering issue remain
-unresolved for this exact build on hardware. A previous compact variant crossed
-the bridge in Azahar, but that does not prove this release safe on hardware.
+**This is not a bridge-crash repair or a complete translation.** A New 3DS
+tester confirms that 0.3.2 still crashes when crossing the bridge toward
+Heliodor, and also crashes when leaving the Church of Guidance. The tester
+reports that the earlier Heliodor rendering error is no longer visible, but
+that improvement needs broader validation. A previous compact variant crossed
+the bridge in Azahar; emulator success did not predict hardware stability.
 The Hotto title's first-visit appearance and saved Tockle-name behavior are
 untested. The covered text audit still finds 8,708 Japanese fields with zero
 parse errors; a separate scan identified 8,658 Japanese secondary candidate
