@@ -8,6 +8,7 @@ from types import SimpleNamespace
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]/'tools'))
 from build_translation import build, BuildCancelled
 from delta import create, sha
+import make_release
 
 
 class BuilderTests(unittest.TestCase):
@@ -42,6 +43,31 @@ class BuilderTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 build(args, lambda *_:None)
             self.assertFalse(args.output.exists())
+
+    def test_release_and_builder_include_standalone_bch(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            original = root/'original'
+            mod = root/'mod'
+            release = root/'release'
+            rel = Path('romfs/ui/location/location_b021_001a.bch')
+            (original/rel).parent.mkdir(parents=True)
+            (mod/rel).parent.mkdir(parents=True)
+            (original/rel).write_bytes(b'BCH\0original texture')
+            (mod/rel).write_bytes(b'BCH\0English Hotto texture')
+            old_argv = sys.argv
+            try:
+                sys.argv = ['make_release', '--base', str(original),
+                            '--mod', str(mod), '--output', str(release)]
+                make_release.main()
+            finally:
+                sys.argv = old_argv
+            manifest = json.loads((release/'manifest.json').read_text(encoding='utf8'))
+            self.assertEqual([row['path'] for row in manifest['files']], [rel.as_posix()])
+            args = SimpleNamespace(rom=None, extracted=original, release=release,
+                                   output=root/'rebuilt')
+            build(args, lambda *_: None)
+            self.assertEqual((args.output/rel).read_bytes(), (mod/rel).read_bytes())
 
 
 if __name__ == '__main__':

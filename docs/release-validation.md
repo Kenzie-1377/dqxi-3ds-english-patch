@@ -1,5 +1,21 @@
 # Release validation
 
+## 0.3.2 — September 30, 2026 (experimental; hardware unverified)
+
+- Generated 577 patch targets from the reviewed local installation: 575 PACK
+  deltas, one standalone BCH delta, and one executable IPS. All 577 targets
+  rebuilt against original inputs and independently matched installed hashes.
+- Manifest SHA-256: `eb948e1cd2de1320aaf915112ab3cfa1b8c2de4818a6713fb36ad7225d494e52`.
+- All 23 automated tests passed, including a standalone BCH release/builder
+  roundtrip. The Windows EXE packaged successfully (14,942,937 bytes; SHA-256
+  `8bb4772ccc1622ed5b2d8c72b33ed3a3c5dbf9937eb8253a95bcd1d9923702b6`).
+  Its frozen runtime self-test has not completed, so clean-Windows execution is
+  not verified.
+- The exact build has not passed the New 3DS bridge/Heliodor hardware test.
+  Hotto first-visit image and saved Tockle-name checks remain open. The 8,708
+  Japanese-field covered audit omits 8,658 regional secondary candidate refs;
+  neither number is a complete count of active untranslated dialogue.
+
 ## 0.3.1 — September 29, 2026 (experimental; hardware unverified)
 
 - Built 575 patch targets from the last validated installed mod: 574 archive

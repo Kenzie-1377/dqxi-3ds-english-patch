@@ -20,7 +20,11 @@ def main():
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
     rows = []
-    mod_files = [args.mod/'exefs/code.ips', *sorted((args.mod/'romfs').rglob('*.pack'))]
+    # Standalone BCH textures (for example localized area-title artwork) use
+    # the same verified delta path as PACK archives.
+    romfs_files = sorted(p for p in (args.mod/'romfs').rglob('*')
+                         if p.is_file() and p.suffix.lower() in {'.pack', '.bch'})
+    mod_files = [args.mod/'exefs/code.ips', *romfs_files]
     for mod in mod_files:
         if not mod.is_file():
             continue
@@ -32,7 +36,7 @@ def main():
             kind = 'ips'
             name = 'code.patchdata'
             source_rel = 'exefs/code.bin'
-        elif rel.startswith('romfs/') and rel.endswith('.pack'):
+        elif rel.startswith('romfs/') and mod.suffix.lower() in {'.pack', '.bch'}:
             source_rel = rel
             source = normalize((args.base/rel).read_bytes())
             if source == target:
