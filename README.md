@@ -9,17 +9,18 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The current experimental patch is **0.3.0**. It includes the recent Tickington
-NPC and book-world pass, more story and party dialogue, and battle/menu text-fit
-repairs. A fresh text audit still finds **12,472 Japanese-containing fields** in
-the covered game archives, so this is not a complete English release. See the
+The current experimental patch is **0.3.1**. It adds reviewed story and party
+dialogue to the 0.3.0 Tickington and screen-fit work. Substantial Japanese text
+remains, and image/executable text and real-hardware gameplay are not fully
+audited. This is not a complete English release. See the
 [changelog](CHANGELOG.md) for changes and work still to do.
 
-**Known New 3DS hardware issue (0.2.0 and 0.3.0):** A repeatable crash has
+**Known New 3DS hardware issue (0.2.0 and 0.3.0; 0.3.1 unverified):** A repeatable crash has
 been reported in 3D mode when crossing the bridge toward Heliodor, and the
 first Heliodor visit may show corrupted graphics. Removing the translated
 `romfs/gamecmn.pack` reportedly allows the crossing and restores normal
-graphics. This is **not fixed**; do not treat 0.3.0 as hardware-validated.
+graphics. **0.3.1 has not been shown to fix this crash and has not been
+hardware-validated.** Do not treat this prerelease as a crash repair.
 Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
 and the [patch-only diagnostic tests](diagnostics/bridge_0_3_0/README.md).
 The diagnostic files are not a release or a permanent workaround.
@@ -175,10 +176,9 @@ with that tool; it is not relicensed by this repository.
 
 ## Current progress
 
-The **0.3.0 experimental prerelease** updates 566 patch targets, including the
+The **0.3.1 experimental prerelease** updates 575 patch targets, including the
 earlier quest/journal, battle-message, tutorial, forge, speaker-name and item
-corrections plus newer Tickington, dialogue and screen-fit work. The fresh
-covered-format audit still finds 12,472 Japanese-containing fields. See the
+corrections plus Tickington, further dialogue and screen-fit work. See the
 [changelog](CHANGELOG.md) for completed scopes and remaining work, and
 [validation notes](docs/release-validation.md) for the checks performed.
 

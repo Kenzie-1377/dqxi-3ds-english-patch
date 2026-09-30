@@ -1,5 +1,42 @@
 # Changelog
 
+## 0.3.1 — September 29, 2026 (experimental, hardware-unverified prerelease)
+
+This is a **translation-progress update, not a crash fix**. It has **575 patch
+targets** (574 archive deltas and one executable IPS payload), versus 566 in
+0.3.0. It was built from the last validated installed translation snapshot.
+Pending bridge-test variants, uninstalled party-talk work and uninstalled title
+assets are not included.
+
+### Changes since 0.3.0
+
+- Added carefully reviewed story and party dialogue, regional conversations,
+  Tickington and book-world follow-ups, battle/UI text fixes, and screen-fit
+  revisions. The installed-work ledger records 3,877 BXON text update events,
+  874 layout-pane update events, one image, and six hidden raw-pool corrections
+  since 0.3.0; these are work events, not a count of distinct game lines.
+- Rebuilt all 575 patch targets from matching original inputs and independently
+  matched all 575 outputs to the validated installed snapshot. This structural
+  check does not establish real-hardware stability or visual fit.
+
+### Critical known issue and remaining work
+
+**The New 3DS 3D-mode crash while crossing the bridge toward Heliodor is
+unresolved.** It was reported with 0.2.0 and 0.3.0; 0.3.1 has **not** been
+tested on hardware or shown to fix it. The translated `gamecmn.pack` is a
+leading suspect, and first-visit Heliodor graphics corruption has also been
+reported. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
+and the [diagnostic tests](diagnostics/bridge_0_3_0/README.md). Back up saves
+and mod files before testing. This release is not recommended as a way to get
+past that bridge.
+
+The latest effective-overlay text audit still finds 9,031 Japanese-containing
+records in its covered archive formats, with zero parse errors. That audit has
+known blind spots: top-level archives, embedded images, executable text and
+runtime visibility are not comprehensively resolved. Tickington and wider
+gameplay/fit checks remain open. No ROM, complete game archive or save is
+distributed.
+
 ## 0.3.0 — September 29, 2026 (experimental prerelease)
 
 This patch has **566 targets** (565 archive deltas and one executable IPS

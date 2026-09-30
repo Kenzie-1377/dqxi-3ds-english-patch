@@ -1,5 +1,23 @@
 # Release validation
 
+## 0.3.1 — September 29, 2026 (experimental; hardware unverified)
+
+- Built 575 patch targets from the last validated installed mod: 574 archive
+  deltas and one executable IPS payload. All payload hashes and delta
+  reconstructions passed; all 575 original source hashes and rebuilt output
+  hashes matched the installed snapshot, with zero extras or mismatches.
+- The manifest SHA-256 before publication is
+  `61387080d95c567d5fabf182536b737cc12aa567340c11278b4e225be0bf0345`.
+- The 0.3.0/0.2.0 New 3DS 3D-mode bridge-to-Heliodor crash and possible
+  first-visit rendering corruption remain unresolved. This release is **not**
+  a validated fix. Hardware A/B diagnostic results are still needed.
+- All 22 automated tests passed. The frozen Windows builder self-test created
+  its GUI, verified 575 embedded payloads, and built 575 mod targets from
+  matching originals; independent output hashes matched 575/575.
+- The Windows EXE is 14,924,117 bytes, SHA-256
+  `1631a9ea467362fa0a1cdf1bb986cb34ca6b799a43bc229355506192aecb144e`.
+  A clean-Windows test and real-hardware gameplay validation remain pending.
+
 ## 0.3.0 — September 29, 2026
 
 - Built 566 patch targets from the current mod: 565 archive deltas and one
