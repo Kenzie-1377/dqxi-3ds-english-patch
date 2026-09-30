@@ -9,8 +9,11 @@
 - All 23 automated tests passed, including a standalone BCH release/builder
   roundtrip. The Windows EXE packaged successfully (14,942,937 bytes; SHA-256
   `8bb4772ccc1622ed5b2d8c72b33ed3a3c5dbf9937eb8253a95bcd1d9923702b6`).
-  Its frozen runtime self-test has not completed, so clean-Windows execution is
-  not verified.
+  A later frozen runtime self-test with normal Windows permissions created the
+  GUI, verified 577 embedded payloads and rebuilt all 577 mod targets from
+  matching originals. Independent output hashes matched **577/577**. A first
+  sandbox-restricted attempt did not finish; clean-Windows execution remains
+  unverified.
 - A New 3DS tester confirms that the exact 0.3.2 build still crashes at the
   bridge toward Heliodor and when leaving the Church of Guidance. The tester
   reports that the earlier Heliodor rendering error is no longer visible;
