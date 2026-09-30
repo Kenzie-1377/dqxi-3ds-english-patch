@@ -18,9 +18,10 @@ that improvement needs broader validation. A previous compact variant crossed
 the bridge in Azahar; emulator success did not predict hardware stability.
 The Hotto title's first-visit appearance and saved Tockle-name behavior are
 untested. The covered text audit still finds 8,708 Japanese fields with zero
-parse errors; a separate scan identified 8,658 Japanese secondary candidate
-references outside that audit, including player-visible examples. These are
-not confirmed active dialogue counts. Keep backups of saves and mod files.
+parse errors; a corrected later scan identified 8,328 Japanese secondary
+candidate references outside that audit after excluding 270 false pointers
+embedded in other strings. This newer scan includes local work after 0.3.2;
+the counts are not confirmed active dialogue. Keep backups of saves and mod files.
 
 ## 0.3.1 — September 29, 2026 (experimental, hardware-unverified prerelease)
 

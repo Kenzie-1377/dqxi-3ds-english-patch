@@ -16,8 +16,15 @@
   reports that the earlier Heliodor rendering error is no longer visible;
   broader validation remains open. Hotto first-visit image and saved Tockle-name
   checks remain open. The 8,708
-  Japanese-field covered audit omits 8,658 regional secondary candidate refs;
-  neither number is a complete count of active untranslated dialogue.
+  Japanese-field covered audit omits secondary references. A corrected later
+  scan finds 8,328 Japanese regional secondary candidates after excluding 270
+  false refs embedded within decoded strings. Neither number is a complete
+  count of active untranslated dialogue; local work after 0.3.2 affects the
+  newer candidate count.
+- A patch-only 0.3.2 original-data control was added after the hardware crash
+  report. Its reverse delta was checked against exact 0.3.2 and original PACK
+  hashes; the reconstructed output matched the original byte for byte. All 24
+  repository tests passed. This is a diagnostic, **not** a fix or a new release.
 
 ## 0.3.1 — September 29, 2026 (experimental; hardware unverified)
 

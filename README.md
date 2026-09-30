@@ -25,8 +25,9 @@ allowed an earlier bridge/Heliodor test to pass. A compact translated variant
 crossed the bridge in Azahar, but that did not predict hardware behavior.
 **Do not treat 0.3.2 as a crash repair.**
 Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
-and the [patch-only diagnostic tests](diagnostics/bridge_0_3_0/README.md).
-The diagnostic files are not a release or a permanent workaround.
+and the [0.3.2 patch-only original-data control](diagnostics/bridge_0_3_2/README.md).
+The older [0.3.0 diagnostics](diagnostics/bridge_0_3_0/README.md) reject a
+0.3.2 input. Diagnostic files are not a release or a permanent workaround.
 
 This repository now includes the **translation differences and tools needed to
 build an installable mod from your own supported game files**. It contains no ROM,
@@ -188,8 +189,9 @@ corrections plus Tickington, further dialogue and screen-fit work. See the
 
 This is not a complete translation. Broader character dialogue and some graphics
 remain Japanese. A newly identified regional-dialogue audit blind spot contains
-8,658 Japanese secondary candidate references; their in-game visibility is not
-fully classified. The Hotto title image and saved Tockle name behavior still need
+8,328 Japanese secondary candidate references after excluding 270 false refs
+embedded in other strings; their in-game visibility is not fully classified.
+The Hotto title image and saved Tockle name behavior still need
 in-game checks, and text readability is not yet finished on every screen.
 
 ## Development
