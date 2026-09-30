@@ -1,4 +1,4 @@
-"""Reconstruct three temporary Heliodor bridge diagnostic archives.
+"""Reconstruct five temporary Heliodor bridge diagnostic archives.
 
 The input must be the exact gamecmn.pack built by release 0.3.0. This tool
 never modifies the input, an installed mod, or saves.
@@ -33,6 +33,18 @@ VARIANTS = (
         "316a225191ff11b44b40f2b3298dbafe346187fbcf77c246265f07e2190c91ea",
         "1bbff5f6c67424655ddb1a1316efe7dbe9af8ab8645b0c96ace1ad773e56469d",
         2699752,
+    ),
+    (
+        "group_a_only",
+        "51b2a0881bb1ac330e482c133f6ae89c5d954cd54797c64a801d63b41bb3aafa",
+        "2a6c044562ae8de9fdfb16447d905ec0a4d71b2914041fb7f8eeb20b7c51ec01",
+        2628200,
+    ),
+    (
+        "group_b_only",
+        "033b00737e8ef8d71da15616a0de7ee9d4c65afb9d822c1f3290d0c0da2ee41d",
+        "28193915d3e142cc3ed18ac69f82030da47e73e571e47fc3699a9dddc12f166f",
+        2627816,
     ),
 )
 PATCH_DIR = Path(__file__).resolve().parents[1] / "diagnostics" / "bridge_0_3_0"

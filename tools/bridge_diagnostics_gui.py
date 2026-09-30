@@ -73,27 +73,27 @@ def main() -> None:
     ttk.Label(frame, text="Heliodor bridge diagnostic builder", font=("Segoe UI", 15, "bold")).pack(anchor="w")
     ttk.Label(
         frame,
-        text="Select the exact 0.3.0 romfs/gamecmn.pack from your own mod. This creates three\n"
+        text="Select the exact 0.3.0 romfs/gamecmn.pack from your own mod. This creates five\n"
         "temporary test variants in a new folder. It does not install them or touch saves.",
         justify="left",
     ).pack(anchor="w", pady=(8, 8))
-    ttk.Label(frame, text="Test original_pack_control first. Close the game before changing files.").pack(anchor="w")
+    ttk.Label(frame, text="For round two, test group_a_only and group_b_only separately.").pack(anchor="w")
     ttk.Label(frame, text="0.3.1 gamecmn.pack will be rejected; this tool is for 0.3.0 only.").pack(anchor="w", pady=(0, 12))
 
     def choose_and_build() -> None:
         selected = filedialog.askopenfilename(title="Select 0.3.0 gamecmn.pack", filetypes=[("PACK archive", "*.pack")])
         if not selected:
             return
-        parent = filedialog.askdirectory(title="Choose a folder for the new bridge-tests-0.3.0 folder")
+        parent = filedialog.askdirectory(title="Choose a folder for the new bridge-tests-round2-0.3.0 folder")
         if not parent:
             return
         try:
-            output = Path(parent) / "bridge-tests-0.3.0"
+            output = Path(parent) / "bridge-tests-round2-0.3.0"
             paths = build(Path(selected), output)
         except (OSError, ValueError) as exc:
             messagebox.showerror("Diagnostic build failed", str(exc))
             return
-        messagebox.showinfo("Diagnostic files ready", f"Built and verified {len(paths)} variants in:\n{output}\n\nTest original_pack_control first. Do not distribute the generated PACK files.")
+        messagebox.showinfo("Diagnostic files ready", f"Built and verified {len(paths)} variants in:\n{output}\n\nTest group_a_only and group_b_only one at a time. Do not distribute the generated PACK files.")
 
     ttk.Button(frame, text="Choose 0.3.0 gamecmn.pack and build tests", command=choose_and_build).pack(anchor="w")
     root.mainloop()
