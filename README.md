@@ -15,6 +15,15 @@ repairs. A fresh text audit still finds **12,472 Japanese-containing fields** in
 the covered game archives, so this is not a complete English release. See the
 [changelog](CHANGELOG.md) for changes and work still to do.
 
+**Known New 3DS hardware issue (0.2.0 and 0.3.0):** A repeatable crash has
+been reported in 3D mode when crossing the bridge toward Heliodor, and the
+first Heliodor visit may show corrupted graphics. Removing the translated
+`romfs/gamecmn.pack` reportedly allows the crossing and restores normal
+graphics. This is **not fixed**; do not treat 0.3.0 as hardware-validated.
+Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
+and the [patch-only diagnostic tests](diagnostics/bridge_0_3_0/README.md).
+The diagnostic files are not a release or a permanent workaround.
+
 This repository now includes the **translation differences and tools needed to
 build an installable mod from your own supported game files**. It contains no ROM,
 complete extracted game archives, encryption keys, saves, or emulator.
