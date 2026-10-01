@@ -9,11 +9,13 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The current experimental patch is **0.3.2**. It brings the public builder up to
-the latest locally installed, reviewed dialogue, UI, and Hotto title work.
+The current experimental prerelease is **0.4.0**. It includes reviewed dialogue,
+party talk, map/UI and battle-text improvements, plus the player-confirmed
+Veronica/Sylvando final-letter display repair. It packages 733 patch targets.
 Substantial Japanese text remains, and image/executable text and real-hardware
 gameplay are not fully audited. This is not a complete English release. See the
-[changelog](CHANGELOG.md) for changes and work still to do.
+[changelog](CHANGELOG.md) and [scoped completion checklist](docs/completion-status.md)
+for changes, completed audited scopes and work still to do.
 
 **Known New 3DS hardware issue (including 0.3.2):** A hardware tester confirms
 that **0.3.2 still crashes** in 3D mode when crossing the bridge toward
@@ -24,6 +26,7 @@ translated `romfs/gamecmn.pack` and using an original-data PACK control
 allowed an earlier bridge/Heliodor test to pass. A compact translated variant
 crossed the bridge in Azahar, but that did not predict hardware behavior.
 **Do not treat 0.3.2 as a crash repair.**
+**0.4.0 is also not a crash repair and has not been validated on real hardware.**
 Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
 and the [0.3.2 patch-only original-data control](diagnostics/bridge_0_3_2/README.md).
 The older [0.3.0 diagnostics](diagnostics/bridge_0_3_0/README.md) reject a

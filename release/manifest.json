@@ -1,7 +1,7 @@
 {
   "format": "dqxi-translation-deltas-v1",
   "title_id": "0004000000199200",
-  "status": "Incomplete; updated as the maintainer can.",
+  "status": "Experimental prerelease; incomplete translation; hardware crashes unresolved.",
   "files": [
     {
       "path": "exefs/code.ips",
@@ -9,9 +9,9 @@
       "kind": "ips",
       "payload": "code.patchdata",
       "source_sha256": "dfcd1b7ad170eab3932abfaa702b694e6673dc0a8744bfc070765cc8c8cc24d8",
-      "target_sha256": "e69f4d70796aa08e5ff8e3808620dfb39c61d1bded8b5fc10f29209c9b096506",
-      "payload_sha256": "e69f4d70796aa08e5ff8e3808620dfb39c61d1bded8b5fc10f29209c9b096506",
-      "target_size": 2918
+      "target_sha256": "8a3a0eec8b6ed6399f1f3b6c97904125ce04b925d95b77e8e94a76957123d548",
+      "payload_sha256": "8a3a0eec8b6ed6399f1f3b6c97904125ce04b925d95b77e8e94a76957123d548",
+      "target_size": 3360
     },
     {
       "path": "romfs/battlecmn.pack",
@@ -19,9 +19,9 @@
       "kind": "delta",
       "payload": "0001.dqdelta",
       "source_sha256": "46f2f5b511b7886d756ec1d934fd3f3a2d2b4e777486236af4b651a1d2add691",
-      "target_sha256": "8d4c275009675960911f07d2830ddf753f823ec133f45be558a23340d058d833",
-      "payload_sha256": "9b9adf98ead7ffdd6b905e88d64e63f8d85ee489fc7bf1d6326386d16452f9d5",
-      "target_size": 2682292
+      "target_sha256": "e387c0735c0407af6e93d62d1af1524643f7049dcc6416e400c40574729cc871",
+      "payload_sha256": "fedea2a90b0215fcdcaea0e408a090802d9061e56ba2cbeead1f0c5d383e9162",
+      "target_size": 2694580
     },
     {
       "path": "romfs/fieldcmn.pack",
@@ -29,9 +29,9 @@
       "kind": "delta",
       "payload": "0002.dqdelta",
       "source_sha256": "1ac929475f2f5e2ed787ca76cefc3a409874fe31841522955c6891a33f74cbca",
-      "target_sha256": "cf67bf11e1ee9df0923afac5b2cc2a45059873ab2136b77449036a6f64becefe",
-      "payload_sha256": "e2a72993c3f41e188e2ae69eef5b98333bfb78fac81e3b3f8655663717164297",
-      "target_size": 188012
+      "target_sha256": "fdf6ed5628e1ac385cb5b185b8fa77bb1bba4a09f1d4b57ccecc68352c29d6d5",
+      "payload_sha256": "68e8014491346f9cd7ae7f1d165c2861bbb972a46f79d9d18765584cf863b098",
+      "target_size": 192348
     },
     {
       "path": "romfs/gamecmn.pack",
@@ -39,9 +39,9 @@
       "kind": "delta",
       "payload": "0003.dqdelta",
       "source_sha256": "26bf97310438c16e400b3bb36253c9f5c45eca787b216029bd65bf4f8e1b9ceb",
-      "target_sha256": "eeb7dbd02c304c71c2b3b552fd4265c25f847220c63743f70050aad94bfb9ea1",
-      "payload_sha256": "41353296f3a2be794be22650bd2bca84647178099cfc3e916dd814846dd3ae68",
-      "target_size": 2589416
+      "target_sha256": "6f20ae6b96c7898cc91d5cc4d815bf5c32310baab0dab956656bd53e38a4cfc5",
+      "payload_sha256": "d8cb1429b7d3d75aaf6effc04c704a3c6bf76804392a2ab465f9057bcb2b0e2b",
+      "target_size": 2600424
     },
     {
       "path": "romfs/param/region/r001.pack",
@@ -89,9 +89,9 @@
       "kind": "delta",
       "payload": "0008.dqdelta",
       "source_sha256": "b3d9c1fa6b9f12e4b267fbf61a61bae9fd98c1b8430e2ccb47c8fe8e62c76465",
-      "target_sha256": "b43521f052d67c31eabb6c9e8c7dc561de082b3df2ab572deec6c1ca152b9f79",
-      "payload_sha256": "9f8d686817e11c343d6554a826705e2c2b81e02abede2b17ab39755fec32952b",
-      "target_size": 889368
+      "target_sha256": "931d521620656d73afcfadd893d2adf7fd1afac68cfce530d75a235cb5b7109c",
+      "payload_sha256": "fd5a0b6de16cb00ac542fa41fbf1b2c8d7adcdd88cfb565bc517430458815606",
+      "target_size": 961572
     },
     {
       "path": "romfs/param/region/r006.pack",
@@ -99,9 +99,9 @@
       "kind": "delta",
       "payload": "0009.dqdelta",
       "source_sha256": "92e6beb6070f74eb60048bbde7ccb43b5233efaf7ed7125e46cb72f3478952d8",
-      "target_sha256": "8c7bd6fdbe38d9d51e65d144ef4e5861a3c38b3972c58266b936fe5cac139ce3",
-      "payload_sha256": "47f04db6b4b28c0360873bfef613e9e8dd9ed8d57ae042b15f2f60ff6e7b4196",
-      "target_size": 1056216
+      "target_sha256": "b3100f54a694472170e5629802e11fe328e311653bd11be46b6bc5bbaee57192",
+      "payload_sha256": "bf95b04e252a057fd7d90312acc503365837fbf006c696642adba3f38b846739",
+      "target_size": 1071556
     },
     {
       "path": "romfs/param/region/r007.pack",
@@ -109,9 +109,9 @@
       "kind": "delta",
       "payload": "0010.dqdelta",
       "source_sha256": "c5106789a7e3f98753c7a47823a6cef3ff2e635976132934403dac5b05e77fd1",
-      "target_sha256": "c11b4059e823498a135c10cf24aa930b6db2cf726cf3bb9d74bfdebed5d98ce1",
-      "payload_sha256": "3200f6217385289cb35eddb4e22a3a54a0e026b16d36ed78bc9766719e93fb28",
-      "target_size": 528648
+      "target_sha256": "4f82f46c7a4f43b8343b32269a68c986f8b08da552bde4010475e462b3a2f956",
+      "payload_sha256": "a527014c4189e7a9ed0e4de34872b0f3d65e6de030d9baba9a4b3830dc2aa145",
+      "target_size": 528712
     },
     {
       "path": "romfs/param/region/r008.pack",
@@ -119,9 +119,9 @@
       "kind": "delta",
       "payload": "0011.dqdelta",
       "source_sha256": "c5fa68ca43aeb0850ad8083e8b848fdfc594fdb636f42aacde14a6a8f5cb2f5c",
-      "target_sha256": "424eb5f2cc350cac2dbd0e7d51e746d7d1dab176e11a01fa491cde633df921cf",
-      "payload_sha256": "68bc7b479ef27fbe04f8adae347f26d5fd9773e69dd793e6d7b0eedec2f5cb4f",
-      "target_size": 272968
+      "target_sha256": "c85fa96f1abffde9e104fbae918972a30c2087597e3b4f5d294827ee5fe9f630",
+      "payload_sha256": "ba37d0641fd5c6f28a705581599bc275c60d574474feebf9a0d6bdcd2498a23d",
+      "target_size": 273084
     },
     {
       "path": "romfs/param/region/r009.pack",
@@ -129,9 +129,9 @@
       "kind": "delta",
       "payload": "0012.dqdelta",
       "source_sha256": "62e2f599ea5fadc80608dba0d8358e7c2b4c51b5dd0eb9706f04cb7b48de643e",
-      "target_sha256": "bff3735399b947ca77defb4bf93349fe04ae5ce6b16959b948e4c0765d1d9913",
-      "payload_sha256": "dcf4a6315fda29fae46f561899459eaa36842a63288a8f2c690d5bbb9b905ef1",
-      "target_size": 116440
+      "target_sha256": "500cfe78351bcdeeece644f03e143ead814233c1c1c860f28a3ae7b6ed01a19f",
+      "payload_sha256": "9291a2a329f2dc77430a1d64eec20d86349b58baf8983f67110a8ce1716c60dd",
+      "target_size": 116460
     },
     {
       "path": "romfs/param/region/r010.pack",
@@ -159,9 +159,9 @@
       "kind": "delta",
       "payload": "0015.dqdelta",
       "source_sha256": "3904c89d464f4d41663b570c3c2515c5169a13a788c235d4b88834ff42983c82",
-      "target_sha256": "6c8cb3c1078305002f5bfb4220c47bb042fbb03789e0c8aafde138bb7965adff",
-      "payload_sha256": "547ea0406c3b2ff03a3ec20248b9c3e5407f2d7ec3bd02c4a80c44bd9c86da07",
-      "target_size": 695016
+      "target_sha256": "85f611aa1d4b41e910875e2a4f7884d3714f94b865205e815a509fe956f2e9c0",
+      "payload_sha256": "5539bf9fe1de75f695570f4895698d1fcc15cbc0d62c30a0aad356de8ca2c2d6",
+      "target_size": 695272
     },
     {
       "path": "romfs/param/region/r013.pack",
@@ -219,9 +219,9 @@
       "kind": "delta",
       "payload": "0021.dqdelta",
       "source_sha256": "f73121b20bdbd7b729402dd84173b45f12b80b7efbdfc3a7fd8fc7ebfe13c518",
-      "target_sha256": "5b932b245e99fead23b1d0b844cb61589f2dc316f9a31a24d990052de116b630",
-      "payload_sha256": "ba1382d57bc4fb57eb4c9519c349a7ece37c976f8ac93251a1843dcd972ba6e4",
-      "target_size": 177528
+      "target_sha256": "bdf6596cd48d57ae1ecd2c351eb0b408df975d3c5262bcc9a02a6d84cdb5a580",
+      "payload_sha256": "55576aee42120042af93964eea8d6be4fb390870729b9f856ec678b10c81ec73",
+      "target_size": 177592
     },
     {
       "path": "romfs/param/region/r019.pack",
@@ -239,9 +239,9 @@
       "kind": "delta",
       "payload": "0023.dqdelta",
       "source_sha256": "ff30cd78adfd816af7716de2c59718fedcd0e175a3afd7952140833de0c9dd1a",
-      "target_sha256": "81b8d58d2758ea80afa4ac7a4141886ef612dceb10194b55dacc6a630887fc19",
-      "payload_sha256": "866d897316068db69269d93a773cc4c9779ef272daf25b22f626f4231adc0cb1",
-      "target_size": 165520
+      "target_sha256": "d8f7089ea049b221b5d24a15094e82e0bc59b9cfe94fa93e3f45a823b225d369",
+      "payload_sha256": "b6bf7823ec42d35f89381c9fd200a2bbec8d228a37f02be5bf33507630a9d90f",
+      "target_size": 165648
     },
     {
       "path": "romfs/param/region/r021.pack",
@@ -259,9 +259,9 @@
       "kind": "delta",
       "payload": "0025.dqdelta",
       "source_sha256": "420f8c290dba7cd0067c76e768e03c012e45ad4081ce46b90746a6cda365d8e2",
-      "target_sha256": "2bbf0dcdffa4cdcde24f04951a9f9520f01d80f8556f8867d3e25367b97c9010",
-      "payload_sha256": "22222a69bc04f0bedee283f20469b69cbbdebfc5c57af9f63c6affcd6cda080e",
-      "target_size": 1116408
+      "target_sha256": "31a1473b96541a582c00bbd9bdd5f268659f6d196c9c7caabb893d65d094b422",
+      "payload_sha256": "3750b2585a3527da9a320395ca845569917dbd78747b6df7d63eec8a192e790b",
+      "target_size": 1116424
     },
     {
       "path": "romfs/param/region/r023.pack",
@@ -299,9 +299,9 @@
       "kind": "delta",
       "payload": "0029.dqdelta",
       "source_sha256": "5adb6dadde109cd811210eb4880f71958a53390e68d229f1a814d47bc7a26b8d",
-      "target_sha256": "c5adcf1841e91fde92270dcc68c7e769d9461cb379ed4b5b7aee6ea3ae009db6",
-      "payload_sha256": "3599d0a5c02477936d5be95f206d80e86885050df6dff810fc7f5828db9029d6",
-      "target_size": 109704
+      "target_sha256": "48bf6a579540d2d4514561b3b4a5e41b5b8042e91990755b8b41702610968ed5",
+      "payload_sha256": "fcdb5a1dca99b205fde45a5927d475c9ba5bb25c747c3c7584997ee05adc902f",
+      "target_size": 109896
     },
     {
       "path": "romfs/param/scenario/cs/a_010_cs_010.pack",
@@ -1039,9 +1039,9 @@
       "kind": "delta",
       "payload": "0103.dqdelta",
       "source_sha256": "84ce0d16c690b61d23ada8e1372bb811becafeccec4214fd4e367c478d13bb49",
-      "target_sha256": "1a2c79c5b611f2136aed8aeecae1fdb28cbe28e645c901d494cc62eba26c250a",
-      "payload_sha256": "2caae83deb73b8c8d61ed692d893bf2bc88b0d6870ba06c3baa11fe6276a0406",
-      "target_size": 1728
+      "target_sha256": "2b42224e4df9fd95bde65a00afb2ac6fe13bf4ea1dd4c07d242bfdf84a3bac9e",
+      "payload_sha256": "ed2e2510ac7f4c2ab39d20b2962c07cc68f2d720e5ed5f2eaa38f1bccf15a436",
+      "target_size": 1748
     },
     {
       "path": "romfs/param/scenario/cs/a_070_cs_050.pack",
@@ -1069,9 +1069,9 @@
       "kind": "delta",
       "payload": "0106.dqdelta",
       "source_sha256": "28a50e691a529526458c2e964fae366201817f6fd5b56089ae0390b2d747e389",
-      "target_sha256": "4119af07b4ddff8bfef4674d9cb6c65c13497c76b3833cd4a364e23c3364ed6e",
-      "payload_sha256": "ecca2747096644302481eac3de9fca7c3cef7e86a338b9e27fe6e7ec044c8f25",
-      "target_size": 5148
+      "target_sha256": "90c6b497ddc5f3669bc9fd494591749fbed777c5a317ff2be0459dcfc67c4256",
+      "payload_sha256": "a451422d201e3985456a63a843845baf9435928167be53caa8e8daeaf337edab",
+      "target_size": 5168
     },
     {
       "path": "romfs/param/scenario/cs/a_070_cs_090.pack",
@@ -1129,9 +1129,9 @@
       "kind": "delta",
       "payload": "0112.dqdelta",
       "source_sha256": "d79b794df3f39deb1c4133c6df55f682fb27a41e349cca9494f7ab0caa8c1167",
-      "target_sha256": "a0ad4eaa328845c82f49a4ac32c3f832e257c954699fe48cfb789de8301dec2e",
-      "payload_sha256": "b9fa784e33454d271f79d9853d90ec31de99a6589524073d721fcb47e0181446",
-      "target_size": 5780
+      "target_sha256": "2ecb94e60827c810fd44b7138060bd2952bb8002d03163ba28d91ff8675b34d4",
+      "payload_sha256": "c8ec5aa6ab2dbeaf40df88be5a44e553147e30e67cf968f4ef1c9ccf9e26aa08",
+      "target_size": 5800
     },
     {
       "path": "romfs/param/scenario/cs/a_070_cs_160.pack",
@@ -1139,9 +1139,9 @@
       "kind": "delta",
       "payload": "0113.dqdelta",
       "source_sha256": "b8c542177e130c7376dc0aace59a0deaf70d07962ce230a4a98fa904ccf77570",
-      "target_sha256": "bdabe4c0838df251c8b528f97f76c42d194680ec83c670df3e22f9f99d64782d",
-      "payload_sha256": "125762a4bf8a6be53f54f14bc97daecd7a2846de0f702ddf3c5239a257c93ea2",
-      "target_size": 7208
+      "target_sha256": "8e3cb25d0814c4b1c6104ae6dad8bf845ea4d19556a4dab0d621e1addddd9143",
+      "payload_sha256": "cd01636cde37e2b2ea734bf5df1e1cfeba1663ff7fb157a648b22140dd0df970",
+      "target_size": 7228
     },
     {
       "path": "romfs/param/scenario/cs/a_070_cs_170.pack",
@@ -1219,9 +1219,9 @@
       "kind": "delta",
       "payload": "0121.dqdelta",
       "source_sha256": "b63d7b82063023da3cbbe2a0988fbb80f319e13a77ee8d9c6c7aceb7d1bb26d0",
-      "target_sha256": "88f68daad227cb3f51a4d5acfe656ea5b6261bf6211d746cf8db2d59a624dac9",
-      "payload_sha256": "c9951c9355c6044a7e6bdf9662de058ac9d64414e79f20dee4a7bbb6e4da71d3",
-      "target_size": 3692
+      "target_sha256": "474904e4d19e9f70fe271a5965b9dbc1e09d0db4fad9700cecad3e1d950405bd",
+      "payload_sha256": "fbf94bd280c623a6e27fbe3da45a22d65e8f9b37b278c2f2be98bbc825b7cca3",
+      "target_size": 3952
     },
     {
       "path": "romfs/param/scenario/cs/a_080_cs_070.pack",
@@ -1899,9 +1899,9 @@
       "kind": "delta",
       "payload": "0189.dqdelta",
       "source_sha256": "da33731150899f932d5057e08f203336708388f78b6ea6026776dc6b4e1c1819",
-      "target_sha256": "03ab4ac1a9b2afd5b4adefda266c7fac1bb74199a18509de0938abb4aeaebf4c",
-      "payload_sha256": "fdac7a5742f6dd0bfd9bce67cbfaa19c304e262b626989c2a612205c5775642a",
-      "target_size": 6116
+      "target_sha256": "54282b2f5241abd7c786daf38db4efed02bbacc6d07c52e8cb9448a4525afe77",
+      "payload_sha256": "948bfe5635435a020e2172440aa94fda85a33ac8f225ceb001c3ec58ca99afb0",
+      "target_size": 9152
     },
     {
       "path": "romfs/param/scenario/cs/a_150_cs_030.pack",
@@ -1919,9 +1919,9 @@
       "kind": "delta",
       "payload": "0191.dqdelta",
       "source_sha256": "57605ebb25025b15781fa16a0a295e606b2a0d22abc01d4e7be1161fae02831f",
-      "target_sha256": "b34f022cacc390c07a87f45ea9c54be9a576c97d9afa1ccbb0c4d7a6b373c0ba",
-      "payload_sha256": "e3fd138fc1bb112d8f7194db46240e2b1ccca9a5fc85779dcee3ef7b891a3d2a",
-      "target_size": 5632
+      "target_sha256": "7903a69e8a5ae29133e847bf0e41b6117109100ab985292050e59caecc31c271",
+      "payload_sha256": "98e0700ebbe48f6d31eec680c055848b1b4b74678b9f6ef0429a8b88cadcc263",
+      "target_size": 8612
     },
     {
       "path": "romfs/param/scenario/cs/a_150_cs_050.pack",
@@ -1979,9 +1979,9 @@
       "kind": "delta",
       "payload": "0197.dqdelta",
       "source_sha256": "fb1681fe6b4abf31438e3cae6cadf542c6e4898eaa72f381cdd8274a1d8a9b6c",
-      "target_sha256": "6308a60ecddf1e9979bce810b1ae3befffb8deb2241640cc3f2fa45e10cc021f",
-      "payload_sha256": "54a9c48eb4e54f089587ba8554bee798c36171566e4885764a3c1d4406dadfd8",
-      "target_size": 6020
+      "target_sha256": "9821a5282ad0be889db5abe3ae77d1bc1ba5ae779f2e135f2196ca00d7d4a8b9",
+      "payload_sha256": "dd47aa4290cc92ae380a72236636b065eae1691d5f72df0095da9239990c460f",
+      "target_size": 9448
     },
     {
       "path": "romfs/param/scenario/cs/a_150_cs_110.pack",
@@ -2009,9 +2009,9 @@
       "kind": "delta",
       "payload": "0200.dqdelta",
       "source_sha256": "217a2c20cf4c05ed8193d06520964e630a6407008c73b6ae24746c3cbc0db2c5",
-      "target_sha256": "7baf8551f0aa8752b9b9bac25f72f153de3fd1714ada0b416a47034d7600191b",
-      "payload_sha256": "58073457f85a96fbe4e5b83f0a4b8b2a8fecf072d605bd4de9d62192fab3eebe",
-      "target_size": 3344
+      "target_sha256": "6134fa76d7960a3fa2dead2617e12b9f0a7088e6c6850006237a40250c6e7eab",
+      "payload_sha256": "3f82cc30a47a48b547af3e6b6f23537067df2b21d9706f0405075ea9b0bc41c7",
+      "target_size": 5168
     },
     {
       "path": "romfs/param/scenario/cs/a_150_cs_140.pack",
@@ -2069,9 +2069,9 @@
       "kind": "delta",
       "payload": "0206.dqdelta",
       "source_sha256": "4a7beafd8a097f9c350e670826a20d8c000fc45a9afd424f59a69d6e05a5c828",
-      "target_sha256": "0ec5149e972bd5ae50bdcdada5a782d2d7affa7ad6515252310717776cd4a685",
-      "payload_sha256": "56f431f465ff1a8fabba1b3c042012ea46b1bfbff976207eef5f53ddf98821f8",
-      "target_size": 5920
+      "target_sha256": "2e6bd825f6fa5c7e5b3656ba80c7883d7a8f4e36d9635f25010d1ebd4e838254",
+      "payload_sha256": "438b830055385ac3966405710376765e2fd5da39d2b8d290e70cbac126fcbfaf",
+      "target_size": 8816
     },
     {
       "path": "romfs/param/scenario/cs/a_170_cs_040.pack",
@@ -2189,9 +2189,9 @@
       "kind": "delta",
       "payload": "0218.dqdelta",
       "source_sha256": "d7f668ce941594b4e7bf155344f49761be5d1f2babe0d2bc165e6902464d7a4d",
-      "target_sha256": "b6577ea11dd0e01fda32cabc3f120824759f68848d6c702faee28b0585ad81e3",
-      "payload_sha256": "e867815133e139237773d3a15571e6a8153469b5cedc619098b67d29cd390993",
-      "target_size": 5896
+      "target_sha256": "ddb97a7338f07e9f639c8ecba7351f39a76efb123493e2bedfbdaf011338f2ce",
+      "payload_sha256": "a953345069d6d466e39ae1a000654f8d757ad3f77db221b2c27b3658a1e259e5",
+      "target_size": 9072
     },
     {
       "path": "romfs/param/scenario/cs/a_170_cs_145.pack",
@@ -2229,9 +2229,9 @@
       "kind": "delta",
       "payload": "0222.dqdelta",
       "source_sha256": "2319c37c4b0ab25f1478ba4f6b37340ab1425696fc2c44d6013c0df8e4262578",
-      "target_sha256": "ae3706b303590741d25cb73f97d58b50d497294b7fe6a2d9c2355631cb4f6b3f",
-      "payload_sha256": "3414eadf2cf47870079b5265bd2f4c00902e3d607cf2841145353faa3dea795f",
-      "target_size": 4980
+      "target_sha256": "661e5cc732e79c9fabbdbd8bce6e8ed10ca73a08de89e67f240862e784ff1550",
+      "payload_sha256": "157bc416dbdeb8d91d770b3483598d66681b4a0dbde7227fae4a7214761330f1",
+      "target_size": 7472
     },
     {
       "path": "romfs/param/scenario/cs/a_180_cs_040.pack",
@@ -2649,9 +2649,9 @@
       "kind": "delta",
       "payload": "0264.dqdelta",
       "source_sha256": "ebad8ae4d5589b6fc9907a5e9f61f767552048eddb32b7b749ef1916acc24f2e",
-      "target_sha256": "7de0e440607d74f4536a70bf12dbac48e444c3caee141aee1ecc19c034c9355a",
-      "payload_sha256": "60e60159fb3835fbd6c1cfdcffbea3f71142e71b7496339b3de2dc2a2637cadc",
-      "target_size": 5880
+      "target_sha256": "732758c6333b2d278a27547037b6f0e8406d2f6d751c0dd223154645af3f9bca",
+      "payload_sha256": "7ba3ce738c8ec7c7aab97e32e9276869d6c66182662a30381d9afd725db98d65",
+      "target_size": 8528
     },
     {
       "path": "romfs/param/scenario/cs/b_030_cs_110.pack",
@@ -2679,9 +2679,9 @@
       "kind": "delta",
       "payload": "0267.dqdelta",
       "source_sha256": "4ca1358251cc3e35f224725959d0a13174794326e67b399c9b98ce21ad85d8f7",
-      "target_sha256": "41d3fbf5f740cbca23f613eafd267d390366322c963119733f4113f8364b8280",
-      "payload_sha256": "9c55805e54850d033344bf183237cb8931ea49eae9fe6244086ceda69d6d18c5",
-      "target_size": 6168
+      "target_sha256": "2d37b23d3c4d77dbf4924e35de5bbb2ec87411e0da301ff162e0501d9e7e1cba",
+      "payload_sha256": "f98197f94082c782662b518d77d42f1d1ccb3d75c27defc20c5d5c2193230f2f",
+      "target_size": 8592
     },
     {
       "path": "romfs/param/scenario/cs/b_030_cs_140.pack",
@@ -2689,9 +2689,9 @@
       "kind": "delta",
       "payload": "0268.dqdelta",
       "source_sha256": "60dfbfc0126c253d4dc4b0121a0c6dcd22f0182e543127d95d670e4e1a03da49",
-      "target_sha256": "c944d318f99ec0a112a092ebf7f8f9455a963ab2074bc1a0977bdd2b903c5995",
-      "payload_sha256": "4f7fb639e43a0563b503a56597c427b06f8422e3aaadd3961466554d0bbcaa61",
-      "target_size": 4812
+      "target_sha256": "7efd332ba61ffa384362a911d2f7c83919a0a57a997612b33df86afec05b16c7",
+      "payload_sha256": "f6871c519e8db6330b808d0fec0be6e609f48cf1303ca4d6d493541d38820ddb",
+      "target_size": 7220
     },
     {
       "path": "romfs/param/scenario/cs/b_040_cs_010.pack",
@@ -2699,9 +2699,9 @@
       "kind": "delta",
       "payload": "0269.dqdelta",
       "source_sha256": "8c7bbd7d4f001ca536ba8eafb4f004c80d9a18bb992420d3d8030eea318a7350",
-      "target_sha256": "5a1011f65ca39bb681065d3651d676eb555e0c8d15b734b3e463e7ee98d91b94",
-      "payload_sha256": "d557acb54fa6c393847ef6cab9fe40d5cbb7e060c6ba611d08f619789add4a65",
-      "target_size": 5804
+      "target_sha256": "304fb91c327b28c4842886390f86270723334a04643693aedd4c580b9997ee33",
+      "payload_sha256": "5c2b8bd5e7bfa2714b6081e945093cfcc245eff0f585e363e3f139ce78828731",
+      "target_size": 7848
     },
     {
       "path": "romfs/param/scenario/cs/b_040_cs_020.pack",
@@ -2819,9 +2819,9 @@
       "kind": "delta",
       "payload": "0281.dqdelta",
       "source_sha256": "54365a90d1c8116537feb11c8aed4e723765385aa2a906318f1e8f3f3c1cf4cf",
-      "target_sha256": "2739589ccf3e95dab5f5a19ddc6168fbae1d39ac2bd3e6bb82dfa5073bc41da0",
-      "payload_sha256": "04d86dd18a9af2fff895bf41a1a138336457f51b835930f846fcbd49ed96be05",
-      "target_size": 5708
+      "target_sha256": "6cdad31cf0a2a60ba0c10b6525ecae0bf357aa6706104ec74259e52a130a064d",
+      "payload_sha256": "497bd46fe3e9fca6a26d6f03907c1f6767f7b7f98b79762fa3fe9e2758e6935e",
+      "target_size": 8560
     },
     {
       "path": "romfs/param/scenario/cs/b_040_cs_150.pack",
@@ -2949,9 +2949,9 @@
       "kind": "delta",
       "payload": "0294.dqdelta",
       "source_sha256": "1b8b68a4df28b2e96ffebd73684cbd3f12f8d49ec123eb486d3ec8c8f106bdba",
-      "target_sha256": "2e9d6c6b583e9ba911e64dad6d37a549a13ae3ec7a7e2e0117217f0cc2fb70a4",
-      "payload_sha256": "4e0dbe43e63c4f059d71c49d2a2714fb21ea44d020596b240ef0d2d66cc14e4d",
-      "target_size": 4864
+      "target_sha256": "8a2b80d8e5914dda115793411146d65076caf6bd4f166d13fc6f41d39cdd64a1",
+      "payload_sha256": "ba9a0e17271f0fb26977872ff7d2d5aeaf21d237bbaba1cb82828fed046a3509",
+      "target_size": 4884
     },
     {
       "path": "romfs/param/scenario/cs/b_070_cs_030.pack",
@@ -2989,9 +2989,9 @@
       "kind": "delta",
       "payload": "0298.dqdelta",
       "source_sha256": "bce0629a77e273363bf1d3a14dfe5f9d293c081bcf0ee9d157e93ca9e8ff9595",
-      "target_sha256": "eca38f1c603522797666568b62bdedc1700246b2d64693f2d7297057e0db056f",
-      "payload_sha256": "cf8caf01cce13b06d2606f0fe427d719ed5eefd71ecbd0e80c6a12502a445ef2",
-      "target_size": 2524
+      "target_sha256": "88ff37d694ce48d048a279f13c8d55b421ef23b7acb54d965b50de0d235da5cd",
+      "payload_sha256": "ca733ea6778a95e82ead1a47f96b4435d0313e0fa6ca75c39078a058c3233f50",
+      "target_size": 2544
     },
     {
       "path": "romfs/param/scenario/cs/b_070_cs_070.pack",
@@ -2999,9 +2999,9 @@
       "kind": "delta",
       "payload": "0299.dqdelta",
       "source_sha256": "9569333a64058af0d4d0082ede78f1eee902adc688d87d50edeee9165bcf2bf4",
-      "target_sha256": "dd97a30d0333017d3f46210e800b35fdb7290b9c14d237fc47d1e63543f446b7",
-      "payload_sha256": "36887d18f62b4e9d8a4f3283c06330b29480ddea89f2343130130f426ca8bcb4",
-      "target_size": 3124
+      "target_sha256": "ed15a074eb17d4a673a60f992b774e1a995b931c4d87bbb14509c086d47afc6e",
+      "payload_sha256": "6c1d10192a634f71c19c48e5598c859af5df064577e957b498af84d5a2215114",
+      "target_size": 3144
     },
     {
       "path": "romfs/param/scenario/cs/b_080_cs_010.pack",
@@ -3069,9 +3069,9 @@
       "kind": "delta",
       "payload": "0306.dqdelta",
       "source_sha256": "9e7d7fe0a54d379426439511b80ecde48deb536adf8ab7b7c450cbfae9aab329",
-      "target_sha256": "aeb3fb5056d20a72fa6cd8ced9917a095a786191be7835ae01e83a5052154be7",
-      "payload_sha256": "83e1a9118255c1869cfec4341e22232dd2b72d981173ad51466b4f0e2bb279f4",
-      "target_size": 3172
+      "target_sha256": "6dc0038c21e413f32e003f57a4ee458d7da35c75614001b806aa8ec49b0d6e5a",
+      "payload_sha256": "61f2d1bb1c7d6c15c17466d8881828d160a605d13994c7c890627ba796b68dd6",
+      "target_size": 3192
     },
     {
       "path": "romfs/param/scenario/cs/b_080_cs_100.pack",
@@ -3099,9 +3099,9 @@
       "kind": "delta",
       "payload": "0309.dqdelta",
       "source_sha256": "ca820d5c01ae2820b835e4839337c3ba1c6b0d24c5e35879e0e7a679e9907395",
-      "target_sha256": "d1f613cc04d3b515d3f57ad02efa8ddd7c12be9a771f411dc86e0ee7f86b961f",
-      "payload_sha256": "a6e5ff67c021fb744d2be12a96f45d2d32d0eba897ebfbd82d25fc7d529b582f",
-      "target_size": 13024
+      "target_sha256": "e277a28e725b9dc1231b1d0e11aed1547716a03ee30b8bdb253124535055b1d3",
+      "payload_sha256": "e5605280cba7baf88fede0d10a2f734be450fab7dc1ef17d71c9d6672eaa17dc",
+      "target_size": 17156
     },
     {
       "path": "romfs/param/scenario/cs/b_080_cs_130.pack",
@@ -3349,9 +3349,9 @@
       "kind": "delta",
       "payload": "0334.dqdelta",
       "source_sha256": "5852a8edd589c44c8f776cc14a951b641542494a174d26c5c07fcec354bf9f1e",
-      "target_sha256": "a6ec705742aa8d40114701f01e9841e8164acb8a2bf292c0810f893454b620ff",
-      "payload_sha256": "b8036de2eecdd64ab75699421988ced7601109784fd207f04590f04afec3267e",
-      "target_size": 6720
+      "target_sha256": "e078ba532f5d93cb9c175509f58f6ada02d6c3a1968e504ca8436362d7ab59f5",
+      "payload_sha256": "247e25fa00ec44d3bee733e3e9bbe22a6f2a0a59941d3ce812a80a7e0bee3607",
+      "target_size": 9692
     },
     {
       "path": "romfs/param/scenario/cs/b_100_cs_110.pack",
@@ -4059,9 +4059,9 @@
       "kind": "delta",
       "payload": "0405.dqdelta",
       "source_sha256": "3d835ff91a78a6807038958b1abe5d4652015f920bdc66984eb54fa4e66bee94",
-      "target_sha256": "c5c47bc843c68e7adb9f63c6230de71eb654a2540e174029e097ffc7d69f36d0",
-      "payload_sha256": "b60f003a3d309dafccb6e9cdbd2a658748c4c6251c1c4d1e9ad243b5b76bb659",
-      "target_size": 8196
+      "target_sha256": "2df2213a93dd0325566c8b1186d81c77e54ef7129730ad3edec4204720166e06",
+      "payload_sha256": "46f7447928e4972ecd43fcd8ee505d37c3e054fa213104ea14fb1f635f1babf2",
+      "target_size": 10836
     },
     {
       "path": "romfs/param/scenario/cs/b_170_cs_130.pack",
@@ -4099,9 +4099,9 @@
       "kind": "delta",
       "payload": "0409.dqdelta",
       "source_sha256": "a45981b76a53a8af0fc2542552880dd7f35105cfe6f16eecb94b0dd119c6522c",
-      "target_sha256": "6167371e3df8abb52b9ffe426f8ba5f24878848fdc8ab10f432462381f551d4d",
-      "payload_sha256": "48929171a42f450031dc8a2f8f0f9a57cc125297197f549420f380e434a55c8c",
-      "target_size": 6252
+      "target_sha256": "c2d4c7782ca070c9809b3589ac591160c3575d0d16fb85883b2e1676afaae9af",
+      "payload_sha256": "be17e3188560889a1ccf8aad737b31c230bb063407678764d4f300cce42b4c1d",
+      "target_size": 8824
     },
     {
       "path": "romfs/param/scenario/cs/c_010_cs_005.pack",
@@ -4459,9 +4459,9 @@
       "kind": "delta",
       "payload": "0445.dqdelta",
       "source_sha256": "24400bf0170ebef798b6c42296fdee64d4c9a3a107b95deb2273391c8b0082c0",
-      "target_sha256": "2e1c4945278ff57a79616acb95b6c0ba01d92315744cabbb8fd5d66ee2e56ede",
-      "payload_sha256": "358ae9c33341dbab198696d245f3bc10635365ca8388fb904384829ca1620362",
-      "target_size": 6124
+      "target_sha256": "e0c874081836206052fec5557c63b7998316ba86431aab5a1761cda53c39ca4b",
+      "payload_sha256": "cd0240a0af67fda2c3d10bf806b8ef1ea878e74d2686790219fccf2d4ea7a498",
+      "target_size": 8992
     },
     {
       "path": "romfs/param/scenario/cs/c_110_cs_030.pack",
@@ -4849,15 +4849,55 @@
       "kind": "delta",
       "payload": "0484.dqdelta",
       "source_sha256": "b139d56283af59a505be0f61666f378ea96619f88a2cacc5c79b5f062c06c6aa",
-      "target_sha256": "2220e7fcb7fd2e18775960448a30f669685bc17a59c27bae12bd179f6abfcf16",
-      "payload_sha256": "f2cd3c57f7f503a91a976130f46042d764f9395aec9e6c1c69e8caa3a141defa",
-      "target_size": 29268
+      "target_sha256": "ad946a51307012703892177bb738aa66c2b4d1193342684db0b4c0964bedc7dd",
+      "payload_sha256": "e4a407c6c15d42b94877d0501ed54ff2d89e81f7519b459e7cb015ae5a7cfa17",
+      "target_size": 34876
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_a070.pack",
+      "source": "romfs/param/talk_party/talk_party_a070.pack",
+      "kind": "delta",
+      "payload": "0485.dqdelta",
+      "source_sha256": "1ceaac04c9c6c9c3a2f1c5ecd963ff83681bdc02f101c2fa7b59f3b3b12f87f0",
+      "target_sha256": "626e73751971405e43b55021e406f3f103767220a81370c20302e3fdc89d50e6",
+      "payload_sha256": "d67ce299ba14e49774318f94da86db928a1abe9b4024330646349eb64e7e2e10",
+      "target_size": 61868
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_a080.pack",
+      "source": "romfs/param/talk_party/talk_party_a080.pack",
+      "kind": "delta",
+      "payload": "0486.dqdelta",
+      "source_sha256": "5b27fde442fb8e80bd34f420396140171f46ace71c9fa84829a77c4ab93a2e98",
+      "target_sha256": "6129f10f977810aaae33165306f59966ebf3f8b10a0ee3d58c555803c380029b",
+      "payload_sha256": "970d1463e1c852c0d47f69e898a7dd01eb3e4cf4f636dcc4025eecec5c2f207c",
+      "target_size": 48880
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_a100.pack",
+      "source": "romfs/param/talk_party/talk_party_a100.pack",
+      "kind": "delta",
+      "payload": "0487.dqdelta",
+      "source_sha256": "d79740afb4533d56655780cf01d5a7c35e0bca58e87bb4953fdecdfe9bfb089b",
+      "target_sha256": "ac150e5e931f04be9a47fa2a26e66952ee6f327e43029b47e6461b4f16551c77",
+      "payload_sha256": "3d39981ef52e3378e8836e7c7254762c35ea69848c226d4a75a6bc1296fb29b0",
+      "target_size": 53292
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_a110.pack",
+      "source": "romfs/param/talk_party/talk_party_a110.pack",
+      "kind": "delta",
+      "payload": "0488.dqdelta",
+      "source_sha256": "f5c9ac85b5fc475a0c217808751449eed11aa290187ff2f18c22caef7ff6cd62",
+      "target_sha256": "6fe9555cf2be959d90042f7101cd43a4181dfacf35aa710607be109b22aa7100",
+      "payload_sha256": "227f3d65215b12746eb1e2fe08b10ff7c79be1fb93acb70849f9f57c1c8ea27d",
+      "target_size": 38804
     },
     {
       "path": "romfs/param/talk_party/talk_party_a130.pack",
       "source": "romfs/param/talk_party/talk_party_a130.pack",
       "kind": "delta",
-      "payload": "0485.dqdelta",
+      "payload": "0489.dqdelta",
       "source_sha256": "7cbd0e3599f6cd5676e4f81dd52c6134d62bd16586b3d9634ee9d88fcb112b07",
       "target_sha256": "d046e9e353d0311909f454b1be9e352dcf13a540ff4acc3718c9e4198f098f52",
       "payload_sha256": "0de408c9655232281282cef0e4a92487d3ffc5e6c5dbd724851f94f7db6575ea",
@@ -4867,7 +4907,7 @@
       "path": "romfs/param/talk_party/talk_party_a150.pack",
       "source": "romfs/param/talk_party/talk_party_a150.pack",
       "kind": "delta",
-      "payload": "0486.dqdelta",
+      "payload": "0490.dqdelta",
       "source_sha256": "61a217569f0a29ec84e1dc46b0d30cf3fa6039aaf0f22115176e1cd90704cbba",
       "target_sha256": "6c83d80ed72d7f4147eb5dae12c7dbd6292910fc111df319f4b03edcf56324df",
       "payload_sha256": "4ab73723ef9d4e777efe1f85114ccd98e43ab3d866d9bbfb725cee98b78a7fb9",
@@ -4877,7 +4917,7 @@
       "path": "romfs/param/talk_party/talk_party_a170.pack",
       "source": "romfs/param/talk_party/talk_party_a170.pack",
       "kind": "delta",
-      "payload": "0487.dqdelta",
+      "payload": "0491.dqdelta",
       "source_sha256": "2e286ce0c01b53585ea084f36e518371e4647ad6cf2bdf42a8cd8362fb482433",
       "target_sha256": "0427f1226ca7d134b2379d251f7a2bbeed196c70500f24974933483654971973",
       "payload_sha256": "2735e92f405828c32e27c9d8999c91bd524a841ae8883f31ed297205cba4abc7",
@@ -4887,17 +4927,57 @@
       "path": "romfs/param/talk_party/talk_party_a180.pack",
       "source": "romfs/param/talk_party/talk_party_a180.pack",
       "kind": "delta",
-      "payload": "0488.dqdelta",
+      "payload": "0492.dqdelta",
       "source_sha256": "75402600c76acaa9d46d32f022294482a8b8e510aec02b12af94b568f375eb64",
       "target_sha256": "b8acca482704abaf0fcf140a5c442bd1643aae04a467358ea128a76973da69ea",
       "payload_sha256": "ef4f08c71b5b52c73cec16d611cc7d247d871a153b555fd816b4a3fd334d38c7",
       "target_size": 50436
     },
     {
+      "path": "romfs/param/talk_party/talk_party_b020.pack",
+      "source": "romfs/param/talk_party/talk_party_b020.pack",
+      "kind": "delta",
+      "payload": "0493.dqdelta",
+      "source_sha256": "4dd67730a28c8c83f6d5a1c1948c9cf29341a188ccd06f2736998c6278e6229d",
+      "target_sha256": "658495a71191d7c6d6180eceecb54ef3d6da8bccf92f431bc65f2bf9b31d3f08",
+      "payload_sha256": "3e06edc5b4fee097de84aa264d87939d65f115628cbd8fe1477bfa4b1c60f7eb",
+      "target_size": 41388
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_b030.pack",
+      "source": "romfs/param/talk_party/talk_party_b030.pack",
+      "kind": "delta",
+      "payload": "0494.dqdelta",
+      "source_sha256": "9798213cea2e6e3939bf74ab3bbc036612ecf50166cd84db327a9208adc38266",
+      "target_sha256": "95a93112304fcfa55146a8182d40ab8e113b9fe0dd6119a607acd4a7935b7481",
+      "payload_sha256": "17808acb136880a1028e6cd11135cf6022758c6ff17c1b140cf5afc65fc6eb13",
+      "target_size": 101012
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_b040.pack",
+      "source": "romfs/param/talk_party/talk_party_b040.pack",
+      "kind": "delta",
+      "payload": "0495.dqdelta",
+      "source_sha256": "12ba8da1ee2809bfb3575a3c331c2d145753cf0597a6807a6b98aef9301b95de",
+      "target_sha256": "bd7491694d741d0e9d87394fef6313ef5fcc73a1b5f4e0187051f99b9afa2fd7",
+      "payload_sha256": "8dfeddcba2c97b729e00db49586c433661adacc2ed016da7301149d77ab78bce",
+      "target_size": 94820
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_b060.pack",
+      "source": "romfs/param/talk_party/talk_party_b060.pack",
+      "kind": "delta",
+      "payload": "0496.dqdelta",
+      "source_sha256": "9de8dd97bf844ed453247b12f8324248c7195bb189a2d1ba916790c9634a2f83",
+      "target_sha256": "0e71e0918a7d3b0cb6aa9f6cc6b239063901a986d750931b28d48ffdc6c015ba",
+      "payload_sha256": "1c6138ec3e7a3fcc410bb9563cb6298274e9ccdabea825dcc3b3ab3da7255d0c",
+      "target_size": 54176
+    },
+    {
       "path": "romfs/param/talk_party/talk_party_b070.pack",
       "source": "romfs/param/talk_party/talk_party_b070.pack",
       "kind": "delta",
-      "payload": "0489.dqdelta",
+      "payload": "0497.dqdelta",
       "source_sha256": "7c06ce445ecf62b70d71f4c4dadbaf54b28885554e93902a537a5638afc052e5",
       "target_sha256": "256e1803e5cdb3ef1b35b663d16a3675ab3362411c5bffe3872b664ba2c0ed12",
       "payload_sha256": "d94f609dec2feead50fc2e4ca464b60121821a64c91c007c446aa09797a711a8",
@@ -4907,47 +4987,117 @@
       "path": "romfs/param/talk_party/talk_party_b080.pack",
       "source": "romfs/param/talk_party/talk_party_b080.pack",
       "kind": "delta",
-      "payload": "0490.dqdelta",
+      "payload": "0498.dqdelta",
       "source_sha256": "a9e4a3fb8c558f5e843ae285aa8a1714cd293f41a0347a7d879a96c4f48a5ae7",
       "target_sha256": "888a286889c95c872646af7bedfd775a4197d160712415e49621d13be7c676d3",
       "payload_sha256": "ef164e0321b9d9db95b83144514b8bc04d3518ae3f632a5a1f07c94091369f04",
       "target_size": 56612
     },
     {
+      "path": "romfs/param/talk_party/talk_party_b090.pack",
+      "source": "romfs/param/talk_party/talk_party_b090.pack",
+      "kind": "delta",
+      "payload": "0499.dqdelta",
+      "source_sha256": "c024eede2a7371600f659b4435fe705d67b3b1bf92e8033f1ecbd9f3479f68a1",
+      "target_sha256": "d17a60ad0b77856a604880ee51b2d67b6ddd82858d6d86f707c61262c69eefd7",
+      "payload_sha256": "0baa963446049c28fe98844fe4e45066a81cec635a842b490defddb766eb5237",
+      "target_size": 44716
+    },
+    {
       "path": "romfs/param/talk_party/talk_party_b100.pack",
       "source": "romfs/param/talk_party/talk_party_b100.pack",
       "kind": "delta",
-      "payload": "0491.dqdelta",
+      "payload": "0500.dqdelta",
       "source_sha256": "ce31df5b6afdc8ca19bacc9546d68505bc2a4d6c523782408942f07d3fefd66e",
       "target_sha256": "361bf5fe4868651541836831c41716a9e34f370e4037ff58bedca451e66b5e2c",
       "payload_sha256": "75810d9eec55daa741f9fcaf0400702a8971d7c0d21116901bb090748c55c111",
       "target_size": 143656
     },
     {
+      "path": "romfs/param/talk_party/talk_party_b110.pack",
+      "source": "romfs/param/talk_party/talk_party_b110.pack",
+      "kind": "delta",
+      "payload": "0501.dqdelta",
+      "source_sha256": "74dc936a6e3545b57ea723a8e1f7af065fb74690b705f5fa685237477a7bf733",
+      "target_sha256": "1a708e74fef73dcd673add0e992d26fd89fec638da62ef9fbf648403255c1289",
+      "payload_sha256": "e3cfc4c99411fdf2674f0a1f4b66f92355827b42513c51cb39702acaf158ef95",
+      "target_size": 91720
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_b120.pack",
+      "source": "romfs/param/talk_party/talk_party_b120.pack",
+      "kind": "delta",
+      "payload": "0502.dqdelta",
+      "source_sha256": "beab8c4c2611e9d1cdecb8297d254bb5f38b43cabbd2416a557b6af236f7dcfb",
+      "target_sha256": "8face89ea370cf9a631985d6044d383bf056a7cd9d1d1ed0e70120a78a8268d0",
+      "payload_sha256": "cecd765de1c370131afc9a4b7dacf9d07d2bf2e9a9839ce844c485b75e473d17",
+      "target_size": 74672
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_b150.pack",
+      "source": "romfs/param/talk_party/talk_party_b150.pack",
+      "kind": "delta",
+      "payload": "0503.dqdelta",
+      "source_sha256": "aac38373dc4d49b1e0780c3345d6124a12c43a806b3f69cfb8f2be1fc6260b3a",
+      "target_sha256": "2a969e555b6baba77592d089d2f202969ed34b24c103ea8e3d711bbcaec89f79",
+      "payload_sha256": "5f27c271b031a96c90f08d13d2a1ca1d0ade882ee4ec018ad017aa37692865b2",
+      "target_size": 88004
+    },
+    {
+      "path": "romfs/param/talk_party/talk_party_b160.pack",
+      "source": "romfs/param/talk_party/talk_party_b160.pack",
+      "kind": "delta",
+      "payload": "0504.dqdelta",
+      "source_sha256": "83d8cfc5d7c868e2eff18d18936671b5c98038b947ad9122c8ddb782afa0b658",
+      "target_sha256": "eb4028359c068fd111c7647dd6ec082ac2b011d0241ecb96a1d6dee353a40a54",
+      "payload_sha256": "6953ba10bee1a0ab8a9f0d8cd2673ebce3e09839a9eb15401376bba4f1db5b8f",
+      "target_size": 31040
+    },
+    {
       "path": "romfs/param/talk_party/talk_party_b170.pack",
       "source": "romfs/param/talk_party/talk_party_b170.pack",
       "kind": "delta",
-      "payload": "0492.dqdelta",
+      "payload": "0505.dqdelta",
       "source_sha256": "9cdb179e58064d1187600983de362b7e096c4b030bb50b2c799102073d1bc696",
       "target_sha256": "8006444e523140fe6f7b5f7a8cf3ca62187c090bedf24888dd965c8c61d4ce65",
       "payload_sha256": "9b7954c06d42332dac06627091fcfbf0805aa0c02856486e5ea368f43bc1edfc",
       "target_size": 137816
     },
     {
+      "path": "romfs/param/talk_party/talk_party_c010.pack",
+      "source": "romfs/param/talk_party/talk_party_c010.pack",
+      "kind": "delta",
+      "payload": "0506.dqdelta",
+      "source_sha256": "45fc1521e7645be10bc7e5c5280eb7e1433ce5fad487ffc63e803ee1133c0d00",
+      "target_sha256": "5efb4cea384d7cb6f65c0bf33ca521b915d4cb104ee1f3dcf3829e330c04284a",
+      "payload_sha256": "d71b93d043a41f1d2b5631166afc1b183f72ea903a60e9d0457f02aaa78a027b",
+      "target_size": 43564
+    },
+    {
       "path": "romfs/param/talk_party/talk_party_c020.pack",
       "source": "romfs/param/talk_party/talk_party_c020.pack",
       "kind": "delta",
-      "payload": "0493.dqdelta",
+      "payload": "0507.dqdelta",
       "source_sha256": "7347f2c9db66d02069e9e8da5bfacd082c5fe4193b56a788ce8345c5d3e1f3b7",
       "target_sha256": "0ba3260776df1bf2c741b1a6024f114a19105989e366e7548084f171d7da434e",
       "payload_sha256": "98b1a785822656617c76fd5437de9bd021e28db32319d6284de6422ec4aeab8d",
       "target_size": 396256
     },
     {
+      "path": "romfs/param/talk_party/talk_party_c300.pack",
+      "source": "romfs/param/talk_party/talk_party_c300.pack",
+      "kind": "delta",
+      "payload": "0508.dqdelta",
+      "source_sha256": "900f8a3a1eca532b3696ae13472a753d5400cd39ef3f327f601f18f51a8189f8",
+      "target_sha256": "b81287eaa5b89eb2fceef7dbcb00d73704f82d8902c2536f4ab27aab9e5e8319",
+      "payload_sha256": "00a329c2740fe40e2f29cde73ce375be4b69e702ace9f91bd046de7ddc618426",
+      "target_size": 1844
+    },
+    {
       "path": "romfs/param/talk_party/talk_party_y010.pack",
       "source": "romfs/param/talk_party/talk_party_y010.pack",
       "kind": "delta",
-      "payload": "0494.dqdelta",
+      "payload": "0509.dqdelta",
       "source_sha256": "5d2216212c51f149526b805eda9e91a31ae859cbb67fba63e9fd09c087fe3db9",
       "target_sha256": "3e164750bcb102c96ae6e6df17800a83d6bfda55a02cc7160adf8001b8bcc2ba",
       "payload_sha256": "47ec69008b8a9e04294bc43e6aa9cb929217c9ad631d79a223a5c01603476ac1",
@@ -4957,7 +5107,7 @@
       "path": "romfs/script/a_010.pack",
       "source": "romfs/script/a_010.pack",
       "kind": "delta",
-      "payload": "0495.dqdelta",
+      "payload": "0510.dqdelta",
       "source_sha256": "9eec87c284d226148b64aeaff5abac3e71779cc67a5d7970da2dc609550b9399",
       "target_sha256": "6b891403fa6e3453695d0db34944d1afc7236ed8cf75ef423d28cc147928acab",
       "payload_sha256": "d048cf4bc5d98c977555701614c1e42eccdcd183bf59ad28fd4361bd4c7953b5",
@@ -4967,7 +5117,7 @@
       "path": "romfs/script/a_020.pack",
       "source": "romfs/script/a_020.pack",
       "kind": "delta",
-      "payload": "0496.dqdelta",
+      "payload": "0511.dqdelta",
       "source_sha256": "77e53c6f75aa452598a900f7c49e5384f8c52af587f8e4ce729a30df6f4bf0a0",
       "target_sha256": "be91eb21eaf353e6a908534c671d7a4c3604e4b3bc8757e9a6c45809bc22206d",
       "payload_sha256": "d697eca3959a7cee0d06225abcc04a6ee370f15597e8a4c8e48cda2d3ff0f428",
@@ -4977,7 +5127,7 @@
       "path": "romfs/script/a_030.pack",
       "source": "romfs/script/a_030.pack",
       "kind": "delta",
-      "payload": "0497.dqdelta",
+      "payload": "0512.dqdelta",
       "source_sha256": "d44ea723af670185a946a90cee202bbd1ea9e0fdcd226dde3d87698e4f3b6569",
       "target_sha256": "9614d9468a41281b941a6693e493453797ae9fa723d0f6abcd866479b62089b7",
       "payload_sha256": "848523dd351836559a069f9df411674c6c2fef147952193f7fb12542432b129a",
@@ -4987,7 +5137,7 @@
       "path": "romfs/script/a_050.pack",
       "source": "romfs/script/a_050.pack",
       "kind": "delta",
-      "payload": "0498.dqdelta",
+      "payload": "0513.dqdelta",
       "source_sha256": "7aeac82b8b42626312ed6ab42305e9ee798b657baad9157a560ed0148a1e2e65",
       "target_sha256": "932517bf7c62be872cb99af7802164e1241344a7f3db0a9b8b1da899000a5ac1",
       "payload_sha256": "17c5b4733a356c0ef1da2466f779ef87c99bc78bd00062504bb505a868c04e56",
@@ -4997,7 +5147,7 @@
       "path": "romfs/script/a_060.pack",
       "source": "romfs/script/a_060.pack",
       "kind": "delta",
-      "payload": "0499.dqdelta",
+      "payload": "0514.dqdelta",
       "source_sha256": "1a92d273ab0551149f8ed8777805c4a71ca47749ae7580d949417433ba3934da",
       "target_sha256": "58fab67ff9cbfc48d3485d2312f6efcd064f07a16fbb748ca3069262b8afd969",
       "payload_sha256": "da9ee1c6002661064f6e1ba4636ddabfdc94a2b38b47499cfdbee3bc4cd98e31",
@@ -5007,7 +5157,7 @@
       "path": "romfs/script/a_070.pack",
       "source": "romfs/script/a_070.pack",
       "kind": "delta",
-      "payload": "0500.dqdelta",
+      "payload": "0515.dqdelta",
       "source_sha256": "243bdb60286042d081371376890fc7299bf37a6cfae9e73bd8517aa5781df7f2",
       "target_sha256": "2014bfac6ecc229b19576322e5813323847ddc0304c7cb06191e6946c0af435c",
       "payload_sha256": "46d6f47254df0ceaab22e585674ac2faa8ffc95ba9fb7addd24f2094cb95e951",
@@ -5017,7 +5167,7 @@
       "path": "romfs/script/a_080.pack",
       "source": "romfs/script/a_080.pack",
       "kind": "delta",
-      "payload": "0501.dqdelta",
+      "payload": "0516.dqdelta",
       "source_sha256": "11882ce2ab748d193278d92d0aea6ed63dc01870da1be3d1a11d2277ff97cb03",
       "target_sha256": "d245ff9acb24645734b1b6505ef56d76d3d32bfb85a9ed50e366ca5f036cb3b6",
       "payload_sha256": "f87c2bb42d8b14994e5f1149b027e1f4c217ec4e8b41695a5c6c872142b409d1",
@@ -5027,7 +5177,7 @@
       "path": "romfs/script/a_100.pack",
       "source": "romfs/script/a_100.pack",
       "kind": "delta",
-      "payload": "0502.dqdelta",
+      "payload": "0517.dqdelta",
       "source_sha256": "57724b94eb64789086364ec9fc9913fbcfb2c5a55d1523c5c4c3b80217a5b98e",
       "target_sha256": "fde5efd6e8e2d11bf755a636f41d5127fd669a3855a5655fde7efe59372d335a",
       "payload_sha256": "296a5a2e1946184b2e94ba4a71f72f0ecd60d834a24f9286a84a37a74d2a5abc",
@@ -5037,7 +5187,7 @@
       "path": "romfs/script/a_110.pack",
       "source": "romfs/script/a_110.pack",
       "kind": "delta",
-      "payload": "0503.dqdelta",
+      "payload": "0518.dqdelta",
       "source_sha256": "64ee876fba269067c28ebfd08c179cb5818d2a669e534696b39667181e1f7a3c",
       "target_sha256": "e90f9b7cd543b171af8804f5c8e6371d3e7caeb0d8478d79c0c764267f7a8736",
       "payload_sha256": "7127f19e12431eeac1e42609eb162d98b388fe91d42e338a5098a686fbbbfc38",
@@ -5047,7 +5197,7 @@
       "path": "romfs/script/a_130.pack",
       "source": "romfs/script/a_130.pack",
       "kind": "delta",
-      "payload": "0504.dqdelta",
+      "payload": "0519.dqdelta",
       "source_sha256": "421be99eb6c03845c172d7aa0957839f6c7d78ba7ffce6a4707ef5a5fe167c02",
       "target_sha256": "ced59b249668a48e5b321d193930f86713d4e9917ec9c46f5b0c5fc5d739a60a",
       "payload_sha256": "f5c089d9f6e73476f91309880b160a7763247b1966ff95f1f227fcbfdbd2c456",
@@ -5057,7 +5207,7 @@
       "path": "romfs/script/a_140.pack",
       "source": "romfs/script/a_140.pack",
       "kind": "delta",
-      "payload": "0505.dqdelta",
+      "payload": "0520.dqdelta",
       "source_sha256": "374cb19c2d6965171dd48b4b42ba52ed0df06a7706b9316b481f61ca8f6057aa",
       "target_sha256": "f0a4bd03ec6e00824e13e7d53b16b06189d627e448c3a4c1b410f8f9495b9993",
       "payload_sha256": "5529adc84ec6f8801aeedd7e71c6c1482813629b5d183ce3b0741a0a738faaae",
@@ -5067,7 +5217,7 @@
       "path": "romfs/script/a_150.pack",
       "source": "romfs/script/a_150.pack",
       "kind": "delta",
-      "payload": "0506.dqdelta",
+      "payload": "0521.dqdelta",
       "source_sha256": "6f406ca6ab63abd2b8df62221b7cdcddaabf2ef0b168c5f8d43d597ebb7186f3",
       "target_sha256": "31e36c80190004c2e8e59c722e806f69cc373a5f7344d8853eaea6158ade67fe",
       "payload_sha256": "0da271019fd7df933f5d24d78d6970fe9f7b09a4343e8eed61dd89cb7cd2c77a",
@@ -5077,7 +5227,7 @@
       "path": "romfs/script/a_170.pack",
       "source": "romfs/script/a_170.pack",
       "kind": "delta",
-      "payload": "0507.dqdelta",
+      "payload": "0522.dqdelta",
       "source_sha256": "83dd30a6275064f86b226177552ac882bbbf2fb2e4fb79a38731bb3fd94289d8",
       "target_sha256": "ff629052bf7f7aeae8a7468b076ae0e5da9cc10834a2103f4fc5b32df474ff7f",
       "payload_sha256": "badc8069e888d908fa9b7f66014e1e829dd141bba68dd0229aea45da11dcd324",
@@ -5087,7 +5237,7 @@
       "path": "romfs/script/a_180.pack",
       "source": "romfs/script/a_180.pack",
       "kind": "delta",
-      "payload": "0508.dqdelta",
+      "payload": "0523.dqdelta",
       "source_sha256": "91c0c5ac036a8a139391d9d47d744d362e2601534fbbd58321e27f12a86f823a",
       "target_sha256": "0b5e3a0c1407757e9311f97f664257aea0c90cd0c51d8e69b5e790352ffd608e",
       "payload_sha256": "fc116950b2b51e0ebc1831f1adc3684522358121d5a864e85be1b6e86541e238",
@@ -5097,17 +5247,17 @@
       "path": "romfs/script/b004c.pack",
       "source": "romfs/script/b004c.pack",
       "kind": "delta",
-      "payload": "0509.dqdelta",
+      "payload": "0524.dqdelta",
       "source_sha256": "ed8a4e0289f15975808a0b8c4c7ec1edd923d1f99165645af3eca6ff09bfdaf0",
-      "target_sha256": "7afc724593f615d51c8f12834808e09a359b8dc3b16e9c44765b905fb66002f8",
-      "payload_sha256": "6341a98e8c14d278da108dfe76f41af054aa4110eb718a33a09672f513182c28",
-      "target_size": 14072
+      "target_sha256": "318bf037edb9a5a998b1f3cd500b01382d9ce9737ef3e0aa608ce965b98e75c7",
+      "payload_sha256": "eaba23456d12e12817b583d7e45eaa9872696db5fd3ede8544e334cf465844a8",
+      "target_size": 14092
     },
     {
       "path": "romfs/script/b011c.pack",
       "source": "romfs/script/b011c.pack",
       "kind": "delta",
-      "payload": "0510.dqdelta",
+      "payload": "0525.dqdelta",
       "source_sha256": "a3524969fbc367cdc5c762afea9adabb8e322d21490fc41e895ec00e5fdb728a",
       "target_sha256": "90ef17e953fb76a9306f6bee355699a401a60d15e6ac0536d98b5992b50e45fe",
       "payload_sha256": "df644f77a21dc6ad8f22f4a3eb176367233fc401aad8dd0ae90109811e5df967",
@@ -5117,7 +5267,7 @@
       "path": "romfs/script/b012c.pack",
       "source": "romfs/script/b012c.pack",
       "kind": "delta",
-      "payload": "0511.dqdelta",
+      "payload": "0526.dqdelta",
       "source_sha256": "1c98e41431a15ee57d74713e887de462a76f1eaa1de1a07e0ad9e87a9fcf9329",
       "target_sha256": "6f1334ec0a735e371cb69ec246d00e8324c981b2d91e3d243bfea6ae2be38ae3",
       "payload_sha256": "1cad5a5eb42e483953142e81954b0b4908ecd4ab55c1f6773c6e2b5919887d81",
@@ -5127,7 +5277,7 @@
       "path": "romfs/script/b014.pack",
       "source": "romfs/script/b014.pack",
       "kind": "delta",
-      "payload": "0512.dqdelta",
+      "payload": "0527.dqdelta",
       "source_sha256": "c40318ce5359b325a55a6d305f834e44ac372fdf6c632ec8735de174197e2d26",
       "target_sha256": "cb16d04d39fb301bf2b7c53ce9729b10920105ee630ab8fde70ec8041518f986",
       "payload_sha256": "c21d446b23e7b3003b179df74499849c59d3e68ed8397bbf1610a16fec481209",
@@ -5137,7 +5287,7 @@
       "path": "romfs/script/b014c.pack",
       "source": "romfs/script/b014c.pack",
       "kind": "delta",
-      "payload": "0513.dqdelta",
+      "payload": "0528.dqdelta",
       "source_sha256": "dafd31d98d5ed7e5f575d18538a3ad29dbca35a210e4010152765692d4426ada",
       "target_sha256": "323cacae8ed6aced6249ccd249d5f28b68b167b38becc16e79b4bd9aea6b7cb7",
       "payload_sha256": "32a70add616459428cbcec955de775e16ec7d77a73e77cbc5ab48dda3114509a",
@@ -5147,7 +5297,7 @@
       "path": "romfs/script/b015c.pack",
       "source": "romfs/script/b015c.pack",
       "kind": "delta",
-      "payload": "0514.dqdelta",
+      "payload": "0529.dqdelta",
       "source_sha256": "d72286301cb78f2734a9fd09bd32b6c340ace840fc0dc4e808a0156fa08359ad",
       "target_sha256": "12b7df4b51f43cd32854cddfc29142058e55f76f5798ffdc4bff43f29fff697e",
       "payload_sha256": "708444aa40140fb3733fc5dd3ebbfd07f6e1e84db15dd6d637314649cbd248d9",
@@ -5157,7 +5307,7 @@
       "path": "romfs/script/b017.pack",
       "source": "romfs/script/b017.pack",
       "kind": "delta",
-      "payload": "0515.dqdelta",
+      "payload": "0530.dqdelta",
       "source_sha256": "06ebfe11da810e56b000a69e472f4d69698d118eaafb2cab03cf7525c26eaa8e",
       "target_sha256": "43ba7703d09fb07196b66c56d5e00ab5bffcfbfa3898f9f0f6911c10c84e87e3",
       "payload_sha256": "d996a9fdbda56e965ee35b12afde3fecf4e53f23236ff423a7e8f9e66126c045",
@@ -5167,7 +5317,7 @@
       "path": "romfs/script/b017c.pack",
       "source": "romfs/script/b017c.pack",
       "kind": "delta",
-      "payload": "0516.dqdelta",
+      "payload": "0531.dqdelta",
       "source_sha256": "28c5f97ccdd29db92a512d9155f907302c828cfb10fe42a01d3dbd228032846d",
       "target_sha256": "fa1a163c4d424941865f7563e43b5cb596ef7fd0d3d938c367d7627238ea82a5",
       "payload_sha256": "086e1b1806439d4a37e451cfd8482f8f38cbbeb1e202adb5a5c79366172db6a7",
@@ -5177,7 +5327,7 @@
       "path": "romfs/script/b018c.pack",
       "source": "romfs/script/b018c.pack",
       "kind": "delta",
-      "payload": "0517.dqdelta",
+      "payload": "0532.dqdelta",
       "source_sha256": "0921a5e90654f21395c1b312ef5c09e260f4f3351acbb23be9c4962c97c7acd0",
       "target_sha256": "059819243301a68f465ef96fecaa690a1966ef4f336abd918c617d453c5e62f0",
       "payload_sha256": "bd15cedc746cddd1afebbac199be38b303aa01e30b606134a1f96fc2369c1390",
@@ -5187,7 +5337,7 @@
       "path": "romfs/script/b019c.pack",
       "source": "romfs/script/b019c.pack",
       "kind": "delta",
-      "payload": "0518.dqdelta",
+      "payload": "0533.dqdelta",
       "source_sha256": "2f9454fbeea8fb328ae4f77b3b4a1c04d02bdccf30afb12719c801d0e14d9d75",
       "target_sha256": "bee94fae940913d0549ee7b9a58720c305986ba6fbb3d431927a5aadcfb2f4fa",
       "payload_sha256": "ef1e1c21ab36fb6dba332ec2d8dabd487e094b35c2e448f05c8f9a4299ce03ae",
@@ -5197,7 +5347,7 @@
       "path": "romfs/script/b021c.pack",
       "source": "romfs/script/b021c.pack",
       "kind": "delta",
-      "payload": "0519.dqdelta",
+      "payload": "0534.dqdelta",
       "source_sha256": "d66c5f7b38dd467a8e71648638d3818920a94dc88d9407f0f90c18078d4c1453",
       "target_sha256": "08039f425a4f64a73a18f37517d03b2cb347a5c4127a243a9300524ea7f7c1e2",
       "payload_sha256": "bfe77dc879395865138c7f72a60441dc3ba2c521d5001ac342f830ccf3f79757",
@@ -5207,7 +5357,7 @@
       "path": "romfs/script/b022c.pack",
       "source": "romfs/script/b022c.pack",
       "kind": "delta",
-      "payload": "0520.dqdelta",
+      "payload": "0535.dqdelta",
       "source_sha256": "73c62be8daf04de8171af2edd1150e12e0c6e69287888588aeb50a28a53d44e8",
       "target_sha256": "c0be6e3847ca4332e0ece7602cb7ea43c396cad34cb7561af029545a4dadf4ae",
       "payload_sha256": "917b8e73d70b2124f1924f3eed040346f4c2ec909caf74aaca369bd42a519c39",
@@ -5217,7 +5367,7 @@
       "path": "romfs/script/b_010.pack",
       "source": "romfs/script/b_010.pack",
       "kind": "delta",
-      "payload": "0521.dqdelta",
+      "payload": "0536.dqdelta",
       "source_sha256": "3107bc33428273ce192a0ca51498636baeefac584dde3aa654ec569d8c278f45",
       "target_sha256": "8920da1f83ce6016006d0d26d9b5e3a98dda2ada526b23aacf83f688f7d97ad8",
       "payload_sha256": "84754fa17196e636c2f5bb09f28cb525aefe01e5db200c6fb997786ef86e80bd",
@@ -5227,7 +5377,7 @@
       "path": "romfs/script/b_020.pack",
       "source": "romfs/script/b_020.pack",
       "kind": "delta",
-      "payload": "0522.dqdelta",
+      "payload": "0537.dqdelta",
       "source_sha256": "f761c6e5909b2ddfcd1c5a685482f1293380299068c02f358952ae9b77fa50c4",
       "target_sha256": "1ffd7e689f6da31ec69d0906deaf54f087aacb31f208299a4820c7930937a8ce",
       "payload_sha256": "58e151578d8ac4003abdbf5ec01acd38b99f2ef2ae5db0a61851e4ecdefef920",
@@ -5237,7 +5387,7 @@
       "path": "romfs/script/b_030.pack",
       "source": "romfs/script/b_030.pack",
       "kind": "delta",
-      "payload": "0523.dqdelta",
+      "payload": "0538.dqdelta",
       "source_sha256": "763d00da80c88f109c1525057367329f842a9c024e55a55c35ceef4521cddb68",
       "target_sha256": "b9154f895ea0f785f439dde8515db596eefafe63a420839435917c1a732d6531",
       "payload_sha256": "f4d092aca7e05e95edc0979982305f95a29f4f6de020f2a977ee35ead8b78144",
@@ -5247,7 +5397,7 @@
       "path": "romfs/script/b_040.pack",
       "source": "romfs/script/b_040.pack",
       "kind": "delta",
-      "payload": "0524.dqdelta",
+      "payload": "0539.dqdelta",
       "source_sha256": "83e91e737946d99b83d419ace0fcce298362e5b64fec698097b4f9998a3d14b7",
       "target_sha256": "be940503d05aeb57ef8c6063bf41d7d9f1cbd69060a449fb56c546945baa0908",
       "payload_sha256": "ca0d595f90b767aaeab7f86c1b361349c56880fcd285fe88ac68fc9a86e4cae1",
@@ -5257,7 +5407,7 @@
       "path": "romfs/script/b_060.pack",
       "source": "romfs/script/b_060.pack",
       "kind": "delta",
-      "payload": "0525.dqdelta",
+      "payload": "0540.dqdelta",
       "source_sha256": "903f2179d4b89b20f9478fcb0e90622724d7396cc291b7caa5cb0866976dc555",
       "target_sha256": "84ad7d88fdedb62de58e24ea1ff7cf9b256c0011f61f41b1818329f7bc22980e",
       "payload_sha256": "e306f99ecc382a89aceacdbfa9767a11fee8a80cd3f710fd383cb7e55b5b14bb",
@@ -5267,7 +5417,7 @@
       "path": "romfs/script/b_080.pack",
       "source": "romfs/script/b_080.pack",
       "kind": "delta",
-      "payload": "0526.dqdelta",
+      "payload": "0541.dqdelta",
       "source_sha256": "83474dceb62626816119a26dd127aa84a569d8f77b62fa07bcb6570caac83aee",
       "target_sha256": "785dea0eab78482ff690dd34dc797271e23110d376cec28d0e2940ad35e6f99d",
       "payload_sha256": "17528ad85d03ed03c1fcad64926c7c720a8f6e3a2661ec72eabdc4e9b9fb6feb",
@@ -5277,7 +5427,7 @@
       "path": "romfs/script/b_090.pack",
       "source": "romfs/script/b_090.pack",
       "kind": "delta",
-      "payload": "0527.dqdelta",
+      "payload": "0542.dqdelta",
       "source_sha256": "0c0c5532ca3076ab33be0500a6b3ddce22f358a784372b0fa08c74832146c0b6",
       "target_sha256": "929f3d8ec0f029dc748902f279b356c46ed1464436e0600d51051f576147aaec",
       "payload_sha256": "690d3c40f8c207e4ef2766c8f7a42f3e2eafdc4889a540a65023c57ea397c8c7",
@@ -5287,7 +5437,7 @@
       "path": "romfs/script/b_100.pack",
       "source": "romfs/script/b_100.pack",
       "kind": "delta",
-      "payload": "0528.dqdelta",
+      "payload": "0543.dqdelta",
       "source_sha256": "ab57a38b217e6021b8e2b00b28bf6879e19449f3ec539591b5888dcf3bcb72be",
       "target_sha256": "4389c70b0fb13dcd4acd67695aacd1ddb8d5d4f7474559d509e38adcb1d25b4d",
       "payload_sha256": "45711a3fb3585a460dc6ef60f975a84a9ed8b36a834dce7ee7458a160997ad9f",
@@ -5297,7 +5447,7 @@
       "path": "romfs/script/b_110.pack",
       "source": "romfs/script/b_110.pack",
       "kind": "delta",
-      "payload": "0529.dqdelta",
+      "payload": "0544.dqdelta",
       "source_sha256": "95c5503cc16fcee4e4c25396a245a62097bfef95ddfbd40534e1d8ba843ea9cf",
       "target_sha256": "3da0ac5f105a95311ac70be0cb3e2f34d294e298dafa07927cb20216632cad28",
       "payload_sha256": "acca054fc6ce0f699ad0cb37bcb8561846891384a891857c04db8967de8a96b9",
@@ -5307,7 +5457,7 @@
       "path": "romfs/script/b_120.pack",
       "source": "romfs/script/b_120.pack",
       "kind": "delta",
-      "payload": "0530.dqdelta",
+      "payload": "0545.dqdelta",
       "source_sha256": "9b0de0cd2a224377e83e2278ce6a2d0045f6b63381884b13e13ca7043b37bf69",
       "target_sha256": "31ddb98e310e7f657fd5587edbbe8a341d821a5d8fa9cdddcfb632e8b9bb7305",
       "payload_sha256": "d9fee93aa76a4cc002dafa68179bf66a355077c3fc6e1158a110320310cb0d47",
@@ -5317,7 +5467,7 @@
       "path": "romfs/script/b_150.pack",
       "source": "romfs/script/b_150.pack",
       "kind": "delta",
-      "payload": "0531.dqdelta",
+      "payload": "0546.dqdelta",
       "source_sha256": "a22df906b9a41138dd8be1e1f657d9088addafca9a5787f11fd41b16f711d4c6",
       "target_sha256": "928f9747ee812789c9207ffabeec53be89273fa60c2dcb12f89fb74044dad849",
       "payload_sha256": "1cca7d21a62bb5c24821ff8b08acc614ad8172cdbdec9f6fbb22f6391d5382dd",
@@ -5327,7 +5477,7 @@
       "path": "romfs/script/b_160.pack",
       "source": "romfs/script/b_160.pack",
       "kind": "delta",
-      "payload": "0532.dqdelta",
+      "payload": "0547.dqdelta",
       "source_sha256": "26eba269a84cea37402525775a620563c3c615b7c0ff3747fe084298a6efc3cb",
       "target_sha256": "e253781e2926c55787e713136ff609cc2cc1c04ab0a32cf55c39b4a2aa7cbef8",
       "payload_sha256": "b87b16a9c082e2d20afd44412dae5ea76964af5002b78298285b08d37c2ffed6",
@@ -5337,7 +5487,7 @@
       "path": "romfs/script/b_170.pack",
       "source": "romfs/script/b_170.pack",
       "kind": "delta",
-      "payload": "0533.dqdelta",
+      "payload": "0548.dqdelta",
       "source_sha256": "36c9a4d9f146ff0b1b756572dd5a1f2414eed455d06da38d62b08084d16c3145",
       "target_sha256": "29d4cac921b97bf25b08695a08f6326e855e4d5381979a59083edc242fc019d3",
       "payload_sha256": "73bcdc7f009837fb11585ef166eb32288fdd7752b1dbd88d6abe8ecfa2cc2d82",
@@ -5347,7 +5497,7 @@
       "path": "romfs/script/c_010.pack",
       "source": "romfs/script/c_010.pack",
       "kind": "delta",
-      "payload": "0534.dqdelta",
+      "payload": "0549.dqdelta",
       "source_sha256": "20d92fcf3fdf45f610048ade3f1ede867325da48f35d1cf388d923ca906b8e74",
       "target_sha256": "ad3a0137f6829ed05da4c4414ab0e93fab28212749fde7fd27588122dcc296d6",
       "payload_sha256": "7ccfaa13194cb9cecd8fbdb84863ad2557829bef73c1113be21f1bce636ff063",
@@ -5357,7 +5507,7 @@
       "path": "romfs/script/c_020.pack",
       "source": "romfs/script/c_020.pack",
       "kind": "delta",
-      "payload": "0535.dqdelta",
+      "payload": "0550.dqdelta",
       "source_sha256": "94b20be746d751f6ac7af2f9f39a1a163514e7755dd386891baafb578a5166b7",
       "target_sha256": "fe8bd19f9fa96354563c6c0e126e2542df2a447f9da187955656f8b6bc07ee6b",
       "payload_sha256": "c758438367330efd38d2302d5c153bcc4b1477baef2233382fc19b001dd8ef4f",
@@ -5367,7 +5517,7 @@
       "path": "romfs/script/c_300.pack",
       "source": "romfs/script/c_300.pack",
       "kind": "delta",
-      "payload": "0536.dqdelta",
+      "payload": "0551.dqdelta",
       "source_sha256": "00459a64b0f3b2f138b23dfdafbe0439833d364630e333f865989614f3ececc5",
       "target_sha256": "408270a6a64deb8a656e6371364055358a8b56f5974632245575d1cb09d5890c",
       "payload_sha256": "80fbd305ba9671050b72140d7efaf144ecfa812fd7f51236a36eb75c9f8df9ff",
@@ -5377,7 +5527,7 @@
       "path": "romfs/script/d002c.pack",
       "source": "romfs/script/d002c.pack",
       "kind": "delta",
-      "payload": "0537.dqdelta",
+      "payload": "0552.dqdelta",
       "source_sha256": "004c2c7fce630af795c73da469f791f93c4894b2ce9e7a023b9d0ea14341004d",
       "target_sha256": "1e4617af0a220a1d6c09c850de3d09291e390bd6b5947257f47f33b03f5b6c6f",
       "payload_sha256": "0bc2c6c40daa2d09a39723649ba5aadffe4a0b3adc1daee1461cf83f797fe971",
@@ -5387,7 +5537,7 @@
       "path": "romfs/script/d008c.pack",
       "source": "romfs/script/d008c.pack",
       "kind": "delta",
-      "payload": "0538.dqdelta",
+      "payload": "0553.dqdelta",
       "source_sha256": "25d12e41e39c6076f1d2bebc317d013f4de28dc99ac2ca0eb04bebaf7a8b4c58",
       "target_sha256": "324f45a929d62074c05839e8bec580d542379e47ebb4e8e9934ad86186974305",
       "payload_sha256": "c7b5f1b35bf45f33e992ecd2ee0dae21cdce6250f7db396073f2f00eb3272c18",
@@ -5397,7 +5547,7 @@
       "path": "romfs/script/d010c.pack",
       "source": "romfs/script/d010c.pack",
       "kind": "delta",
-      "payload": "0539.dqdelta",
+      "payload": "0554.dqdelta",
       "source_sha256": "31dede29dce74bcc542d3c950f1ea1402a81e6dfef6dd643340aa4ead130648b",
       "target_sha256": "b1cb35a597073fd477b4c84a7a62656123673f51c0736118fcfb2e05efbd5eb0",
       "payload_sha256": "ed53f8ec04607d0cc6d60a2f4bb29e9685f802b5ddf8b4abbf8f54b1bc9bcee0",
@@ -5407,7 +5557,7 @@
       "path": "romfs/script/d014c.pack",
       "source": "romfs/script/d014c.pack",
       "kind": "delta",
-      "payload": "0540.dqdelta",
+      "payload": "0555.dqdelta",
       "source_sha256": "9bfb7d3cb3b809467ef2bed0644d577539dcafad3927a099009dbd6ba73ac77c",
       "target_sha256": "ea31cfe3cae51531c1debf60149e870643a9a750280473ef322f369612f67fa2",
       "payload_sha256": "bd480e3de28cb9af4c2a810085e645d312eb3c6e7260c32a0f9f97590a5ab8e4",
@@ -5417,7 +5567,7 @@
       "path": "romfs/script/d021c.pack",
       "source": "romfs/script/d021c.pack",
       "kind": "delta",
-      "payload": "0541.dqdelta",
+      "payload": "0556.dqdelta",
       "source_sha256": "03beec01dd148049f66af9787414ea471f321e0429a917cd6e53dd4b32e3fb17",
       "target_sha256": "f9b63f1b43c437c5e4468e812c45da03ea7b8fa73b7e26a9941685c5a0e5e348",
       "payload_sha256": "18f6e45ad5bd7b57874275c292bbea116c25abd987f4c501250cbeb2d9110439",
@@ -5427,7 +5577,7 @@
       "path": "romfs/script/f013c.pack",
       "source": "romfs/script/f013c.pack",
       "kind": "delta",
-      "payload": "0542.dqdelta",
+      "payload": "0557.dqdelta",
       "source_sha256": "a01f2149e03655302cab570222c677fd1e094fda655b9a4abd7b1515c89e3a97",
       "target_sha256": "189bf5532bafbead43cc08d072568047cdd4134f00a8c3b9f21b966e404d199c",
       "payload_sha256": "1c93dd55daccc84d6859b7a54e5a998539b9dde4b4b1571cb3f0f01815b737c4",
@@ -5437,7 +5587,7 @@
       "path": "romfs/script/m002c.pack",
       "source": "romfs/script/m002c.pack",
       "kind": "delta",
-      "payload": "0543.dqdelta",
+      "payload": "0558.dqdelta",
       "source_sha256": "66f9f81ca4f59e410a63c6e431397f84f107907362a6b5d074a4c8f721d5c1da",
       "target_sha256": "5177f78b6af5f6813aa9d79f22bc4d1fd2e69fda7782dec34f09a6a02e3cf3d7",
       "payload_sha256": "0c1deb6a5bfdccf38f2fb6609cad7d935a824a2bbeaa43ea52b8c56dfc6cdb6c",
@@ -5447,7 +5597,7 @@
       "path": "romfs/script/m010c.pack",
       "source": "romfs/script/m010c.pack",
       "kind": "delta",
-      "payload": "0544.dqdelta",
+      "payload": "0559.dqdelta",
       "source_sha256": "876de2786351bf250a556aca74aaa73c459f011e82fdec41d70e877b123ee82f",
       "target_sha256": "cdc0f2c302288735f502c12781d2917504a7729127eb64f78fed13fd73ea4165",
       "payload_sha256": "bc5a6c3a900880182dc97b5a5ca49a767c62360d2b2f24d354a2a530dfb2d8b1",
@@ -5457,7 +5607,7 @@
       "path": "romfs/script/m021c.pack",
       "source": "romfs/script/m021c.pack",
       "kind": "delta",
-      "payload": "0545.dqdelta",
+      "payload": "0560.dqdelta",
       "source_sha256": "9b1d6f618b0d51a5e8a65aa779ab7dd7f1e771b468e27bb2d2862229dcc05324",
       "target_sha256": "a0608dad972eabaefa3c6d7ed6ffd066d77e8157f304208c7b7f75ad5be41035",
       "payload_sha256": "18789b0a593561004101c387f4b079de50e0ab66685f49d467adce4054f8a6f9",
@@ -5467,7 +5617,7 @@
       "path": "romfs/script/m023c.pack",
       "source": "romfs/script/m023c.pack",
       "kind": "delta",
-      "payload": "0546.dqdelta",
+      "payload": "0561.dqdelta",
       "source_sha256": "0e94472c8204934f9848f0b97f3123bd8375c0c64ef3d3f8c58603deeb4b3ab4",
       "target_sha256": "4c1168de088ae8e1dff12a0664da68fa71eb1f817beb3581e0747788e31a4a00",
       "payload_sha256": "42d0ba745a10610dd6a891870ab7173d2c3fcc86be01b80201fc5cb2cd5f2b97",
@@ -5477,7 +5627,7 @@
       "path": "romfs/script/world.pack",
       "source": "romfs/script/world.pack",
       "kind": "delta",
-      "payload": "0547.dqdelta",
+      "payload": "0562.dqdelta",
       "source_sha256": "63a7a934df6a5956230ab8d1c158c879776be172d83af91aa47fd49ffa901eb6",
       "target_sha256": "95140bfa697767f945aef2872a7fe676c5cafdff58948af0bc57253138c6859b",
       "payload_sha256": "846826b3c73f2a363ee9e47afb05671dc406db2a4b498fb35c7fc0ad280f4bc1",
@@ -5487,7 +5637,7 @@
       "path": "romfs/script/worldc.pack",
       "source": "romfs/script/worldc.pack",
       "kind": "delta",
-      "payload": "0548.dqdelta",
+      "payload": "0563.dqdelta",
       "source_sha256": "085f11a517e52aec096980267e4a2fb505bbd0fed14312aa02752137bc34d0cf",
       "target_sha256": "26712cb1130e03c51957e43e5ef35f94f7286c95694d456d36d5b1709a214f2a",
       "payload_sha256": "f9bf0280fb2ef91e569a925cfaf7f1ebfa1932d094952894db91e3957f0e7113",
@@ -5497,27 +5647,27 @@
       "path": "romfs/syscmn.pack",
       "source": "romfs/syscmn.pack",
       "kind": "delta",
-      "payload": "0549.dqdelta",
+      "payload": "0564.dqdelta",
       "source_sha256": "4ef70b46f325564596154528b1b35236d281c0a24b09f697eec079bf1340a44e",
-      "target_sha256": "9b7049b1d606d534985477db219f518385a2e40f840a00062a66e3624f04cfdf",
-      "payload_sha256": "d9f7c13a6b639dae3ac9365cd15487080ec81ab3eab6c0f8bcb4fccaaff77f76",
-      "target_size": 1282280
+      "target_sha256": "852ebacc3b4b6e564f7f90a217f7cdeb976492a49d918f2c71d06e74d8cb9ac4",
+      "payload_sha256": "31b1cc507ea5811cd674120968984fadb40ac888120976754e1adb72a451034b",
+      "target_size": 1282792
     },
     {
       "path": "romfs/ui/battle_2d.pack",
       "source": "romfs/ui/battle_2d.pack",
       "kind": "delta",
-      "payload": "0550.dqdelta",
+      "payload": "0565.dqdelta",
       "source_sha256": "63fe883fd5bba61046437115a5dd154192659f609d0223da15a7163998266b0d",
-      "target_sha256": "a0cb670af0f4171a5dbd1e123a76903d05e5e4b04508bc0504d9da3dc33a0c5e",
-      "payload_sha256": "e5d54be59dc6a2234da39a2847121226a6d85534c89bd96d1d06d18d127ca6b1",
+      "target_sha256": "ad071f8af331dae3770380e8db79527d79aecacae0122934b009e4ba1a3bb6b0",
+      "payload_sha256": "c386010d350248c24b77c29159d1a4df8947f56c690b379ee869d74eeef98564",
       "target_size": 251244
     },
     {
       "path": "romfs/ui/battle_3d.pack",
       "source": "romfs/ui/battle_3d.pack",
       "kind": "delta",
-      "payload": "0551.dqdelta",
+      "payload": "0566.dqdelta",
       "source_sha256": "02277274ef723c3275d38bfa6630f1576e928069b517748cb45d1a74ad3d4481",
       "target_sha256": "761a9dab78ceeadb11bf84c9e6ec77dc94a6a56d102800b65484811609a03a65",
       "payload_sha256": "679d9532a2ab168ffbe16a73280bff612ed776301ee53ab616868c91745c4132",
@@ -5527,7 +5677,7 @@
       "path": "romfs/ui/casino_slot_3d.pack",
       "source": "romfs/ui/casino_slot_3d.pack",
       "kind": "delta",
-      "payload": "0552.dqdelta",
+      "payload": "0567.dqdelta",
       "source_sha256": "bd50f34eae498cabc1e9148f34fe8f638467f4d2b615d976acb4a107a6ecac9f",
       "target_sha256": "b371726309b3ee03595e0a9f65f9b823438490cb7346a9f3f871174fb94c31ad",
       "payload_sha256": "fe399a10664c27ffe9031218a481215fff752d54e770b6e9782809215bf9c527",
@@ -5537,47 +5687,47 @@
       "path": "romfs/ui/common_2d.pack",
       "source": "romfs/ui/common_2d.pack",
       "kind": "delta",
-      "payload": "0553.dqdelta",
+      "payload": "0568.dqdelta",
       "source_sha256": "5608d986b9bbcd831d3820dfcd26cbc55efaccab144368879ce2d781335857e3",
-      "target_sha256": "260b5241bc0db326f8ae21459580cca709898f156800de1ea777510babb5e66f",
-      "payload_sha256": "30495a5f9293ca5de90f55cda9cd475d0bba97088925942f0b30c2792ae76f72",
-      "target_size": 1954148
+      "target_sha256": "f35a1260f6b814a3e9cd75ae5fd68e3b3c5a46a8b2690cf7d090859549c1dd88",
+      "payload_sha256": "35d91ae984f89fc537e307d4f720a22dbba1deb83f30267a3801403685fc6acc",
+      "target_size": 1955556
     },
     {
       "path": "romfs/ui/common_2way.pack",
       "source": "romfs/ui/common_2way.pack",
       "kind": "delta",
-      "payload": "0554.dqdelta",
+      "payload": "0569.dqdelta",
       "source_sha256": "990a9fd62893398b01271e34bef9ca8d0a0b7ace7d19174257734d1a704899b2",
-      "target_sha256": "ee5a46401ec923483168e2c4549dc27533fff8ba99d76d0416028af3e37620f0",
-      "payload_sha256": "d5a91c0ff962696e5e537253fb6032abb745e1cd641e9cbd2fd1b379c2f6967a",
-      "target_size": 3836900
+      "target_sha256": "fdcae5113e888ebfb7578e8f44a04cd4512051e1b704acdf3a5cf47428705da8",
+      "payload_sha256": "af3e8a705169df7cd7b97f7c12664ff9924367f7802d2de6d10b2121a3bd1c1c",
+      "target_size": 3838436
     },
     {
       "path": "romfs/ui/common_3d.pack",
       "source": "romfs/ui/common_3d.pack",
       "kind": "delta",
-      "payload": "0555.dqdelta",
+      "payload": "0570.dqdelta",
       "source_sha256": "ee83baf151293baa447cae8fe6eba9103fcca91debd1609c9cb264cb6c1ff478",
-      "target_sha256": "c3ebf24f609efa6c0471143781ff28e6ffa354d35a17a45ef6d3e811d0c02beb",
-      "payload_sha256": "093695a3321a2bc01c1ee7dca8ee338a5448e09a34c8083274bb124701bb548b",
-      "target_size": 3704932
+      "target_sha256": "7f36e7be386bcdd425eddf5a296660f5f00aaba769f851b11de9d3774e4436e5",
+      "payload_sha256": "a0a910defcb0b3a91adb4dd00c933ca000e37badcb09a9ec0d6180d1a5637835",
+      "target_size": 3706596
     },
     {
       "path": "romfs/ui/compactcommon.pack",
       "source": "romfs/ui/compactcommon.pack",
       "kind": "delta",
-      "payload": "0556.dqdelta",
+      "payload": "0571.dqdelta",
       "source_sha256": "2dc8c059ea6df4f848bcc441d09aa3958f5c82c77afb03fc0170b52285d77d9b",
-      "target_sha256": "f41b00edeefba5864c396fe654fbf53f4a2adf88182eb062c12a101ef7709d69",
-      "payload_sha256": "fdda8b3324fdaca1ed88a0012256e6f820d48457fafbb07319af48af2aad695c",
+      "target_sha256": "d3017811a2369d1e1554c449a000a4edfb66df9d74416475b996aa7d67c1fb6c",
+      "payload_sha256": "9b4709a7eb704a1e7ecb3852fd399d5e99dd59ddac73d2f4f79a029153ff4259",
       "target_size": 327620
     },
     {
       "path": "romfs/ui/credit_3d.pack",
       "source": "romfs/ui/credit_3d.pack",
       "kind": "delta",
-      "payload": "0557.dqdelta",
+      "payload": "0572.dqdelta",
       "source_sha256": "ad765ed47cb8621d69f8e260ec996df2f03beb0825dd51744a2fc432e0e6b932",
       "target_sha256": "adeae23767505752e61d3e1cceb522287be3b8e2c0aaa5e5a39dd9ee2b3ab015",
       "payload_sha256": "10d664c1d2aa5510184d1e3ab2b9ffdf8ac384e5c70feb9ae6b84b075d040c70",
@@ -5587,7 +5737,7 @@
       "path": "romfs/ui/cutscene_3d.pack",
       "source": "romfs/ui/cutscene_3d.pack",
       "kind": "delta",
-      "payload": "0558.dqdelta",
+      "payload": "0573.dqdelta",
       "source_sha256": "2cbcf19df7bdaea794934e99b7b14721b9de44616f9cbbab7332661c06c6920f",
       "target_sha256": "45431354d4e22da4d9314c3c515ebb6edd06c42e5ed60ae19305de4f1e62e8e9",
       "payload_sha256": "49743a07bd7b34b019f9a07510b6a8997c3454528199d6d1099296bf96130ae5",
@@ -5597,17 +5747,17 @@
       "path": "romfs/ui/dive_dugeon_2way.pack",
       "source": "romfs/ui/dive_dugeon_2way.pack",
       "kind": "delta",
-      "payload": "0559.dqdelta",
+      "payload": "0574.dqdelta",
       "source_sha256": "2cbc51ecf27f69ee1ec223ff836807f99b42b40fc9811f8ba904f3d231574e24",
-      "target_sha256": "3b1213cd7d5120a70987d5d83d85aac76e1080a6025baf5ecb4e7446cb64ba3b",
-      "payload_sha256": "4e8d8a8f95ae96f49072bdb14bcf87cbcd3f0b242c9032437cabda6eb285a23b",
-      "target_size": 1740960
+      "target_sha256": "5b226d1d5882ce8d2d090fa61f0f1c3812f273f7f958032700193535972e3bf1",
+      "payload_sha256": "5cf10aafb40d8cac40009f527909d629ff8b1720bda3be43bebe7c74b3655f7c",
+      "target_size": 1741520
     },
     {
       "path": "romfs/ui/dive_dugeon_btl_2way.pack",
       "source": "romfs/ui/dive_dugeon_btl_2way.pack",
       "kind": "delta",
-      "payload": "0560.dqdelta",
+      "payload": "0575.dqdelta",
       "source_sha256": "96b4b77fa8b47196debe964fe1ac6e35fc22a9c7705a069d489bf18ae9941a69",
       "target_sha256": "27a19b67aeaa3cd6b00985cd044e2fede84f7f6783e9cb1bda5fedb0c3557d8b",
       "payload_sha256": "cb275186b15f038c77b32468af767988c3e3a7f4706e93ab21e300665dcb5200",
@@ -5617,27 +5767,37 @@
       "path": "romfs/ui/equip_3d.pack",
       "source": "romfs/ui/equip_3d.pack",
       "kind": "delta",
-      "payload": "0561.dqdelta",
+      "payload": "0576.dqdelta",
       "source_sha256": "84de899f154438f2ddfbd567d1b7ee3d32d737621b701cb93e43f9e33e64b549",
-      "target_sha256": "d86c217af57e7ba63af5aa3884478fb4d23855912fa5228cde8112dd6070e7d9",
-      "payload_sha256": "5799aef866d50ec68d78b96b7b18de46beea32a4cdbf535b4fa6b507f6ef688c",
+      "target_sha256": "9539dada384ca16c943de0f08332f52758fb983fec61eac2b330fc885144d8fc",
+      "payload_sha256": "c47d22a48403e2511fd32c66e37ee9eb2cab5872e4e1b97a6db9cf7407e04059",
       "target_size": 691620
     },
     {
       "path": "romfs/ui/horseRace_3d.pack",
       "source": "romfs/ui/horseRace_3d.pack",
       "kind": "delta",
-      "payload": "0562.dqdelta",
+      "payload": "0577.dqdelta",
       "source_sha256": "48f042015f8720a257a512854e485665c8e6186301d1cd96285b69cb90e95a5f",
-      "target_sha256": "9398126a1d5771f4f781c92d421f15638411b5a162be9ade9bb672b81837fbe1",
-      "payload_sha256": "91bec3399603cb87f271894fce534b38b5d580a8ff0cab5587c5b030e34b84dc",
+      "target_sha256": "1877586a42d6fbe12b6d82cb1b6ce6b82c83ee1d2001c53b0c1ae4ef61958f19",
+      "payload_sha256": "85f60a5dec2a783bed1fc763b854739b952c4fef7590a51461e09c9167f433a6",
       "target_size": 868676
+    },
+    {
+      "path": "romfs/ui/location/location_b016_001a.bch",
+      "source": "romfs/ui/location/location_b016_001a.bch",
+      "kind": "delta",
+      "payload": "0578.dqdelta",
+      "source_sha256": "fe95af9061f602c2886d352a619230885d099804fe38f63b4dea42ad33417246",
+      "target_sha256": "afe77823ddc69e2bbd4b2aac6c1d9b307137151acac6ffe785ca7c17f9e96d4c",
+      "payload_sha256": "3a8df470bd7de672de809988352c9e02ce02bff4dd5ff2f8437e88f93f0ddbb9",
+      "target_size": 8932
     },
     {
       "path": "romfs/ui/location/location_b021_001a.bch",
       "source": "romfs/ui/location/location_b021_001a.bch",
       "kind": "delta",
-      "payload": "0563.dqdelta",
+      "payload": "0579.dqdelta",
       "source_sha256": "1f708ff3a98f30a68ac7da3637f9a08067e719031da8fe69cc65b07fcae3a7fd",
       "target_sha256": "416131a5d1899291f8a8c6bd1720e84524a95666e56c95f91ef9f6836c5bd7f6",
       "payload_sha256": "9042dd1bc75acd5614dc1c5a48400b29914a51622b5a1792cb532ecc61dd3743",
@@ -5647,7 +5807,7 @@
       "path": "romfs/ui/logo_2d.pack",
       "source": "romfs/ui/logo_2d.pack",
       "kind": "delta",
-      "payload": "0564.dqdelta",
+      "payload": "0580.dqdelta",
       "source_sha256": "86975f265bbe6a83ba02b17b1a72dc575b7e8c8b2507cad403f93ca5dda96dae",
       "target_sha256": "9ffc81f864d5dc639a1954f7d8efd2a85a04aeac4777d8268c389b04c55ade66",
       "payload_sha256": "0e611de57bbe8f9f290cea668cd30975b4dbfa0617a68ae5e6fbd1461f83eef2",
@@ -5657,17 +5817,1417 @@
       "path": "romfs/ui/logo_3d.pack",
       "source": "romfs/ui/logo_3d.pack",
       "kind": "delta",
-      "payload": "0565.dqdelta",
+      "payload": "0581.dqdelta",
       "source_sha256": "a6f4d6ae5ccefbe1a88f9b60a28c9f8e7fb85f0ad8c56e946f57eb26cd7550bc",
       "target_sha256": "ed986b535f6877db9b0bcdd54c7851225caefde45328551126c0e94d42e704b0",
       "payload_sha256": "00a2ef82251725a922fb57901f764f03002f0be80f6eb6f5353888393251c9fb",
       "target_size": 3508836
     },
     {
+      "path": "romfs/ui/map/b001_102a_2d.pack",
+      "source": "romfs/ui/map/b001_102a_2d.pack",
+      "kind": "delta",
+      "payload": "0582.dqdelta",
+      "source_sha256": "36715e961590acff1edcfb8dbaa70e01433d4ba0fc1c174c166804d278a8caca",
+      "target_sha256": "ccce2e0235eec40a6cc7789579ca49727cd996ba5ca6f188bf345f4da9da2faa",
+      "payload_sha256": "b756b1642a3a68035d43f604f85b686fa5ba4f82d3d557a8db623625374b36f5",
+      "target_size": 605480
+    },
+    {
+      "path": "romfs/ui/map/b001_102a_3d.pack",
+      "source": "romfs/ui/map/b001_102a_3d.pack",
+      "kind": "delta",
+      "payload": "0583.dqdelta",
+      "source_sha256": "6664b5f86ef2e12f769788bdc69173af32e4014fb755dc05a6ebc76ec6f57509",
+      "target_sha256": "3771294dec636db5771d99876f64f88a338d22c5b26b961719e24b22e4023ebc",
+      "payload_sha256": "3843e9d1d29b113a427975ac18c6359dba56223a62fec0ca90acc34f0b598be3",
+      "target_size": 212648
+    },
+    {
+      "path": "romfs/ui/map/b001_102b_2d.pack",
+      "source": "romfs/ui/map/b001_102b_2d.pack",
+      "kind": "delta",
+      "payload": "0584.dqdelta",
+      "source_sha256": "a1ff7cb84b203624d17efc5e192894d70eb654b4851a4ca6a87ca5fe3a44a75e",
+      "target_sha256": "4c713f2c77f6e44e2dedd2cadd3bd2476dc6b98c9d7c7a8e9ce2e8fb33487192",
+      "payload_sha256": "dd0e44ddad296b6aa5ace18b0f583f7c06d1e326be8ea62885bd60ddf73f0d3a",
+      "target_size": 605352
+    },
+    {
+      "path": "romfs/ui/map/b001_102b_3d.pack",
+      "source": "romfs/ui/map/b001_102b_3d.pack",
+      "kind": "delta",
+      "payload": "0585.dqdelta",
+      "source_sha256": "2efcb5ac904d4568425cf2c22769f6935052a690ca54c845e6807ae14c95f8d1",
+      "target_sha256": "1bbdaef526937ebd51a211308313114e6c7c81cd0e987713e533b6a12ece89cd",
+      "payload_sha256": "22fdda6d6061f655ab1e5828206f0a4ca0aba2d9d100217f7ad3eb9d7b7ba3a3",
+      "target_size": 213288
+    },
+    {
+      "path": "romfs/ui/map/b001_103b_2d.pack",
+      "source": "romfs/ui/map/b001_103b_2d.pack",
+      "kind": "delta",
+      "payload": "0586.dqdelta",
+      "source_sha256": "e0ee4ed13693e806fac3cc87d6ae95d2b0d78705ace7629efe7754672d368986",
+      "target_sha256": "8aa4c035c004b910b68cf279934a498fefe54477c9d3c7944378bab3990009c7",
+      "payload_sha256": "4880aca9f3d84eb47687903399c5a82782727c976d5c92057fe5ebb06c994203",
+      "target_size": 604840
+    },
+    {
+      "path": "romfs/ui/map/b001_104a_2d.pack",
+      "source": "romfs/ui/map/b001_104a_2d.pack",
+      "kind": "delta",
+      "payload": "0587.dqdelta",
+      "source_sha256": "2bc68b0b4c3d20041539087b2ea0eb97fe39bdc33a4e03c5c432d69b862fe5af",
+      "target_sha256": "5365ffd6f3ca00246111d67521ba792080e552b46277eac132b3d2c1b15695d0",
+      "payload_sha256": "ed483d9f00835ef9fa79e451b436062ce54637096b83e3f5d11dd34f4fa588ea",
+      "target_size": 605224
+    },
+    {
+      "path": "romfs/ui/map/b001_104a_3d.pack",
+      "source": "romfs/ui/map/b001_104a_3d.pack",
+      "kind": "delta",
+      "payload": "0588.dqdelta",
+      "source_sha256": "b320cda03f1da56d2737fffcbec812da3ba474758014884cbdf4018bcdbe8da7",
+      "target_sha256": "d11cf1157e58eff4f4c5968baf011a390bd433b3629ac2652b236d616bbf18c3",
+      "payload_sha256": "7c301153c987723df4556c3f91f38c2295454e66553f8e46c749fe10e70068cd",
+      "target_size": 212264
+    },
+    {
+      "path": "romfs/ui/map/b001_104b_2d.pack",
+      "source": "romfs/ui/map/b001_104b_2d.pack",
+      "kind": "delta",
+      "payload": "0589.dqdelta",
+      "source_sha256": "498eab194b15ea6f9e8e1a197c1558ba401174ab68ce243e02bff778f767c846",
+      "target_sha256": "6651e8609d94fc5bb9224b8f0b38833117966bc5836dc508fbbb83b21943e06a",
+      "payload_sha256": "ef1fa3843762ad44c365f190b7db7d7794729f47d236e5cc1c678ef40283e242",
+      "target_size": 603560
+    },
+    {
+      "path": "romfs/ui/map/b001_104b_3d.pack",
+      "source": "romfs/ui/map/b001_104b_3d.pack",
+      "kind": "delta",
+      "payload": "0590.dqdelta",
+      "source_sha256": "43ca5bb87b04a8bafcaee807ae723ea3d963e549004f084332fa4838dda7bfb4",
+      "target_sha256": "6fb6e2febd5783cd6d55f986b0ed01e98716afe13fbf1a9db2a65b4d24e7d98d",
+      "payload_sha256": "d358a81fa1e32e85aab9437eed375b7888f5c2ec44b28b41f0b5a8ae91a8a049",
+      "target_size": 212776
+    },
+    {
+      "path": "romfs/ui/map/b001_105a_2d.pack",
+      "source": "romfs/ui/map/b001_105a_2d.pack",
+      "kind": "delta",
+      "payload": "0591.dqdelta",
+      "source_sha256": "ed31091f9d88c21e9e95e79b399e9fd35ec8c9299cfe290f72f009fd857cfb2a",
+      "target_sha256": "9b9df3fe08ef60b8f3b02f97799b4249d570b85653b7f1664f93c7f7097453a9",
+      "payload_sha256": "dcddd133070f7cf06927e669c304ed069ce65fa0c2be86f07d4ecd3501ae3b31",
+      "target_size": 603816
+    },
+    {
+      "path": "romfs/ui/map/b001_105a_3d.pack",
+      "source": "romfs/ui/map/b001_105a_3d.pack",
+      "kind": "delta",
+      "payload": "0592.dqdelta",
+      "source_sha256": "54c8ac16d6278796c924e3848f40138a4299f0d73c01f461f2d3d261a94b881c",
+      "target_sha256": "ad0636875ad04613fbc4f848d2d21da8bdac291f9545e5804e92c5be77cd371a",
+      "payload_sha256": "2a77ae171f7a8abc68b5cc732582f692f94357f31563d68117c03340173808db",
+      "target_size": 211368
+    },
+    {
+      "path": "romfs/ui/map/b002_001a_2d.pack",
+      "source": "romfs/ui/map/b002_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0593.dqdelta",
+      "source_sha256": "9db7a3c7fb629e62fe2b62c3e45749c3b96ce7a9171c691afccb6d6105391ea3",
+      "target_sha256": "d5732aa95c4c725300900fe0c6b1c4a37dec8a220fde4662a7ddc2141f71afa8",
+      "payload_sha256": "95cf159dad30573fe4bff8a142dcfeb4f95ae00f69d080e09f9702aba31c09cc",
+      "target_size": 220712
+    },
+    {
+      "path": "romfs/ui/map/b002_001a_3d.pack",
+      "source": "romfs/ui/map/b002_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0594.dqdelta",
+      "source_sha256": "584eb991ca916e769502617aa1f4d2eac60411e441797e3a364ce91addccacb9",
+      "target_sha256": "8338caf46cff6a3c7e536eded6408b29d7b730499cd70adf761748cf3852513c",
+      "payload_sha256": "ba0c5ff0b768f624384b84e2148cd9a847381c242549cfb0562ab5e5438ca0f7",
+      "target_size": 224424
+    },
+    {
+      "path": "romfs/ui/map/b002_001b_2d.pack",
+      "source": "romfs/ui/map/b002_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0595.dqdelta",
+      "source_sha256": "fe4de63eb192522ead78d9dba6a5b5c5063b8d1d42ba6509b2cea8afa3fddd1b",
+      "target_sha256": "61d21d3b79703c2f682143edfb5ac1af9460ea7baa144d67e06bce37d16f840b",
+      "payload_sha256": "75420278783260177ec6a86ba76ffabbac056fa706a37773f13f140db63e61d8",
+      "target_size": 341928
+    },
+    {
+      "path": "romfs/ui/map/b003_001a_2d.pack",
+      "source": "romfs/ui/map/b003_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0596.dqdelta",
+      "source_sha256": "cf4d02adc71e8a871ff3055902b434a0a559465a4646736d641c536c173bdf64",
+      "target_sha256": "b68001dbbbef1a92a1db68c71c43a677b2cbaffc5d503dd5228386808305a410",
+      "payload_sha256": "f86a67ef2ca13481df88e600e7b17ec60de62f4d1f134072bcfa60c868e77055",
+      "target_size": 216744
+    },
+    {
+      "path": "romfs/ui/map/b003_001a_3d.pack",
+      "source": "romfs/ui/map/b003_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0597.dqdelta",
+      "source_sha256": "12dbe2287c9030a5e6c1cb9616f505ccb2d132a66dd0b7bf1240d6e4d717b76d",
+      "target_sha256": "15349ab3b8c2e579cef6d4e4d7390fb3b864005e21acb0658fa3e689ca872f20",
+      "payload_sha256": "f19b2edac6969bf12d37c8448a40bf8d58ba32db5e9e136f1b933baafad59d9c",
+      "target_size": 611112
+    },
+    {
+      "path": "romfs/ui/map/b003_001b_2d.pack",
+      "source": "romfs/ui/map/b003_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0598.dqdelta",
+      "source_sha256": "5c2473bc7957887b8f61dd43f6955383a8ab92ac3d466b28bd028035892d70e9",
+      "target_sha256": "febbf0d1bd3d7505c41c21af7f2bcf30578636371bfaad0d079bcbf43cff54e2",
+      "payload_sha256": "08d8ba1904f3153a6e251f577302219848e3f086e6c5ac1eeaf5ffe081ee93f9",
+      "target_size": 211112
+    },
+    {
+      "path": "romfs/ui/map/b003_101a_3d.pack",
+      "source": "romfs/ui/map/b003_101a_3d.pack",
+      "kind": "delta",
+      "payload": "0599.dqdelta",
+      "source_sha256": "59a84ab75465eb14af8942bea3072a2369b2576973122fc55e7a36c637ec0ec1",
+      "target_sha256": "9bb2a7e3a8e8c25b3aba9c10f39712691024281b1566d97fd65454b7548570de",
+      "payload_sha256": "089dee48db2bbac9afb06f71b7281d7d7a9c06a12a9b95f211fc8cf1a75a0b3b",
+      "target_size": 155176
+    },
+    {
+      "path": "romfs/ui/map/b004_001a_2d.pack",
+      "source": "romfs/ui/map/b004_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0600.dqdelta",
+      "source_sha256": "2c2d193971a8d351617f130feafbd8339bef586639ee30205a135a34f5084bb4",
+      "target_sha256": "3f8d6cfeeb7b658d1b9b3b444cd550f5ffef5af76528db54c7b1c5525df99b06",
+      "payload_sha256": "00838916fae153cd40b9ae9dac9f3990d999d7491c3512a8c18f78e8687c11ca",
+      "target_size": 211368
+    },
+    {
+      "path": "romfs/ui/map/b004_001a_3d.pack",
+      "source": "romfs/ui/map/b004_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0601.dqdelta",
+      "source_sha256": "7f627469854f9bf0b2986cf78a4c288c9987829e792eecc48b876ce42f37df65",
+      "target_sha256": "395f98c93f23683e1045957bf8dd5462aaaad2e4d30f10a2a67d587bf0f6a45c",
+      "payload_sha256": "df7de8e4f9b2eabcd33b5b7676612157bb0fa63bb93aad028e7c5cd3b50850f6",
+      "target_size": 214696
+    },
+    {
+      "path": "romfs/ui/map/b005_001a_2d.pack",
+      "source": "romfs/ui/map/b005_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0602.dqdelta",
+      "source_sha256": "8c4aba943c0e494571c8d48c93bbcfb44a2046c641659b35df2a2d9fbb9dca74",
+      "target_sha256": "3f990715fe32c012084b8fa357dd8e1aee0bf6ddbfc8b181e8445eaac9c1f7b2",
+      "payload_sha256": "58d2c2c3648445f71f5b841c7d124fc13da419020c4e932bfef26601d996eac9",
+      "target_size": 219560
+    },
+    {
+      "path": "romfs/ui/map/b005_001a_3d.pack",
+      "source": "romfs/ui/map/b005_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0603.dqdelta",
+      "source_sha256": "8691d807bd734775d0dea4d3b0f77a02f214dba343c819f3a7528fc6acac344b",
+      "target_sha256": "db49c3e995a44da3cbd599168155c2cc29252d7d5b3385f543fef7478d1f1dfa",
+      "payload_sha256": "beec7b4f04e76ba36a2d01acd807db32b3a133dce51260dafb55df609a072b9c",
+      "target_size": 444968
+    },
+    {
+      "path": "romfs/ui/map/b005_101a_3d.pack",
+      "source": "romfs/ui/map/b005_101a_3d.pack",
+      "kind": "delta",
+      "payload": "0604.dqdelta",
+      "source_sha256": "58e3abbbe3b1d5116857db4424a596250b07a062e4b90762478fe2c9f3bc1fb1",
+      "target_sha256": "59425527d0f557df828e0ea07111136b84f71a874216531718fb47295dd61caf",
+      "payload_sha256": "7c0ea1ad8e32589d44d1040cf955d0288719c9d31f55445f8e0f14bf14f26157",
+      "target_size": 222888
+    },
+    {
+      "path": "romfs/ui/map/b008_001a_2d.pack",
+      "source": "romfs/ui/map/b008_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0605.dqdelta",
+      "source_sha256": "bd8f4dabb972fb60a576d22ccd3ccaa675cb3b8a69a59795e2f5acc4f28f5ab7",
+      "target_sha256": "da1048ef2792d15411d9e0000f570b67ab770a110c394cbd7d5ae0bbf97a257a",
+      "payload_sha256": "f573b0a324818aa350ed6379a373d6c60f00583d6532abf93d40244e3304a74d",
+      "target_size": 211368
+    },
+    {
+      "path": "romfs/ui/map/b009_001a_2d.pack",
+      "source": "romfs/ui/map/b009_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0606.dqdelta",
+      "source_sha256": "e782a00dfaac3b7e208b289b7a82fdf78502fb94c7f26b6829be5a21c059dee0",
+      "target_sha256": "442867e83540bcef3cff1d12f9e1daf41c1438837c5c0f199003a7733ca14aeb",
+      "payload_sha256": "587f7b25f268563f590ff60084901d778dc41ccec61357a9f4162720ed872015",
+      "target_size": 217896
+    },
+    {
+      "path": "romfs/ui/map/b010_001a_2d.pack",
+      "source": "romfs/ui/map/b010_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0607.dqdelta",
+      "source_sha256": "fa7f18cd73e3d3651ad942d401d32fa0e16827d3de26917bc20367ae9cfbf07b",
+      "target_sha256": "fb01a8deb4b0a26043ae9b86909cac9a4a4ecf17c1cf8d9968bf3169be120f0e",
+      "payload_sha256": "36fdb523e64cf82df5d473dc06f51e3151f812022f923f61dc253c8e0fcbf068",
+      "target_size": 211112
+    },
+    {
+      "path": "romfs/ui/map/b010_001b_3d.pack",
+      "source": "romfs/ui/map/b010_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0608.dqdelta",
+      "source_sha256": "a2b2640755581d8fbce0954488fcf705bb8c0850c10f602341efcecc1fb55800",
+      "target_sha256": "52931005089143e6a91affb46c2b3aa6814084410750efb39c34ee48b28d382e",
+      "payload_sha256": "7147b9c7f58c611122b4d7700c750111510b6c6ce16d8e5fe62804f4177d227a",
+      "target_size": 421288
+    },
+    {
+      "path": "romfs/ui/map/b010_002a_2d.pack",
+      "source": "romfs/ui/map/b010_002a_2d.pack",
+      "kind": "delta",
+      "payload": "0609.dqdelta",
+      "source_sha256": "d1c2e78ecbc21d1e7d486ab2edf7352961fe11d42f45b7273464639bb309ac14",
+      "target_sha256": "65373c670018993b7103d86f764d2b1838edf2d5d77d74fa66827077347fc243",
+      "payload_sha256": "88728b67c6edd1b5437980e951b351163e47244b43b019e55832c418704d87ce",
+      "target_size": 211752
+    },
+    {
+      "path": "romfs/ui/map/b010_002b_3d.pack",
+      "source": "romfs/ui/map/b010_002b_3d.pack",
+      "kind": "delta",
+      "payload": "0610.dqdelta",
+      "source_sha256": "bdfed358a109bce8bfb9f20f9c7737824069b99f1f7c3173f00cd9cf15039daa",
+      "target_sha256": "79e5199f3a2a70bfbeb5535eb5f43d64cf392f9171fc7a716c80b1dad1bfd2fa",
+      "payload_sha256": "7084c9b7a7bafe7eaa850bbdc00ded5f0248fb2ccb01a46684a2c417986427b9",
+      "target_size": 211496
+    },
+    {
+      "path": "romfs/ui/map/b010_003a_2d.pack",
+      "source": "romfs/ui/map/b010_003a_2d.pack",
+      "kind": "delta",
+      "payload": "0611.dqdelta",
+      "source_sha256": "cd5ea3222f42dc0d232b7d63c58d05d0d8df808237dd71039f21d7dd3600da3c",
+      "target_sha256": "b7c09ee2ee0493c21db38f4ea8def3cfe1183205ece8f7781a8a3973b4b9983d",
+      "payload_sha256": "3ecd1c1e0b73c47e9941de5c2bb65605fc592775935fcd7d0f50da370f621dae",
+      "target_size": 211112
+    },
+    {
+      "path": "romfs/ui/map/b010_003b_3d.pack",
+      "source": "romfs/ui/map/b010_003b_3d.pack",
+      "kind": "delta",
+      "payload": "0612.dqdelta",
+      "source_sha256": "3648fcd6f662b5ee7b06f29d05ed22dd93d60afd48f9bf92409eb6e74414f71b",
+      "target_sha256": "de3231ba68338abb54f15d2820523f4d0a5f3bd7ee3ddb1a1e48935979dd5edd",
+      "payload_sha256": "f4db2a25f138d4204a9fd63ddc00e2cdab026651791dc5bcbbc641709788e60b",
+      "target_size": 211752
+    },
+    {
+      "path": "romfs/ui/map/b011_001a_2d.pack",
+      "source": "romfs/ui/map/b011_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0613.dqdelta",
+      "source_sha256": "25b07bdee58cbf5c79735fa70077267732c775f111e32bb34b5666a6308591a7",
+      "target_sha256": "e5270567121983a71d7730d23a7d04570c31015b94b57c30368b8ef6ac6139a8",
+      "payload_sha256": "e14c3306cc9bcf18cf92e40b1c4ac7ff69f936ff36c2ae546ec82ff6340e2be2",
+      "target_size": 215336
+    },
+    {
+      "path": "romfs/ui/map/b011_001b_2d.pack",
+      "source": "romfs/ui/map/b011_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0614.dqdelta",
+      "source_sha256": "4c4abd6dcaedfc9ff60f6e4fb1102f3253a84948ee51c6ff4d5a4576a7d67414",
+      "target_sha256": "adf487468d5abec347a4416f4cf8577b55c45fc15aa676d7f40f8afd84ca8874",
+      "payload_sha256": "29e6b29d15a6b74b4c6a3081eb07d203fb85c60a41776be77fcded625d1c19fd",
+      "target_size": 214824
+    },
+    {
+      "path": "romfs/ui/map/b011_001c_2d.pack",
+      "source": "romfs/ui/map/b011_001c_2d.pack",
+      "kind": "delta",
+      "payload": "0615.dqdelta",
+      "source_sha256": "1c5e997a62c25c46565f7bedee339c1858afab40bbfff5157fad44c5fac29e3c",
+      "target_sha256": "6682464639817e62e9b1aac4c3fb255f9379fa9cab4799eed4a8c0891f98f65d",
+      "payload_sha256": "86d2758e51b39485e4afbe20f9c653064b6e4b67e411a9aa2dd71929ca5891ce",
+      "target_size": 213672
+    },
+    {
+      "path": "romfs/ui/map/b011_002a_2d.pack",
+      "source": "romfs/ui/map/b011_002a_2d.pack",
+      "kind": "delta",
+      "payload": "0616.dqdelta",
+      "source_sha256": "cc1976bba41be1cf8f982a952fe488cff140d183b8a7045f652da0aaa61032d5",
+      "target_sha256": "9aaa19aa523bf13301ff8faf1c166f72c1a08feed14e2cb4f0f1158d67100fd4",
+      "payload_sha256": "4738a0effe1e6a69f44158516ced5aeca9a10a09e2d32542dcf40b9c5f49782e",
+      "target_size": 211112
+    },
+    {
+      "path": "romfs/ui/map/b011_002b_2d.pack",
+      "source": "romfs/ui/map/b011_002b_2d.pack",
+      "kind": "delta",
+      "payload": "0617.dqdelta",
+      "source_sha256": "d75fddd23672658ce9f04c9fcae58966ed75ab33d3d151099c32f9385fb1d28c",
+      "target_sha256": "a032cdb79a32ad36139da076f89653a5dd00457708baca0fbd960029af7c7029",
+      "payload_sha256": "609b3cbe987460c519dd4034fd1b0d948780722bebdcc559ac913f42b82435d8",
+      "target_size": 214824
+    },
+    {
+      "path": "romfs/ui/map/b011_002b_3d.pack",
+      "source": "romfs/ui/map/b011_002b_3d.pack",
+      "kind": "delta",
+      "payload": "0618.dqdelta",
+      "source_sha256": "eb61df0318eb8a2a822dcd0742e1972aac895f9d27f6785c3e02d84f419a5d18",
+      "target_sha256": "70edaf2c7c1d4a156fdacd5efab65ddd72520d0ee944032f7fb0da8ab31c49e1",
+      "payload_sha256": "26e8e397db8190b83e70a9b9d676a5b1ce4144006b0c7d27d6d6b6323a2fed19",
+      "target_size": 215848
+    },
+    {
+      "path": "romfs/ui/map/b011_002c_2d.pack",
+      "source": "romfs/ui/map/b011_002c_2d.pack",
+      "kind": "delta",
+      "payload": "0619.dqdelta",
+      "source_sha256": "4c323855ac5fef66ed1dd0449d63c54db17156536019feb65e1bfbef912ca5dd",
+      "target_sha256": "df1ebf24198783e4584f4098034c965458a7efc3c1afeb9e52fed2c63b4d0ec6",
+      "payload_sha256": "74e2d044a6dfc52cbda28dfc44cc05a915f9b3e5a029bc6840f4117ea223c613",
+      "target_size": 210856
+    },
+    {
+      "path": "romfs/ui/map/b011_002c_3d.pack",
+      "source": "romfs/ui/map/b011_002c_3d.pack",
+      "kind": "delta",
+      "payload": "0620.dqdelta",
+      "source_sha256": "fc80544a54b02ef83bbe5a1920d76c1a12b407c989b7350647847156838cae5e",
+      "target_sha256": "8fee63f446813cea08542628777672636e75c81f5dd9cb5cfaaa8c73ecf4e4f2",
+      "payload_sha256": "e0c6a1b9c5034db13a0168c0c30fd9113dd998f73fb801d8e9b1e4f37d74f9bb",
+      "target_size": 211624
+    },
+    {
+      "path": "romfs/ui/map/b012_001a_2d.pack",
+      "source": "romfs/ui/map/b012_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0621.dqdelta",
+      "source_sha256": "58bee52b87660c8ff6f2db194d400539c94932dfc16dfbaafa6b8577335b827f",
+      "target_sha256": "dda3d4cc0b92104aa4fecc0852170bd567dea8165e2b0e0bbd915f76b9f088db",
+      "payload_sha256": "a17423a09985004b28cbec6e6f28e19e7e95bc9548d578d407fd28feedb38ad7",
+      "target_size": 217812
+    },
+    {
+      "path": "romfs/ui/map/b014_001a_2d.pack",
+      "source": "romfs/ui/map/b014_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0622.dqdelta",
+      "source_sha256": "4ee14a9a6347c9c545ea8705c1012be3a93a21b6fd690c48337fb61a9a46cfd3",
+      "target_sha256": "de6188520ba8cd1b047c2eae4f3cb0cb1841d70afaca4689d08f955089299976",
+      "payload_sha256": "c566309504694754af6c95992d44df89260ba0c27516b60a11b9c1749b2a51b2",
+      "target_size": 218664
+    },
+    {
+      "path": "romfs/ui/map/b015_001a_2d.pack",
+      "source": "romfs/ui/map/b015_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0623.dqdelta",
+      "source_sha256": "2dd1c70274f70b14a08ade11e72cf2a476f06965deaceaf7d4052e99a8162483",
+      "target_sha256": "49f563979560a9cec8aac29e3cadf472f0b001a2e2e2d74595ce7169907ebd51",
+      "payload_sha256": "d1977353939e24aaa74a73b3828c02f8152e70ffb41a1f4044b97141306c4bd8",
+      "target_size": 217384
+    },
+    {
+      "path": "romfs/ui/map/b015_001a_3d.pack",
+      "source": "romfs/ui/map/b015_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0624.dqdelta",
+      "source_sha256": "0958ff13139860c470962f67a9c3483728f564435e83b1db2ce8761ed9c1670b",
+      "target_sha256": "b108a3ef0c372415c3499650d06322cfcc82c5ab40bcda636ef309bee0a9cdfd",
+      "payload_sha256": "3881354ca884bb8fcd66a25497dfe8fa63a3fedee5dda5b604d6ffa2b1123b6d",
+      "target_size": 436264
+    },
+    {
+      "path": "romfs/ui/map/b015_001b_2d.pack",
+      "source": "romfs/ui/map/b015_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0625.dqdelta",
+      "source_sha256": "ee2c5ea5d798f84c3d08329917a83cf73416819925f7f4d8388812da3c02856a",
+      "target_sha256": "ef330ca07cb306d4b78537905f8dbd66a6336330f69d664d9b5b3711b5822045",
+      "payload_sha256": "f7059b5749d74cfb5974fb36add5d3956f320d2b8739d1977d9f99a839a608cb",
+      "target_size": 217128
+    },
+    {
+      "path": "romfs/ui/map/b015_001b_3d.pack",
+      "source": "romfs/ui/map/b015_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0626.dqdelta",
+      "source_sha256": "c04f2e46f44d32a99c2d5480c50dffd76ec7c7f30f859b66e9b5656a2f39e936",
+      "target_sha256": "a08fb6bccf69648b16170d8337c491d459bdefaf7878a10e05937bda743a9824",
+      "payload_sha256": "26a4abb1811c578338ec688b04d69bc90ffd203511a29eb4b73075124c5464fc",
+      "target_size": 434856
+    },
+    {
+      "path": "romfs/ui/map/b015_002a_2d.pack",
+      "source": "romfs/ui/map/b015_002a_2d.pack",
+      "kind": "delta",
+      "payload": "0627.dqdelta",
+      "source_sha256": "95735f8c6bfa6af64dc0684aa232e6754a916df2b96ec078722039ab86a46098",
+      "target_sha256": "6927231ba5d0fe7b85ef4fae17f57f46813f540c755059b3ced8cf0c12abfae0",
+      "payload_sha256": "bcff874d32097acd8e76cb4a7e107411d625592b5dbbf7664f79c2d6d51e0dd8",
+      "target_size": 210600
+    },
+    {
+      "path": "romfs/ui/map/b015_002a_3d.pack",
+      "source": "romfs/ui/map/b015_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0628.dqdelta",
+      "source_sha256": "e7592a1184948562773af49848c57da0ede0c2b056c4b3e8022288c1cc264d57",
+      "target_sha256": "20d4241f2d2b054fa4b169f8b3c2d1fcb7cd78309533a25eb6ea46589ce138a0",
+      "payload_sha256": "55441ebe1538aaac4f1f546fe871aea60dc42bc1329f96d0622c35f2bb23f91f",
+      "target_size": 211368
+    },
+    {
+      "path": "romfs/ui/map/b015_003a_2d.pack",
+      "source": "romfs/ui/map/b015_003a_2d.pack",
+      "kind": "delta",
+      "payload": "0629.dqdelta",
+      "source_sha256": "5f2dc6b7f98211f7fdbcb15576d1cf27d9dd8e6b259451aed1b4bbae0caa21d1",
+      "target_sha256": "bc8baa31b31757d6ac2312ba4c986c808902226028a72727cd31d37726cd2a79",
+      "payload_sha256": "42648dc5e06fa98f63431a4540f04d2a946f9c33cb650da48822b830e8b42842",
+      "target_size": 211752
+    },
+    {
+      "path": "romfs/ui/map/b015_003a_3d.pack",
+      "source": "romfs/ui/map/b015_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0630.dqdelta",
+      "source_sha256": "7c370d734c7ba72876278d364d2a114353e3e7ae27fe69f428ed03a57f931915",
+      "target_sha256": "4eafc418ead757f2713b82bf18c894193714a9ee536415f461857e67c195ab50",
+      "payload_sha256": "9553b347403af2f18a29242f2d84811e4a9198167969d50236ef0bae8a63c7e0",
+      "target_size": 637736
+    },
+    {
+      "path": "romfs/ui/map/b015_003b_2d.pack",
+      "source": "romfs/ui/map/b015_003b_2d.pack",
+      "kind": "delta",
+      "payload": "0631.dqdelta",
+      "source_sha256": "bb6e5752fb207925652ae688d73f19ce081b0222efa7022d9fcf75b3840190d6",
+      "target_sha256": "abc6f4ab0ddbcdde6ce418e744453a5bf0ca791e9c2118bcc3e4bebdc0ae3831",
+      "payload_sha256": "80a2dfca53b224ed76dd8b0ae05fb2b6d18866d154da090acb2c9cfe55fa1a55",
+      "target_size": 210600
+    },
+    {
+      "path": "romfs/ui/map/b015_003b_3d.pack",
+      "source": "romfs/ui/map/b015_003b_3d.pack",
+      "kind": "delta",
+      "payload": "0632.dqdelta",
+      "source_sha256": "a50f7d5514dbcc82da1ac342e98531d31d2d7dec3bc0e0f94830536c07006153",
+      "target_sha256": "204bad56609cc7daaf6022c03e9274dcd7cb2335ffaf783cf9503c976bda41e2",
+      "payload_sha256": "3a870e519d1f07fb8dacb0c4ac5555f8e17baddedbf62b935ed9620d48cacad6",
+      "target_size": 211368
+    },
+    {
+      "path": "romfs/ui/map/b015_004b_2d.pack",
+      "source": "romfs/ui/map/b015_004b_2d.pack",
+      "kind": "delta",
+      "payload": "0633.dqdelta",
+      "source_sha256": "0d23afa40a2fa2e7582643180209f52caefacee09bab8b9081247e1f4a5e6bab",
+      "target_sha256": "303a573dd5cac4bad5530f1e6a533df97362424f4025700dcebf62370be86879",
+      "payload_sha256": "939ea3f2c346389042079db70eaebcae8eb0795df28a9675c0cf1b8c6dec81fa",
+      "target_size": 210984
+    },
+    {
+      "path": "romfs/ui/map/b015_004b_3d.pack",
+      "source": "romfs/ui/map/b015_004b_3d.pack",
+      "kind": "delta",
+      "payload": "0634.dqdelta",
+      "source_sha256": "d718e66f51b0cc024881e23f187d216838e37171c5bc7c40aaf3ba49afbc17d5",
+      "target_sha256": "d96bdf20da597299bd758da54490eb9e790fb42efcda0b0447cfd4fba176ecc4",
+      "payload_sha256": "12a175e8699343fde4d618fe7ea9cbf23e5d86dc0a57dc133186010cfc4ea816",
+      "target_size": 213160
+    },
+    {
+      "path": "romfs/ui/map/b015_101a_3d.pack",
+      "source": "romfs/ui/map/b015_101a_3d.pack",
+      "kind": "delta",
+      "payload": "0635.dqdelta",
+      "source_sha256": "00ec117619a0ac65fda91728153ea554d53cfc60fc9878aa16758a136cac747b",
+      "target_sha256": "d8617b8a17ef4c0ade0d16a9337af443c9082347bfe126888d2d83a4f02c9910",
+      "payload_sha256": "7efaae8b6182ceb61b13cef095d648620efbb84121b046cbd95bc8d0c875e177",
+      "target_size": 220712
+    },
+    {
+      "path": "romfs/ui/map/b015_104a_3d.pack",
+      "source": "romfs/ui/map/b015_104a_3d.pack",
+      "kind": "delta",
+      "payload": "0636.dqdelta",
+      "source_sha256": "18485302ea30a8d108375c14ea870f977420aa79dff4fcb0311198e1135c3407",
+      "target_sha256": "aecce2a482952d76d5b9e8e7f97e0ed0fe3cc33f99492e67b333a9df1f53c149",
+      "payload_sha256": "a4bb55aa553115dc732d26948dd271699cb34bd669d098bd1300dcce3fd41823",
+      "target_size": 215592
+    },
+    {
+      "path": "romfs/ui/map/b016_001a_2d.pack",
+      "source": "romfs/ui/map/b016_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0637.dqdelta",
+      "source_sha256": "a7557809f2510f0f47c19d566f9136270d761eba039be8c6c238105eb5bea492",
+      "target_sha256": "e225363aef2824e2d82661dee6025a0ab97f8871e14609e6a477aca0c356d186",
+      "payload_sha256": "df803e57a77feccb8346621e226d6d302f53706e8996091ae3e7d4143f6ce4e1",
+      "target_size": 216104
+    },
+    {
+      "path": "romfs/ui/map/b016_001a_3d.pack",
+      "source": "romfs/ui/map/b016_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0638.dqdelta",
+      "source_sha256": "3198127b2de130b34a713107ba05cf131fa86130a4ab6a2302b328ae62aeca78",
+      "target_sha256": "4e72cd11c896ac6e18f0291da347378278e5190303c32df736fad9cd51e153c6",
+      "payload_sha256": "8c12e03dcdf0b77b5a342345aafe9ed6e6b1c846fbb37e7528566d78a1956177",
+      "target_size": 218024
+    },
+    {
+      "path": "romfs/ui/map/b017_001a_2d.pack",
+      "source": "romfs/ui/map/b017_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0639.dqdelta",
+      "source_sha256": "ef11d5ea7bda4c7ef72bb88a8ff6d9de1eb8b87e17c3054ac1f4933e134ed245",
+      "target_sha256": "1cfeb6f4420f2b6ee9fdf4492b9fca9f959220aa713ad8b32c6012c425966a07",
+      "payload_sha256": "b1bf8d7e5865d20d1b65b9cbe52b4af6cabf14817c042d9a1d3838207d12fe29",
+      "target_size": 217512
+    },
+    {
+      "path": "romfs/ui/map/b018_001a_2d.pack",
+      "source": "romfs/ui/map/b018_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0640.dqdelta",
+      "source_sha256": "e3d53b63c42121c883ac8bee83e66120ed063b81514675e5431bc492e9c7ef80",
+      "target_sha256": "a8e357b53b1aafd13a47809fd69c25aad2d9eb3ac1a7c27935bf096cd00c66ca",
+      "payload_sha256": "418a05324fbfffaedcbb075db73a44f5bb42bce0d97fd666b6e17ee4338a4c66",
+      "target_size": 215080
+    },
+    {
+      "path": "romfs/ui/map/b018_001a_3d.pack",
+      "source": "romfs/ui/map/b018_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0641.dqdelta",
+      "source_sha256": "3328cccbbfff4048f97bf42be078d02533b8b8721981c6ff5eaa0d6a5ded947c",
+      "target_sha256": "796f9df07d6f8e8a16cbdc02e30236aeb74f56afbb18b519335c27c8ce735e6c",
+      "payload_sha256": "9a9a99cfc4895911a2b9502178b551f24ec3c13a29fcde542d39121739a38187",
+      "target_size": 215080
+    },
+    {
+      "path": "romfs/ui/map/b018_001b_2d.pack",
+      "source": "romfs/ui/map/b018_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0642.dqdelta",
+      "source_sha256": "8a6eac7e3d952fdfb39fdb214e8d4fd0baa6085da9af9f63aa2f8dc7ef3d7bba",
+      "target_sha256": "5a01d553165d1bfa17c001b784e1083431e84086e300cc0c5350eee2b167df2a",
+      "payload_sha256": "6c3af2467cf0367397f79adb3f3735991d27e9aceae585a5c694e16bcef59136",
+      "target_size": 217128
+    },
+    {
+      "path": "romfs/ui/map/b018_001b_3d.pack",
+      "source": "romfs/ui/map/b018_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0643.dqdelta",
+      "source_sha256": "995147eaa32f048de00ca58998b07bf045beb294fae2119b626e1240d9eecf36",
+      "target_sha256": "e43abd8598d6c3d64e120c566c36914fad8df22f46f43b3a760501b5fc65258b",
+      "payload_sha256": "3847d042f5ed5393a646c85a0c7c3a1a468699be9b96f380b7f87fea632cebea",
+      "target_size": 217640
+    },
+    {
+      "path": "romfs/ui/map/b019_001a_2d.pack",
+      "source": "romfs/ui/map/b019_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0644.dqdelta",
+      "source_sha256": "59e647e0981dd2facfbc47de0e1400c2fed94fff599f5b27dce8de868234d697",
+      "target_sha256": "f84830094d8d1cb90cc8b5b754ddae82edb5c461ae4c51a28e1963abc2e29bb3",
+      "payload_sha256": "37331d00f95cbf0a824e45a0d49836eb760c4cfa3a9cfa124c152e30fae1f966",
+      "target_size": 216616
+    },
+    {
+      "path": "romfs/ui/map/b019_002a_2d.pack",
+      "source": "romfs/ui/map/b019_002a_2d.pack",
+      "kind": "delta",
+      "payload": "0645.dqdelta",
+      "source_sha256": "777496962d1d8d70ec8d3d10cfbd78c0660f5d549a588e7d2b116ed58d93c36f",
+      "target_sha256": "272aecf4e511a70fbc94abf1c97b7c767a0ef6e709c473e6a1a00c1952b5bc7f",
+      "payload_sha256": "274c38f4517eb04141ddf2d7e3dd1c9b8376a071f02d202ef3f21b7e486b7da2",
+      "target_size": 210516
+    },
+    {
+      "path": "romfs/ui/map/b020_001a_2d.pack",
+      "source": "romfs/ui/map/b020_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0646.dqdelta",
+      "source_sha256": "f4252307ee86bbaa0d6bd85ddd74749b6452b292a54b84497aa64d0ede5d77bb",
+      "target_sha256": "4159694dd1e408120d921b22a58eee722bc4ecaaad83209dda081768b38f407c",
+      "payload_sha256": "c2e2b03d8b2af40bb42af31c8cfb58c170c410731450a4dcdd47d8eb31c64758",
+      "target_size": 213160
+    },
+    {
+      "path": "romfs/ui/map/b020_002a_2d.pack",
+      "source": "romfs/ui/map/b020_002a_2d.pack",
+      "kind": "delta",
+      "payload": "0647.dqdelta",
+      "source_sha256": "2f97b3df9cda0ea4e99edbed67076f1f70f43203a60f4414a567ceb1f2b9c26e",
+      "target_sha256": "b096a005d6efdc6dcc7803600f6a86a9a55e55871e6eab971366c0c91a37bcd2",
+      "payload_sha256": "f8a1c47e2e084d6d6cce2df5f86d1b9f204ed844a11f1b13d2ce2e52cdb8c89d",
+      "target_size": 213032
+    },
+    {
+      "path": "romfs/ui/map/b020_003a_2d.pack",
+      "source": "romfs/ui/map/b020_003a_2d.pack",
+      "kind": "delta",
+      "payload": "0648.dqdelta",
+      "source_sha256": "e04923192232dbb42bdd2f856909a2ef235037b0e5f1e1333e0663019bae9d4e",
+      "target_sha256": "3b20a07ad82ce7112501d7e8569792f4391804611088547f705371b2c3b9897a",
+      "payload_sha256": "f7f9a98882a7c7751e0fabf2c7fc5c4c7bb768ee273d3f14380cc7cbbf43f8f5",
+      "target_size": 211752
+    },
+    {
+      "path": "romfs/ui/map/b020_004a_2d.pack",
+      "source": "romfs/ui/map/b020_004a_2d.pack",
+      "kind": "delta",
+      "payload": "0649.dqdelta",
+      "source_sha256": "70d224e260e2dd17e69c34dfdfc6b263ddee00cd1d38dd54028808c41f1e4873",
+      "target_sha256": "942b31ab9622fa29679925ffabf843cfa4ec4e5106d82c626d7c2119da547049",
+      "payload_sha256": "0cf4c5174271f0f0ee9d5df7bc3813c7b8d713ad38cedc54270f5d96bb124b57",
+      "target_size": 210728
+    },
+    {
+      "path": "romfs/ui/map/b020_006a_2d.pack",
+      "source": "romfs/ui/map/b020_006a_2d.pack",
+      "kind": "delta",
+      "payload": "0650.dqdelta",
+      "source_sha256": "c41fbb82a3fa3aae3d2d44ea47946756e55d023339c8c4423e085c58b8093e06",
+      "target_sha256": "84718ccb937917efca1cf70b938ee499dac74dd6753d81baf56c5cb0600e00bf",
+      "payload_sha256": "e424311f0d8650eaea847da358e48f0d3fde2284edd1230288191d4114ace85f",
+      "target_size": 211016
+    },
+    {
+      "path": "romfs/ui/map/b021_001a_2d.pack",
+      "source": "romfs/ui/map/b021_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0651.dqdelta",
+      "source_sha256": "b96a52d1de1cc75c8e50bfff3b6f02a014f4490ddaef3f4edf1a540a5f8b0c5a",
+      "target_sha256": "ce5701925fd711f96e1f9d33087ca7d7452d7dc7be8cf74452ba46d688216c99",
+      "payload_sha256": "d05ecf26b987b40b0e4c4d93f40c1b803137bd584c894c6126e564ad5727fc8d",
+      "target_size": 217512
+    },
+    {
+      "path": "romfs/ui/map/b021_001a_3d.pack",
+      "source": "romfs/ui/map/b021_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0652.dqdelta",
+      "source_sha256": "d294a3f3c5e6999d481b8eb4609f54a2c39a19b27d837588449379cd86a6ba77",
+      "target_sha256": "b3abed5157885a3324a2999300dafa4d86a1960aaa7279f5b250d907f20d6d12",
+      "payload_sha256": "075b1a6331d7f5f6819c0dddf763dc74575891fbf87646cebc25650585cfb713",
+      "target_size": 219304
+    },
+    {
+      "path": "romfs/ui/map/b022_001a_2d.pack",
+      "source": "romfs/ui/map/b022_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0653.dqdelta",
+      "source_sha256": "6ca675d337be7d2f9709e54e68c458869a770c1a1cc52e9a44bfa56d3754b120",
+      "target_sha256": "302dd4c330886cb83ea0e3385e5bea985357ce48a52aa1974d7bcd4fbbcdc201",
+      "payload_sha256": "d3a0ec5ad446a50f3e828b235b6695116abe9508e427cb48495659f22573cab7",
+      "target_size": 215592
+    },
+    {
+      "path": "romfs/ui/map/b022_001a_3d.pack",
+      "source": "romfs/ui/map/b022_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0654.dqdelta",
+      "source_sha256": "26ecbae04b745960d79e7913ec948a1b0097dec29327d62277601c23e59f5558",
+      "target_sha256": "d6b80749cc57bd4a2773c8b0a8dbbfc2f862ce2a85ac4f827beb9f196e37221c",
+      "payload_sha256": "bd8a32560617c59f6c1ef249fe4d57dca45bd3a728ec65cb07a3f5cf712025bb",
+      "target_size": 218024
+    },
+    {
+      "path": "romfs/ui/map/b022_001b_2d.pack",
+      "source": "romfs/ui/map/b022_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0655.dqdelta",
+      "source_sha256": "9efd667bbfb583c66ace49d9a85799de81100ef656349014033a752e7b1cbede",
+      "target_sha256": "e66e5874b0adda4a14a8cd477af9f41934ff71d34bb9b147e4a9dda1b5e50398",
+      "payload_sha256": "330d25de9e0ca03ab8d18bc60476ee37766c90efb4444393cb1bedc7fdb36e69",
+      "target_size": 215592
+    },
+    {
+      "path": "romfs/ui/map/b022_002a_2d.pack",
+      "source": "romfs/ui/map/b022_002a_2d.pack",
+      "kind": "delta",
+      "payload": "0656.dqdelta",
+      "source_sha256": "dcfb046f4aad0f1017e8bc978888ca899cb7fe3ba07fcdb764145ccb7c5e6f6d",
+      "target_sha256": "c5937f05fa478fe26ab231d1c45a9902c2850d2482ae2e34879046ab2d287ea3",
+      "payload_sha256": "9d2769bb577ed8c8b065b84e8529c93f35b8926217fb33304eb68a35782e0c7c",
+      "target_size": 210344
+    },
+    {
+      "path": "romfs/ui/map/b022_002b_2d.pack",
+      "source": "romfs/ui/map/b022_002b_2d.pack",
+      "kind": "delta",
+      "payload": "0657.dqdelta",
+      "source_sha256": "5028cbf28f5d617a67a9cf072d3efe6912c3bc18135637f9c02b72970a2e5c17",
+      "target_sha256": "c6886367261e5bfd1f6730773d5b8a3022149f42122c621806399f3d9a1bd2c5",
+      "payload_sha256": "4058ae76749a0b91a7f7347eebf29f2dbd4ccaaab2f479c5d676edf192fba875",
+      "target_size": 210600
+    },
+    {
+      "path": "romfs/ui/map/b023_001a_2d.pack",
+      "source": "romfs/ui/map/b023_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0658.dqdelta",
+      "source_sha256": "a2c11cd8cb69ba436b37bbea05ca361389d78bd308aef14f59f9e193fae77c01",
+      "target_sha256": "1c6c9340a63a8d8bd9870390b685f21fbc9af4c9f0168929cd94c58fcdea8cb5",
+      "payload_sha256": "8ce282830986cdf29a553948823ed71b0ba63001b27074f7e2d81b4b0d276a8a",
+      "target_size": 214824
+    },
+    {
+      "path": "romfs/ui/map/b023_001a_3d.pack",
+      "source": "romfs/ui/map/b023_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0659.dqdelta",
+      "source_sha256": "db95f7913720b514dc94567a971ba14df62c603c1100317f22794c08a2a0aaa7",
+      "target_sha256": "ffe9634ba0693bb2cf854291bbf5a3c8900e062a768d3395aaa8bcac188587c9",
+      "payload_sha256": "d9fbbfcb947aeefb4b42e0f2e14b364ff5aa0bd8628fb92002225ed68315c864",
+      "target_size": 215592
+    },
+    {
+      "path": "romfs/ui/map/b023_001b_2d.pack",
+      "source": "romfs/ui/map/b023_001b_2d.pack",
+      "kind": "delta",
+      "payload": "0660.dqdelta",
+      "source_sha256": "f67034adfd74d5aa3e2bd174e6069d7687d21e172ece08c3df7be77c956961a9",
+      "target_sha256": "02ea2be01b42491d915eb7b39a47e2aed39da3087ceb2d3f0f37f04a498d4c8d",
+      "payload_sha256": "d50b7b77a832a3ba7a3d5be55add80235971727b17830dca1ae88a4f0eaab283",
+      "target_size": 210344
+    },
+    {
+      "path": "romfs/ui/map/d001_001a_3d.pack",
+      "source": "romfs/ui/map/d001_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0661.dqdelta",
+      "source_sha256": "d1d4432c420a9249c1fea02c0c2c8b3199aadd5c65955f263cefd423ec4e745f",
+      "target_sha256": "4fd596022d0f90d87116558d6bc087ada18940981bca30d65dc1cf75c00b19ca",
+      "payload_sha256": "fcd26190a7e08b7af187d44c554e6f486b0d94f8c2a43625c753d793be35a3a3",
+      "target_size": 372008
+    },
+    {
+      "path": "romfs/ui/map/d001_001b_3d.pack",
+      "source": "romfs/ui/map/d001_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0662.dqdelta",
+      "source_sha256": "e9c21b5190b5f2f420ed94caa75a5b26808e4a02847c3e303d7d73c27341abd9",
+      "target_sha256": "8c63b844d883b8889cba3383c557a8448332a0d269c6720f4198cf8e62a30c9a",
+      "payload_sha256": "c226866a9c8727b418a383b6187c7dd9db8ef25d7a58f6f982fb221637258922",
+      "target_size": 395816
+    },
+    {
+      "path": "romfs/ui/map/d001_002a_3d.pack",
+      "source": "romfs/ui/map/d001_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0663.dqdelta",
+      "source_sha256": "bda73434fb37ef23252baf647a85aaf75670ed83fd5c86b97b7610edd4c7d800",
+      "target_sha256": "ef2652ef3b8ec6c7cb4d131ae3c8630d38f0d80eb3a392aaf9b07da161fcd0b8",
+      "payload_sha256": "1ebf11d79f85ecc3c816d9b131e1dc4b974ff93fece76f318c816edc4db9e486",
+      "target_size": 390440
+    },
+    {
+      "path": "romfs/ui/map/d001_002b_3d.pack",
+      "source": "romfs/ui/map/d001_002b_3d.pack",
+      "kind": "delta",
+      "payload": "0664.dqdelta",
+      "source_sha256": "dec4d0a64dca858ba9fcf66b12aa457122bef768a47658e42624ed029ce52782",
+      "target_sha256": "171d95b4ed60685611a61716ea5197d4ea676c1f324b3dc68f91ce87e0e9c8db",
+      "payload_sha256": "c347b27feafb64075325311534c69b7dab6659561e0edba9934bf6202a36832a",
+      "target_size": 224680
+    },
+    {
+      "path": "romfs/ui/map/d002_003a_3d.pack",
+      "source": "romfs/ui/map/d002_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0665.dqdelta",
+      "source_sha256": "9570987457858f108d8667170242007b5b200bf20cc9eae9de1abd8f527a4c88",
+      "target_sha256": "0d217de0bab1a60eb8631da53aca19249abbde34361bd9645300c349342d278a",
+      "payload_sha256": "73400e0ddf23fdd54b95e3d66cb46916d171fb8eda01b6d8115079e66cc2dcc8",
+      "target_size": 357928
+    },
+    {
+      "path": "romfs/ui/map/d003_001a_3d.pack",
+      "source": "romfs/ui/map/d003_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0666.dqdelta",
+      "source_sha256": "70206b8229128431db761fea09e65f887be41628a61ff0493771d3af657904b2",
+      "target_sha256": "d638ce5b1a338a4c1f57f85b5d8f148f770148536254958eeef8764b75e3abb4",
+      "payload_sha256": "5e9b8a0482196b3188772512f8f660c5ab7f1b6dfa79b5c02cd52e0ae66c34d2",
+      "target_size": 625832
+    },
+    {
+      "path": "romfs/ui/map/d006_001a_3d.pack",
+      "source": "romfs/ui/map/d006_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0667.dqdelta",
+      "source_sha256": "7988be26ab03ffe0a45e31c40b8447c3f399094ce7e626e0ee5c4e6eb7d5be20",
+      "target_sha256": "22a94bba60fda138d9d5512507ead4141b0f6d67d8aaf107ab487f524f34dcdc",
+      "payload_sha256": "650349bff66cd0ff066947a54c496e5916b8326d49aa7810bd60536da1e48314",
+      "target_size": 358440
+    },
+    {
+      "path": "romfs/ui/map/d008_001a_3d.pack",
+      "source": "romfs/ui/map/d008_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0668.dqdelta",
+      "source_sha256": "6d01fc67ed4ca995ae1270dae1d5a902a21442c110136e747819ab949b141097",
+      "target_sha256": "98725c36254184547279a10a75307e5a7c44815fe934e7292162239320959bd0",
+      "payload_sha256": "8ca5de0bec6d71be510734e9517d0e3ebd435bec9615df388e3ecbd2d5256670",
+      "target_size": 700840
+    },
+    {
+      "path": "romfs/ui/map/d008_002a_3d.pack",
+      "source": "romfs/ui/map/d008_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0669.dqdelta",
+      "source_sha256": "9873e7a5b58185f4da49fcf543bb8f0f63e6db400bb6626a64b6fb35e816279d",
+      "target_sha256": "5619e721217ef90b01fb5fecdc0cd2df0467b8204f41f6dcda1db0d6488d5be5",
+      "payload_sha256": "f396de6d2fba306d2e3c01db49e3ff21f7cc0bd66a7bc9e4fd4b8af184618127",
+      "target_size": 354216
+    },
+    {
+      "path": "romfs/ui/map/d008_003a_3d.pack",
+      "source": "romfs/ui/map/d008_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0670.dqdelta",
+      "source_sha256": "370cbd912f721461a9ceb0c9ec18ca4eacf5cb097c663c3aff1691652def0e04",
+      "target_sha256": "f6633103f1cca6c6842536340cb726c8ee0e589ce228eb8ca1a145dc6779368e",
+      "payload_sha256": "fda59d49083b650e3a13c684d03834acce3df1458fafd349f0ec6868a8d021ad",
+      "target_size": 577832
+    },
+    {
+      "path": "romfs/ui/map/d010_001a_3d.pack",
+      "source": "romfs/ui/map/d010_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0671.dqdelta",
+      "source_sha256": "5c4e42318a4686e6288da4a233d5e07f9ae43f3e7feaabcfa694d45dfd948b45",
+      "target_sha256": "19d4a715e173a74cbf7a79f8440200c1dea77c33c7855973a49e851554e613ce",
+      "payload_sha256": "7c36ef7bb7aac255c7693d21658cadfb019589897278debd18f4d663e986bff9",
+      "target_size": 354728
+    },
+    {
+      "path": "romfs/ui/map/d013_001a_3d.pack",
+      "source": "romfs/ui/map/d013_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0672.dqdelta",
+      "source_sha256": "7e29e3e8cfdb45a33a506126924f2ede826907dd9966d6c06af3f2ab5fd24aea",
+      "target_sha256": "a72b52432d8b910847fc247cb77c625026540006e7ecb26bcbff57caabacff95",
+      "payload_sha256": "bd9ab4a3ab26d81cb038a288c7d35505f8ef5f9e90655ed573357a2b002f0394",
+      "target_size": 487464
+    },
+    {
+      "path": "romfs/ui/map/d014_002a_3d.pack",
+      "source": "romfs/ui/map/d014_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0673.dqdelta",
+      "source_sha256": "bb55157fa29c49c8526138e8fcb9581036f223f9a90cc36d6574a944464b2a4b",
+      "target_sha256": "5f5ba97a5f4e452d608b30da1a31aa52dbe0256837580195554a1ad854ca88ab",
+      "payload_sha256": "066687d48388819ca92274193716552c0e3d828bbe626479e0ea1f6332775eb6",
+      "target_size": 222376
+    },
+    {
+      "path": "romfs/ui/map/d014_004a_3d.pack",
+      "source": "romfs/ui/map/d014_004a_3d.pack",
+      "kind": "delta",
+      "payload": "0674.dqdelta",
+      "source_sha256": "7cd55fbe9b4936c8998953ab9f02d8d38e93c32b0c48e6740461dec4fa58c9b9",
+      "target_sha256": "2f3d1002f6d46eb6d7e636f8b70efdc8f977409fd93fc2d3ff570cf39754f0cb",
+      "payload_sha256": "7c1fae3f21bb8f71df9481774e8baa8ca368df82c7f44a3b5c069666418878d7",
+      "target_size": 711464
+    },
+    {
+      "path": "romfs/ui/map/d015_001a_3d.pack",
+      "source": "romfs/ui/map/d015_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0675.dqdelta",
+      "source_sha256": "95df95971b25ddf82716477b113dffb00850d05b95e8786431a62a2c025cd53f",
+      "target_sha256": "5839c1fe94015e0b42ed1b944a7f0adfd582166a3b96f7f22e2ce99f0ad77878",
+      "payload_sha256": "1ec0f3950d823b4bb52bfa558a93d8f2637a1401bd50c7b32a04dcf72a4afc3b",
+      "target_size": 1364648
+    },
+    {
+      "path": "romfs/ui/map/d015_002a_3d.pack",
+      "source": "romfs/ui/map/d015_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0676.dqdelta",
+      "source_sha256": "211f5576f3f8c1d5878de2be925fbb90ab8bba5014d6db38224ffe6aa444d3c3",
+      "target_sha256": "6732bec6bfcca5b1a2e702f4ac14d5c9af8d61cb3b4eb2a21ba94dc31de743f3",
+      "payload_sha256": "2e1a63a89ece139662dd5e8876b2a9033b0258ebd968d53242d1508061c55649",
+      "target_size": 1286568
+    },
+    {
+      "path": "romfs/ui/map/d016_001a_3d.pack",
+      "source": "romfs/ui/map/d016_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0677.dqdelta",
+      "source_sha256": "3c39039d233774ad611f526d346ad8dd8ae2547f997bf6e616a6cec755c3c292",
+      "target_sha256": "1da4fcf477ea4da4df7ce7296646b0267e163eb274cceb53097fa73a5a0399ec",
+      "payload_sha256": "d52e43ee20ab2c59ca8e55a1a1cef9242a4baaed0a2fdd2bb12c5246d11d0e47",
+      "target_size": 1298472
+    },
+    {
+      "path": "romfs/ui/map/d016_002a_3d.pack",
+      "source": "romfs/ui/map/d016_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0678.dqdelta",
+      "source_sha256": "4e797ccd855056d4a30d736428a2d4d8b14f4f547787bb67b8364372f831dc1b",
+      "target_sha256": "e416af36dd73415e4cb62947c3b126873765c22c1c05dfe18d59e442db300535",
+      "payload_sha256": "0790f413a2262a35d70ea506551a9758dc31bc6695c0e54698cf3c62c1ff156b",
+      "target_size": 357772
+    },
+    {
+      "path": "romfs/ui/map/d016_003a_3d.pack",
+      "source": "romfs/ui/map/d016_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0679.dqdelta",
+      "source_sha256": "8a886ad43d121a88c05807c1983f0e29bbffebd8a65c8ae3c1a008612e0a66c6",
+      "target_sha256": "7dd2064f13dcff32348eefdf06656e47ef4cfb158cb062521ce6021ebd93ec10",
+      "payload_sha256": "ae82a514a030cfcb4f65351de17de0d58d6891af0f0f1789ef7266c8eeb484e7",
+      "target_size": 357544
+    },
+    {
+      "path": "romfs/ui/map/d016_004a_3d.pack",
+      "source": "romfs/ui/map/d016_004a_3d.pack",
+      "kind": "delta",
+      "payload": "0680.dqdelta",
+      "source_sha256": "803a6bbf460ee3633eaa0383411623ee1aafc31fde3b3afe99dd3e2917e38d80",
+      "target_sha256": "9aadc11210883a4421259ab936caf986cfa117a84efcaa8967a3ad16682470a1",
+      "payload_sha256": "b88cec850f511ed71f6e1425c39e0c628e1f62523b5fa302c6de1b75696d58ea",
+      "target_size": 357032
+    },
+    {
+      "path": "romfs/ui/map/d016_005a_3d.pack",
+      "source": "romfs/ui/map/d016_005a_3d.pack",
+      "kind": "delta",
+      "payload": "0681.dqdelta",
+      "source_sha256": "24d1823f24799b7eeb6d516f9d11cc04bd93268d6dd7f91c08e28cb07a6b5526",
+      "target_sha256": "6cce87324aec5afa122c17f0c095c773dce31dda4ce55fe91983518259acff15",
+      "payload_sha256": "594cb577ee95feb6f93ce2058aa53cc208268e544f9b995c01eac83deed732f5",
+      "target_size": 358056
+    },
+    {
+      "path": "romfs/ui/map/d016_008a_3d.pack",
+      "source": "romfs/ui/map/d016_008a_3d.pack",
+      "kind": "delta",
+      "payload": "0682.dqdelta",
+      "source_sha256": "17192c0903be9f2e8085bff5f1a5b822cb74acadd484f131d051512f818c3b11",
+      "target_sha256": "74e47335fc8b030dc36c3b2f60a8bb8d3cfe480790b0516c833a561a4ce5ee02",
+      "payload_sha256": "1fd3d11ff5b132876e3325b55578f71704540ef9c243b5f695ebe8632b9b7a1b",
+      "target_size": 155432
+    },
+    {
+      "path": "romfs/ui/map/d016_011a_3d.pack",
+      "source": "romfs/ui/map/d016_011a_3d.pack",
+      "kind": "delta",
+      "payload": "0683.dqdelta",
+      "source_sha256": "2ca9dd7503cea923f6d2e196e1aed8f69a9f0e0d4237519bddea7beda98a519f",
+      "target_sha256": "975c1a1b08b181b206ba0d11b2251fd866a568c2eb23f3d8f9480e2cda1adc16",
+      "payload_sha256": "f739460b61d887d5f399d97e4baebe3f42e657abe8648001140e5c01e8b0fcf4",
+      "target_size": 351656
+    },
+    {
+      "path": "romfs/ui/map/d017_002a_3d.pack",
+      "source": "romfs/ui/map/d017_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0684.dqdelta",
+      "source_sha256": "52d0657f60a05d419d2dfbd3d630edacc2773e4503da757fb6f9ed608238a543",
+      "target_sha256": "93e02af885ed0f03fab76b59d5cbff693f8bfac5884e6f08185635131a6f3452",
+      "payload_sha256": "9c7be7299cceefb969f2d3a569088d9d53fa049f302c0e428b2ab49c79f7627a",
+      "target_size": 1052072
+    },
+    {
+      "path": "romfs/ui/map/d017_004a_3d.pack",
+      "source": "romfs/ui/map/d017_004a_3d.pack",
+      "kind": "delta",
+      "payload": "0685.dqdelta",
+      "source_sha256": "2948dc12294dbe508c00dacbd72c93c711924908ce95a37353d3d8eb33e86f1b",
+      "target_sha256": "414089f484e67169feb73c40ecde3fe6d14c6f5120c02088609a0f1aaff6482f",
+      "payload_sha256": "5d6c918c49bd51eb20e8256067f8bf2e0649282c33a9df31c92be25e3d9878ea",
+      "target_size": 154280
+    },
+    {
+      "path": "romfs/ui/map/d018_001a_3d.pack",
+      "source": "romfs/ui/map/d018_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0686.dqdelta",
+      "source_sha256": "e8f05c87bfc1daf296313275785b47a403fa2ebb58a9047878cbed5f75a22d70",
+      "target_sha256": "d7e71527d05e83575ad25ac584537698dc9ba8365b17cc86f044053f1e8e1f7d",
+      "payload_sha256": "70ff1abb7f77b84324e1cd24228526e79e194976457efd5fd0ad7663a43f9b36",
+      "target_size": 354088
+    },
+    {
+      "path": "romfs/ui/map/d018_002a_3d.pack",
+      "source": "romfs/ui/map/d018_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0687.dqdelta",
+      "source_sha256": "42d3d262f18d5b840d5cd9d8286cb1f2c5f522a2da3891fd7223a40549b18f66",
+      "target_sha256": "33cf62a2e0e717349cf29f59e240f962b03cad12dd3122c351946a5c89b1bd78",
+      "payload_sha256": "bac83d7820697c7968b8375285b3628bcc134d3cd20abab005fa9dfc0694fcb8",
+      "target_size": 357416
+    },
+    {
+      "path": "romfs/ui/map/d018_003a_3d.pack",
+      "source": "romfs/ui/map/d018_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0688.dqdelta",
+      "source_sha256": "970ab079750f7b9b699e9a048d07cc634fa213f1bfeca574b1754cc753a85c17",
+      "target_sha256": "270c8d30a17e1e9219c60482b64f35e1e0168bd86d90f9db859572af3d66f24a",
+      "payload_sha256": "37b5430bc192633ca3eef54b5b4bf532927cfcc92c2f4671dc37911ce7806aa4",
+      "target_size": 355496
+    },
+    {
+      "path": "romfs/ui/map/d018_004a_3d.pack",
+      "source": "romfs/ui/map/d018_004a_3d.pack",
+      "kind": "delta",
+      "payload": "0689.dqdelta",
+      "source_sha256": "83d0256402b7093f05f1447820d9c6b0bb1b5a221bfa56f0d78656b30fb7d835",
+      "target_sha256": "46dbfb26fd4dc1b20c3ef75276b79bbd9a428ca5330ea123125c92af230c462b",
+      "payload_sha256": "19841dd415f9b9d8f073952ff08c06bb03dd2b0042a98e6e6fc02bf3de566c67",
+      "target_size": 356776
+    },
+    {
+      "path": "romfs/ui/map/d019_005a_3d.pack",
+      "source": "romfs/ui/map/d019_005a_3d.pack",
+      "kind": "delta",
+      "payload": "0690.dqdelta",
+      "source_sha256": "0d745ae84156169fa8371d8b3282a178b00d61e371984d6a3aad554c0158105f",
+      "target_sha256": "aed2ef42a6e3d07beac46e4e5bb0448ee9fb28aa6c48612929898b93d2ca1aa0",
+      "payload_sha256": "43ad27b6eb6eb24070015e7dd8a0649bdcf0438d77c4c4022bd2d758c3198b01",
+      "target_size": 212136
+    },
+    {
+      "path": "romfs/ui/map/d019_301a_3d.pack",
+      "source": "romfs/ui/map/d019_301a_3d.pack",
+      "kind": "delta",
+      "payload": "0691.dqdelta",
+      "source_sha256": "89df5826e7bf15a6cc64f78bb5148aff71c289843bd0fcfd28d622bdb70930b3",
+      "target_sha256": "3146635a10a525c70c9233a68dd4c30b5545a339edd0728c7f64f5aec2846a88",
+      "payload_sha256": "a6ce2c8fcada79d3d6637317c9813f2b0201310ace3547d47bb79170a80903dc",
+      "target_size": 211704
+    },
+    {
+      "path": "romfs/ui/map/d020_001a_3d.pack",
+      "source": "romfs/ui/map/d020_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0692.dqdelta",
+      "source_sha256": "85f010b2f5bc902600b2d9d3c85e50d88bdb38c0bbe9e9516521ec8a59fa1e63",
+      "target_sha256": "c35145e4838f6c27f4da57afe0dde089c092b52c4593bbcdde74c2754eb31046",
+      "payload_sha256": "6c3966d4c5ba14b6c56c0259b2e8de93c3b923615c057dbea58e05d4b008319e",
+      "target_size": 429480
+    },
+    {
+      "path": "romfs/ui/map/d020_301a_3d.pack",
+      "source": "romfs/ui/map/d020_301a_3d.pack",
+      "kind": "delta",
+      "payload": "0693.dqdelta",
+      "source_sha256": "b56890f31acaba19f6b12565609f91ee6b6a6d5ccd4fbeda73e810aec1fed5d7",
+      "target_sha256": "c4b6737ade5a74337b0a6b2a57b4bf9c0368bc966669a2d1a7bb755560a18e41",
+      "payload_sha256": "b57e7906a89b0ce0ee1287b61bae4181f31a9f3caaa0660a6968b2af990ca722",
+      "target_size": 213672
+    },
+    {
+      "path": "romfs/ui/map/d021_004a_2d.pack",
+      "source": "romfs/ui/map/d021_004a_2d.pack",
+      "kind": "delta",
+      "payload": "0694.dqdelta",
+      "source_sha256": "c24407a17f0c85d5b399ba6378a44121369f1872cd50504ba18a162be845adf2",
+      "target_sha256": "f63bcfeb307db3da1e7aa4d51a8de815aef0452e285b374e85d5bac4fc205311",
+      "payload_sha256": "d734002b70f2a6cb4da8583e0cff8f0214e18bb686d5dc1c995188da9ce9856c",
+      "target_size": 213032
+    },
+    {
+      "path": "romfs/ui/map/d021_011a_3d.pack",
+      "source": "romfs/ui/map/d021_011a_3d.pack",
+      "kind": "delta",
+      "payload": "0695.dqdelta",
+      "source_sha256": "8f9774df890bd2f7794119c382ace95737aeeae6b3680318bbeb130ec8508fa6",
+      "target_sha256": "ba5bdbfd1eac25b68555b853566e8707f58b56e73e31d43f93094c4844dc9ff4",
+      "payload_sha256": "2bf1449c73d9aadb2aa330cb687696ed8fce4fe88ddfad5d90adaecad233c2be",
+      "target_size": 359336
+    },
+    {
+      "path": "romfs/ui/map/f001_001a_3d.pack",
+      "source": "romfs/ui/map/f001_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0696.dqdelta",
+      "source_sha256": "638dcb1ba5a767fe304c46f81c070a35f6f66ed71e90350b5272d2f25eeeb0c9",
+      "target_sha256": "29a54fccd783cb91033047f3e4f3436ef0fd6e4ec6ec643e7bbd360d4868606d",
+      "payload_sha256": "c73a64f5e20a17c71becffea3415c4ecf81822a28ed4e443a0f91f5aa8c2cefb",
+      "target_size": 215336
+    },
+    {
+      "path": "romfs/ui/map/f001_001b_3d.pack",
+      "source": "romfs/ui/map/f001_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0697.dqdelta",
+      "source_sha256": "f09a06383d28b3fe0e949f77cf4bd5ce2127440a3b562ad32da5dabb9837512f",
+      "target_sha256": "a80a1ed683de84d13460959198a8c42631aab8925efd59e89dbb4ebd41941427",
+      "payload_sha256": "267126c64e3849d4c6fe47d080dc17f9615d18e379084f42c3cbfbb7a814bc6d",
+      "target_size": 215336
+    },
+    {
+      "path": "romfs/ui/map/f001_002a_3d.pack",
+      "source": "romfs/ui/map/f001_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0698.dqdelta",
+      "source_sha256": "6268fe9d442519cea1a6d6b69bbdbe9336a9dc619fb6cf3ffc66db6be9878d94",
+      "target_sha256": "076ea232fc19b18e2455ad387500e1b633c74f9096af07fdb8db3ab0ece5513f",
+      "payload_sha256": "75097d47da7438286ea8cc2e00f3f2a6e76d730f36fe3830213eddd3f4c396bb",
+      "target_size": 214056
+    },
+    {
+      "path": "romfs/ui/map/f001_003a_3d.pack",
+      "source": "romfs/ui/map/f001_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0699.dqdelta",
+      "source_sha256": "c82c0e3ae2aa6932cba1d5f3927871fc2f0bde5a08001b46dbc7f8a1dbb2ec10",
+      "target_sha256": "2ba91cf3410eedcb2bebc6aa37a2b909508fe41794b3c62e6967b36e71cc1278",
+      "payload_sha256": "2e4a6c5aba092636aba30b9731d1b6136e44be548d3263e79e82a1137dd1d364",
+      "target_size": 215592
+    },
+    {
+      "path": "romfs/ui/map/f001_003b_3d.pack",
+      "source": "romfs/ui/map/f001_003b_3d.pack",
+      "kind": "delta",
+      "payload": "0700.dqdelta",
+      "source_sha256": "83d8e03d5b777e55151efaa32398895fda522f7b7834e8b2ce5c0b621099c82a",
+      "target_sha256": "a33d41f678d386d823ebc23a9d37ff69aeadabec8da815bb865f9636ea096e44",
+      "payload_sha256": "3a75f07425f3191ddbe9eea41a3d213761cabb6a35348725f464f782ae8182c3",
+      "target_size": 216360
+    },
+    {
+      "path": "romfs/ui/map/f003_001a_3d.pack",
+      "source": "romfs/ui/map/f003_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0701.dqdelta",
+      "source_sha256": "045acecf00c9484385a913f6a930b1a5f1b471d4d92ead06b08f508f3b82dec9",
+      "target_sha256": "94de65e0284c77e8527d0d16bc3c14a10524d88e3655097d6eb1e8e9b01178e0",
+      "payload_sha256": "f017eb01a2f6d704fc8c5f22847183689d4b6df5ad81c32621bbd40cb11b3d7f",
+      "target_size": 218536
+    },
+    {
+      "path": "romfs/ui/map/f003_001b_3d.pack",
+      "source": "romfs/ui/map/f003_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0702.dqdelta",
+      "source_sha256": "70a3a670429dff4c348e149bc5fc4e4f894544b2128d3f98c66c04a676602146",
+      "target_sha256": "c66900805e62e8e984508402a41287d11e5854d98d81da4cc1c9f6e54d918c60",
+      "payload_sha256": "e5975bb744d46edc19c9b44c4dc3169df910d993e5969dbda8fd675d6b9cbb10",
+      "target_size": 217896
+    },
+    {
+      "path": "romfs/ui/map/f004_001a_3d.pack",
+      "source": "romfs/ui/map/f004_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0703.dqdelta",
+      "source_sha256": "efada05830a197e1faf71d912db5c632ed1ea725e2c75714ff977297c6a1aa7f",
+      "target_sha256": "61339baad2e6fa1ac01cd3ee0d77688fdacfd4879408991365af26e113508a24",
+      "payload_sha256": "637d2d0f045687e21389d6f524026493de7553a1369903c049dc9660f3073030",
+      "target_size": 219560
+    },
+    {
+      "path": "romfs/ui/map/f005_001a_3d.pack",
+      "source": "romfs/ui/map/f005_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0704.dqdelta",
+      "source_sha256": "6497a4ca72a273d90f9ed2cf498c06f294ce3f9bc4c46b909459f401a09bce28",
+      "target_sha256": "1b73dce76edfd6a72b604e3e0f2cd70bce6fbf892d7897ba2a1d47c8247f22d8",
+      "payload_sha256": "5548a51fdd190b56bd911710d8d30c70c8ec656b3dbca9a67c8ab71f1fded5ad",
+      "target_size": 351016
+    },
+    {
+      "path": "romfs/ui/map/f007_001a_3d.pack",
+      "source": "romfs/ui/map/f007_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0705.dqdelta",
+      "source_sha256": "b5a58a826e2768bd934efb95a118e63d1657dbd577f1f0f8569f189128247c21",
+      "target_sha256": "9e3c0a74b46bd6cdb8f042470a386a3e639eabb390184b88d2a4f07f1250b403",
+      "payload_sha256": "f2e3744196d691f9dac90a2e6760833f5fa5b45983d5e319e1df8d92ee2037ea",
+      "target_size": 345768
+    },
+    {
+      "path": "romfs/ui/map/f007_002a_3d.pack",
+      "source": "romfs/ui/map/f007_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0706.dqdelta",
+      "source_sha256": "461c5378ce56ee54b1a326171c16d36937f465488157e8505c9f29e41b2f0040",
+      "target_sha256": "ea8b58e6f0f44624eb99ae537ad610e0da4042e7141ace4f83c134001a67d870",
+      "payload_sha256": "94aa646041dbc7dd62170f4255f20c855f3527fd5267d0c1ac43b4c55e2bc2fb",
+      "target_size": 213288
+    },
+    {
+      "path": "romfs/ui/map/f007_003a_3d.pack",
+      "source": "romfs/ui/map/f007_003a_3d.pack",
+      "kind": "delta",
+      "payload": "0707.dqdelta",
+      "source_sha256": "0b30476d5a9dfd56081c5a66144dd92766cae949fbf3939ee760cdda64b8d943",
+      "target_sha256": "a0732cf6726cb0db6d72f1d86e1adb2e602975dad241c01e074655f733f22b7b",
+      "payload_sha256": "b02696f99d3c4e3d936978e8f30503ee5d1b91faf20c3b83c06b4e79879b1656",
+      "target_size": 347688
+    },
+    {
+      "path": "romfs/ui/map/f007_004a_3d.pack",
+      "source": "romfs/ui/map/f007_004a_3d.pack",
+      "kind": "delta",
+      "payload": "0708.dqdelta",
+      "source_sha256": "bc3bd28409761db6e6ae59ba5e5d05e768da5fc994bc503de015e89f70442ba2",
+      "target_sha256": "e1f4c859c93f38cd5bf7119a4ac6ced8a73a320388b1cd899fcd71ab5137cf88",
+      "payload_sha256": "119cf27a1486553472e048b10757eab47f6a39ebf47e8d0334ebd08803b48921",
+      "target_size": 345000
+    },
+    {
+      "path": "romfs/ui/map/f008_001a_3d.pack",
+      "source": "romfs/ui/map/f008_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0709.dqdelta",
+      "source_sha256": "d305626ff9233007d597dc0eecebdf51076f3adde292573734a656cc93bd54ef",
+      "target_sha256": "40abf8d32d473331958fad8f4ef077115202425330bbbeba1819d4b208781b2d",
+      "payload_sha256": "dc0d7bb26c2b360b02c203da3c8195399416404f8aaf79e51f6e60589bba0817",
+      "target_size": 347048
+    },
+    {
+      "path": "romfs/ui/map/f008_001b_3d.pack",
+      "source": "romfs/ui/map/f008_001b_3d.pack",
+      "kind": "delta",
+      "payload": "0710.dqdelta",
+      "source_sha256": "31822df24ee0908388f2ec7948ee2e5f32e7eb7659857e05814e62c6bf360c4e",
+      "target_sha256": "5795f350dc2a79c156f33cdb9d105be5e1e6467c5cbb1fea7038bf71f89e8235",
+      "payload_sha256": "1fb0b69b6e243703ec1cec10ab98c1a242ec59e0b95060ad0d56d53f02a16aa9",
+      "target_size": 349608
+    },
+    {
+      "path": "romfs/ui/map/f008_002a_3d.pack",
+      "source": "romfs/ui/map/f008_002a_3d.pack",
+      "kind": "delta",
+      "payload": "0711.dqdelta",
+      "source_sha256": "d685d61a3988c1d00a10f380cd04867a3e69a72dc76fb715b9f24995ab7c9548",
+      "target_sha256": "a5a523c97de0abfcaf66b122df5ebf8f4834f33cd5ae553b05062bb178dc333a",
+      "payload_sha256": "d04b3baac265484dc98c32123cfda382816f5775f75c49dcaff33b552e6523fd",
+      "target_size": 347688
+    },
+    {
+      "path": "romfs/ui/map/f009_001a_3d.pack",
+      "source": "romfs/ui/map/f009_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0712.dqdelta",
+      "source_sha256": "a0c45c2549b2ad4d7ac5ceb6bcf80e83ad01ea386cd860d9f835167f94ef1fcb",
+      "target_sha256": "a2194a42490571a9b1cd7bc86fce27e23288d7beacca1a1bfb63299e5d96f174",
+      "payload_sha256": "53589932be71575431204010104272fe9d58329d3b0fbf5152cea92f09863d5b",
+      "target_size": 1222952
+    },
+    {
+      "path": "romfs/ui/map/f009_301a_3d.pack",
+      "source": "romfs/ui/map/f009_301a_3d.pack",
+      "kind": "delta",
+      "payload": "0713.dqdelta",
+      "source_sha256": "5324fe2cbc33556adaa1dafe0d6fcb5a6e333195be68d413a5e63bf1ea9469ad",
+      "target_sha256": "37b9afd5d8d2e2cf746e079961a3374e133e4881f205324fea92b28d678b4642",
+      "payload_sha256": "d1495b649c4b55ce262e62cbc0be44a576e9daa07d221699e2ec1e8f62f21ed3",
+      "target_size": 614056
+    },
+    {
+      "path": "romfs/ui/map/f010_001a_3d.pack",
+      "source": "romfs/ui/map/f010_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0714.dqdelta",
+      "source_sha256": "4ca7fd051986ae0bfe3198e5d91fd03d3f306a22953c6f692a080c6ea26710e6",
+      "target_sha256": "ab623a4f580ea429fb78c8362c5178e02bf4a1e7c4a60d55f01b4a6f7b86424a",
+      "payload_sha256": "11abd0faac53d98b4fcbc3894b0daf77bc7d2689b5ee9d0ece031d20a8c126db",
+      "target_size": 612264
+    },
+    {
+      "path": "romfs/ui/map/f011_001a_3d.pack",
+      "source": "romfs/ui/map/f011_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0715.dqdelta",
+      "source_sha256": "8917cc318770f95259ef14642f5d9ae1309a03a0c9a62267012e2c0c3dd6a631",
+      "target_sha256": "944e03af31b291de0f31d1351e07411c029d9de433b1fbc10b51ae8b95aae3b3",
+      "payload_sha256": "547dc188f3052f903b5c075ceea4cf509b7c86cad7284faec6d9dde920ff1722",
+      "target_size": 348456
+    },
+    {
+      "path": "romfs/ui/map/f012_001a_3d.pack",
+      "source": "romfs/ui/map/f012_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0716.dqdelta",
+      "source_sha256": "191776d338faac34a5aa3f49377f46cf7af2d003c8dd0c87c0c650aa84ec0c90",
+      "target_sha256": "e9a63ac6d2ee0ca20723b9cd0cd54cf95c35b355a99e6f6559ab0f99d5ba83fd",
+      "payload_sha256": "1db3eb0745538f7afa1c6ebc5a5c209b7fda6f46a54cd1b96b21e382d2b2451e",
+      "target_size": 613672
+    },
+    {
+      "path": "romfs/ui/map/f013_001a_3d.pack",
+      "source": "romfs/ui/map/f013_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0717.dqdelta",
+      "source_sha256": "38df7d004308bf5ebcd1fe76e839e6db3c33b9101569dcb37c8a5c98c2821f9b",
+      "target_sha256": "e1d321e28d7cb7c8ac97a2f0991c31581e2c398463d63b4e5f1c12f2b47a1724",
+      "payload_sha256": "fcbc60cf6b823127c3430d36990e3c0d2375c300e886098f2f69187982546e49",
+      "target_size": 614056
+    },
+    {
+      "path": "romfs/ui/map/m004_001a_2d.pack",
+      "source": "romfs/ui/map/m004_001a_2d.pack",
+      "kind": "delta",
+      "payload": "0718.dqdelta",
+      "source_sha256": "71b0dca71b03ca2b94dab8d8aae6d1a3c1f95e0663d06e2c90d91cc171eca93e",
+      "target_sha256": "bf09348d19f1100fec37ce2cbd637a99de9b68b973c0568f8fe5d736dabae828",
+      "payload_sha256": "26afce7b534cb0b4595f28d39e853abd1979fa634c8557aa42de48709c9ecadd",
+      "target_size": 210984
+    },
+    {
+      "path": "romfs/ui/map/m004_101a_2d.pack",
+      "source": "romfs/ui/map/m004_101a_2d.pack",
+      "kind": "delta",
+      "payload": "0719.dqdelta",
+      "source_sha256": "e78a7632b024bc2fd7547e4bf353e3ea74702e6fdbbcbf751c8c4eed8c990239",
+      "target_sha256": "4e0b1475d96736a7b812f0fcfc7a38cca28ac4fb2a2cfad68da0bc416003af0c",
+      "payload_sha256": "625b4b96d9f401385f48693201645b595052bdba32fb03cb188328bbfeac3235",
+      "target_size": 213288
+    },
+    {
+      "path": "romfs/ui/map/m022_001a_3d.pack",
+      "source": "romfs/ui/map/m022_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0720.dqdelta",
+      "source_sha256": "bcf15deee17e7e5cb07a638139f7de40a225bd1082bfcc45f29dbbd9e987a454",
+      "target_sha256": "61dfaddd35ddccb19715a44b92ce290863ea814c7e09f8bfd29917e60fe781be",
+      "payload_sha256": "a8c44265dd5cb4f8a3a4fd20724978f4b717d7a494abed28c643e5604f668c6f",
+      "target_size": 210984
+    },
+    {
+      "path": "romfs/ui/map/m023_001a_3d.pack",
+      "source": "romfs/ui/map/m023_001a_3d.pack",
+      "kind": "delta",
+      "payload": "0721.dqdelta",
+      "source_sha256": "1cdaec7be990be1462c7d18489e8e902b7b9d5c0593f902ac63ed926f1fe7f5b",
+      "target_sha256": "85ffd317a92c2cf2e3ecdb29c25ba818879dc37841115f6dd2f29895741f7c67",
+      "payload_sha256": "837c4a496c1bcd2777740f67acda4a4c07314ae0ffa7ff61f2835622cd3b3e69",
+      "target_size": 708648
+    },
+    {
       "path": "romfs/ui/memories_2d.pack",
       "source": "romfs/ui/memories_2d.pack",
       "kind": "delta",
-      "payload": "0566.dqdelta",
+      "payload": "0722.dqdelta",
       "source_sha256": "9bb316473e5ecdd180ed5492b731e5c5af123f4a32f5942c9db5542923a06e98",
       "target_sha256": "2c806b90753e6c3c3ea35ee463057ab3b6bac8ca7ca4f15b963172c4b97c3a23",
       "payload_sha256": "885ad6209ae401f34bf4da3250360e7d60aaab3eb26da4913cef3e4bb016c78a",
@@ -5677,27 +7237,27 @@
       "path": "romfs/ui/memories_3d.pack",
       "source": "romfs/ui/memories_3d.pack",
       "kind": "delta",
-      "payload": "0567.dqdelta",
+      "payload": "0723.dqdelta",
       "source_sha256": "354cc8079f65c6434cc1a1ea2fff025861e9a8790c013254dc461ad6486909c1",
-      "target_sha256": "a020f4aa23d024845fd6be743e650d0ad7eb3e591dadca9ddcca4127c0756d83",
-      "payload_sha256": "c63c2602416030d0f6ce17afbea5047327081f92aa432a43d004fc0f69c33d9a",
+      "target_sha256": "e2990f1ad98ac2e1df734794d42de35db848e96845bf5122678288998c35db62",
+      "payload_sha256": "1633ba8b29c029cf0386448129e8d1721538bbd357bba0af8a30c5d216bccba1",
       "target_size": 460940
     },
     {
       "path": "romfs/ui/panel_3d.pack",
       "source": "romfs/ui/panel_3d.pack",
       "kind": "delta",
-      "payload": "0568.dqdelta",
+      "payload": "0724.dqdelta",
       "source_sha256": "a518f864a2908ea77d5eecb70f597ef319d69ca67b7d363f8f2b39bf35298f00",
-      "target_sha256": "d9202ecbb82213a097bc63d13725f6ae5ad248dc83b97c8348d5bb7c1aabf5bc",
-      "payload_sha256": "f2d6d2f6a1bc0cf8dcff5ae43b460bf53ea84f5ef1dfc8d490ff3b32eeb173a3",
+      "target_sha256": "9ea98ab9c78fc6ed39fbed01ade035dae3f3a99edc4267fd745ccea1fba1b12c",
+      "payload_sha256": "fe4e7d2b11f01fbe6e96c8bff0000b7dd09123d8a289de38b85e6fb4c95699da",
       "target_size": 2087780
     },
     {
       "path": "romfs/ui/poker_3d.pack",
       "source": "romfs/ui/poker_3d.pack",
       "kind": "delta",
-      "payload": "0569.dqdelta",
+      "payload": "0725.dqdelta",
       "source_sha256": "a4b2dedd4cd4a71e6a8a32c1fbb5fa452447ed822a02da4a4f9764a6e05a9fe4",
       "target_sha256": "c8bc74491ab1f474dea0e0edd072d9a6497b90edf94fda4583500e1abef12fc0",
       "payload_sha256": "f940663950b16db4962569432131629cb1df16a8efce962f9145757af2888cb5",
@@ -5707,7 +7267,7 @@
       "path": "romfs/ui/present_3d.pack",
       "source": "romfs/ui/present_3d.pack",
       "kind": "delta",
-      "payload": "0570.dqdelta",
+      "payload": "0726.dqdelta",
       "source_sha256": "b611f08065760fa329a00fb91cd3d2272206c67fb700e32628e899a608abfcc0",
       "target_sha256": "b7e5b2ba70ae5dbe242fa7fd6d4ade189cba82bb57e0196c981817a214c9f461",
       "payload_sha256": "2d2c999ba81c8069ebbaf201fb292122615ee0ca6ed6acab4eaabeab9db56224",
@@ -5717,17 +7277,17 @@
       "path": "romfs/ui/record_3d.pack",
       "source": "romfs/ui/record_3d.pack",
       "kind": "delta",
-      "payload": "0571.dqdelta",
+      "payload": "0727.dqdelta",
       "source_sha256": "edd6938ed1e661a4851b3081d35640ec58e02459298cb0a33eda41dc3a659e95",
-      "target_sha256": "3d1422ecb6e1333591012eab3715a7b26b4e36d855ac59de4d7d7002d4e1a1d4",
-      "payload_sha256": "2787cd7f3f2bc58ea26384d993aa338a786399dce4ef23f54432df0df33d7637",
-      "target_size": 1828116
+      "target_sha256": "d72e9f2eab1dfef6189fbfbae7befcd409a3b121e945358edeea7ed7e4da3fcd",
+      "payload_sha256": "b014f0519eb76f18e09696ee605c2ea1bd04788dd4b680acbd6f6b2282bf73a1",
+      "target_size": 1828244
     },
     {
       "path": "romfs/ui/roulette_3d.pack",
       "source": "romfs/ui/roulette_3d.pack",
       "kind": "delta",
-      "payload": "0572.dqdelta",
+      "payload": "0728.dqdelta",
       "source_sha256": "4c07859c3878e27438dbcb22880e099fc19e0fcd38146865814eb9c6f7a7e0f5",
       "target_sha256": "56c2351c33b80ada5ce2f2361a399aadc585791f8d971f1cf7b53261bf6a81ac",
       "payload_sha256": "8da454c191b15b3eef20040084d2eef43dc266c2b12bf85619de2cdadf700fbb",
@@ -5737,7 +7297,7 @@
       "path": "romfs/ui/smith_3d.pack",
       "source": "romfs/ui/smith_3d.pack",
       "kind": "delta",
-      "payload": "0573.dqdelta",
+      "payload": "0729.dqdelta",
       "source_sha256": "3c7e86a54c91aa81e10b9a2ffc72869bbd53b972304f142ca15e14e5c9b0735d",
       "target_sha256": "d18cf2fec89e400a8e52fc4b12ad2a65e4666fc6cdf521bdb5c56a78bec0b22c",
       "payload_sha256": "428f05a00c74240c6ce5b59c0f3a4c00afb2d2a76caf1f09c1ea2a11c7681c53",
@@ -5747,7 +7307,7 @@
       "path": "romfs/ui/stamp_3d.pack",
       "source": "romfs/ui/stamp_3d.pack",
       "kind": "delta",
-      "payload": "0574.dqdelta",
+      "payload": "0730.dqdelta",
       "source_sha256": "7a7af6f90fc9f107cce26e17a92a73887d682147dff3396661e494245c7bb544",
       "target_sha256": "d7d16c0fb1d7e7c07a14c8a14dd4edd7981199b372190d32040903cd3ab6dbd9",
       "payload_sha256": "f48eeaf25d90b84bce1dfa8bc174513ffdf91ab7983327b4c338a85f013c4616",
@@ -5757,21 +7317,22 @@
       "path": "romfs/ui/stpass_3d.pack",
       "source": "romfs/ui/stpass_3d.pack",
       "kind": "delta",
-      "payload": "0575.dqdelta",
+      "payload": "0731.dqdelta",
       "source_sha256": "9458e4a840a6749319bb72d51e94f6d5c18ea3cb5ee8cb145bbfe1944aa38110",
-      "target_sha256": "84aee70f69b80f1431de19ff0ba142b8ab0694815a7a163978c19a11eec1d185",
-      "payload_sha256": "0fb3da35745c5d440bb42c33c86c7491000ea0952487ea771f659dbeca46f534",
-      "target_size": 1194416
+      "target_sha256": "c2fd27b4c36685ff58af7ad350edd2edcf02035eb5c40f7913ff2ea7ddd3b9ae",
+      "payload_sha256": "48e338ed4c2e9881bd03f6623c7b1febf239591469c0b3fb38ab9798e0bf2d95",
+      "target_size": 1194544
     },
     {
       "path": "romfs/ui/title.pack",
       "source": "romfs/ui/title.pack",
       "kind": "delta",
-      "payload": "0576.dqdelta",
+      "payload": "0732.dqdelta",
       "source_sha256": "a8394ebcbdb3356169c396ddf2a69390dad4d037c6e262a3b35b7d8bbacada07",
-      "target_sha256": "a828ccae89ba38445a935fd13331ff594d9fb06e2e969cab64c8bd2e12e8a2e7",
-      "payload_sha256": "153a43f0ffb02b634d98e6632d2fac576a20dfbad3a37a099093ff286db2ee08",
+      "target_sha256": "8896a3b40e3cad7db534713b110c834aa3260cc86a51feda619a5f3e466b9394",
+      "payload_sha256": "abf1ddc12cdb0f4bf1d33c2e07eb8e69462231278d7d1bdfc6b7d872775b83d5",
       "target_size": 3069020
     }
-  ]
+  ],
+  "version": "0.4.0"
 }

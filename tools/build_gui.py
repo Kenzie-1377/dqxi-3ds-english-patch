@@ -17,7 +17,7 @@ class Application:
     def __init__(self, root):
         self.root, self.busy, self.built = root, False, None
         self.events, self.cancel = queue.Queue(), threading.Event()
-        root.title('DQXI 3DS — English Translation Builder')
+        root.title('DQXI 3DS — English Translation Builder 0.4.0 (experimental)')
         root.geometry('800x670')
         root.minsize(720, 650)
         style = ttk.Style(root)
@@ -196,7 +196,7 @@ def main():
         root.withdraw()
         Application(root)
         root.update_idletasks()
-        result = dict(frozen=bool(getattr(sys, 'frozen', False)), payloads=len(manifest['files']), gui_created=True)
+        result = dict(version=manifest.get('version'), frozen=bool(getattr(sys, 'frozen', False)), payloads=len(manifest['files']), gui_created=True)
         root.destroy()
         if len(sys.argv) == 5:
             args = SimpleNamespace(rom=None, extracted=Path(sys.argv[3]), output=Path(sys.argv[4]), release=ROOT/'release', ctrtool=None, download_ctrtool=False)

@@ -1,5 +1,35 @@
 # Release validation
 
+## 0.4.0 — October 1, 2026 (experimental prerelease)
+
+- Frozen from the working local installation after the player confirmed the
+  corrected Veronica/Sylvando final-letter repair. All live target hashes were
+  stable across delta generation; no failed comparison variants or held stages
+  were substituted into this snapshot.
+- 733 targets: 730 PACK deltas, two BCH image deltas and one executable IPS.
+  Compared with the hash-pinned 0.3.2 manifest: 156 added targets, 56 changed
+  targets, 521 unchanged, zero removed. The exact file list is in
+  [0.4.0-target-changes.json](0.4.0-target-changes.json).
+- Packaged Windows manifest SHA-256 (before Git line-ending normalization):
+  `2aba70cd5ce2fc4191d30af6e9ac37e4df227574788c4df695c4d3ec9180008a`.
+- All 24 repository tests passed. A separate source-builder run checked source
+  hashes, rebuilt all 733 targets and independently matched all output hashes
+  to the frozen snapshot, with zero extra files or mismatches.
+- Exact final Windows EXE: 15,228,359 bytes, SHA-256
+  `fbc7150913e537d9ba478fb996eaa1b02935a025852ba2bdab46cc6949d68901`.
+  Its frozen self-test ran with normal Windows permissions, constructed its
+  GUI, verified all 733 embedded payloads and rebuilt all 733 targets from
+  matching originals. A separate hash comparison confirmed 733/733 and no extras.
+- The corrected display-only name hook passed 62 actual ARM tests, including
+  execution of the original singleton accessor. The first candidate failed
+  the human test due to an extra pointer dereference; it is NOT packaged.
+  The corrected version was player-confirmed. Existing IPS records and
+  character/gameplay data are preserved; no save fields or name buffers expanded.
+- These are structural/build and scoped player checks, not a complete gameplay
+  audit. New 3DS 3D-mode bridge/Church crashes remain unresolved; 0.4.0 has not
+  been hardware-tested. Clean-Windows/Windows 8, wider UI/story/side-world fit,
+  Hotto's first-visit title and saved Tockle names remain open.
+
 ## 0.3.2 — September 30, 2026 (experimental; hardware crash confirmed)
 
 - Generated 577 patch targets from the reviewed local installation: 575 PACK

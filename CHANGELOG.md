@@ -1,5 +1,77 @@
 # Changelog
 
+## 0.4.0 — October 1, 2026 (experimental prerelease)
+
+Translation progress, UI improvements and character-name repair. **This is
+not a complete translation or a hardware-crash repair.** The frozen package
+contains **733 patch targets**, versus 577 in 0.3.2: 156 added targets, 56 updated
+targets and 521 unchanged targets. No previous target was removed. Target counts
+are files, not dialogue lines or a completion percentage.
+
+### Character-name repair — player confirmed
+
+- Restored the final letters of Veronica and Sylvando on the player's tested
+  menu/battle screens. The original runtime name field stores only seven UTF-16
+  characters; increasing it would overwrite adjacent level data. The repair
+  supplies separately terminated full names on the shared display paths instead.
+- The corrected patch passed 62 offline ARM tests, including the original
+  manager accessor, register/flags/stack preservation, unrelated/null pointers
+  and unchanged character data. The player confirmed the corrected build fixed
+  the problem. This is not an exhaustive test of every consumer or real hardware.
+- Saves and stored character-name fields are not rewritten.
+
+### Battle text, menus and readability
+
+- Added reviewed enemy action names, songs, dances, breath attacks, physical
+  attacks and summon labels. Repaired two damaged actor substitutions; preserved
+  dynamic controls and gameplay metadata in the reviewed replacements.
+- Reworked selected spell/action descriptions, spell-list readability, required
+  equipment labels, enemy targeting text and the monster-mount message.
+- Corrected selected inventory Cancel/Filter labels, item ownership messages,
+  equipment statistics, party stat labels, profile titles and field status text.
+- Improved Line-Up name/stat layouts, Tockle sorting and profile labels/value
+  placement, Zoom destinations, adventure guidance and selected title/records
+  captions. Added further reviewed map labels and location artwork.
+- These changes have file-level validation; most still need broader rendered
+  fit and gameplay testing. They are not claims that every battle/menu is complete.
+
+### Story, party talk and regional dialogue
+
+- Added reviewed party-talk archives and story/NPC follow-ups, including Hotto,
+  Gallopolis/Faris, Michelle's farewell, Rab-related dialogue, Sniflheim and
+  Arboria scenes. Existing quest, tutorial, forge and covered Tickington work
+  from earlier versions is retained.
+- The latest October 1 away-work batch alone installed 155 enemy display fields,
+  161 scene/NPC dialogue fields, 18 speaker-name fields and 93 map/UI panes across
+  21 archives. These are scoped field/pane counts, not unique conversations,
+  and do not represent the entire change list since 0.3.2.
+- A held 19-field letter and a quest instruction with unresolved canonical names
+  were excluded. Unreviewed bulk machine-translation drafts are not included.
+
+### Remaining work and critical warnings
+
+- **New 3DS 3D-mode crashes at the Heliodor bridge and Church of Guidance exit
+  remain unresolved.** They were confirmed on 0.3.2; 0.4.0 is not hardware-validated
+  and must not be presented as a fix. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1).
+- An intermittent battle-entry texture/atlas flash was also reproduced in a
+  repeated unpatched Azahar comparison. Emulator involvement is suspected,
+  not confirmed; this release does not claim to fix it or change renderer settings.
+- The latest separate inventories find 282 Japanese enemy-action fields,
+  7,944 regional secondary candidates and 5,588 broad structured/layout candidates.
+  These are different, overlapping scopes with blind spots and inactive/duplicate
+  records. **Do not add them together or derive a completion percentage.**
+- Regional dialogue, party talk, Tickington/book worlds, image/executable text,
+  names retained in older saves, translation accuracy and screen fit still need
+  further review and in-game coverage. Hotto's first-visit title remains unverified.
+- Clean-Windows/Windows 8 compatibility and the new name repair on hardware are
+  untested. Back up saves/mods; use a normal game save rather than an old save state.
+
+See [the scoped completion checklist](docs/completion-status.md) and
+[validation evidence](docs/release-validation.md). Use your own supported
+decrypted Japanese game. No ROM, full game archives, saves, keys or emulator
+are distributed. This unsigned builder produces a new ROM or mod folder;
+it does not modify your original ROM or saves.
+
 ## 0.3.2 — September 30, 2026 (experimental; hardware crash confirmed)
 
 This updates the public builder to the latest locally installed translation
