@@ -9,11 +9,15 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The current experimental prerelease is **0.4.0**. It includes reviewed dialogue,
-party talk, map/UI and battle-text improvements, plus the player-confirmed
-Veronica/Sylvando final-letter display repair. It packages 733 patch targets.
-Substantial Japanese text remains, and image/executable text and real-hardware
-gameplay are not fully audited. This is not a complete English release. See the
+The **0.5.0 experimental prerelease** substantially expands regional
+dialogue and speaker-name coverage while retaining the player-confirmed
+Veronica/Sylvando final-letter repair. It packages 733 patch targets: 111 updated
+and 622 unchanged from 0.4.0. The regional translation pass converted 7,588
+fields, with original-data, archive and conservative text-fit checks.
+Japanese and ambiguous text remain, and image/executable text, rendered layouts
+and real-hardware gameplay are not fully audited. This is neither fully
+translated nor stable. The frozen candidate passed builder verification and the
+player reported it was good to go after the requested limited spot check. See the
 [changelog](CHANGELOG.md) and [scoped completion checklist](docs/completion-status.md)
 for changes, completed audited scopes and work still to do.
 
@@ -27,6 +31,7 @@ allowed an earlier bridge/Heliodor test to pass. A compact translated variant
 crossed the bridge in Azahar, but that did not predict hardware behavior.
 **Do not treat 0.3.2 as a crash repair.**
 **0.4.0 is also not a crash repair and has not been validated on real hardware.**
+**0.5.0 likewise makes no hardware-crash repair claim.**
 Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
 and the [0.3.2 patch-only original-data control](diagnostics/bridge_0_3_2/README.md).
 The older [0.3.0 diagnostics](diagnostics/bridge_0_3_0/README.md) reject a
@@ -183,17 +188,21 @@ with that tool; it is not relicensed by this repository.
 
 ## Current progress
 
-The **0.3.2 experimental prerelease** updates 577 patch targets (575 archive
-patches, one Hotto location-image patch, and one executable IPS patch), including
-earlier quest/journal, battle-message, tutorial, forge, speaker-name and item
-corrections plus Tickington, further dialogue and screen-fit work. See the
+The **0.5.0 experimental prerelease** contains 733 patch targets (730 PACK
+deltas, two BCH deltas and one executable IPS), with 111 updated and 622 retained
+from 0.4.0. It includes 7,588 newly converted regional Japanese fields
+(6,302 dialogue and 1,286 speaker labels), including repeated fields rather
+than unique conversations. Five English-only corrections are counted separately.
+Earlier quest/journal, battle-message, tutorial, forge, speaker-name, item,
+Tickington and screen-fit work is retained. See the
 [changelog](CHANGELOG.md) for completed scopes and remaining work, and
 [validation notes](docs/release-validation.md) for the checks performed.
 
 This is not a complete translation. Broader character dialogue and some graphics
-remain Japanese. A newly identified regional-dialogue audit blind spot contains
-8,328 Japanese secondary candidate references after excluding 270 false refs
-embedded in other strings; their in-game visibility is not fully classified.
+remain Japanese. The latest broad regional audit reports 356 Japanese candidates
+across 26 packs, including unsupported fields, duplicates, potentially unused
+text and numeric pointer lookalikes. This is not an active conversation count
+or completion percentage; other audit scopes overlap and must not be added.
 The Hotto title image and saved Tockle name behavior still need
 in-game checks, and text readability is not yet finished on every screen.
 

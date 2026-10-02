@@ -17,7 +17,7 @@ class Application:
     def __init__(self, root):
         self.root, self.busy, self.built = root, False, None
         self.events, self.cancel = queue.Queue(), threading.Event()
-        root.title('DQXI 3DS — English Translation Builder 0.4.0 (experimental)')
+        root.title('DQXI 3DS — English Translation Builder 0.5.0 (experimental)')
         root.geometry('800x670')
         root.minsize(720, 650)
         style = ttk.Style(root)

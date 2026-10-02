@@ -1,7 +1,24 @@
-# Scoped completion checklist — 0.4.0
+# Scoped completion checklist — 0.5.0
 
 This checklist distinguishes reviewed implementation from player testing.
 "Complete" below applies only to the stated audited scope, never the whole game.
+
+## New file-verified implementation in 0.5.0
+
+- Regional pass: 7,588 Japanese display fields translated and locally installed
+  (6,302 dialogue, 1,286 speaker labels); five English-only corrections separate.
+- Original structured membership, controls, gameplay bytes, archive metadata,
+  untouched entries, rebuilds and source/output hashes checked for approved batches.
+- Conservative static dialogue/caption fit checked; broader rendered fit unverified.
+- Fresh regional inventory: 356 candidates, including unsupported structures and
+  numeric pointer lookalikes. No full-region/game/dialogue completion claim.
+- Frozen package: 733 targets, 111 changed and 622 unchanged from 0.4.0.
+- Source and packaged builders independently rebuilt all 733 targets successfully.
+  The player reported the frozen candidate good to go after the requested limited
+  spot check; this is not comprehensive or independently observed gameplay testing.
+
+The remaining sections retain earlier scoped achievements and limitations;
+historical audit counts below are not the fresh 0.5.0 remaining count.
 
 ## Completed scoped work retained from earlier releases
 
@@ -41,8 +58,10 @@ This checklist distinguishes reviewed implementation from player testing.
 - Main-game dialogue, party talk, Tickington/other side-world coverage.
 - Remaining Japanese enemy-special-action names (282 fields in the last audit).
 - Comprehensive image/executable-text audit and every menu's rendered fit.
-- Held 19-field letter and one quest instruction pending canonical-name review.
-- New 3DS 3D-mode Heliodor-bridge/Church-exit crashes; 0.4.0 is hardware-untested.
+- The previously held 19-field letter needs canonical review. The older held
+  quest-instruction inventory must be reconciled against newer regional receipts;
+  it is not an additional confirmed remaining field count.
+- New 3DS 3D-mode Heliodor-bridge/Church-exit crashes; 0.5.0 is hardware-untested.
 - Intermittent battle-entry atlas flash: reproduced unpatched in Azahar;
   emulator cause unconfirmed, no repair claimed.
 - Hotto first-visit location title and saved Tockle-name behavior.
@@ -50,12 +69,13 @@ This checklist distinguishes reviewed implementation from player testing.
 
 ## How to read the counts
 
-733 packaged targets are patched files, not unique lines. The latest regional
-secondary inventory has 7,944 candidates across 26 packs; another broad inventory
-has 5,588 candidates in a different scope. They overlap and include inactive or
+733 packaged targets are patched files, not unique lines. The fresh 0.5.0 regional
+inventory has 356 candidates across 26 packs. Historical inventories recorded
+7,944 regional candidates and 5,588 candidates in a different broad scope;
+these are superseded or differently scoped counts. They overlap and include inactive or
 duplicate resources, and neither covers every image/executable/runtime string.
 They are not additive and cannot establish a percentage translated.
 
-The latest away batch's 155 enemy fields, 161 scene/NPC fields, 18 speaker fields
+The earlier 0.4.0 away batch's 155 enemy fields, 161 scene/NPC fields, 18 speaker fields
 and 93 map/UI panes are a documented subset of 0.4.0, not the entire release delta.
 See CHANGELOG.md and the machine-readable target changes for exact file coverage.

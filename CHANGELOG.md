@@ -1,5 +1,63 @@
 # Changelog
 
+## 0.5.0 — October 2, 2026 (experimental prerelease)
+
+Not fully translated, not stable, and not a hardware-crash repair. The frozen
+candidate passed packaged-builder verification; the player reported it was
+good to go after the requested limited in-game spot check. This is not an
+independently observed or comprehensive gameplay/visual validation.
+
+### Completed implementation and file-verified scope
+
+- The regional secondary-display translation pass converted and locally
+  installed **7,588 Japanese fields: 6,302 dialogue and 1,286 speaker labels**.
+  Counts include repeated fields; these are not unique conversations or a
+  whole-game completion percentage. Five English-only quality corrections
+  are recorded separately and do not reduce the Japanese backlog.
+- Covered work includes regional NPC conversations, story-related exchanges,
+  party/book-entry dialogue, quest instructions and canonical speaker captions.
+  Original 3DS directions and mechanics were retained where XI S differs.
+- Each approved batch checked whole original display-field membership,
+  original/current source equality, ordered dynamic controls, unchanged gameplay
+  bytes, archive metadata and non-target entries, no-op rebuilds and exact hashes.
+  Local installation used closed-emulator checks and exact recoverable backups.
+- Dialogue was checked at a conservative 24 cells by three lines, reserving
+  eight cells per player-name substitution. Captions received separate length
+  checks. These are static checks, not proof of every rendered layout.
+- The frozen release contains **733 targets: 111 updated, 622 unchanged,
+  no additions and no removals** relative to 0.4.0. Previously included battle,
+  map/UI, tutorial, item and character-name work is retained. The verified
+  Veronica/Sylvando display-only IPS is unchanged; saves are not rewritten.
+
+### Unverified layouts and gameplay
+
+- New dialogue, captions and map/UI layouts need broader in-game visual testing.
+  A release spot check is a limited regression check, not a full playthrough.
+- Comprehensive image-embedded and executable-text audits remain unfinished.
+  Whole-game, all-dialogue and all-Tickington completion are not claimed.
+- Clean-Windows/Windows 8 execution and real-hardware compatibility remain
+  unverified. Builder results on this Windows host must not be generalized.
+
+### Ambiguous or remaining text
+
+- A fresh broad regional inventory reports **356 Japanese candidates across
+  26 packs**. It includes unsupported fields, duplicates and numeric values
+  that resemble pointers, not 356 confirmed visible conversations.
+- A separate structural investigation identified alternate-layout prose and
+  numeric pointer lookalikes. Unsupported numeric fields and unproven alternate
+  text were left untouched; false candidates are not counted as translations.
+- Other text inventories have different scopes and can overlap; do not add them
+  together. Remaining enemy-action text and held letters/instructions documented
+  in 0.4.0 are not implicitly completed by this regional pass.
+
+### Unresolved crashes and rendering issues
+
+- Reported New 3DS 3D-mode crashes at the Heliodor bridge and Church of Guidance
+  exit remain unresolved. 0.5.0 is not a crash fix and is hardware-untested.
+- The intermittent battle-entry atlas flash also reproduced fully unpatched in
+  Azahar. Its cause is unconfirmed; no renderer/settings/cache repair is claimed.
+- Existing patch-only hardware diagnostic controls are separate from this release.
+
 ## 0.4.0 — October 1, 2026 (experimental prerelease)
 
 Translation progress, UI improvements and character-name repair. **This is

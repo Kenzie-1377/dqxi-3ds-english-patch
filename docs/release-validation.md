@@ -1,5 +1,41 @@
 # Release validation
 
+## 0.5.0 — October 2, 2026 (experimental prerelease)
+
+- 733 frozen targets: 730 PACK deltas, two BCH deltas and one executable IPS;
+  111 changed, 622 unchanged, no additions/removals relative to 0.4.0.
+  See [0.5.0-target-changes.json](0.5.0-target-changes.json).
+- Latest installation receipts were reconciled against live files before the
+  freeze. Snapshot hashes stayed stable during copying and delta generation.
+  The Veronica/Sylvando display-only IPS is unchanged.
+- Candidate manifest SHA-256:
+  `e9bef010e9444ef3e218be6d0ac5f883018a8e6d0452734eb60be47557b61871`.
+- Source builder rebuilt all 733 targets from matching originals. Independent
+  sizes/hashes/path-set checks matched every frozen output, with no extra files.
+- All 24 repository regression tests passed with normal Windows permissions.
+  A sandbox-restricted run encountered temporary-file permission errors; it
+  is superseded by the complete successful normal-permissions run.
+- Exact final Windows EXE: 15,436,543 bytes, SHA-256:
+  `d689143cd33037d036db44a8239958cad259a52c0bb7dc289592962bea9aa14b`.
+  At the player's request, three fresh full frozen-builder runs with normal
+  Windows permissions each created the GUI, verified all 733 embedded payloads
+  and rebuilt all 733 targets from matching originals. Separate native readback
+  matched every output's size/hash and exact path set in all three runs, with
+  no mismatches or extras. All 24 regression tests also passed again.
+- Earlier attempts had intermittent failures in this EXE, the previously
+  published builder and standalone Python; their root cause remains unknown.
+  A sandbox-restricted evening startup also stalled and was stopped. These
+  successful normal-permissions repeats establish scoped verification on this
+  host, not proof of a diagnosed fix or clean-Windows reliability. No tracing,
+  decoder masking or runtime/PC-setting workaround was added. The older
+  `f08c625...` candidate success is historical, not the final-asset proof.
+- The player reported the frozen candidate "good to go" after the requested
+  limited in-game spot check. Specific screens were not individually enumerated,
+  and the check was not independently observed. File verification does not
+  establish all rendered fit or gameplay correctness. Clean-Windows, Windows 8
+  and real-hardware execution remain unverified. Hardware bridge/Church 3D
+  crashes are unresolved; this is not a stable or fully translated release.
+
 ## 0.4.0 — October 1, 2026 (experimental prerelease)
 
 - Frozen from the working local installation after the player confirmed the
