@@ -1,7 +1,7 @@
 {
   "format": "dqxi-translation-deltas-v1",
   "title_id": "0004000000199200",
-  "status": "Experimental prerelease; incomplete translation; hardware crashes unresolved.",
+  "status": "Experimental prerelease; targeted real-hardware bridge crash repair; incomplete translation; wider crash/corruption audits pending.",
   "files": [
     {
       "path": "exefs/code.ips",
@@ -39,8 +39,8 @@
       "kind": "delta",
       "payload": "0003.dqdelta",
       "source_sha256": "26bf97310438c16e400b3bb36253c9f5c45eca787b216029bd65bf4f8e1b9ceb",
-      "target_sha256": "749b479b2ee9264ec16de72edffff01229148c236e62de74ab8d7d8b28494078",
-      "payload_sha256": "2d2f0e81d862327c792be45ade944e1fe392dfde770921ac594321d624636a72",
+      "target_sha256": "9d00e6864e35b6d7a08defe3f7be2e77c74d35536ad508f654986efcab5b0d02",
+      "payload_sha256": "40bee6e293509a548c63df3fc7d2020269dc88276aaf1e2818dc3b87fef63c61",
       "target_size": 2602600
     },
     {
@@ -7334,5 +7334,5 @@
       "target_size": 3069020
     }
   ],
-  "version": "0.5.0"
+  "version": "0.5.1"
 }

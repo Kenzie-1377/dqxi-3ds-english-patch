@@ -1,5 +1,44 @@
 # Changelog
 
+## 0.5.1 — October 4, 2026 (experimental hardware-crash hotfix)
+
+Focused bridge-crash repair, not a whole-game stability or rendering fix.
+
+- Repairs the known crash occurring shortly after crossing the Heliodor bridge
+  on real hardware. The player reports that the private diagnostic ROM now
+  passes the previously crashing bridge/walking test. This is a limited,
+  user-reported hardware test, not an independently observed full playthrough.
+- A text importer mistook four packed enemy-category/flag values for relative
+  text pointers, because their arithmetic happened to land after `&&&&` markers.
+  Resizing enemy text changed those numeric values. The supplied ARM11 dump
+  shows enemy 63 selecting an invalid category, followed by a null+0x60 read.
+- Restores the original category values for enemy records 63, 471, 472 and 483.
+  Exactly eight bytes in `romfs/gamecmn.pack` differ from 0.5.0. All existing
+  English, archive layout, other game data and the Veronica/Sylvando IPS remain
+  unchanged. There are no new translations: 733 targets, one changed and 732
+  unchanged relative to 0.5.0.
+- Maintainer heuristic marker/CharacterIEData imports now fail closed on text
+  changes without a typed pointer schema. Exact no-op output remains available;
+  typed TextBlock dialogue import does not rewrite numeric pointer lookalikes.
+- Replaces the release builder with a Windows-native C#/.NET Framework 4.8 GUI,
+  retaining both mod-folder and `.3ds` outputs without Python. The previous
+  engine's execution-failure cause remains unknown. The exact native candidate
+  passed 66 synthetic checks per trial, three complete 733-target builds and
+  independent output/input checks. Its ROM matched the hardware diagnostic byte
+  for byte; independent readback verified 21,250 RomFS files, three ExeFS files
+  and all content hashes/IVFC levels. See [verification scope](docs/release-validation.md).
+- Wider source/structural screening is not a complete corruption clearance.
+  Unsupported schemas and suspected fields remain held, not silently repaired.
+  The separate Church of Guidance exit crash and emulator rendering issues are
+  not established as fixed. Translation, screen-fit and whole-game gameplay
+  validation remain incomplete. Clean-Windows and Windows 8 are unverified.
+- Possible Heliodor rendering regression: the player supplied a hardware photo
+  showing duplicated town-map imagery on the upper screen, missing 3D scenery
+  and purple objects. This resembles the earlier rendering error, but recurrence
+  with clean diagnostic inputs is not confirmed. A clean-install test without
+  leftover external patch files is pending. This hotfix does not claim to repair
+  that rendering issue.
+
 ## 0.5.0 — October 2, 2026 (experimental prerelease)
 
 Not fully translated, not stable, and not a hardware-crash repair. The frozen

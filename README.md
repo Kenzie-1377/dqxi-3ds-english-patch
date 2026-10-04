@@ -21,7 +21,21 @@ player reported it was good to go after the requested limited spot check. See th
 [changelog](CHANGELOG.md) and [scoped completion checklist](docs/completion-status.md)
 for changes, completed audited scopes and work still to do.
 
-**Known New 3DS hardware issue (including 0.3.2):** A hardware tester confirms
+**0.5.1 experimental hardware bridge-crash hotfix:** Four enemy-category values in
+`gamecmn.pack` were accidentally relocated as if they were text pointers.
+The fix restores those original numeric values, changing only eight bytes from
+0.5.0 and retaining its English translation. The player reports the diagnostic
+ROM passed the previously crashing real-hardware bridge/walking test.
+This does not establish whole-game stability or fix the separate Church exit
+report. The Heliodor rendering error may have returned: a hardware photo shows
+similar corruption, but confirmation awaits a clean-install test without
+leftover external patch files. A Windows-native C#/.NET Framework 4.8 builder
+replaces the old Python engine, whose failure cause remains unknown. The exact
+native candidate passed repeated complete builds and independent cartridge
+verification. See the [0.5.1 changelog](CHANGELOG.md)
+for scope and remaining limits.
+
+**Historical New 3DS hardware reports through 0.5.0:** A hardware tester confirms
 that **0.3.2 still crashes** in 3D mode when crossing the bridge toward
 Heliodor, and also crashes when leaving the Church of Guidance. The tester
 reports that the earlier Heliodor rendering error is no longer visible in
@@ -45,8 +59,8 @@ The patch cannot be used by itself without matching original inputs.
 ## What you need
 
 - Your own **decrypted Japanese game**, title ID `0004000000199200`.
-- Windows x64. **The standalone EXE does not require Python.**
-- At least 20 GB free for ROM rebuilding, or several GB for mod-folder output.
+- Windows x64 with .NET Framework 4.8. **The EXE does not require or bundle Python.**
+- Allow at least 25 GB free for ROM rebuilding, or several GB for mod-folder output.
 - An emulator with compatible LayeredFS and ExeFS IPS mod support.
 
 The builder checks every required source file's SHA-256. A different revision,
@@ -57,8 +71,9 @@ included.
 ## Standalone Windows app — no Python required
 
 Use `DQXI-English-Translation-Builder.exe` from the repository's release assets
-when available. The EXE includes the runtime, graphical interface, and translation
-patches. Source ZIP downloads do not contain the executable.
+from the **0.5.1** assets. It includes the interface and translation patches and
+uses Windows' installed .NET Framework 4.8. Source ZIPs do not contain the EXE.
+Clean-host and Windows 8 compatibility are unverified.
 
 1. Open the EXE and choose your decrypted Japanese ROM.
 2. Choose an output folder and select **Translated .3ds file** (default), or **Mod folders**.
@@ -69,8 +84,10 @@ patches. Source ZIP downloads do not contain the executable.
 Single-ROM output requires a genuine decrypted `.3ds`/`.cci` cartridge image,
 not a renamed `.app`/`.cxi`. The original cartridge's other partitions are
 preserved and verified. The original ROM is never overwritten. Rebuilt ROMs are
-decrypted/unsigned and are intended for compatible emulators; real hardware
-compatibility has not been validated. Do not distribute the rebuilt ROM.
+decrypted/unsigned and require compatible emulators or custom-firmware workflows.
+The 0.5.1 ROM matched the player's limited hardware bridge diagnostic byte for
+byte, not a comprehensive hardware playthrough. Do not distribute rebuilt ROMs.
+Older external LayeredFS/IPS overrides can change their behavior.
 
 Decrypted cartridges with a stale encryption flag are handled automatically:
 the builder verifies the plaintext hashes, then corrects only its private
@@ -84,11 +101,32 @@ Do not share that private folder or the generated mod.
 The executable is unsigned, so Windows may show an unrecognized-app warning.
 Do not disable security software; use only the maintainer's trusted download.
 
-## Run from source (developers; Python required)
+## Run the native builder from source (Windows developers)
+
+Run `Build-Windows-Exe.ps1` using PowerShell and the Windows .NET Framework 4.8
+compiler, then open `Build-Translation.cmd`. The source is in `tools/native/`.
+Source builds are not automatically certified as the separately verified release
+asset. For native command-line builds, supply a fresh output directory:
+
+```text
+dist/DQXI-English-Translation-Builder.exe --rom "YOUR_GAME.cci" --download-tools --output "NEW_FOLDER"
+dist/DQXI-English-Translation-Builder.exe --rom "YOUR_GAME.cci" --download-tools --output-format rom --output "NEW_FOLDER"
+dist/DQXI-English-Translation-Builder.exe --extracted "YOUR_EXTRACTED_FOLDER" --output "NEW_FOLDER"
+```
+
+Use `--ctrtool PATH` instead of `--download-tools` for a local extractor;
+`--rebuild-tool PATH` supplies the pinned local ROM rebuilder. The GUI defaults
+to `.3ds` output; the command line defaults to mod folders.
+
+## Historical Python developer tools (not the 0.5.1 release engine)
+
+The following older tools remain for maintainer reference. They are not the
+recommended builder; their execution-failure cause has not been diagnosed.
+`Build-Translation.cmd` now launches the compiled native builder instead.
 
 1. Download this repository using **Code → Download ZIP**, then extract it.
 2. Install Python from [python.org](https://www.python.org/downloads/) if needed.
-3. Double-click **Build-Translation.cmd**.
+3. Run `python tools/build_gui.py` from the repository folder.
 4. Select your decrypted `.3ds`, `.cci`, `.cxi`, or `.app` file.
 5. Approve the download of the pinned official CTRTool extractor.
 6. Wait for the successful verification message.
@@ -160,7 +198,8 @@ Restart the emulator, then load a normal save rather than a save state.
 
 See the [mod layout reference maintained by the Azahar team](https://citra.azahar-emu.org/help/feature/game-modding/).
 This is an archived Citra reference; menu labels can vary by emulator version.
-Real 3DS hardware installation has not been validated by this release.
+Hardware workflows vary; only the reported limited bridge diagnostic was tested,
+not every installation method or hardware configuration.
 
 ## Known issues
 

@@ -17,7 +17,8 @@ class Application:
     def __init__(self, root):
         self.root, self.busy, self.built = root, False, None
         self.events, self.cancel = queue.Queue(), threading.Event()
-        root.title('DQXI 3DS — English Translation Builder 0.5.0 (experimental)')
+        version = json.loads((ROOT/'release/manifest.json').read_text(encoding='utf8')).get('version', 'unknown')
+        root.title(f'DQXI 3DS — English Translation Builder {version} (experimental)')
         root.geometry('800x670')
         root.minsize(720, 650)
         style = ttk.Style(root)

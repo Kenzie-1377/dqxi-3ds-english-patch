@@ -1,5 +1,50 @@
 # Release validation
 
+## 0.5.1 — October 4, 2026 (experimental hardware-crash hotfix)
+
+- 733 targets, one changed and 732 unchanged relative to 0.5.0. Only the
+  gamecmn delta/target changes; the IPS and all other payloads are identical.
+  Four original enemy-category values are restored: exactly eight target bytes.
+  No English text, archive layout or unrelated gameplay bytes change in this fix.
+- Frozen manifest SHA-256:
+  `f1219ec7990d2fa82eaee34df754f85b0282bf4a7e5a0069aa7655ea60cc1345`.
+- Windows-native C#/.NET Framework 4.8 executable: 3,528,192 bytes, SHA-256
+  `ede72bb014ecb38b9ae96cd8c0e1a47eab0001832b4096970e72bc45e424e305`.
+  It does not bundle or execute Python. Its sole managed resource is a ZIP of
+  exactly the manifest plus 733 hash-verified patch payloads; no originals,
+  complete game archives, ROMs, saves or private reference data are embedded.
+- Three fresh normal-permission trials constructed the GUI, checked all733
+  embedded payloads and rebuilt all733 outputs from matching originals.
+  Each passed 44 codec plus22 support/path/cancellation synthetic checks,
+  with separate native output path/size/hash and source before/after checks.
+- Functional GUI checks also passed under the production Windows message loop:
+  successful build, cancellation, restored controls, and no cancelled output
+  advertised as ready. Both pinned tool downloads and pre-cancelled download
+  checks passed. The GUI-built mod passed independent checks of all 733 files.
+- Microsoft Defender's custom file scan of this exact executable completed
+  with no threats detected. This is a scoped scan, not a security guarantee.
+- End-to-end cartridge extraction, patching and rebuilding passed. Independent
+  CTRTool extraction checked every one of21,250 RomFS files and three ExeFS
+  files against original/frozen expected bytes. Logo/exheader/ExeFS/RomFS and
+  all three IVFC integrity levels passed; unrelated cartridge partitions were
+  preserved, original ROM unchanged and only the private exheader code-compression
+  bit cleared for uncompressed patched code. Modified NCSD/NCCH Nintendo retail
+  signatures necessarily fail; these expected authentication failures are not
+  represented as valid retail signatures or content-integrity failures.
+- The rebuilt cartridge was byte-for-byte identical to the diagnostic the
+  player reported passed the previously crashing hardware bridge/walking test.
+  This is limited user-reported testing, not an independently observed full
+  playthrough. Heliodor's possible rendering recurrence awaits a clean-install
+  result; the Church exit crash is not established as fixed.
+- The first native ROM trial stopped normally at3dstool's legacy261-character
+  path limit. Shorter exclusive temporary paths and fail-closed path preflight
+  were implemented, recompiled and checked in a fresh successful complete trial.
+  No Windows policy, registry, emulator or PC settings were changed.
+- Previous Python-based execution failures remain unexplained, including failures
+  outside packaging. Replacing the builder is an authorized architecture change,
+  not a diagnosed Python/PC/hardware fix. Clean-host and Windows8 compatibility,
+  wider schemas, gameplay and rendered text fit remain unverified.
+
 ## 0.5.0 — October 2, 2026 (experimental prerelease)
 
 - 733 frozen targets: 730 PACK deltas, two BCH deltas and one executable IPS;

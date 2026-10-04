@@ -1,4 +1,7 @@
 @echo off
-py -3 "%~dp0tools\build_gui.py"
-if errorlevel 1 echo Build failed. Check the message above. Python 3.10 or newer is required.
-pause
+if not exist "%~dp0dist\DQXI-English-Translation-Builder.exe" (
+ echo First run Build-Windows-Exe.ps1, or download the verified 0.5.1 EXE from GitHub Releases.
+ pause
+ exit /b 1
+)
+start "" "%~dp0dist\DQXI-English-Translation-Builder.exe"

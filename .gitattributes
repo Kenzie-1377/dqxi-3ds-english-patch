@@ -5,3 +5,4 @@
 *.cmd text eol=crlf
 *.dqdelta binary
 *.patchdata binary
+release/manifest.json -text
