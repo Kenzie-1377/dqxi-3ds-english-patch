@@ -1,5 +1,50 @@
 # Release validation
 
+## 0.5.2 — October 4, 2026 (experimental Heliodor rendering repair)
+
+**This version has not been tested on real hardware.** The player reports a
+limited Azahar Heliodor rendering pass with the compact item-storage variant;
+file verification is not gameplay or whole-game certification.
+
+- 733 targets: only `syscmn.pack` changes relative to 0.5.1; the other 732
+  payloads, eight-byte bridge repair and Veronica/Sylvando IPS are unchanged.
+  The private newer dialogue overlays are not included.
+- Manifest SHA-256:
+  `875318786e3f69e4245bb2ad506e91f83b8d147ee986ba0c26aae490454ffb85`.
+- Exact native Windows EXE: 3,511,296 bytes, SHA-256
+  `b1e20b31762b2b8293f28c9fed2a1f3e48583a28bc65d63a1f718c1f55e138e6`.
+- Three fresh normal-permission full builds each passed GUI construction,
+  44 codec checks, 22 support checks, all 733 embedded payload checks and
+  all 733 matching-source builds. Separate native readback checked every
+  output path, size and hash, and each original input before and after.
+- Typed item audit covers all 2,875 descriptors: all effective UTF-16 names
+  and descriptions, ASCII resource strings, nullness and original gameplay
+  metadata are preserved. The original text tail is fully accounted for by
+  typed strings and alignment padding, and reconstructs byte-for-byte.
+  Compact storage interns byte-identical same-encoding strings and changes
+  pointer/storage topology; it does not establish an exact GPU or memory fault.
+  The other 67 archive payloads and table/header metadata are preserved;
+  original, legacy-translated and compact archive no-op rebuilds match exactly.
+- The final EXE's exact release-asset file passed a native Microsoft Defender
+  custom scan with no threats detected. This scoped scan is not a security
+  guarantee; the unsigned executable is not represented as signed.
+- Functional GUI success/cancellation, both pinned tool downloads and cancelled
+  downloads passed. Independent readback verified all 733 GUI-built files.
+- Independent extraction of the final builder's rebuilt ROM verified all
+  21,250 RomFS files, three ExeFS files, content integrity and unchanged
+  non-game partitions. The original ROM remained unchanged. These are file
+  checks, not hardware gameplay validation.
+- The sole embedded resource contains exactly the manifest and 733 verified
+  patch payloads, with no extra files or private game/reference data.
+- Earlier helper-path mistakes were held and corrected without changing the
+  package: a nested output was safely rejected, and an independent harness
+  initially selected the old manifest. Successful final-EXE repeats supersede
+  these test-harness results; no runtime/decoder masking was used.
+- Clean-host/Windows 8 compatibility, hardware Heliodor rendering, Church exit
+  behavior, other reported crashes, full translation and rendered text fit
+  remain unverified or unresolved. The previous Python execution-failure cause
+  remains unknown. 0.5.0 and 0.5.1 release assets remain unchanged.
+
 ## 0.5.1 — October 4, 2026 (experimental hardware-crash hotfix)
 
 - 733 targets, one changed and 732 unchanged relative to 0.5.0. Only the

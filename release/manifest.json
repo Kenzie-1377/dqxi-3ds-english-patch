@@ -1,7 +1,7 @@
 {
   "format": "dqxi-translation-deltas-v1",
   "title_id": "0004000000199200",
-  "status": "Experimental prerelease; targeted real-hardware bridge crash repair; incomplete translation; wider crash/corruption audits pending.",
+  "status": "Experimental prerelease; compact item string storage fixes Heliodor rendering in user emulator A/B tests; NOT hardware tested; retains 0.5.1 bridge crash repair; incomplete translation and wider audits pending.",
   "files": [
     {
       "path": "exefs/code.ips",
@@ -5649,9 +5649,9 @@
       "kind": "delta",
       "payload": "0564.dqdelta",
       "source_sha256": "4ef70b46f325564596154528b1b35236d281c0a24b09f697eec079bf1340a44e",
-      "target_sha256": "852ebacc3b4b6e564f7f90a217f7cdeb976492a49d918f2c71d06e74d8cb9ac4",
-      "payload_sha256": "31b1cc507ea5811cd674120968984fadb40ac888120976754e1adb72a451034b",
-      "target_size": 1282792
+      "target_sha256": "629c311a63b583eeac0b7ebc37b47755bae0109c0411796316dd1548fa8a18e2",
+      "payload_sha256": "3a6bbe5df7749025ae46437a04fb52ea36a994cc94246db31966d123a62fa434",
+      "target_size": 866408
     },
     {
       "path": "romfs/ui/battle_2d.pack",
@@ -7334,5 +7334,5 @@
       "target_size": 3069020
     }
   ],
-  "version": "0.5.1"
+  "version": "0.5.2"
 }

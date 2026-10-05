@@ -21,6 +21,17 @@ player reported it was good to go after the requested limited spot check. See th
 [changelog](CHANGELOG.md) and [scoped completion checklist](docs/completion-status.md)
 for changes, completed audited scopes and work still to do.
 
+**0.5.2 experimental Heliodor rendering repair — hardware untested:** Compacts
+the item-text storage in `syscmn.pack`, preserving the existing English item
+names and descriptions, resource strings and original gameplay values. The
+player reports that the compact variant renders Heliodor correctly in Azahar;
+the previous translated item entry reproduced the problem in controlled tests.
+The exact graphics failure mechanism is not diagnosed. **This version has not
+been tested on real hardware.** The 0.5.1 bridge repair remains included, but its
+earlier limited hardware pass does not validate 0.5.2. The Church exit crash,
+other reported crashes and whole-game validation remain unresolved. Back up
+saves and avoid mixing older external patch overrides with the new build.
+
 **0.5.1 experimental hardware bridge-crash hotfix:** Four enemy-category values in
 `gamecmn.pack` were accidentally relocated as if they were text pointers.
 The fix restores those original numeric values, changing only eight bytes from
@@ -71,7 +82,7 @@ included.
 ## Standalone Windows app — no Python required
 
 Use `DQXI-English-Translation-Builder.exe` from the repository's release assets
-from the **0.5.1** assets. It includes the interface and translation patches and
+from the **0.5.2** assets. It includes the interface and translation patches and
 uses Windows' installed .NET Framework 4.8. Source ZIPs do not contain the EXE.
 Clean-host and Windows 8 compatibility are unverified.
 
@@ -118,7 +129,7 @@ Use `--ctrtool PATH` instead of `--download-tools` for a local extractor;
 `--rebuild-tool PATH` supplies the pinned local ROM rebuilder. The GUI defaults
 to `.3ds` output; the command line defaults to mod folders.
 
-## Historical Python developer tools (not the 0.5.1 release engine)
+## Historical Python developer tools (not the native release engine)
 
 The following older tools remain for maintainer reference. They are not the
 recommended builder; their execution-failure cause has not been diagnosed.

@@ -1,5 +1,31 @@
 # Changelog
 
+## 0.5.2 — October 4, 2026 (experimental Heliodor rendering repair)
+
+**Not tested on real hardware.** This is an emulator-tested, scoped repair,
+not a stable or fully translated release.
+
+- Compacts item-text storage in `syscmn.pack`, removing superseded text pools
+  and sharing byte-identical strings of the same encoding. Item data shrinks
+  from 811,072 to 394,652 bytes; the archive shrinks to 866,408 bytes.
+- Preserves every effective English item name and description, ASCII resource
+  string and original gameplay value across all 2,875 item records. The other
+  67 archive payloads and archive metadata are retained. Original shader-file
+  alignment is preserved; alignment alone did not resolve the tested symptom.
+- The player reports correct Heliodor rendering in Azahar with the compact
+  variant. Controlled tests reproduced the error with the previous translated
+  item entry and cleared it with the compact entry. This supports the tested
+  storage-level remedy, not a diagnosed GPU fault or allocation threshold.
+- Retains the eight-byte bridge crash repair and native Windows builder from
+  0.5.1. Earlier limited hardware bridge testing is not hardware validation of
+  this new version. There are no new translations: 733 targets, one changed
+  and 732 unchanged relative to 0.5.1. Private newer dialogue overlays are not
+  included in this focused release.
+- Hardware Heliodor rendering, the Church exit crash, other reported crashes,
+  full gameplay and rendered text fit remain unverified or unresolved. Earlier
+  Python execution failures remain unexplained. Avoid old external overrides
+  when testing the newly built ROM; preserve saves and recoverable backups.
+
 ## 0.5.1 — October 4, 2026 (experimental hardware-crash hotfix)
 
 Focused bridge-crash repair, not a whole-game stability or rendering fix.

@@ -31,7 +31,7 @@ public sealed class BuilderForm : Form
 
     public BuilderForm()
     {
-        Text = "DQXI 3DS — English Translation Builder 0.5.1 (experimental)";
+        Text = "DQXI 3DS — English Translation Builder 0.5.2 (experimental)";
         Font = new Font("Segoe UI", 9F);
         AutoScaleMode = AutoScaleMode.Dpi;
         ClientSize = new Size(830, 710);
@@ -54,7 +54,7 @@ public sealed class BuilderForm : Form
             Font = new Font("Segoe UI", 20F, FontStyle.Bold), Margin = new Padding(0, 0, 0, 6)
         });
         AddText(layout, "DRAGON QUEST XI • Japanese Nintendo 3DS edition", 12);
-        AddText(layout, "Experimental, incomplete translation. Heliodor rendering remains unresolved.\r\nYour original ROM and saves are never modified. No automatic installation.", 16);
+        AddText(layout, "Experimental, incomplete translation. Heliodor fix passed a limited emulator test; NOT hardware tested.\r\nYour original ROM and saves are never modified. No automatic installation.", 16);
 
         AddPath(layout, "1. Your decrypted Japanese game (.3ds, .cci, .cxi, .app)", rom, PickRom);
         output.Text = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "DQXI Translation Builds");
@@ -197,7 +197,7 @@ public sealed class BuilderForm : Form
             if (romOutput.Checked && extension != ".3ds" && extension != ".cci")
                 throw new ArgumentException("Translated .3ds output requires a .3ds/.cci cartridge image. Choose mod folders for .cxi/.app input.");
             if (romOutput.Checked && MessageBox.Show(this,
-                "Create a new translated .3ds file? The builder may download verified 3dstool. Allow at least 20 GB free.\r\n\r\nYour original ROM stays unchanged. This experimental build does not confirm that the Heliodor rendering issue is resolved.",
+                "Create a new translated .3ds file? The builder may download verified 3dstool. Allow at least 20 GB free.\r\n\r\nYour original ROM stays unchanged. Heliodor fix passed a limited emulator test; NOT hardware tested. This does not confirm whole-game stability.",
                 "Build a translated .3ds?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
 
             // Unique destination avoids reuse/overwrite; the engine must also fail closed.
@@ -238,7 +238,7 @@ public sealed class BuilderForm : Form
                 throw new IOException("The engine did not return an existing verified output.");
             built = result;
             progress.Value = 100;
-            status.Text = "Build verification completed. Experimental output is ready; Heliodor rendering remains unresolved. See Installation help.";
+            status.Text = "Build verification completed. Heliodor fix passed a limited emulator test; NOT hardware tested. See Installation help.";
         }
         catch (OperationCanceledException)
         {
@@ -323,7 +323,7 @@ public sealed class BuilderForm : Form
     private void ShowHelp()
     {
         MessageBox.Show(this,
-            "This is an experimental, incomplete translation. Successful file verification is not in-game validation. Heliodor rendering remains unresolved; a successful bridge test does not prove all scenes or hardware are safe.\r\n\r\n" +
+            "This is an experimental, incomplete translation. Successful file verification is not in-game validation. Heliodor fix passed a limited emulator test; NOT hardware tested. A successful bridge test does not prove all scenes or hardware are safe.\r\n\r\n" +
             "For .3ds output: use the new ROM in a compatible emulator or your appropriate custom-firmware workflow. No mod folders need to be installed for its embedded patch. Older LayeredFS mods or external IPS patches can override embedded data; do not mix test sets.\r\n\r\n" +
             "For mod folders:\r\n1. Close the game and back up existing mods and saves.\r\n2. Open the game's Mods Location in your emulator.\r\n3. Copy the generated romfs and exefs folders into:\r\nload/mods/0004000000199200/\r\n4. Restart the emulator and load a normal save.\r\n\r\n" +
             "The builder never installs mods, changes emulator settings or edits saves. Do not share generated ROMs, mod folders or .dqxi-private: they contain game-derived data. Share only the public builder and patches.",
