@@ -1,5 +1,36 @@
 # Changelog
 
+## 0.5.3 — October 7, 2026 (experimental dialogue, UI and rendering update)
+
+- Includes 175 recently installed translated dialogue fields across 38 cutscene
+  packs. Eight previously private translations in the Sinderella/Whambelina
+  scene are also retained and packaged; they are separate from the recent 175.
+  Two original heart glyphs remain intentionally. Existing-English quality
+  corrections and a Rab-note reflow are counted separately, not as new Japanese
+  translations. The full Octagonia NPC/quest/party/alternate-state audit is not
+  complete, and untranslated or held lines remain.
+- Repairs the Hold to Skip texture while retaining the separate Y icon, and
+  adjusts the equipment Stat Changes heading, Magical Might/Mending label sizing
+  and Rotate footer spacing. UI changes have file/layout checks, not universal
+  rendered-fit clearance.
+- Restores the exact original graphics-resource suffix and addresses in
+  `syscmn.pack` while retaining all 68 current payloads, including compact English
+  item text. The player reports correct Octagonia and Heliodor 3D rendering in
+  Azahar. Controlled Octagonia tests cleared the failure with all overrides off
+  and with only syscmn off, then passed with this repair. The internal graphics
+  consumer dependency is not diagnosed; this is not a whole-game rendering claim.
+- The player confirms the Church crash fix passed on real hardware with 0.5.2.
+  This supersedes the earlier unresolved report for that tested version, but is
+  not hardware validation of the new 0.5.3 graphics layout. The existing bridge
+  fix and character-name IPS remain byte-for-byte unchanged.
+- 733 patch targets: 42 updated and 691 byte-identical payloads retained from
+  0.5.2. No targets are added or removed. Unrelated newer private overlays and
+  six uninstalled private dialogue fields are not included. Older releases and
+  their assets remain unchanged. See [release validation](docs/release-validation.md).
+- Experimental prerelease: new-version hardware, full gameplay, all rendered
+  layouts, comprehensive translation and clean-host compatibility are not
+  certified. Original ROMs, saves and private references are not distributed.
+
 ## 0.5.2 — October 4, 2026 (experimental Heliodor rendering repair)
 
 **Not tested on real hardware.** This is an emulator-tested, scoped repair,

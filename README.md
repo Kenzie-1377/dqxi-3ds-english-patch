@@ -9,7 +9,16 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.5.0 experimental prerelease** substantially expands regional
+The **0.5.3 experimental prerelease** adds recently reviewed dialogue and UI
+repairs and an Octagonia rendering repair. It packages 733 targets, with 42
+updated and 691 payloads unchanged from 0.5.2. The player reports that Octagonia
+and Heliodor render correctly in Azahar with the repaired shared archive.
+The Church crash fix has a separate user-reported hardware pass on **0.5.2**;
+the new 0.5.3 archive has not been hardware tested. The full Octagonia dialogue
+audit, whole-game stability and comprehensive rendered text fit remain unfinished.
+See the [changelog](CHANGELOG.md) and [verification scope](docs/release-validation.md).
+
+The earlier **0.5.0 experimental prerelease** substantially expands regional
 dialogue and speaker-name coverage while retaining the player-confirmed
 Veronica/Sylvando final-letter repair. It packages 733 patch targets: 111 updated
 and 622 unchanged from 0.4.0. The regional translation pass converted 7,588
@@ -21,7 +30,7 @@ player reported it was good to go after the requested limited spot check. See th
 [changelog](CHANGELOG.md) and [scoped completion checklist](docs/completion-status.md)
 for changes, completed audited scopes and work still to do.
 
-**0.5.2 experimental Heliodor rendering repair — hardware untested:** Compacts
+**Historical 0.5.2 release-time status (later Church hardware pass noted above):** Compacts
 the item-text storage in `syscmn.pack`, preserving the existing English item
 names and descriptions, resource strings and original gameplay values. The
 player reports that the compact variant renders Heliodor correctly in Azahar;
@@ -82,7 +91,7 @@ included.
 ## Standalone Windows app — no Python required
 
 Use `DQXI-English-Translation-Builder.exe` from the repository's release assets
-from the **0.5.2** assets. It includes the interface and translation patches and
+from the **0.5.3** assets. It includes the interface and translation patches and
 uses Windows' installed .NET Framework 4.8. Source ZIPs do not contain the EXE.
 Clean-host and Windows 8 compatibility are unverified.
 

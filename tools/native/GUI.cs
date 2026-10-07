@@ -31,7 +31,7 @@ public sealed class BuilderForm : Form
 
     public BuilderForm()
     {
-        Text = "DQXI 3DS — English Translation Builder 0.5.2 (experimental)";
+        Text = "DQXI 3DS — English Translation Builder 0.5.3 (experimental)";
         Font = new Font("Segoe UI", 9F);
         AutoScaleMode = AutoScaleMode.Dpi;
         ClientSize = new Size(830, 710);

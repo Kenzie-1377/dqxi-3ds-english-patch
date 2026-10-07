@@ -1,5 +1,50 @@
 # Release validation
 
+## 0.5.3 — October 7, 2026 (experimental dialogue, UI and rendering update)
+
+- 733 targets: 42 changed, 691 byte-identical payloads retained from 0.5.2,
+  with no added/removed targets. Scope is 38 cutscene packs, one existing-English
+  script reflow, two UI archives and the shared graphics-layout repair. Eleven
+  unrelated preexisting private overlays and six uninstalled fields are excluded.
+- Fresh typed before/current reconciliation confirms 175 recent translated
+  dialogue fields across 38 packs, raw CJK reduction 173 and two retained source
+  heart glyphs. Eight older privately installed translations in one scene have
+  separate source/installation lineage and are not counted in the recent 175.
+  Existing-English quality corrections are separate. The broader town audit and
+  full rendered-fit/runtime validation remain incomplete.
+- Frozen manifest SHA-256:
+  `f1265829a7c2e19e43723b1775b953aa92775f95adcaec3b7bb582ccd384adfa`.
+- Exact Windows-native EXE: 3,524,096 bytes, SHA-256
+  `cbef76ca68e3aa8ff0e2001e08a21882f58d92e210406750d0c2d3628545009b`.
+- Three fresh complete matching-source builds passed GUI construction, 44 codec
+  and 22 support checks, all 733 embedded payload checks, all 733 output
+  path/size/hash checks and source-before/after checks. Native codecs and safety
+  assertions are unchanged from 0.5.2; builder changes are version/manifest pins.
+- Independent inspection of the sole embedded ZIP verified exactly the manifest
+  and 733 patch payloads, independently reconstructed all targets and checked
+  the 42-change/691-preserved scope. No original archives, ROMs, saves, private
+  reference CSV or extra package files are embedded.
+- Functional GUI build/cancellation and both pinned tool downloads passed;
+  independent readback checked every GUI output. The first restricted-environment
+  download attempt failed at TLS credentials after build/cancellation passed;
+  a fresh exact-assembly permitted-network run passed all gates. No emulator,
+  Windows policy, cache or decoder changes were used.
+- The rebuilt cartridge passed independent readback of all 21,250 RomFS files,
+  three ExeFS files, content hashes and three IVFC levels. Unrelated partitions
+  and the original ROM were preserved. Modified Nintendo retail signatures are
+  expected invalid; they are not claimed as valid signatures.
+- The exact release asset passed a scoped Defender file scan with no threats
+  detected. This is not a security guarantee; the builder remains unsigned.
+- Shared archive repair restores the exact original graphics suffix/addresses
+  while retaining every current payload. The player reports Octagonia and
+  Heliodor rendering passes in Azahar. The internal graphics dependency is not
+  diagnosed. The Church fix has a separate user-reported hardware pass on 0.5.2,
+  not hardware validation of the new 0.5.3 archive. Whole-game, new-version
+  hardware, all layouts and clean-host compatibility remain unverified.
+- Historical 0.5.0, 0.5.1 and 0.5.2 release assets remain unchanged. The earlier
+  Church-unresolved wording below reflects release-time evidence and is
+  superseded by the later limited 0.5.2 user hardware confirmation above.
+
 ## 0.5.2 — October 4, 2026 (experimental Heliodor rendering repair)
 
 **This version has not been tested on real hardware.** The player reports a
