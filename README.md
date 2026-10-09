@@ -9,7 +9,23 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.5.3 experimental prerelease** adds recently reviewed dialogue and UI
+The **0.6.0 experimental prerelease** packages the current installed translation
+progress, including regional dialogue, extra-page call repairs in 2D and 3D,
+mini-medal/menu fixes, localized area-title artwork and the remaining Memories
+titles. It has 787 patch targets: 72 updated, 54 added and 661 payloads unchanged
+from 0.5.3. All 888 scene-title fields and 53 chapter headings have reviewed
+English; exact PC title counterparts replace earlier manual wording where
+available. The player reports that the latest Memories fixes work in Azahar.
+
+**Unresolved crashes were reported during 2D battles and map movement. This is
+not a fix for those crashes.** Translation, regional NPC/book/quest/party audits,
+all replay paths and whole-game stability remain unfinished. This exact version
+has not been tested on real hardware. Back up saves and do not mix old external
+overrides with a newly built ROM. See the [changelog](CHANGELOG.md),
+[completion scope](docs/completion-status.md) and
+[verification scope](docs/release-validation.md).
+
+The historical **0.5.3 experimental prerelease** adds recently reviewed dialogue and UI
 repairs and an Octagonia rendering repair. It packages 733 targets, with 42
 updated and 691 payloads unchanged from 0.5.2. The player reports that Octagonia
 and Heliodor render correctly in Azahar with the repaired shared archive.
@@ -91,7 +107,7 @@ included.
 ## Standalone Windows app — no Python required
 
 Use `DQXI-English-Translation-Builder.exe` from the repository's release assets
-from the **0.5.3** assets. It includes the interface and translation patches and
+from the **0.6.0** assets. It includes the interface and translation patches and
 uses Windows' installed .NET Framework 4.8. Source ZIPs do not contain the EXE.
 Clean-host and Windows 8 compatibility are unverified.
 

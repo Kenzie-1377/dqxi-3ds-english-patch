@@ -1,7 +1,27 @@
-# Scoped completion checklist — 0.5.0
+# Scoped completion checklist — 0.6.0
 
 This checklist distinguishes reviewed implementation from player testing.
 "Complete" below applies only to the stated audited scope, never the whole game.
+
+## New scoped work packaged in 0.6.0
+
+- Memories title tables: all 888 nested display fields and 53 chapter headings
+  reviewed in English, using exact PC matches wherever available. No referenced
+  Japanese titles remain. Full wording and original playback identities are
+  preserved. Menu headers, confirmation/mode choices and prompts are English;
+  the player reports that the latest update works in Azahar. This does not
+  certify every memory's playback, dialogue or alternate state.
+- Regional dialogue and extra-page consumer repairs since 0.5.3 are included,
+  as are school/map/quest/records/mini-medal/equipment UI and area-title artwork
+  improvements. Tests remain interaction-specific. Puerto Valor, Lonalulu,
+  Nautica, L'Académie and the overall game are not certified fully complete.
+- School NPC, book, quest and party/alternate-path work is still unfinished.
+  Reported 2D battle/map crashes are undiagnosed. Brollyminator and other long
+  battle-target names still need a wrapping repair. This release does not claim
+  to fix these outstanding issues or provide real-hardware validation.
+- Package/build scope: 787 targets, 72 updates, 54 additions, 661 unchanged
+  payloads from 0.5.3. All787 matching-source outputs and complete rebuilt-ROM
+  contents were verified; those checks are not gameplay certification.
 
 ## New file-verified implementation in 0.5.0
 

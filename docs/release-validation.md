@@ -1,5 +1,49 @@
 # Release validation
 
+## 0.6.0 — October 9, 2026 (experimental regional dialogue and Memories update)
+
+- Frozen current installed package: 787 active targets, consisting of 72 updated
+  targets, 54 additions and 661 byte-identical retained payloads from 0.5.3.
+  No earlier public target is removed. 551 quarantined old files are excluded.
+  Original inputs and the entire installed inventory were pinned before and
+  after preparing the separate snapshot; publication does not install anything.
+- Manifest SHA-256:
+  `ddcdc0cbc9b28b2b0e5cf93fcf373d9ea97ba84814c92b069e3da8c604c007a9`.
+- Exact native Windows EXE: 3,757,056 bytes, SHA-256
+  `86fc8424dfa761cfa519410a96e47581ae395fd2de66550c81bbcfb326d35431`.
+- Three complete builds of that exact executable verified all 787 embedded
+  payloads and all 787 output paths, sizes and hashes. Original input hashes
+  were checked before and after each run. Each output matches the frozen
+  installed snapshot. Builder changes are mechanical version, manifest-pin
+  and target-count changes; codecs and runtime safety checks are retained.
+- Independent embedded-resource inspection found exactly one ZIP resource,
+  containing only the manifest and 787 source-bound patch payloads. All targets
+  reconstructed correctly from matching originals. No complete game archives,
+  original ROM, saves, keys, private reference CSV or quarantine files are bundled.
+- Functional GUI build/cancellation and both checksum-pinned tool downloads
+  passed, including cancelled download behavior. All 787 GUI output files were
+  independently compared. Repository regression tests passed 37/37.
+- Independent rebuilt-ROM verification checked all 21,250 RomFS files, three
+  ExeFS files and content/IVFC integrity. The original ROM and unrelated
+  cartridge partitions were preserved. Modified retail NCSD/NCCH signatures
+  are expected invalid, not represented as Nintendo-valid signatures.
+- The exact release EXE passed a scoped Defender file scan with no threats
+  found; remediation was disabled and no security settings changed. This is
+  not a security guarantee. The builder remains unsigned.
+- All 941 referenced memory titles were independently read back from typed
+  tables. No Japanese remains in those referenced title fields. Playback IDs,
+  counts and unrelated bytes are preserved. Full PC titles are retained with
+  explicit native-font typography conversions; list and prompt widths are
+  checked for the maximum title. The user reports the latest Memories changes
+  work. This is not verification of every replayed scene or every story state.
+- Runtime page validation remains limited to reviewed consumers and individual
+  player-tested interactions. School NPC/book/quest/party completion and wider
+  regional audits remain unfinished. Newly reported 2D battle/map crashes are
+  undiagnosed; no new crash fix, whole-game stability or hardware clearance is
+  claimed. Earlier bridge and Church hardware passes are version/scope-specific.
+- Existing release tags, bodies and assets are preserved. Only the builder EXE
+  and SHA-256 checksum file are published as the new release's assets.
+
 ## 0.5.3 — October 7, 2026 (experimental dialogue, UI and rendering update)
 
 - 733 targets: 42 changed, 691 byte-identical payloads retained from 0.5.2,

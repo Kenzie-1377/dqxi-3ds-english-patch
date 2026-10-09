@@ -1,5 +1,42 @@
 # Changelog
 
+## 0.6.0 — October 9, 2026 (experimental regional dialogue and Memories update)
+
+- Packages the current installed translation progress since 0.5.3: regional
+  story/NPC/book/party work covering Puerto Valor, Lonalulu, Nautica and
+  L'Académie, plus related earlier-scene corrections. This is not a claim that
+  these regions or all their alternate states are complete.
+- Retains full English dialogue in the repaired scopes, using matched PC text
+  where available and documented faithful Japanese fallback for 3DS-only lines.
+  Includes explicit extra-page call repairs for reviewed 2D and 3D scene paths,
+  addressing cases where appending text pages alone did not call the next page.
+  Runtime coverage remains scene-specific, not universal playback certification.
+- Completes the referenced Memories title tables: 888 scene-title display fields
+  across 444 entries and 53 chapter headings. 540 scene fields and 28 chapter
+  headings use unique exact Japanese-to-PC-English matches; remaining labels
+  use faithful fallback or retained reviewed English. Existing manual versions
+  with exact PC counterparts are replaced. Full titles are retained, with narrow
+  text sizing for the 43-character maximum, rather than truncation. The player
+  confirms that the latest memory-title/menu update works in Azahar.
+- Includes Memories headers, Yes/No and 2D/3D/Cancel choices, replay prompts,
+  quest-status badges, Detailed Records formatting, Battle Record heading,
+  Magical Mending sizing, school quest title/reward fit, jewel-shop farewell and
+  mini-medal screen work. Adds 26 localized area-title artwork targets. Wider
+  visual/runtime testing remains necessary.
+- 787 patch targets: 72 existing targets updated, 54 added, 661 unchanged
+  payloads retained from 0.5.3, no removals. All 551 quarantined old files and all
+  uninstalled stages are excluded. Older public releases and assets are unchanged.
+- The exact native Windows builder passed three complete builds, all target
+  hash/size/path readbacks, GUI success/cancellation and pinned tool-download
+  checks, independent embedded patch-only reconstruction and a Defender file
+  scan. The rebuilt ROM passed content/integrity readback of all 21,250 RomFS
+  files and three ExeFS files. See [validation](docs/release-validation.md).
+- **Known issue:** crashes reported during 2D battles and map movement remain
+  undiagnosed. This release does not fix those crashes and has not been tested
+  on real hardware. Existing bridge, shared-graphics and character-name repairs
+  are retained; their earlier limited passes do not certify this new version.
+  The translation and school NPC/book/quest/party pass are still incomplete.
+
 ## 0.5.3 — October 7, 2026 (experimental dialogue, UI and rendering update)
 
 - Includes 175 recently installed translated dialogue fields across 38 cutscene

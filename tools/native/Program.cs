@@ -41,7 +41,7 @@ public static class Program {
                 result=BuildEngine.Build(new BuildOptions {Rom=get("--rom"),Extracted=get("--extracted"),Output=get("--output"),Release=get("--release"),WorkRoot=get("--work-root"),CtrTool=get("--ctrtool"),RebuildTool=get("--rebuild-tool"),DownloadTools=options.ContainsKey("--download-tools"),RomOutput=mode=="rom"},delegate(string message,int p) { Console.WriteLine(p+"% "+message); },CancellationToken.None);
             } else if(!self) throw new ArgumentException("Choose --rom or --extracted");
             if(get("--report")!=null) {
-                var report=new { version="0.5.3",engine="Windows .NET Framework; no Python",gui_created=gui,payloads=733,completed_output=result,utc=DateTime.UtcNow.ToString("o"),scope="Bounded builder checks only; not gameplay/whole-game certification" };
+                var report=new { version="0.6.0",engine="Windows .NET Framework; no Python",gui_created=gui,payloads=787,completed_output=result,utc=DateTime.UtcNow.ToString("o"),scope="Bounded builder checks only; not gameplay/whole-game certification" };
                 BuildSupport.WriteNew(Path.GetFullPath(get("--report")),System.Text.Encoding.UTF8.GetBytes(new JavaScriptSerializer().Serialize(report)));
             }
             return 0;
