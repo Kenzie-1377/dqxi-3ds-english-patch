@@ -1,4 +1,21 @@
-# Scoped completion checklist — 0.6.0
+# Scoped completion checklist — 0.7.0 candidate
+
+## Newly installed audited scopes
+
+Phnom Nonh, Sniflheim, Arboria/surroundings, Angri-La/Mount Pang Lai,
+Havens Above, Battleground/Fortress, Fallen Haven, Tower of Lost Time,
+Drustan trials, Radiant Expanse and the final-ending scene families have
+source/continuation/build checks and independently verified installed readback.
+Complete matched PC wording is retained, with documented native-only fallback.
+This does not certify every historical return state or a live whole-game run.
+
+The player confirmed the latest Veronica/Sylvando battle formatter fix.
+The newest ending captions, choices and ending-save/return behavior still need
+human testing. Tickington/book worlds, earlier-town return-state audits,
+120 conditionally excluded historical party candidates and 11 shared held
+fields remain open. The intermittent 2D crash remains unresolved.
+
+## Historical 0.6.0 release-time checklist
 
 This checklist distinguishes reviewed implementation from player testing.
 "Complete" below applies only to the stated audited scope, never the whole game.

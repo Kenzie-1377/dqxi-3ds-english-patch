@@ -1,5 +1,37 @@
 # Release validation
 
+## 0.7.0 candidate — October 11, 2026
+
+The release candidate is being reconstructed from the exact latest installed
+1,547-file inventory, excluding quarantined files and uninstalled preparations.
+The installed ending batch passed exact backups, twice-read-back targets and
+an independent complete inventory/archive/metadata check. Complete PC wording,
+native-only provenance, both-mode/sibling/timeline continuation, choice flags,
+font coverage and scoped layout fit were independently checked offline.
+
+The patch-only embedded resource independently reconstructs all 996 active
+targets. Three runs of the exact native executable passed complete output
+path/hash/size checks and verified original inputs remained unchanged. The
+package preserves 563 previous payloads byte-for-byte, updates 224 and adds
+209, without removing any previous target. All 551 quarantined files are
+excluded; the complete cumulative battle-fix IPS is retained.
+
+Manifest SHA-256: `b6523cfe3bf5a2bc95a5d4919b2e0f41ae8165222901996eeb8a44179eda1b05`.
+Builder SHA-256: `1f0614bc28e4d8e233f27b046d3d91f98ce6dec2f1ec628f1477b9e7ffb72911`.
+
+GUI success, cancellation and checksum-pinned tool-download tests passed, with
+all 996 GUI outputs independently checked. A fresh source-recipe build also
+reconstructed all targets. Repository tests passed 37/37 after package staging.
+The exact executable is unsigned. The local Defender engine returned error
+`0x80508023` and did not complete its scan; no clean antivirus-scan claim is made.
+No security settings were changed. The rebuilt ROM passed independent checks
+of all 21,250 RomFS files, three ExeFS files and IVFC integrity levels. Executable
+readback independently applied the exact cumulative IPS to the immutable
+original executable, rather than comparing against an older diagnostic patch.
+No claim is
+made that these checks are emulator playthrough or real-hardware certification.
+Human cinematic pacing, final choices and ending-save/return tests remain.
+
 ## 0.6.0 — October 9, 2026 (experimental regional dialogue and Memories update)
 
 - Frozen current installed package: 787 active targets, consisting of 72 updated

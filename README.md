@@ -9,7 +9,21 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.6.0 experimental prerelease** packages the current installed translation
+The **0.7.0 experimental prerelease** includes the installed Phnom Nonh,
+Sniflheim, Arboria and surrounding areas, Angri-La/Mount Pang Lai, Havens Above,
+Battleground/Fortress, Fallen Haven, Tower of Lost Time, Drustan trials, Radiant
+Expanse and final-ending scene passes. Full matched PC English is retained where
+available; documented faithful fallback covers native-only differences.
+It also includes the player-confirmed battle formatter repair for Veronica and
+Sylvando. Regional build checks are not whole-game or hardware certification.
+The package contains 996 patch targets: 224 updated, 209 added and 563 unchanged
+payloads retained from 0.6.0, with no removals. All 551 quarantined files and
+uninstalled preparations are excluded.
+Tickington/book worlds, earlier-town return-state audits and shared held text
+remain unfinished. The ending movie's added caption timing and ending
+choices/save/return paths still need human gameplay testing.
+
+The historical **0.6.0 experimental prerelease** packages the installed translation
 progress, including regional dialogue, extra-page call repairs in 2D and 3D,
 mini-medal/menu fixes, localized area-title artwork and the remaining Memories
 titles. It has 787 patch targets: 72 updated, 54 added and 661 payloads unchanged

@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.7.0 — October 11, 2026 (experimental regional and ending update)
+
+- Includes the installed regional passes for Phnom Nonh, Sniflheim, Arboria and
+  surrounding areas, Angri-La/Mount Pang Lai, Havens Above, Battleground/Fortress,
+  Fallen Haven, Tower of Lost Time, Drustan trials and Radiant Expanse.
+- Uses complete paired PC English where equivalents exist, with documented
+  faithful Japanese fallback for native-only differences. Includes explicit
+  2D/3D/sibling/timeline/choice page continuation and scoped text-fit repairs.
+- Includes 94 reviewed final-ending text fields, credits/control paths and
+  final-page-only choices. A two-page movie caption adds a scoped frame-1580
+  page between original frame-1510 and frame-1650 actions. Movie pacing and
+  ending choices/save/return still require human gameplay testing.
+- Retains the player-confirmed Veronica/Sylvando battle formatter correction,
+  earlier IPS repairs, Memories titles, item/menu and regional fixes.
+- Packages 996 active patch targets: 224 updated, 209 added, 563 unchanged from
+  0.6.0 and no removals. Excludes all 551 quarantined files, uninstalled stages,
+  original game archives, saves, keys and private PC-reference material.
+- Tickington/book worlds, earlier-town return-state audits and shared held
+  fields remain unfinished. No whole-game or real-hardware certification.
+- **Known issue:** the previously reported intermittent 2D battle/map crash
+  remains deferred and unresolved; this release does not claim to fix it.
+
 ## 0.6.0 — October 9, 2026 (experimental regional dialogue and Memories update)
 
 - Packages the current installed translation progress since 0.5.3: regional
