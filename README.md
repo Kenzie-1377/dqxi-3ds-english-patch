@@ -9,7 +9,25 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.7.0 experimental prerelease** includes the installed Phnom Nonh,
+The **0.8.0 experimental prerelease** adds installed Tickington corrections and
+bounded book-world dialogue, book, quest and continuation passes for Damdara,
+Galenholm, Tantegel, Moonahan, Cannock, Erdrick's Home, Rose's Room, Whealbrook,
+Weaver's Peak and Alltrades Abbey, including Academy book acquisition and a
+separate quest74 successor/return scope. Full applicable PC English is retained
+with reviewed extra pages and original choices/gameplay controls. Native-only
+or differing mechanics retain documented faithful wording.
+
+The package contains 1,014 active patch targets: 13 updated, 18 added and 983
+unchanged from 0.7.0, with no removals. All 551 quarantined files and uninstalled
+preparations are excluded. The cumulative battle formatter fixes are retained;
+this update also repairs the native notification loader's 90-to-108 row check.
+These are bounded reviewed scopes, not whole-world completion claims. Other
+hub/book-world actors, the initial mansion/rehearsal pass, earlier-town returns
+and shared held text remain unfinished. Offline checks are not a live gameplay
+or real-hardware certification. Ending caption pacing, choices and save/return
+paths still need human testing.
+
+The historical **0.7.0 experimental prerelease** includes the installed Phnom Nonh,
 Sniflheim, Arboria and surrounding areas, Angri-La/Mount Pang Lai, Havens Above,
 Battleground/Fortress, Fallen Haven, Tower of Lost Time, Drustan trials, Radiant
 Expanse and final-ending scene passes. Full matched PC English is retained where

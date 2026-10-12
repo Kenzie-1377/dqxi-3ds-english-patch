@@ -1,4 +1,25 @@
-# Scoped completion checklist — 0.7.0 candidate
+# Scoped completion checklist — 0.8.0
+
+## Latest installed reviewed scopes
+
+Tickington's bounded opening/return/first-altar/guild/elder scopes and book-world
+passes for Damdara, Galenholm, Tantegel, Moonahan, Cannock, Erdrick's Home,
+Rose's Room, Whealbrook, Weaver's Peak and Alltrades Abbey have independently
+verified installed readback. Academy acquisition captions and the separate
+quest74 successor/return scope are included. The latest two batches total 116
+reviewed dialogue/auxiliary fields; this is not a whole-release unique count.
+Complete applicable paired PC English, extra-page continuation and original
+choices/mechanics are preserved within these bounded scopes.
+
+This is not certification of whole worlds, every state, a complete translation,
+live gameplay or real hardware. Initial map963 mansion/rehearsal work, other
+hub/book-world actors, earlier-town returns, 120 conditional historical party
+candidates and 11 shared held fields remain open. Held captions/notifications,
+including4816, 5008 and secondary129944, are unchanged, not declared unused.
+The intermittent 2D crash remains unresolved. Ending caption pacing, final
+choices and ending-save/return tests remain pending.
+
+## Historical 0.7.0 release-time scopes
 
 ## Newly installed audited scopes
 

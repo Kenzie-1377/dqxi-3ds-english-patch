@@ -1,5 +1,40 @@
 # Release validation
 
+## 0.8.0 — October 12, 2026 (experimental)
+
+The package is frozen from the exact independently installed 1,565-file
+inventory through the bounded quest74 successor. It contains 1,014 active
+targets, excludes all 551 quarantined files and all uninstalled preparations,
+preserves 983 prior payloads, updates 13 and adds 18 without removing targets.
+Only patch payloads and builder sources are distributed; no ROM, original game
+archives, saves, keys or private PC reference resources are included.
+
+Three complete runs of the exact release executable, an independently compiled
+fresh public source-recipe build and embedded reconstruction passed all 1,014
+output path/hash/size checks, with original inputs unchanged. GUI success,
+cancellation, two checksum-pinned tool downloads and download cancellation
+passed. An initial sandbox DNS failure is retained in private diagnostics;
+the separate successful retry did not relax any checksum gate. Repository
+tests passed 37/37.
+
+The rebuilt cartridge passed independent checks of all 21,250 RomFS files,
+three ExeFS files and IVFC integrity levels. Independent executable readback
+applied all 203 literal/RLE records of the exact current cumulative IPS to the
+immutable original executable. Only expected invalid modified-retail signatures
+remain; Nintendo signatures cannot be regenerated.
+
+Manifest SHA-256: `8c63127e7bd1e18a39d4bb80432fc393d6f85dc225d8e7a94d57efe65b70bd1e`.
+Builder SHA-256: `e268173f717ee096c69ecf5dd1c358a2a673784d65406365603b3abf7aedb5bd`.
+Cumulative IPS SHA-256: `5d4b236a823fc215e36603342b53b42903bcff084f927d9c6501b142d1704688`.
+
+The Windows executable is unsigned. Defender completed a scoped scan of this
+exact executable and reported no threats; no security settings were changed.
+This is not a general security guarantee. Build checks do not certify live
+gameplay, real hardware, whole-world completion or whole-game stability.
+Initial mansion/rehearsal work, other hub/book-world actors, earlier returns
+and held fields remain unfinished. Ending pacing, choices and save/return paths
+still require human testing. The intermittent 2D battle/map crash is unresolved.
+
 ## 0.7.0 candidate — October 11, 2026
 
 The release candidate is being reconstructed from the exact latest installed

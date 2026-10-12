@@ -20,7 +20,7 @@ public sealed class ReleaseManifest {
     public ReleaseRow[] files;
 }
 public sealed class ReleaseData : IDisposable {
-    public const string ManifestHash = "b6523cfe3bf5a2bc95a5d4919b2e0f41ae8165222901996eeb8a44179eda1b05";
+    public const string ManifestHash = "8c63127e7bd1e18a39d4bb80432fc393d6f85dc225d8e7a94d57efe65b70bd1e";
     string folder;
     Stream stream;
     ZipArchive archive;
@@ -40,7 +40,7 @@ public sealed class ReleaseData : IDisposable {
         var raw = Read("manifest.json");
         if (BuildSupport.Hash(raw) != ManifestHash) throw new InvalidDataException("Patch manifest checksum mismatch");
         Manifest = new JavaScriptSerializer().Deserialize<ReleaseManifest>(System.Text.Encoding.UTF8.GetString(raw));
-        if (Manifest == null || Manifest.format != "dqxi-translation-deltas-v1" || Manifest.title_id != "0004000000199200" || Manifest.version != "0.7.0" || Manifest.files == null || Manifest.files.Length != 996)
+        if (Manifest == null || Manifest.format != "dqxi-translation-deltas-v1" || Manifest.title_id != "0004000000199200" || Manifest.version != "0.8.0" || Manifest.files == null || Manifest.files.Length != 1014)
             throw new InvalidDataException("Unsupported patch package");
     }
     public byte[] Read(string name) {
@@ -85,7 +85,7 @@ public static class BuildEngine {
         if (options.RomOutput && String.IsNullOrEmpty(options.Rom)) throw new ArgumentException("A cartridge ROM is required for .3ds output");
         if (!String.IsNullOrEmpty(options.Rom) && !String.IsNullOrEmpty(options.Extracted)) throw new ArgumentException("Choose exactly one input");
         string extracted;
-        notify("Checking the frozen 0.7.0 patch package...",0);
+        notify("Checking the frozen 0.8.0 patch package...",0);
         using (var data = new ReleaseData(options.Release)) {
             if (!String.IsNullOrEmpty(options.Rom)) {
                 string rom = Path.GetFullPath(options.Rom);
@@ -119,7 +119,7 @@ public static class BuildEngine {
                 else if (row.kind != "ips" || row.path != "exefs/code.ips" || row.source != "exefs/code.bin") throw new InvalidDataException("Unsupported patch type");
                 if (BuildSupport.Hash(source) != row.source_sha256) throw new InvalidDataException("Game version/input mismatch: "+row.source);
                 if (BuildSupport.Hash(data.Read(row.payload)) != row.payload_sha256) throw new InvalidDataException("Damaged payload: "+row.payload);
-                if ((i+1)%10==0 || i+1==data.Manifest.files.Length) notify("Checking game version: "+(i+1)+"/996",15+30*(i+1)/996);
+                if ((i+1)%10==0 || i+1==data.Manifest.files.Length) notify("Checking game version: "+(i+1)+"/1014",15+30*(i+1)/1014);
             }
             cancel.ThrowIfCancellationRequested();
             BuildSupport.CreateExclusiveDirectory(output);
@@ -143,7 +143,7 @@ public static class BuildEngine {
                 Directory.CreateDirectory(Path.GetDirectoryName(dest));
                 BuildSupport.WriteNew(dest,result);
                 if (BuildSupport.HashFile(dest) != row.target_sha256 || new FileInfo(dest).Length != row.target_size) throw new IOException("Output readback failed");
-                if ((i+1)%10==0 || i+1==996) notify("Building and verifying: "+(i+1)+"/996",45+(options.RomOutput?20:55)*(i+1)/996);
+                if ((i+1)%10==0 || i+1==1014) notify("Building and verifying: "+(i+1)+"/1014",45+(options.RomOutput?20:55)*(i+1)/1014);
             }
         }
         string completed = options.RomOutput ? RomBuilder.Build(Path.GetFullPath(options.Rom),extracted,output,notify,cancel,options.RebuildTool) : output;

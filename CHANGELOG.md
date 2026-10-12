@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.8.0 — October 12, 2026 (experimental Tickington and book-world update)
+
+- Corrects bounded Tickington opening, return, first-altar, guild and elder dialogue against actual paired PC 2D resources, including speaker names.
+- Adds bounded dialogue, book, quest and continuation passes for Damdara, Galenholm, Tantegel, Moonahan, Cannock, Erdrick's Home, Rose's Room, Whealbrook, Weaver's Peak and Alltrades Abbey. Includes Academy acquisition and the separate quest74 successor/return scope; no whole-world completion claim.
+- Retains full applicable PC wording, explicit extra pages and original choices/gameplay controls, with documented native-only/mechanics differences.
+- Includes scoped journal text-fit refinements and the native notification loader's 90-to-108 count-check repair. All earlier cumulative fixes remain.
+- Packages 1,014 active targets: 13 updated, 18 added, 983 unchanged from 0.7.0; no removals. Excludes 551 quarantined files and all uninstalled/private preparations.
+- Initial mansion/rehearsal work, remaining hub/book worlds, earlier returns and held fields remain incomplete. Notifications4816/5008 and secondary129944 stay unchanged.
+- Known intermittent 2D battle/map crashes remain unresolved; human ending and regional gameplay checks remain pending.
+
 ## 0.7.0 — October 11, 2026 (experimental regional and ending update)
 
 - Includes the installed regional passes for Phnom Nonh, Sniflheim, Arboria and
