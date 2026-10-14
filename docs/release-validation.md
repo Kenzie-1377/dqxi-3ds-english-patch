@@ -1,5 +1,42 @@
 # Release validation
 
+## 0.8.1 — October 14, 2026 (experimental; unfinished)
+
+Frozen from the independently installed 1,570-file inventory after the next
+verified 66-field For Eliza subset. The patch-only package has 1,019 active
+targets: 1,007 unchanged payloads, seven updated and five added since 0.8.0,
+with no removals. All 551 quarantined files and all private preparations are
+excluded. No ROM, original game archive, save, key or private reference is
+distributed. All earlier cumulative IPS fixes remain byte-exact.
+
+Three complete runs of the exact release executable and a fresh public-source
+build passed all 1,019 output path/hash/size checks, with original inputs
+unchanged. Independent embedded-resource reconstruction checked every target.
+GUI success, cancellation, two checksum-pinned tool downloads and download
+cancellation passed. The initial sandbox DNS failure and separate successful
+network-enabled retry are retained in private diagnostics; checksum checks
+were not relaxed. Repository tests passed 37/37 using an isolated workspace
+temporary directory after an initial sandbox temporary-directory denial.
+
+The rebuilt ROM passed independent checks of all 21,250 RomFS files, three
+ExeFS files and IVFC integrity levels. An independent raw IPS parser verified
+all 203 literal/RLE records against the immutable original executable; banner
+and icon remained unchanged. Only the expected invalid modified-retail
+signatures remain; Nintendo signatures cannot be regenerated.
+
+Manifest SHA-256: `4992d172e18a477b5a78a6f2492b56aef4b477c08a43793153e2aa4387d36c35`.
+Builder SHA-256: `b40e2723c01e850ff8280f1ab66e7bcfcff62bee81bf15e7cd3cf81f6e7ac4eb`.
+Cumulative IPS SHA-256: `5d4b236a823fc215e36603342b53b42903bcff084f927d9c6501b142d1704688`.
+
+The builder is unsigned. Defender completed a scoped scan of this exact
+executable and reported no threats; no security settings changed. This is not
+a general security guarantee. These are offline build/file checks, not live
+gameplay or real-hardware certification. Remaining worlds/returns, rehearsal
+and conditional routes, shared held fields, captions/notifications and the 53
+held For Eliza context-dependent fields remain unfinished. Later Mad About
+Maps private work is excluded. Ending pacing, choices/save-return and human
+testing remain pending. Known intermittent 2D battle/map crashes are unresolved.
+
 ## 0.8.0 — October 12, 2026 (experimental)
 
 The package is frozen from the exact independently installed 1,565-file

@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.1 — October 14, 2026 (experimental dialogue and journal update)
+
+- Adds bounded initial-mansion dialogue and further Kiefer/Roamer, Chateau
+  Felix, Jessica/Rosalind, Quester's Rest, Go Fygger, Galapagone and Rebirth
+  Rebuffed dialogue, names, book continuations and earlier-return corrections.
+- Adds full Imperial Pantry dialogue and journals, reviewed secondary captions,
+  and a checked 66-field subset of For Eliza village/return dialogue. Full PC
+  For Eliza title and journals are included; all wording is retained.
+- Preserves original choices, commands, gameplay effects and previous fixes.
+  The cumulative IPS is unchanged. Conditional or stored-only dialogue remains
+  explicitly conditional; no new trigger or quest mechanic is invented.
+- Packages 1,019 active targets: seven updated, five added, 1,007 unchanged
+  from 0.8.0, no removals. Excludes 551 quarantined files and private stages.
+- **Unfinished:** remaining book worlds, earlier returns, rehearsal and other
+  conditional routes, shared held text, long captions/notifications and human
+  gameplay/hardware testing. All 53 For Eliza fields dependent on unresolved
+  native dialogue-context behavior remain unchanged. Later Mad About Maps
+  preparations are not included in this frozen release.
+- Known intermittent 2D battle/map crashes remain unresolved. This is not a
+  completed translation, whole-world certification or stability fix. Historical
+  releases and tags are preserved.
+
 ## 0.8.0 — October 12, 2026 (experimental Tickington and book-world update)
 
 - Corrects bounded Tickington opening, return, first-altar, guild and elder dialogue against actual paired PC 2D resources, including speaker names.

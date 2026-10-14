@@ -1,4 +1,34 @@
-# Scoped completion checklist — 0.8.0
+# Scoped completion checklist — 0.8.1
+
+## 0.8.1: verified implementation, not a finished game
+
+This incremental release freezes the independently installed dialogue/journal
+work through the 66-field For Eliza village/return subset. It adds bounded
+initial-mansion, Kiefer/Roamer, Chateau Felix, Jessica/Rosalind, Quester's Rest,
+Go Fygger, Galapagone, Rebirth Rebuffed and Imperial Pantry scopes, earlier
+Kiefer returns, reviewed secondary captions and full-word journal corrections.
+The package contains 1,019 active targets, not 1,019 completed quests or areas.
+
+Still unfinished:
+
+- Remaining hub/book worlds, earlier-town/return-state and fallback audits.
+- All 53 held For Eliza NPC102/Book23 fields and original Start/Active calls:
+  an unresolved native UI callback/context boundary must be understood before
+  their page expansion can safely be installed. They are not declared unused.
+- Rehearsal and conditional/native-callback routes, including the conditional
+  Galapagone return callback. Stored English is not proof of normal invocation.
+- Shared held fields, historical conditional party/global scopes, oversized
+  captions and notifications. Existing holds are not silently discarded or
+  shortened. Deliberate native password text is retained.
+- Physical 2D/3D gameplay, ending pacing/choices/save-return and real-hardware
+  tests. Known intermittent 2D battle/map crashes remain unresolved.
+
+The initial mansion's bounded 313-field dialogue pass is included; that does
+not certify the whole mansion quest or rehearsal. Later Mad About Maps private
+preparations are excluded. Offline source, layout and file-readback verification
+does not certify every state, whole worlds or a complete game.
+
+## Historical 0.8.0 release-time checklist
 
 ## Latest installed reviewed scopes
 

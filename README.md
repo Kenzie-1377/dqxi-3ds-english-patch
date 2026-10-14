@@ -9,7 +9,25 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.0 experimental prerelease** adds installed Tickington corrections and
+The **0.8.1 experimental prerelease** adds further independently file-verified
+book-world dialogue, speaker names, return dialogue and full-word journal
+corrections. It includes bounded initial-mansion dialogue; Kiefer/Roamer,
+Chateau Felix, Jessica/Rosalind, Quester's Rest, Go Fygger, Galapagone and
+Rebirth Rebuffed scopes; Imperial Pantry dialogue/journals; and a checked
+subset of the For Eliza village/return dialogue. Full applicable PC wording
+and original choices/mechanics are retained within the stated scopes.
+
+It contains 1,019 active patch targets: seven updated, five added and 1,007
+unchanged from 0.8.0, with no removals. All 551 quarantined files and private
+uninstalled work are excluded. The cumulative IPS fixes are unchanged.
+**This is not a completed-game release.** Remaining book worlds and earlier
+returns, rehearsal/conditional routes, shared held text, captions/notifications
+and human gameplay testing remain unfinished. In particular, 53 For Eliza
+fields affected by an unresolved native dialogue-context boundary remain
+unchanged; partial progress is not a whole-quest completion claim. The known
+intermittent 2D battle/map crashes remain unresolved. Back up saves.
+
+The historical **0.8.0 experimental prerelease** adds installed Tickington corrections and
 bounded book-world dialogue, book, quest and continuation passes for Damdara,
 Galenholm, Tantegel, Moonahan, Cannock, Erdrick's Home, Rose's Room, Whealbrook,
 Weaver's Peak and Alltrades Abbey, including Academy book acquisition and a
