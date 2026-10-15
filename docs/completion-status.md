@@ -1,4 +1,32 @@
-# Scoped completion checklist — 0.8.1
+# Scoped completion checklist
+
+## Current scope for 0.8.2
+
+Implemented and installed: the scoped journal, item/recipe, record, item-effect,
+outfit and status-menu readability repairs; further reviewed book-world
+dialogue/journal text; full long quest titles; and three full request captions.
+Earlier regional, Memories and ending passes remain included. These are
+completed implementation scopes, not certification of every area or state.
+
+Player-confirmed in Azahar: the reported menu fixes look good; Stats works
+again; the Timeless Labyrinth entrance and repeated entry work. Journal, Stats
+and Spells regression checks also passed after the Labyrinth repair. The latest
+three captions still need gameplay readability checks. No real-hardware pass
+is claimed for 0.8.2.
+
+Remaining work includes book worlds and earlier returns; player-name/context
+safety for held journal fields; native-versus-PC mechanic/geography decisions;
+conditional and shared text; held captions and notifications; and broad
+gameplay, ending and hardware regression. Historical held fields are not
+declared unused merely because no direct PC title match exists. Intermittent
+2D battle/map crashes outside the tested Labyrinth entrance remain unresolved.
+
+There is no verified whole-game completion percentage. The 1,023 active patch
+targets are files, not completed quests or areas. All 551 quarantined files,
+private test stages, saves, keys and original/reference data are excluded.
+
+The sections below preserve the status at earlier release dates; their old
+holds and crash statements are historical, not a substitute for this scope.
 
 ## 0.8.1: verified implementation, not a finished game
 

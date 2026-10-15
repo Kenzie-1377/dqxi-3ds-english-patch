@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.8.2 — October 15, 2026 (experimental)
+
+## Translation and readability update
+
+This experimental release includes the installed translation work and menu fixes through October 15, 2026. It is not a complete translation.
+
+### Included and checked
+
+- Readability repairs for quest journals, item and recipe descriptions, Forge Records, monster and other record screens. Full wording is retained in the repaired scopes.
+- English item-detail special-effect labels and outfit conditions, including the accented outfit text, with adjusted layouts.
+- Skills, Pep Powers, Special Equipment Effects, Fun-Size Forge, Spells and Stats All layout repairs. The safe status-menu repair is included, not the earlier crashing test version.
+- Further reviewed book-world dialogue, journal text, full quest titles and three full secondary request captions. Original choices and quest mechanics remain intact.
+- The Timeless Labyrinth entrance repair. The player confirmed successful entry and re-entry, plus journal, Stats and Spells regression checks in Azahar. This does not establish a general fix for unrelated 2D crashes.
+- All earlier cumulative native fixes are retained. The patch package contains 1,023 active targets: 15 updated, four added and 1,004 unchanged since 0.8.1, with no removals. All 551 quarantined files and private uninstalled preparations are excluded.
+
+### Still unfinished
+
+- Remaining book-world and earlier-return dialogue audits, conditional routes and shared text.
+- Journal fields that need safe player-name/context handling, native-versus-PC quest mechanic differences, and held captions and notifications.
+- Whole-game regression, alternate quest states, ending pacing and real-hardware testing. The newest three request captions have offline fit/build checks but still need in-game readability checks.
+- Previously reported intermittent 2D battle/map crashes outside the tested Labyrinth entrance remain unresolved.
+
+The repository completion checklist distinguishes completed scoped work from outstanding work; no reliable whole-game completion percentage is claimed. Back up saves and avoid mixing old overrides with a newly built patch. The download is an unsigned Windows patch builder, not a ROM or a bundle of original game files.
+
+
 ## 0.8.1 — October 14, 2026 (experimental dialogue and journal update)
 
 - Adds bounded initial-mansion dialogue and further Kiefer/Roamer, Chateau

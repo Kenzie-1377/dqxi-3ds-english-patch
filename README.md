@@ -9,7 +9,21 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.1 experimental prerelease** adds further independently file-verified
+The **0.8.2 experimental prerelease** includes the latest installed book-world
+translation and readability repairs for journals, item/recipe descriptions,
+records, item effects/outfits and status menus. The player confirmed the
+Timeless Labyrinth entrance and re-entry now work, with journal, Stats and
+Spells checks also passing in Azahar. This is not a general 2D crash fix.
+
+The package contains 1,023 active targets: 15 updated, four added and 1,004
+unchanged since 0.8.1, with no removals. All previous cumulative native fixes
+remain. Remaining book-world/return-state audits, context-dependent journals,
+conditional/shared text, captions/notifications and whole-game/hardware tests
+are unfinished. The newest three full request captions still need in-game
+readability testing. See the [completion checklist](docs/completion-status.md)
+and [release validation](docs/release-validation.md). Back up saves.
+
+The historical **0.8.1 experimental prerelease** adds further independently file-verified
 book-world dialogue, speaker names, return dialogue and full-word journal
 corrections. It includes bounded initial-mansion dialogue; Kiefer/Roamer,
 Chateau Felix, Jessica/Rosalind, Quester's Rest, Go Fygger, Galapagone and

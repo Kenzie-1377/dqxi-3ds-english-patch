@@ -1,5 +1,36 @@
 # Release validation
 
+## 0.8.2 — October 15, 2026
+
+Frozen from the independently verified installed 1,574-file inventory. The
+release includes 1,023 active patch targets; 551 quarantined files are excluded.
+Compared with 0.8.1, 15 targets changed, four were added and 1,004 are unchanged;
+none were removed. No original game files, ROM, saves, keys or private reference
+data are distributed. Earlier cumulative IPS fixes remain byte-exact.
+
+Two complete runs of the exact release executable reconstructed all 1,023
+targets and passed separate output path/hash/size checks with originals
+unchanged. Embedded-resource reconstruction independently checked all 1,023
+targets and the absence of extra embedded files. The exact builder also passed
+GUI construction and synthetic codec/support tests. These are builder/file
+checks, not whole-game or hardware certification. This release does not claim
+a fresh full-ROM rebuild or a fresh exhaustive GUI interaction test.
+
+Player testing confirmed the Labyrinth entrance and re-entry, with journal,
+Stats and Spells checks passing. The newest three full request captions still
+await gameplay readability checks. Other reported intermittent 2D crashes and
+unreviewed quest/conditional states remain outstanding.
+
+Manifest SHA-256: `5c76da07929c136a8dfb5bbb0e29b606b5ff36b5210661a9003e5c9b3c5dbada`.
+Cumulative IPS SHA-256: `5d4b236a823fc215e36603342b53b42903bcff084f927d9c6501b142d1704688`.
+Builder SHA-256: `8ce55d773efc9357d39d2c573d8ce2b3aa8d563e2d66ae7d73efdd2fc3fee98a`.
+
+A fresh build from the public source recipe also reconstructed all 1,023
+targets correctly. Repository tests passed 37/37 using an isolated workspace
+temporary directory; an initial sandbox temporary-directory denial was not
+a product failure. The Windows builder is unsigned. Older validation below
+is historical.
+
 ## 0.8.1 — October 14, 2026 (experimental; unfinished)
 
 Frozen from the independently installed 1,570-file inventory after the next
