@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.8.3 — October 18, 2026 (experimental)
+
+Includes all 0.8.2 translation work, with no removed targets. Repairs the
+reported Heliodor road/city rendering regression through shared-archive
+storage repairs and standalone font loading. Restores Stats subsection text
+with a one-byte font-residency table correction; no new native instruction
+hooks are added. Full wording, glyphs, menu layouts, English entry banners
+and the Labyrinth repair are preserved.
+
+The cumulative package has 1,024 targets: four updated and one added, with
+1,019 unchanged from 0.8.2. The final combined build passed player checks in
+Azahar for Heliodor, Stats, Labyrinth and the quest journal. This is not a
+completed translation, whole-game/hardware certification, or a general fix
+for unrelated intermittent 2D crashes. Back up saves.
+
 ## 0.8.2 — October 15, 2026 (experimental)
 
 ## Translation and readability update

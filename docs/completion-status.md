@@ -1,6 +1,33 @@
 # Scoped completion checklist
 
-## Current scope for 0.8.2
+## Current scope for 0.8.3
+
+All 0.8.2 translation scopes remain included: the earlier regional, Memories
+and ending passes; bounded book-world dialogue and journal work; full long
+quest titles; and menu, item, recipe, record, effect and outfit readability
+repairs. These are completed implementation scopes, not every area or state.
+
+The reported Heliodor road/city rendering regression and blank Stats
+subsections are repaired in the tested build. The final cumulative setup
+passed player checks in Azahar for Heliodor, Stats, Timeless Labyrinth and the
+quest journal. Earlier targeted checks also covered entry banners and item
+special-effects text. Real-hardware and whole-game regression remain open.
+
+Still unfinished: remaining book worlds and earlier returns; held
+player-name/context-dependent journal fields; native-versus-PC mechanic and
+geography decisions; conditional/shared text; captions and notifications;
+and broader gameplay, ending and hardware testing. The newest three request
+captions still lack a specific in-game readability confirmation. Unrelated
+intermittent 2D battle/map crashes are not declared fixed.
+
+The package has 1,024 active targets, not 1,024 completed quests or areas.
+There is no verified whole-game completion percentage. No previous release
+target was removed; 1,019 are unchanged, four updated and one added since
+0.8.2. All 551 quarantined files and private uninstalled work remain excluded.
+
+The following sections preserve historical release scopes and limitations.
+
+## Historical scope for 0.8.2
 
 Implemented and installed: the scoped journal, item/recipe, record, item-effect,
 outfit and status-menu readability repairs; further reviewed book-world

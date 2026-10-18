@@ -1,5 +1,32 @@
 # Release validation
 
+## 0.8.3 — October 18, 2026
+
+Frozen from the player-tested cumulative 1,024-file setup. Every 0.8.2 target
+is retained: 1,019 are byte-identical, four updated and one font override added.
+The repairs preserve full wording and the existing menu and Labyrinth fixes.
+No original game files, ROM, saves, keys, quarantined files or private test
+packages are distributed; the release contains source-bound patch payloads.
+
+Two complete runs of the exact release executable reconstructed all 1,024
+targets and passed independent output path/hash/size checks, with original
+inputs unchanged. GUI construction and synthetic codec/support checks also
+passed. The embedded package independently reconstructs all 1,024 targets
+with no extra entries. Repository tests passed 37/37, and a fresh build from
+the public source recipe also reconstructs all 1,024 targets. These are
+builder/file checks, not full-game or hardware certification.
+
+The final cumulative build passed player testing in Azahar for Heliodor,
+Stats subsections, Timeless Labyrinth and the quest journal. Earlier targeted
+checks also covered entry banners and item special-effects text. Broad
+gameplay, hardware, ending and held quest/state testing remain unfinished.
+
+Manifest SHA-256: `eab187b5899ca9e90de179d31f38ab8d4cc8abfef26a65c2796bf8ae6a6a0469`.
+Cumulative IPS SHA-256: `07e876d9e80fb082dc145420ad1a304717675b983644da53889a82f52a0f44c3`.
+Builder SHA-256: `bab9c8f602fab23cb31cb8f60a9424005709f28a21bc2e36558956529dbefa18`.
+
+The Windows builder is unsigned. Older validation below is historical.
+
 ## 0.8.2 — October 15, 2026
 
 Frozen from the independently verified installed 1,574-file inventory. The

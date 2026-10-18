@@ -1,8 +1,8 @@
 {
   "format": "dqxi-translation-deltas-v1",
   "title_id": "0004000000199200",
-  "version": "0.8.2",
-  "status": "Experimental translation and readability update. Includes the player-tested Timeless Labyrinth entrance repair; not a complete translation or general 2D crash fix. Remaining book-world, journal, conditional/shared text and gameplay/hardware testing are unfinished.",
+  "version": "0.8.3",
+  "status": "Experimental cumulative0.8.2 translation plus Heliodor rendering, standalone-font and Stats text repairs. Player-tested in Azahar; translation and whole-game/hardware testing remain unfinished.",
   "files": [
     {
       "path": "exefs/code.ips",
@@ -10,9 +10,9 @@
       "kind": "ips",
       "payload": "code.patchdata",
       "source_sha256": "dfcd1b7ad170eab3932abfaa702b694e6673dc0a8744bfc070765cc8c8cc24d8",
-      "target_sha256": "5d4b236a823fc215e36603342b53b42903bcff084f927d9c6501b142d1704688",
-      "payload_sha256": "5d4b236a823fc215e36603342b53b42903bcff084f927d9c6501b142d1704688",
-      "target_size": 4549
+      "target_sha256": "07e876d9e80fb082dc145420ad1a304717675b983644da53889a82f52a0f44c3",
+      "payload_sha256": "07e876d9e80fb082dc145420ad1a304717675b983644da53889a82f52a0f44c3",
+      "target_size": 4555
     },
     {
       "path": "romfs/battlecmn.pack",
@@ -40,9 +40,9 @@
       "kind": "delta",
       "payload": "0003.dqdelta",
       "source_sha256": "26bf97310438c16e400b3bb36253c9f5c45eca787b216029bd65bf4f8e1b9ceb",
-      "target_sha256": "64525fd083d3d9c0902ff901f3ce039fd100fe43b184879b5c06df290cc1afbe",
-      "payload_sha256": "e02853fd6a60ebfb93e6dcc844ca8d60968a4a11c690d96146727e4ffdceec27",
-      "target_size": 3445224
+      "target_sha256": "6840b39219976830f102db2d78c2438b9af73c6f09ca157f7cd41d2dae89d1db",
+      "payload_sha256": "32f99160015838e885679ca06f0ef525bb895a5aa5f3a0276b8efad7a763a423",
+      "target_size": 2602600
     },
     {
       "path": "romfs/param/region/r001.pack",
@@ -5650,9 +5650,9 @@
       "kind": "delta",
       "payload": "0564.dqdelta",
       "source_sha256": "4ef70b46f325564596154528b1b35236d281c0a24b09f697eec079bf1340a44e",
-      "target_sha256": "9b8f96f4e985243e5d3617484422326197ab4908ff5cebf92decc7a487285868",
-      "payload_sha256": "7f5c4448075fa2e46035b3fd70e4fbacb086b6bc91bc232c45a6d588c4ff9a75",
-      "target_size": 997992
+      "target_sha256": "dbc08055ec70879725248ea774008bc2aa301d7e03013fd59590b60ce9b2bd2f",
+      "payload_sha256": "9e35c1363690d6c5e1d0630ac705dc302bbf0e4bb576406dc2f50dff48c47f56",
+      "target_size": 987880
     },
     {
       "path": "romfs/ui/battle_2d.pack",
@@ -5700,9 +5700,9 @@
       "kind": "delta",
       "payload": "0569.dqdelta",
       "source_sha256": "990a9fd62893398b01271e34bef9ca8d0a0b7ace7d19174257734d1a704899b2",
-      "target_sha256": "40da73443aaebb471465b4c3b002a71e36b0835799cdc6c536268df5d16f80b3",
-      "payload_sha256": "b50753799be2853c594402734aa519b8671e4d3cf61a6c7f86ca2ec58e016e1d",
-      "target_size": 4962532
+      "target_sha256": "58b8d5b7400bd5fb405b47057cf8fce2d7afc89cd8a02d1c54875e1efc87ac70",
+      "payload_sha256": "4b16ee8da9131cbedde56f3d0f3a440884c3dbbf147d57f602919d0e0af213b9",
+      "target_size": 3851236
     },
     {
       "path": "romfs/ui/common_3d.pack",
@@ -10233,6 +10233,16 @@
       "target_sha256": "7c7bdd9909707741a8e9bf470b1406d82b5efc6e5e6cc67b3e68230c69716791",
       "payload_sha256": "237009db4e9b98f023f522a805f8575ac2ee19522ef4ed5984cbe397e6396282",
       "target_size": 21308
+    },
+    {
+      "path": "romfs/font/3D12.bffnt",
+      "source": "romfs/font/3D12.bffnt",
+      "kind": "delta",
+      "payload": "1023.dqdelta",
+      "source_sha256": "ce23aa4f8d2be6cba7617ffaff7a06ee705f9564747e56dbda00573fa766995f",
+      "target_sha256": "d376dea2c032ecabf27b2cdd9d28ea10be572873482429eb02a0cf1439e685ce",
+      "payload_sha256": "a0ec6dd2f2fdfa6e47aa78e0ccde2eb08a6bb2cec00fb3f7901eaac769544e01",
+      "target_size": 555520
     }
   ]
 }

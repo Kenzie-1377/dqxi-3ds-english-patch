@@ -9,7 +9,21 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.2 experimental prerelease** includes the latest installed book-world
+The **0.8.3 experimental prerelease** retains all 0.8.2 translation work and
+repairs the reported road-to-Heliodor and Heliodor City rendering regression.
+It reduces shared-archive storage without shortening wording, avoids duplicate
+embedded fonts, and restores text in the Stats subsections. The English entry
+banners, menu readability repairs and Labyrinth entrance fix remain included.
+
+The final cumulative build passed player checks in Azahar for Heliodor, Stats,
+Timeless Labyrinth and the quest journal. Earlier targeted tests also covered
+entry banners and item special-effects text. No full-game or real-hardware
+certification is claimed. The package has 1,024 targets: 1,019 unchanged from
+0.8.2, four updated and one added, with no removals. Translation work remains
+unfinished; see the [completion checklist](docs/completion-status.md) and
+[release validation](docs/release-validation.md). Back up saves before testing.
+
+The historical **0.8.2 experimental prerelease** includes installed book-world
 translation and readability repairs for journals, item/recipe descriptions,
 records, item effects/outfits and status menus. The player confirmed the
 Timeless Labyrinth entrance and re-entry now work, with journal, Stats and

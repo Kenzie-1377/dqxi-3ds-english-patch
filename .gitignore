@@ -12,6 +12,7 @@
 *.pack
 *.bxon
 *.bch
+*.bffnt
 *.arc
 *.bin
 *.ips
