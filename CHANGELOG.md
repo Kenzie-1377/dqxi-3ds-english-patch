@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.8.4 — October 19, 2026 (experimental)
+
+- Repairs the reported Heliodor entrance item-shop Buy/repeated-purchase crash.
+  The UI allocation repair handles pressure in the original shared pool and
+  releases fallback buffers through their owning pool. It does not enlarge
+  fixed pools, shorten translations or remove existing fixes.
+- Includes installed Act 2 opening dialogue and paging, the two reported
+  opening scenes, Emerald Coast warning/follow-up text and a scoped
+  Sylvando-arrival speech. The audited opening cutscene scope covers 50
+  dialogue entries across eight text archives; it is not all Act 2 dialogue.
+  The additional Sylvando speech still needs its own explicit gameplay check.
+- Preserves all 0.8.3/0.8.2 translation scopes, English entry banners, readable
+  Stats/item-effect menus, Heliodor rendering and the Labyrinth entrance repair.
+- Player passed Stats and 10 purchases, shop exit/re-entry and 10 further
+  purchases in shop-debug, then the remaining Heliodor/banner, Stats sections,
+  Labyrinth, journal and post-tour shop checks. The promoted normal Azahar
+  package also passed with no crashes and good text. No hardware pass claimed.
+- Contains 1,040 targets: 1,014 unchanged, ten updated and 16 added since
+  0.8.3, with no removed targets. Only patch payloads are distributed.
+
+The project remains unfinished. Book-world/return/conditional dialogue,
+held journal contexts, captions/notifications and broader gameplay/hardware
+regression are still open. Unrelated intermittent 2D crashes are not declared
+fixed. Back up saves; historical releases and tags remain unchanged.
+
 ## 0.8.3 — October 18, 2026 (experimental)
 
 Includes all 0.8.2 translation work, with no removed targets. Repairs the

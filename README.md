@@ -9,7 +9,25 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.3 experimental prerelease** retains all 0.8.2 translation work and
+The **0.8.4 experimental prerelease** repairs the reported crash when selecting
+Buy or repeatedly purchasing items at the Heliodor entrance item shop. It keeps
+the full translated item text and prior rendering, font, menu and Labyrinth
+fixes. The player passed 10 purchases, shop exit/re-entry and 10 more purchases
+in the private test copy, then confirmed no crashes and good text in normal
+Azahar. The private combined build also passed Heliodor, English entry banner,
+Stats subsections, Labyrinth and quest-journal regression checks.
+
+This update also includes the installed Act 2 opening dialogue and paging
+work, both reported opening scenes, Emerald Coast warning/follow-up text and
+a scoped Sylvando-arrival speech. Full wording is retained; this is not a
+claim that all Act 2 or book-world dialogue is complete. The cumulative
+package has 1,040 targets: 1,014 unchanged from 0.8.3, ten updated and 16 added,
+with no removals. Whole-game and real-hardware testing remain unfinished.
+See the [completion checklist](docs/completion-status.md) and
+[release validation](docs/release-validation.md). Back up saves and replace
+old mod output instead of mixing diagnostic files with this package.
+
+The historical **0.8.3 experimental prerelease** retains all 0.8.2 translation work and
 repairs the reported road-to-Heliodor and Heliodor City rendering regression.
 It reduces shared-archive storage without shortening wording, avoids duplicate
 embedded fonts, and restores text in the Stats subsections. The English entry

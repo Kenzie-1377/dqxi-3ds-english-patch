@@ -1,6 +1,31 @@
 # Scoped completion checklist
 
-## Current scope for 0.8.3
+## Current scope for 0.8.4
+
+All earlier translation scopes and menu/rendering/Labyrinth fixes remain.
+The reported Heliodor item-shop Buy and repeated-purchase crash is repaired
+in the tested package. Player testing in the separate copy covered Stats,
+20 purchases across shop exit/re-entry, then Heliodor road/city/banner,
+other Stats sections, Labyrinth, journal and further purchases. The same
+package was promoted to normal Azahar, where the player confirmed no crashes
+and good text. This is scoped Azahar evidence, not hardware certification.
+
+New since 0.8.3: the installed Act 2 opening sequence, reports and paging
+(50 audited dialogue entries in eight cutscene text archives), Emerald Coast
+warning/follow-up text and one Sylvando-arrival speech. The opening pages and
+transitions and Coast interaction passed player checks; the Sylvando-arrival
+speech lacks its own explicit gameplay confirmation. Full wording and native
+choices/mechanics are preserved. Surrounding free-roam/party dialogue and all
+of Act 2 are not declared finished.
+
+The package has 1,040 targets: 1,014 unchanged from 0.8.3, ten updated and 16
+added, with no removals. Targets are files, not completed quests or areas.
+There is no reliable whole-game completion percentage. Remaining book worlds,
+earlier returns, held journal contexts, conditional/shared text, captions,
+notifications, ending pacing and broad gameplay/hardware testing remain open.
+The unrelated intermittent 2D battle/map crashes are not declared fixed.
+
+## Historical scope for 0.8.3
 
 All 0.8.2 translation scopes remain included: the earlier regional, Memories
 and ending passes; bounded book-world dialogue and journal work; full long

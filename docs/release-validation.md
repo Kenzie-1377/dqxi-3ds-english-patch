@@ -1,5 +1,39 @@
 # Release validation
 
+## 0.8.4 — October 19, 2026
+
+Frozen from the 1,040-file package tested in shop-debug and then installed and
+player-tested in normal Azahar. All 0.8.3 targets remain: 1,014 unchanged,
+ten updated and 16 added. Translation resources retain full wording. The
+cumulative IPS preserves earlier fixes and adds the shop UI allocation and
+owning-pool release repair; no fixed pool sizes are increased.
+
+Two complete runs of the exact release executable reconstructed all 1,040
+targets with independent path/hash/size checks and unchanged original inputs.
+A separate embedded-resource audit reconstructed all 1,040 targets and checked
+the absence of extra bundled entries. All 37 repository tests passed. A fresh
+build from the public source recipe also reconstructed all targets. The
+clean source fixture excludes unrelated local builder edits, which were kept
+intact and excluded from publication. These are builder/file checks, not
+full-game or hardware certification.
+
+The player explicitly confirmed Stats text and 10 purchases, exit/re-entry,
+then 10 more purchases in shop-debug. The remaining requested checks also
+passed there: Heliodor road/city/banner, other Stats sections, Labyrinth,
+journal and further purchases after touring. After promotion to normal Azahar,
+the player confirmed no crashes and good text. Earlier Act 2 opening pages,
+transitions and Emerald Coast interaction passed player checks. The additional
+Sylvando-arrival speech lacks its own explicit gameplay confirmation.
+
+No ROM, original game data, saves, keys, quarantined files, debugger settings
+or private test packages are distributed. Only source-bound patch payloads
+are embedded. The Windows builder is unsigned. Whole-game, hardware and
+unrelated intermittent 2D-crash testing remain unfinished.
+
+Manifest SHA-256: `13d74779fb3bdbdc637951573c375f4e56b08957db4c4e1e8deb72c48d1a82cc`.
+Cumulative IPS SHA-256: `603d745fa30f15bf2d89a177cc032329ace23de6b3e699513825a65e33b6381f`.
+Builder SHA-256: `44f6eb67304d9b792c249b8ec86dfb6f5950f5f67fdf2b90c838b0492d08c5ce`.
+
 ## 0.8.3 — October 18, 2026
 
 Frozen from the player-tested cumulative 1,024-file setup. Every 0.8.2 target
