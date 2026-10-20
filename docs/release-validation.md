@@ -1,5 +1,50 @@
 # Release validation
 
+## 0.8.5 — October 20, 2026
+
+The standard-timing package retains 1,040 targets: 1,028 identical to 0.8.4,
+12 updated and none added/removed. The installed user FPS setup is not the
+default release: the two FPS literals are excluded from the standard builder.
+All translation resources, prior code fixes and standard timing are preserved
+in that default output. FPS is available only in the separate optional addon.
+
+Two independent runs of the exact release executable reconstructed all 1,040
+targets with path/hash/size checks and unchanged original inputs. The embedded
+resource audit separately reconstructed all 1,040 targets and rejected extra
+entries. A fresh build from the public source recipe also reconstructed the
+same targets. All 37 repository tests passed. Unrelated local native-builder
+working edits were retained byte-exact and excluded from publication.
+
+Player-confirmed: Last Fort priest pages and church services; Hendrik/High Lama
+names; quantity suffix removal; Discard/Cancel fitting; whole-word enemy names,
+two-line Lump Shaman and the full Forge Special Effects heading. A subsequent
+screenshot shows Royal Slash on separate whole-word lines. Some added replies,
+the newest cooldown/reward/Labyrinth caption and quest-acceptance changes and
+the newest 32 Japanese-source move names still need explicit individual tests.
+
+72 enemy-action name fields use paired PC/name or scenario evidence; 32 use
+direct Japanese-source fallback wording, not an official-localization claim.
+178 Japanese name fields remain held within this typed-bank audit. It does not
+certify every spell, move, message, description or existing English string.
+
+The optional FPS IPS differs from standard effective code only at the main
+update-step and pre-refresh wait literals. 44 bounded native pacer cases and
+the update-step checks passed with OS/GPU boundaries supplied. One player
+reported good private Azahar results, then requested promotion to normal.
+Numeric FPS, separate post-promotion gameplay, exhaustive animation/cutscene
+timing, whole-game and real-hardware performance remain unverified. The addon
+includes the matching standard IPS for rollback and contains only three files:
+instructions, experimental IPS and standard IPS. Neither executable image nor
+ROM, saves, keys, private emulator or reference text dumps are distributed.
+
+Manifest SHA-256: `1dace1bf9c9fe519c2dc6eba07959cb1bfdaa21a30e2b9f1815ca08ed6707dc2`.
+Builder SHA-256: `694b098380cd606404a3587e66ef838b0ebe6b2b2b009e3e54bc91f6bd25d47f`.
+Optional addon SHA-256: `1bb7061d945cfc3f544e3b829a31c153b7b938c3200b2be3ec244e6c28bcf469`.
+
+These are scoped file/build and player checks, not whole-game certification.
+The builder is unsigned. Back up saves; remaining translation work and broader
+gameplay/hardware testing remain open.
+
 ## 0.8.4 — October 19, 2026
 
 Frozen from the 1,040-file package tested in shop-debug and then installed and

@@ -1,8 +1,8 @@
 {
   "format": "dqxi-translation-deltas-v1",
   "title_id": "0004000000199200",
-  "version": "0.8.4",
-  "status": "Experimental cumulative translation with scoped Act 2 additions and user-tested shop UI allocation repair. Full wording and prior fixes retained; translation and whole-game/hardware testing remain unfinished.",
+  "version": "0.8.5",
+  "status": "Experimental cumulative translation and readability update. Standard timing by default; separate optional experimental FPS addon. Translation, broader gameplay and hardware testing remain unfinished.",
   "files": [
     {
       "path": "exefs/code.ips",
@@ -10,9 +10,9 @@
       "kind": "ips",
       "payload": "code.patchdata",
       "source_sha256": "dfcd1b7ad170eab3932abfaa702b694e6673dc0a8744bfc070765cc8c8cc24d8",
-      "target_sha256": "603d745fa30f15bf2d89a177cc032329ace23de6b3e699513825a65e33b6381f",
-      "payload_sha256": "603d745fa30f15bf2d89a177cc032329ace23de6b3e699513825a65e33b6381f",
-      "target_size": 5087
+      "target_sha256": "615bb3c64633303c1af3ca331f832310accf607676b8fcaaf78dd04587f23a8a",
+      "payload_sha256": "615bb3c64633303c1af3ca331f832310accf607676b8fcaaf78dd04587f23a8a",
+      "target_size": 6563
     },
     {
       "path": "romfs/battlecmn.pack",
@@ -20,9 +20,9 @@
       "kind": "delta",
       "payload": "0001.dqdelta",
       "source_sha256": "46f2f5b511b7886d756ec1d934fd3f3a2d2b4e777486236af4b651a1d2add691",
-      "target_sha256": "e387c0735c0407af6e93d62d1af1524643f7049dcc6416e400c40574729cc871",
-      "payload_sha256": "fedea2a90b0215fcdcaea0e408a090802d9061e56ba2cbeead1f0c5d383e9162",
-      "target_size": 2694580
+      "target_sha256": "615307949004929934c2719fb14f69d661c32f494487c12cedda9815ad800d93",
+      "payload_sha256": "bfc3934601e686eff2fd31983ffc4dfeb33cf7079ee23c342a641ca0068f6f9a",
+      "target_size": 2697780
     },
     {
       "path": "romfs/fieldcmn.pack",
@@ -40,8 +40,8 @@
       "kind": "delta",
       "payload": "0003.dqdelta",
       "source_sha256": "26bf97310438c16e400b3bb36253c9f5c45eca787b216029bd65bf4f8e1b9ceb",
-      "target_sha256": "6840b39219976830f102db2d78c2438b9af73c6f09ca157f7cd41d2dae89d1db",
-      "payload_sha256": "32f99160015838e885679ca06f0ef525bb895a5aa5f3a0276b8efad7a763a423",
+      "target_sha256": "afe619cce4b3817c09e2991cbc570894da87f27634cc9fd0619c1770215a9687",
+      "payload_sha256": "fa8aa2f77b826057e4e3699ab9d041f707d991c4bc044dee93ed3c1b0b4551c4",
       "target_size": 2602600
     },
     {
@@ -50,9 +50,9 @@
       "kind": "delta",
       "payload": "0004.dqdelta",
       "source_sha256": "5cb6dd4bc84159133e22ab1ee1523291f003b7cdfd0d01c451605824e1a80f20",
-      "target_sha256": "540e150f736916e9270297a6ea5df64fd9ce1d838df4dfe2653d88325cbefc26",
-      "payload_sha256": "1f7c7b0623d7f6edc97d686bb45561fc50475e69fe8b483d6e46086413c8665a",
-      "target_size": 1232624
+      "target_sha256": "6641f7e8a7dee1b68cd60becde0f9f5c795a6860c1d337fd9c2c44791272e101",
+      "payload_sha256": "86f5d41c42a4eded1600d97ecd26905cc0ae0b649f395c1c1a10c8339a74d117",
+      "target_size": 1235400
     },
     {
       "path": "romfs/param/region/r002.pack",
@@ -290,9 +290,9 @@
       "kind": "delta",
       "payload": "0028.dqdelta",
       "source_sha256": "75f2b1fc56f5ba40441f0a7505b826036ea3cb84b85ebb5c9bb0851cc3ca7abe",
-      "target_sha256": "73d4d4097118dc6a26c270e4f70a967c201b46246bb16add7434e9d2a856854c",
-      "payload_sha256": "e51ef48fe49e2a988a5f310e529cd654b6361070e9fad9eab785b288c8d58360",
-      "target_size": 518912
+      "target_sha256": "4d32d68aef3d4e712f4120806e3597b02436b032dbd4db932d7a800336e23502",
+      "payload_sha256": "b7f0db35d2bf9dec4163281d94b4d1d6ed323cd04f0cde2d9f5b4d42f2ee81f8",
+      "target_size": 520360
     },
     {
       "path": "romfs/param/region/r999.pack",
@@ -5660,8 +5660,8 @@
       "kind": "delta",
       "payload": "0565.dqdelta",
       "source_sha256": "63fe883fd5bba61046437115a5dd154192659f609d0223da15a7163998266b0d",
-      "target_sha256": "d3cb1dd28299c38770e2684c99ca96505f04c53cb8838a050c024870f168edcc",
-      "payload_sha256": "9ef4ef08204b7f5cd5554fe362c88e8bda5be9354c809cad9fe3b91b93af77b6",
+      "target_sha256": "f6ab251ce9c2d901960b8a10fe3c478e903e64123834ef7dcc763d9bde981031",
+      "payload_sha256": "cb02bb2c25924bfe38e2f877d024d2a6992642119eb29b4acdeb33cabf9cb5ff",
       "target_size": 251244
     },
     {
@@ -5690,8 +5690,8 @@
       "kind": "delta",
       "payload": "0568.dqdelta",
       "source_sha256": "5608d986b9bbcd831d3820dfcd26cbc55efaccab144368879ce2d781335857e3",
-      "target_sha256": "d10ff4bcea5eb3105bee45122269cefd3d4021278a30ad72a191bbe6fad378f6",
-      "payload_sha256": "e8940ad3219843eda78045d1e22d32c18668f6e72924c67bb6a16ecabe3bbdfd",
+      "target_sha256": "62aed043a0a7911acb8a77fc2c90467c87ceb69e98f41fb3af2d3440a61fffa8",
+      "payload_sha256": "cc4b46b457e475c5bfe57bdb5d73b5e97730ab97729e5426989287d6dd84f386",
       "target_size": 3635300
     },
     {
@@ -5700,8 +5700,8 @@
       "kind": "delta",
       "payload": "0569.dqdelta",
       "source_sha256": "990a9fd62893398b01271e34bef9ca8d0a0b7ace7d19174257734d1a704899b2",
-      "target_sha256": "58b8d5b7400bd5fb405b47057cf8fce2d7afc89cd8a02d1c54875e1efc87ac70",
-      "payload_sha256": "4b16ee8da9131cbedde56f3d0f3a440884c3dbbf147d57f602919d0e0af213b9",
+      "target_sha256": "43b3fc02de2555a3cf8b66833f3bb1af470c761ce3398e5f5767346901088e69",
+      "payload_sha256": "0467a83b187e57a2e2e79ac1d1956b0dbbe98a737dd903ef7e7eee2303914063",
       "target_size": 3851236
     },
     {
@@ -5710,8 +5710,8 @@
       "kind": "delta",
       "payload": "0570.dqdelta",
       "source_sha256": "ee83baf151293baa447cae8fe6eba9103fcca91debd1609c9cb264cb6c1ff478",
-      "target_sha256": "0a15684e46fa11ca4424d051211e8235b2e3f9deac27381521f7fc77206ddcfa",
-      "payload_sha256": "e5c4039089a0b35db306b7fd15faaca5852968ceb45ca3f38718e76a97d7251c",
+      "target_sha256": "aa2de93bd4c7719d567117b8f10b0e21b4af64cb442e2b9e95fdc119edc269a3",
+      "payload_sha256": "e9d0f69c42d27ca42a8bb0557653e821e6fdeddb9354b14160595e99feddf50b",
       "target_size": 4274916
     },
     {
@@ -5750,8 +5750,8 @@
       "kind": "delta",
       "payload": "0574.dqdelta",
       "source_sha256": "2cbc51ecf27f69ee1ec223ff836807f99b42b40fc9811f8ba904f3d231574e24",
-      "target_sha256": "062eda48945ad70bdec3df17a99cd33b47128791aff4983a8bb5f7d0d80bfc3f",
-      "payload_sha256": "b17e91be4d79f1d39efe26e18eb0d846f10a7bfeae83b0a2e815e86dab82b335",
+      "target_sha256": "6469eb0698ca2cd057d1a11bd9fc6784ef68e21503c164d6cf801d37e39af4ef",
+      "payload_sha256": "c5c9249d12ccaed76a1e4e33fc70dfdb9446131326581c70e00ef814e379cc3f",
       "target_size": 1741520
     },
     {
@@ -5770,8 +5770,8 @@
       "kind": "delta",
       "payload": "0576.dqdelta",
       "source_sha256": "84de899f154438f2ddfbd567d1b7ee3d32d737621b701cb93e43f9e33e64b549",
-      "target_sha256": "3d25e669e0f06808d6e5dfc97dd113e52ba213eac84bbd7132f2cff9f37f6af3",
-      "payload_sha256": "d9fe403225ea836f9545ad0aa9019b94964c38fd26e105bf433f3c32a431e3ea",
+      "target_sha256": "53014e702e2e280ae7983e1be3d65968c85e942fcf318b922d6aca400b19ef8f",
+      "payload_sha256": "2934598715a2b6385bc31446379c02424286b87f66a73fc6e0408a84e8ce510c",
       "target_size": 1247268
     },
     {
@@ -7280,8 +7280,8 @@
       "kind": "delta",
       "payload": "0727.dqdelta",
       "source_sha256": "edd6938ed1e661a4851b3081d35640ec58e02459298cb0a33eda41dc3a659e95",
-      "target_sha256": "b627c5799132be77911a3fa7129b28c523b8b6e65150bbfa5f712cc862953e4a",
-      "payload_sha256": "ca5475ec0b059f3382f13c494028bb4aed0abd48e1002dc30c7d9b150a005211",
+      "target_sha256": "cd6207e0b2deca3e032b7645903901ad0d770cf2f41c9f6df97b1d4564012e97",
+      "payload_sha256": "9a85b52ae0f641bf4f215ff4cdd0972dc42ba28d1bd65809a3b3949960f72384",
       "target_size": 2570288
     },
     {

@@ -9,7 +9,27 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.4 experimental prerelease** repairs the reported crash when selecting
+The **0.8.5 experimental prerelease** adds scoped Last Fort/lookout dialogue,
+priest paging, speaker-name corrections, whole-word enemy/action label wrapping,
+item quantity/menu repairs, Forge headings and further caption fixes. It also
+translates 104 additional enemy-action name fields: 72 evidence-backed names
+and 32 direct Japanese-source translations, not all official localization names.
+All prior translation scopes and rendering, shop, Stats/font and Labyrinth
+fixes are retained. The package has 1,040 targets: 1,028 unchanged from 0.8.4
+and 12 updated, with no additions or removals. Translation remains unfinished.
+
+**Standard timing remains the default.** A separate optional experimental FPS
+addon targets 60 FPS with matching 0.8.5 Azahar mod output. One player reported
+good private-test results; numerical FPS, all animation/cutscene timing, a full
+playthrough and real hardware have not been verified. The addon includes
+instructions and a standard-timing rollback patch. Use 100% emulator speed,
+back up saves and revert if game speed or timing is abnormal. See the
+[FPS addon guide](docs/experimental-60fps.md),
+[validation and test limits](docs/release-validation.md) and
+[remaining work](docs/completion-status.md). Several newest captions/paging
+changes and the latest 32 names still need specific gameplay confirmation.
+
+The historical **0.8.4 experimental prerelease** repairs the reported crash when selecting
 Buy or repeatedly purchasing items at the Heliodor entrance item shop. It keeps
 the full translated item text and prior rendering, font, menu and Labyrinth
 fixes. The player passed 10 purchases, shop exit/re-entry and 10 more purchases

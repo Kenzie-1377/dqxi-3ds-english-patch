@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.5 — October 20, 2026 (experimental)
+
+- Further scoped Last Fort/lookout dialogue and full priest paging, preserving
+  church services, choices, full wording and previous fixes.
+- Correct Hendrik and High Lama names, including camp dialogue nameplates.
+- Whole-word enemy/action label wrapping; Royal Slash and two-line Lump Shaman.
+- Item-menu Discard/Cancel fitting and removal of the Japanese quantity suffix.
+- Forge +0 comparison labels and complete Special Effects heading fitting.
+- Camp Forge cooldown paging, single-member reward subject cleanup, Labyrinth
+  damage/floor labels and quest-acceptance title wrapping. Some newest scopes
+  still lack explicit individual gameplay confirmation; see release validation.
+- 104 additional enemy-action name fields: 72 evidence-backed names and 32 full
+  direct Japanese-source translations. 178 ambiguous/legacy/context-dependent
+  Japanese name fields remain held; no whole-game completion claim.
+- Separate optional experimental FPS addon for matching 0.8.5 Azahar mod output,
+  with standard-timing rollback. The main builder keeps standard timing. One
+  private-test player reports good results; numerical FPS, full timing coverage,
+  post-promotion gameplay and hardware are not verified.
+- Contains 1,040 cumulative targets: 1,028 unchanged and 12 updated since 0.8.4,
+  none added or removed. Prior shop, Heliodor, Stats/font and Labyrinth fixes
+  remain. Back up saves; whole-game and hardware tests remain unfinished.
+
 ## 0.8.4 — October 19, 2026 (experimental)
 
 - Repairs the reported Heliodor entrance item-shop Buy/repeated-purchase crash.

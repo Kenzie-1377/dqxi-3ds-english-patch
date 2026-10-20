@@ -20,7 +20,7 @@ public sealed class ReleaseManifest {
     public ReleaseRow[] files;
 }
 public sealed class ReleaseData : IDisposable {
-    public const string ManifestHash = "13d74779fb3bdbdc637951573c375f4e56b08957db4c4e1e8deb72c48d1a82cc";
+    public const string ManifestHash = "1dace1bf9c9fe519c2dc6eba07959cb1bfdaa21a30e2b9f1815ca08ed6707dc2";
     string folder;
     Stream stream;
     ZipArchive archive;
@@ -40,7 +40,7 @@ public sealed class ReleaseData : IDisposable {
         var raw = Read("manifest.json");
         if (BuildSupport.Hash(raw) != ManifestHash) throw new InvalidDataException("Patch manifest checksum mismatch");
         Manifest = new JavaScriptSerializer().Deserialize<ReleaseManifest>(System.Text.Encoding.UTF8.GetString(raw));
-        if (Manifest == null || Manifest.format != "dqxi-translation-deltas-v1" || Manifest.title_id != "0004000000199200" || Manifest.version != "0.8.4" || Manifest.files == null || Manifest.files.Length != 1040)
+        if (Manifest == null || Manifest.format != "dqxi-translation-deltas-v1" || Manifest.title_id != "0004000000199200" || Manifest.version != "0.8.5" || Manifest.files == null || Manifest.files.Length != 1040)
             throw new InvalidDataException("Unsupported patch package");
     }
     public byte[] Read(string name) {
@@ -85,7 +85,7 @@ public static class BuildEngine {
         if (options.RomOutput && String.IsNullOrEmpty(options.Rom)) throw new ArgumentException("A cartridge ROM is required for .3ds output");
         if (!String.IsNullOrEmpty(options.Rom) && !String.IsNullOrEmpty(options.Extracted)) throw new ArgumentException("Choose exactly one input");
         string extracted;
-        notify("Checking the frozen 0.8.4 patch package...",0);
+        notify("Checking the frozen 0.8.5 patch package...",0);
         using (var data = new ReleaseData(options.Release)) {
             if (!String.IsNullOrEmpty(options.Rom)) {
                 string rom = Path.GetFullPath(options.Rom);

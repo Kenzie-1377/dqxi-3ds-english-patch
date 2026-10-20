@@ -1,6 +1,30 @@
 # Scoped completion checklist
 
-## Current scope for 0.8.4
+## Current scope for 0.8.5
+
+All earlier scopes/fixes remain, with 12 updated files among the same 1,040
+targets. Added scoped Last Fort/lookout replies and priest pages preserve full
+wording and original services/choices. Speaker names, item quantities and menu
+fitting, enemy/action wrapping and Forge headings are corrected.
+
+Player-confirmed: Last Fort priest pages/services, Hendrik/High Lama names,
+Discard/Cancel fitting, numeric-only quantities, enemy whole-word wrapping,
+two-line Lump Shaman and the Forge Special Effects heading. Royal Slash is
+shown correctly in a subsequent screenshot. Newest cooldown/reward/Labyrinth
+caption and quest-acceptance changes, some added replies and the newest 32
+move names still lack explicit individual final gameplay passes.
+
+104 additional enemy-name fields were translated: 72 evidence-backed and 32
+faithful direct Japanese-source fallback labels. 178 Japanese fields remain
+held in this typed name-bank audit. This is not every move/message/description
+or a guarantee that all already-English wording is correct.
+
+The optional FPS experiment has a positive private Azahar player report only;
+no numerical FPS measurement, exhaustive timing, hardware or full-playthrough
+certification. Standard timing stays the default download. Other translation,
+book-world, conditional/contextual and gameplay/hardware holds remain open.
+
+## Historical scope for 0.8.4
 
 All earlier translation scopes and menu/rendering/Labyrinth fixes remain.
 The reported Heliodor item-shop Buy and repeated-purchase crash is repaired
