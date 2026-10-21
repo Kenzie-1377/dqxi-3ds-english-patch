@@ -1,6 +1,24 @@
 # Scoped completion checklist
 
-## Current scope for 0.8.5
+## Current scope for 0.8.6
+
+Further installed regional/book-world dialogue and bounded quest-flow/page
+repairs are included, together with reported key-item, Weather Forecast,
+dual-wield, Tactics, Stats, record, active-rule, Forge and Skill Builder fixes.
+These are scoped restorations, not completed areas or full-game certification.
+The standard package has 1,042 targets: 1,006 identical to 0.8.5, 34 updated,
+two added and none removed. All previous cumulative fixes are retained.
+
+Player testing confirmed many reported menus. The newest shared Skill Builder
+font/hint changes have static width/line checks but need final visual testing.
+559 mapped player descriptions were metric-checked; that does not certify all
+interactive skill/token states. Newly restored dialogue and quests still need
+broader saved-game testing. Conditional/context-dependent text review, held
+translations, whole-game regression and real-hardware testing remain open.
+No reliable completion percentage is claimed. The optional FPS experiment is
+unchanged, separate from the standard-timing default and not newly certified.
+
+## Historical scope for 0.8.5
 
 All earlier scopes/fixes remain, with 12 updated files among the same 1,040
 targets. Added scoped Last Fort/lookout replies and priest pages preserve full

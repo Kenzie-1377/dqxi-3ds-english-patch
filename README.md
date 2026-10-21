@@ -9,7 +9,24 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.5 experimental prerelease** adds scoped Last Fort/lookout dialogue,
+The **0.8.6 experimental prerelease** adds further restored regional and
+book-world dialogue, scoped quest-flow/page-reference repairs and menu fixes
+reported during Azahar testing. These include key-item messages, Weather
+Forecast, dual-wield stats, Tactics names, Stats subsections, item drops,
+record headings, active rules, Forge labels and Skill Builder captions/prompts.
+Skill descriptions now use readable proportions; all 559 mapped player
+description fields pass static font-width checks. Shared hidden-panel hints
+are reflowed, but the newest font/hint changes still need final visual testing.
+The package contains 1,042 targets: 1,006 unchanged from 0.8.5, 34 updated and
+two added, none removed. This is not whole-game completion or certification.
+
+Standard timing remains the default. Use only the matching **0.8.6 optional
+experimental 60 FPS addon** with this release's Azahar mod output; it includes
+standard-timing rollback. No new FPS/timing or hardware certification is claimed.
+See the [release validation](docs/release-validation.md),
+[remaining work](docs/completion-status.md) and [FPS guide](docs/experimental-60fps.md).
+
+The historical **0.8.5 experimental prerelease** adds scoped Last Fort/lookout dialogue,
 priest paging, speaker-name corrections, whole-word enemy/action label wrapping,
 item quantity/menu repairs, Forge headings and further caption fixes. It also
 translates 104 additional enemy-action name fields: 72 evidence-backed names

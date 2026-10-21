@@ -1,5 +1,27 @@
 # Release validation
 
+## 0.8.6 — October 21, 2026
+
+Frozen standard-timing inventory: 1,042 targets; 1,006 unchanged from 0.8.5,
+34 updated and two added, none removed. The optional FPS patch is separate;
+standard timing and prior cumulative fixes remain the builder default.
+
+The release gate requires exact executable reconstruction of all targets,
+independent path/hash/size checks, unchanged original inputs, embedded
+patch-only inspection, a fresh public-source build and repository tests.
+Only a passing gate permits publication. Local unrelated builder edits are
+excluded and preserved. No ROMs, original archives, saves, keys or private
+translation dumps are distributed.
+
+Many reported menu repairs have player confirmations in Azahar. The newest
+Skill Builder font/hint corrections are statically checked, not yet explicitly
+visually confirmed. All 559 mapped player description fields fit the effective
+font metrics and checked weapon substitutions; this is not exhaustive native
+token/runtime certification. Restored dialogue and affected quest paths have
+bounded source/caller checks, not complete saved-game or hardware testing.
+The unchanged optional FPS experiment has no new numeric FPS/timing evidence.
+Translation and whole-game regression remain unfinished.
+
 ## 0.8.5 — October 20, 2026
 
 The standard-timing package retains 1,040 targets: 1,028 identical to 0.8.4,

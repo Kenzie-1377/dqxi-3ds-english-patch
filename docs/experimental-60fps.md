@@ -1,13 +1,13 @@
-# Optional experimental FPS addon — 0.8.5
+# Optional experimental FPS addon — 0.8.6
 
 The standard builder does **not** enable this experiment. Use the separate
-`DQXI-0.8.5-Optional-Experimental-60FPS.zip` release asset with matching 0.8.5
+`DQXI-0.8.6-Optional-Experimental-60FPS.zip` release asset with matching 0.8.6
 Azahar mod output only. Keep all other translation files installed.
 
 The addon changes two timing literals: the main update step from approximately
 1/30 to 1/60 second and the minimum pre-refresh wait from 24,999 to 8,333
 microseconds. Other effective executable bytes, including prior code fixes,
-remain identical to standard 0.8.5. No new hooks, memory pools or code caves
+remain identical to standard 0.8.6. No new hooks, memory pools or code caves
 are introduced. It is not an emulator speed-limit increase.
 
 The bounded native checks cover the affected pacer under supplied OS/GPU
@@ -23,7 +23,7 @@ if game speed, events, animation timing or stability are abnormal.
 ## Install in Azahar
 
 1. Back up saves and fully close Azahar.
-2. Build and install standard 0.8.5 using your own original Japanese game.
+2. Build and install standard 0.8.6 using your own original Japanese game.
 3. Back up the translation mod's `exefs/code.ips`.
 4. Copy the addon's `60fps/exefs/code.ips` over
    `user/load/mods/0004000000199200/exefs/code.ips`.
@@ -34,7 +34,17 @@ if game speed, events, animation timing or stability are abnormal.
 ## Revert
 
 Fully close Azahar and replace that file with `standard/exefs/code.ips` from
-the addon, or your matching standard 0.8.5 backup. All translation, font,
+the addon, or your matching standard 0.8.6 backup. All translation, font,
 rendering and crash repairs stay installed. Do not mix this cumulative IPS
 with a different release version. No original game code, saves or ROMs are
 distributed, and real-hardware suitability is not claimed.
+## Validation unchanged since 0.8.5
+
+Use `DQXI-0.8.6-Optional-Experimental-60FPS.zip` only with the matching 0.8.6
+Azahar mod output. This release retains standard timing by default. The addon
+contains the unchanged experimental FPS patch and standard-timing rollback.
+No new numeric FPS, exhaustive animation/cutscene timing, full-playthrough or
+hardware validation is claimed. Back up saves, use 100% emulator speed and
+revert if timing or game speed is abnormal. The evidence above originated
+with the 0.8.5 experiment; no new FPS/timing validation is claimed for 0.8.6.
+

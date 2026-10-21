@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.8.6 — October 21, 2026 (experimental)
+
+- Further restored book-world and regional conversations, including scoped
+  Hotto, Dundrasil, Zwaardsrust, Cobblestone/refugee-camp and Gallopolis text.
+- Additional quest request/completion/reward text and affected fixed-page
+  caller repairs; original checked choices, conditions and rewards retained.
+- Key-item messages, Weather Forecast, dual-wield stats, Tactics, Stats
+  subsections, item-drop alignment, record/active-rule/Forge label repairs.
+- Skill Builder X caption/prompts, readable shared description proportions
+  and reflowed unlock hints. 559 mapped description fields statically checked;
+  the newest font/hints still await explicit final player visual confirmation.
+- 1,042 cumulative targets: 1,006 unchanged, 34 updated, two added, none removed
+  since 0.8.5. Standard timing default; separate matching optional experimental
+  FPS addon with rollback. No new FPS or real-hardware certification.
+- Translation, broader dialogue/quest-state testing and whole-game regression
+  remain unfinished. Prior cumulative fixes retained; no completion percentage.
+
 ## 0.8.5 — October 20, 2026 (experimental)
 
 - Further scoped Last Fort/lookout dialogue and full priest paging, preserving
