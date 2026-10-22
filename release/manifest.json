@@ -1,8 +1,8 @@
 {
   "format": "dqxi-translation-deltas-v1",
   "title_id": "0004000000199200",
-  "version": "0.8.6",
-  "status": "Unfinished experimental cumulative dialogue restoration and UI readability update. Standard timing by default; separate optional experimental FPS addon. Whole-game and hardware validation remain open.",
+  "version": "0.8.6-lute-test1",
+  "status": "PRIVATE DIAGNOSTIC TEST 1, NOT A CONFIRMED FIX OR PUBLIC RELEASE. Quest-details font-lifetime hypothesis only. Standard timing; no experimental FPS addon.",
   "files": [
     {
       "path": "exefs/code.ips",
@@ -10,9 +10,9 @@
       "kind": "ips",
       "payload": "code.patchdata",
       "source_sha256": "dfcd1b7ad170eab3932abfaa702b694e6673dc0a8744bfc070765cc8c8cc24d8",
-      "target_sha256": "615bb3c64633303c1af3ca331f832310accf607676b8fcaaf78dd04587f23a8a",
-      "payload_sha256": "615bb3c64633303c1af3ca331f832310accf607676b8fcaaf78dd04587f23a8a",
-      "target_size": 6563
+      "target_sha256": "d1d772a1f9d23a567d0baa73deebf6eea8fe0b2c8717037c4d78e0b503adbe35",
+      "payload_sha256": "d1d772a1f9d23a567d0baa73deebf6eea8fe0b2c8717037c4d78e0b503adbe35",
+      "target_size": 6569
     },
     {
       "path": "romfs/battlecmn.pack",
@@ -5690,8 +5690,8 @@
       "kind": "delta",
       "payload": "0568.dqdelta",
       "source_sha256": "5608d986b9bbcd831d3820dfcd26cbc55efaccab144368879ce2d781335857e3",
-      "target_sha256": "967db73ffae417ac24ff1680883f48a08bd72ffce0d2230e67475c466ad65fc4",
-      "payload_sha256": "6e6c2d8515e20e3ef76e6d7f51cbe2745c0a71b7fcd8b1d82715eb99e4fac2ff",
+      "target_sha256": "c59f136680cccdb4a00f97923bad1e6268c14ce240f78ba3ab1c9e95e921a0cb",
+      "payload_sha256": "58514e20fbe5e4f04c32adf7d9d2dd036b69bb271c09bbf37cdfa3377f773b26",
       "target_size": 3674084
     },
     {

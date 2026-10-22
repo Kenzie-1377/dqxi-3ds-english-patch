@@ -1,3 +1,14 @@
+# Community crash test: 0.8.6-lute-test1
+
+This test branch is NOT standard 0.8.6 and is NOT a confirmed fix. It tests a
+quest-panel font-lifetime hypothesis for the Tickington/Galenholm repeat-talk
+crash after accepting the lute request. Back up saves and use standard timing.
+The test requires more persistent font memory; hardware heap headroom remains
+unverified. See [test instructions and rollback](docs/lute-crash-test1.txt).
+The builder retains its original PRIVATE TEST window label.
+
+---
+
 # DQXI 3DS English Patch
 
 An experimental, unofficial English translation for the Japanese Nintendo 3DS

@@ -1,0 +1,71 @@
+DQXI 3DS - 0.8.6-lute-test1
+OPT-IN COMMUNITY DIAGNOSTIC TEST - NOT A CONFIRMED FIX
+
+Purpose
+-------
+Test the reported Galenholm lute/Lyre of Ire quest crash when speaking to
+the quest giver again after accepting his request. The investigation points
+to the quest-details panel's font, not to the player's save.
+
+This is the cumulative 0.8.6 translation plus TWO narrowly changed targets:
+1. Quest-details panel uses the same font data from its separately owned
+   standalone resource rather than the embedded panel-archive copy.
+2. That font is retained in 2D mode by an existing font-residency table.
+
+Words, glyphs, font size, quest logic and rewards are unchanged. Standard
+timing only; do not combine this test with the experimental FPS addon.
+The retained font may require about 543 KiB more persistent font data when
+it was not already loaded. Real-hardware memory headroom is NOT certified.
+
+What to build/install
+---------------------
+1. Back up your save and keep your working 0.8.6 build/output.
+2. Extract this ZIP to a new folder on a Windows PC. The builder is unsigned.
+   Check SHA256SUMS.txt; do not disable security protections to run it.
+3. Run DQXI-0.8.6-Lute-Test1-Builder.exe using your OWN ORIGINAL Japanese game,
+   not a previously translated ROM. Use a separate, new output folder.
+4. Use the same build/install method you used for 0.8.6. This builder can
+   create translated .3ds output or the complete romfs/exefs mod folders;
+   it does not directly install anything to your 3DS or generate a CIA.
+5. Install the test as a coherent build. If using LayeredFS, use the complete
+   test output, not a mix of old overrides. Both changed targets must match.
+   Restart the console/game; use an in-game save, not a save state.
+
+What to test
+------------
+Initially avoid saving over your only pre-crash save.
+
+- Return to the same man in Galenholm after accepting the lute request.
+- Speak to him again. Note whether the crash occurs before any dialogue,
+  while the quest details appear, or after advancing a particular page.
+- If it works, finish the reminder conversation and repeat it five times.
+- Open/close the quest journal several times, then repeat the conversation.
+- If practical, leave and re-enter the book world and check once more.
+- Also check ordinary dialogue, the quest journal and Stats for missing text.
+
+Please report the build label "0.8.6-lute-test1", which steps passed, and
+whether your setup uses a rebuilt game or LayeredFS. If it crashes, take a
+NEW photo showing the registers; press A on the crash screen to save the
+dump if possible. A pre-crash save and dump would greatly help diagnosis.
+
+Rollback
+--------
+Fully power down/close the game and restore your complete standard 0.8.6
+build or mod output using your normal method. Do not restore individual
+test files into an otherwise different version. Preserve your save backup.
+The builder does not edit your saves, original ROM or installed emulator.
+
+Checks and limits
+-----------------
+Offline native tests check current panel binding, original glyphs/metrics,
+font registration/release, repeated layout construction/destruction and a
+modeled archive-buffer reload. The reported real gameplay crash has NOT
+been reproduced end-to-end here. Passing offline checks does not establish
+a real-hardware fix, complete heap/timing safety or full-game compatibility.
+
+This package contains patch payloads in a builder, not a ROM, original game
+archives, saves, keys or reference text dumps. This is an opt-in test release,
+not a replacement for standard 0.8.6. Do not describe it as a confirmed hotfix.
+The exact verified builder still identifies itself as PRIVATE TEST in its
+window because this candidate was first prepared for one reporter. Its build
+identifier is 0.8.6-lute-test1; the binary has not been rebuilt for this upload.

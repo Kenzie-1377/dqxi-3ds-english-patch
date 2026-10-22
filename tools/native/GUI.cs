@@ -31,7 +31,7 @@ public sealed class BuilderForm : Form
 
     public BuilderForm()
     {
-        Text = "DQXI 3DS — English Translation Builder 0.8.6 (experimental)";
+        Text = "DQXI 3DS — English Translation Builder 0.8.6-lute-test1 (PRIVATE TEST)";
         Font = new Font("Segoe UI", 9F);
         AutoScaleMode = AutoScaleMode.Dpi;
         ClientSize = new Size(830, 710);
@@ -50,7 +50,7 @@ public sealed class BuilderForm : Form
 
         AddRow(layout, new Label
         {
-            Text = "Build your English translation", AutoSize = true,
+            Text = "PRIVATE lute-crash test — not a confirmed fix", AutoSize = true,
             Font = new Font("Segoe UI", 20F, FontStyle.Bold), Margin = new Padding(0, 0, 0, 6)
         });
         AddText(layout, "DRAGON QUEST XI • Japanese Nintendo 3DS edition", 12);
