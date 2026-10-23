@@ -9,7 +9,26 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.6 experimental prerelease** adds further restored regional and
+The **0.8.7 experimental prerelease** restores further scoped conversations
+in Heliodor/Last Bastion, Gondolia, Gallopolis, Lonalulu, Nautica, Cobblestone
+and Puerto Valor, with affected dialogue-page handling and story-state checks.
+This includes the full five-page post-banquet/Erdwin's Lantern conversation.
+The package also integrates the Tickington lute repeat-conversation crash fix
+from `0.8.6-lute-test1`: the original reporter confirmed that their crash no
+longer occurs. This is case-specific confirmation, not universal hardware
+certification. The fix retains an existing font in 2D mode; broader memory
+headroom and full-game regression testing remain open.
+
+There are 1,042 cumulative targets: 1,029 unchanged from 0.8.6 and 13 updated,
+none added or removed. All previous translation, UI, shop and rendering fixes
+are retained. **Standard timing only: no 60 FPS addon is provided for 0.8.7.**
+Do not layer older FPS or diagnostic patches over this cumulative build.
+The FPS experiment is on hold after uneven menu/movement timing was reported.
+Back up saves, replace old mod output, and load a normal in-game save after a
+fresh launch. This remains unfinished; see [validation](docs/release-validation.md)
+and [remaining work](docs/completion-status.md).
+
+The historical **0.8.6 experimental prerelease** adds further restored regional and
 book-world dialogue, scoped quest-flow/page-reference repairs and menu fixes
 reported during Azahar testing. These include key-item messages, Weather
 Forecast, dual-wield stats, Tactics names, Stats subsections, item drops,
@@ -20,7 +39,7 @@ are reflowed, but the newest font/hint changes still need final visual testing.
 The package contains 1,042 targets: 1,006 unchanged from 0.8.5, 34 updated and
 two added, none removed. This is not whole-game completion or certification.
 
-Standard timing remains the default. Use only the matching **0.8.6 optional
+For historical 0.8.6 only, standard timing remains the default. Use only the matching **0.8.6 optional
 experimental 60 FPS addon** with this release's Azahar mod output; it includes
 standard-timing rollback. No new FPS/timing or hardware certification is claimed.
 See the [release validation](docs/release-validation.md),

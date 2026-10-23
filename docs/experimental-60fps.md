@@ -1,4 +1,12 @@
-# Optional experimental FPS addon — 0.8.6
+# FPS experiment on hold — 0.8.7
+
+0.8.7 uses standard timing only. No 60 FPS addon is provided or supported for
+this version after uneven menu/movement timing was reported in Azahar.
+Do not apply an older FPS patch: it can overwrite newer cumulative code fixes,
+including the integrated Tickington lute crash fix. Build fresh 0.8.7 output
+instead of layering old patches over it. Historical releases remain unchanged.
+
+## Historical optional experimental FPS addon — 0.8.6 only
 
 The standard builder does **not** enable this experiment. Use the separate
 `DQXI-0.8.6-Optional-Experimental-60FPS.zip` release asset with matching 0.8.6

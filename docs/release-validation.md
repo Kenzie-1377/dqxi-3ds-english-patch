@@ -1,5 +1,27 @@
 # Release validation
 
+## 0.8.7 — October 22, 2026
+
+The standard-timing cumulative snapshot has 1,042 targets: 1,029 identical
+to 0.8.6 and 13 updated, none added or removed. Eleven updated regional/script
+files retain the latest installed translations, including the full five-page
+banquet conversation. Two further targets integrate the exact lute-test fix:
+the quest panel's font reference and one font-residency byte. Prior executable
+records remain identical; neither experimental FPS override is included.
+
+Publication requires independent reconstruction of all targets by the exact
+release executable, a separate embedded patch-only audit, a fresh build from
+the public source recipe, and repository tests. Original sources and installed
+mods remain unchanged; unrelated local builder edits are excluded and preserved.
+No ROMs, original archives, saves, keys or private translation dumps are shared.
+
+The original reporter confirmed the lute-test build stopped their repeat-talk
+crash. This is not universal hardware certification or a full saved-game test
+of the combined release. The fix can retain about 543 KiB of font data if not
+already loaded; wider heap headroom is not certified. Native dialogue getters,
+render submissions and bounded caller/story-state checks do not replace a
+full playthrough or GPU/hardware checks. Translation remains unfinished.
+
 ## 0.8.6 — October 21, 2026
 
 Frozen standard-timing inventory: 1,042 targets; 1,006 unchanged from 0.8.5,

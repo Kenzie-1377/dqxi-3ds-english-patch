@@ -1,6 +1,24 @@
 # Scoped completion checklist
 
-## Current scope for 0.8.6
+## Current scope for 0.8.7
+
+Further full-wording regional conversations and bounded page/continuation
+repairs are included, including the five-page banquet/Lantern conversation.
+These are scoped changes, not completion of any entire region or the game.
+The cumulative package has 1,042 targets: 1,029 unchanged from 0.8.6 and 13
+updated. Prior translation and UI/shop/rendering fixes remain.
+
+The original reporter confirmed that `0.8.6-lute-test1` resolves their
+Tickington lute repeat-conversation crash; that exact two-target fix is now
+integrated. Broader hardware memory/stability certification remains open.
+The fix can retain about 543 KiB of font data if not already loaded.
+
+Standard timing only; the FPS experiment is on hold and no matching addon is
+provided. Newly restored conversations still need broader normal-save play,
+story-state, 2D/3D and hardware testing. Static/native checks are not a full
+playthrough, completion percentage or proof that all dialogue is translated.
+
+## Historical scope for 0.8.6
 
 Further installed regional/book-world dialogue and bounded quest-flow/page
 repairs are included, together with reported key-item, Weather Forecast,

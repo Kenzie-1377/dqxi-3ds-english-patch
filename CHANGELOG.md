@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.8.7 — October 22, 2026 (experimental)
+
+- Restored further scoped regional dialogue in Heliodor/Last Bastion,
+  Gondolia, Gallopolis, Lonalulu, Nautica, Cobblestone and Puerto Valor.
+- Includes fuller initial/repeat/later replies, checked questions/choices,
+  and the full five-page post-banquet/Erdwin's Lantern conversation.
+- Affected fixed-page callers and continuation/story-state paths checked;
+  original choices, rewards and prior UI/rendering/shop fixes retained.
+- Integrates the Tickington lute repeat-conversation crash fix from
+  `0.8.6-lute-test1`, confirmed by the original reporter for that case.
+  Not universal hardware certification; additional font residency can use
+  about 543 KiB when not already loaded. Broader memory testing remains open.
+- Standard timing only. The experimental 60 FPS addon is not included or
+  supported for this version after uneven menu/movement timing was reported.
+- 1,042 cumulative targets: 1,029 unchanged and 13 updated since 0.8.6;
+  none added or removed. Translation and whole-game testing remain unfinished.
+
 ## 0.8.6 — October 21, 2026 (experimental)
 
 - Further restored book-world and regional conversations, including scoped
