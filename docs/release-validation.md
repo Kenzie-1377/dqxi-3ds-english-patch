@@ -1,5 +1,35 @@
 # Release validation
 
+## 0.8.8 — October 24, 2026
+
+The exact current installed authority and independent receipt define the
+1,080-file snapshot: 982 unchanged, 60 updated and 38 added since 0.8.7,
+none removed. Original-source hashes are freshly checked; all original inputs,
+installed files, saves/settings and the prior release remain unchanged.
+
+The release gate requires two complete matching-original builds by the exact
+release executable, a third full build from the clean public-source recipe,
+independent paths/hash/size checks for all 1,080 outputs, a strict embedded
+patch-only reconstruction audit, a separate Python reconstruction using its
+own delta/normalization implementation, and all 37 repository tests. The exact
+builder GUI must also open correctly. The five pre-existing local native-file
+line-ending differences are excluded and preserved byte-for-byte.
+
+Bounded gameplay smoke evidence: existing-session Sacred Summit 2D scene and
+map rendering observed normally; the player confirmed menu open/close displayed
+correctly without saving. No new-scene or fresh-boot gameplay claim follows.
+Dave's 13 pages and other newly restored scenes remain ready for ordinary
+gameplay testing, not universally gameplay-verified. Offline native caller,
+page-flow and rendering checks do not replace GPU/hardware or full-playthrough
+tests. No new full-cartridge/IVFC rebuild test is claimed for this release.
+
+Executable IPS and shared 2D UI bytes retain the exact integrated lute fix from
+0.8.7. Its original reporter confirmation remains case-specific, not universal
+hardware certification. Standard timing only; neither FPS override nor an FPS
+addon is included. Act 2 and whole-game coverage remain incomplete. Only delta
+patches, the original-input-verifying builder and its checksum are published;
+no ROMs, original archives, private dialogue references, keys or saves.
+
 ## 0.8.7 — October 22, 2026
 
 The standard-timing cumulative snapshot has 1,042 targets: 1,029 identical

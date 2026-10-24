@@ -9,19 +9,22 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
 
-The **0.8.7 experimental prerelease** restores further scoped conversations
-in Heliodor/Last Bastion, Gondolia, Gallopolis, Lonalulu, Nautica, Cobblestone
-and Puerto Valor, with affected dialogue-page handling and story-state checks.
-This includes the full five-page post-banquet/Erdwin's Lantern conversation.
-The package also integrates the Tickington lute repeat-conversation crash fix
-from `0.8.6-lute-test1`: the original reporter confirmed that their crash no
-longer occurs. This is case-specific confirmation, not universal hardware
-certification. The fix retains an existing font in 2D mode; broader memory
-headroom and full-game regression testing remain open.
+The **0.8.8 experimental prerelease** is an **Act 2 progress update, not Act 2
+completion**. It restores more scoped early Act 2 / Last Bastion dialogue,
+Angri-La departure and Rab-rejoining continuation, and Sylvando's parade,
+arrival, childhood, Rodrigo/Hendrik meeting, father-reunion and farewell
+conversations. Gonzalez's nine speeches span 18 pages; Dave's five span 13.
+Affected caller, story-state, native page-flow and rendering paths were checked;
+the newest scenes still need ordinary gameplay confirmation in both modes.
 
-There are 1,042 cumulative targets: 1,029 unchanged from 0.8.6 and 13 updated,
-none added or removed. All previous translation, UI, shop and rendering fixes
-are retained. **Standard timing only: no 60 FPS addon is provided for 0.8.7.**
+There are 1,080 cumulative targets: 982 unchanged, 60 updated and 38 added
+since 0.8.7, with none removed. These are file counts, not a completion percentage.
+All previous translation, UI, shop and rendering fixes are retained, including
+the integrated Tickington lute fix. Its original reporter confirmation remains
+case-specific, not universal hardware or memory-headroom certification.
+Release 0.8.7 remains unchanged.
+
+**Standard timing only: no 60 FPS addon is provided for 0.8.8.**
 Do not layer older FPS or diagnostic patches over this cumulative build.
 The FPS experiment is on hold after uneven menu/movement timing was reported.
 Back up saves, replace old mod output, and load a normal in-game save after a
@@ -258,8 +261,8 @@ included.
 
 ## Standalone Windows app — no Python required
 
-Use `DQXI-English-Translation-Builder.exe` from the repository's release assets
-from the **0.6.0** assets. It includes the interface and translation patches and
+Use `DQXI-English-Translation-Builder.exe` from the **0.8.8 experimental release**
+assets. It includes the interface and translation patches and
 uses Windows' installed .NET Framework 4.8. Source ZIPs do not contain the EXE.
 Clean-host and Windows 8 compatibility are unverified.
 
@@ -415,23 +418,17 @@ with that tool; it is not relicensed by this repository.
 
 ## Current progress
 
-The **0.5.0 experimental prerelease** contains 733 patch targets (730 PACK
-deltas, two BCH deltas and one executable IPS), with 111 updated and 622 retained
-from 0.4.0. It includes 7,588 newly converted regional Japanese fields
-(6,302 dialogue and 1,286 speaker labels), including repeated fields rather
-than unique conversations. Five English-only corrections are counted separately.
-Earlier quest/journal, battle-message, tutorial, forge, speaker-name, item,
-Tickington and screen-fit work is retained. See the
-[changelog](CHANGELOG.md) for completed scopes and remaining work, and
-[validation notes](docs/release-validation.md) for the checks performed.
+The current 0.8.8 package contains 1,080 cumulative patch targets. Act 2 is the
+current priority and remains incomplete across story, regional NPC, party,
+quest, choice and text-layout coverage. Specific installed restorations are
+ready to test, not proof that their entire region or act is complete.
 
-This is not a complete translation. Broader character dialogue and some graphics
-remain Japanese. The latest broad regional audit reports 356 Japanese candidates
-across 26 packs, including unsupported fields, duplicates, potentially unused
-text and numeric pointer lookalikes. This is not an active conversation count
-or completion percentage; other audit scopes overlap and must not be added.
-The Hotto title image and saved Tockle name behavior still need
-in-game checks, and text readability is not yet finished on every screen.
+The existing-session Sacred Summit 2D rendering and player menu open/close
+smoke check passed. New scenes, including Dave, still need ordinary gameplay
+confirmation; no fresh-boot, 3D, hardware or whole-game playthrough is claimed.
+See the [changelog](CHANGELOG.md), [remaining scope](docs/completion-status.md)
+and [validation notes](docs/release-validation.md). Saves are not rewritten;
+some names can remain cached in old saves. No completion percentage is claimed.
 
 ## Development
 
@@ -443,13 +440,12 @@ sufficient; no machine-translation model is downloaded.
 python -m unittest discover -s tests -v
 ```
 
-To build the standalone Windows EXE yourself, install `pyinstaller==6.22.3` in
-your Python environment and run `Build-Windows-Exe.ps1`. Alternatively, run the
-**Build Windows app** workflow in GitHub Actions and download its artifact.
-Maintainers can attach the EXE to a GitHub Release; it is not stored in Git.
-The GUI and runtime are bundled with PyInstaller; see its
-[packaging documentation](https://pyinstaller.org/en/stable/usage.html).
-Third-party runtime notices are included under `licenses/`.
+To build the current standalone Windows EXE, run `Build-Windows-Exe.ps1` with
+the Windows .NET Framework 4.8 x64 compiler installed. The current builder is
+native C#/.NET Framework and does not bundle or require Python or PyInstaller.
+Source builds are not automatically the separately verified release asset.
+The executable is attached to the GitHub release rather than stored in Git.
+Third-party notices are included under `licenses/`.
 
 Maintainers can regenerate a release from their own originals and reviewed mod:
 

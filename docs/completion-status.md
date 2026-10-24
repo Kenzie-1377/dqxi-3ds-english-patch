@@ -1,6 +1,33 @@
 # Scoped completion checklist
 
-## Current scope for 0.8.7
+## Current scope for 0.8.8 — Act 2 first, still incomplete
+
+The cumulative snapshot has 1,080 targets: 982 identical to 0.8.7, 60 updated
+and 38 added, none removed. Scoped early Act 2 / Last Bastion conversations,
+Angri-La departure, Rab-rejoining continuation, Sylvando parade/arrival/
+childhood/Rodrigo-Hendrik meeting/father-reunion/farewell, Gonzalez's nine
+speeches (18 pages) and Dave's five speeches (13 pages) are included.
+These are installed ready-to-test scopes, not completion of any whole region,
+character, act or game. Applicable full paired English is preserved.
+
+Dave's correct original interaction actor and story-state binding were checked
+without retagging ship keys/models. Native getters, actual bounded callers,
+page-flow and rendering paths were checked. No nearby save was available for
+his gameplay test; test naturally when reached. The menu open/close smoke test
+was player-confirmed in the existing Sacred Summit 2D session. This does not
+certify new scenes, a fresh launch, 3D, hardware or a full playthrough.
+
+Remaining work includes evidence-backed Act 2 source coverage across story,
+regional NPC, party, quests, choices and layout; context-sensitive localisation
+ordering, parade direction presentation, some asynchronous/style-specific
+paths and songs; and ordinary scene/state/2D/3D/hardware regression testing.
+Missing-Japanese scans or file counts cannot establish completion.
+
+Prior UI/shop/rendering fixes and the integrated Tickington lute fix remain.
+Its reporter confirmation is case-specific; wider hardware/heap headroom is
+unverified. Standard timing only, no 60 FPS addon. 0.8.7 is preserved unchanged.
+
+## Historical scope for 0.8.7
 
 Further full-wording regional conversations and bounded page/continuation
 repairs are included, including the five-page banquet/Lantern conversation.

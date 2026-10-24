@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.8.8 — October 24, 2026 (experimental Act 2 progress)
+
+- Additional full paired-English dialogue and page/caller corrections in scoped
+  early Act 2 / Last Bastion sequences; Angri-La departure and Rab-rejoining
+  continuation repairs.
+- Further Sylvando parade, arrival, childhood, Rodrigo/Hendrik meeting,
+  father-reunion and farewell restorations, plus Gonzalez (nine speeches,
+  18 pages) and Dave (five speeches, 13 pages).
+- Resolved Dave's original interaction/story-state binding without changing
+  ship actor IDs, models or keys. Bounded native getter, caller, page-flow and
+  rendering checks passed; ordinary scene gameplay confirmation remains open.
+- 1,080 cumulative targets: 982 unchanged, 60 updated, 38 added and none removed
+  since 0.8.7. All prior cumulative fixes and the case-specific reporter-confirmed
+  Tickington lute fix retained. Standard timing only; no 60 FPS addon.
+- Exact builder reconstruction, embedded/Python independent readbacks, clean
+  public-source recipe and repository tests are release requirements. Limited
+  smoke check: existing-session Sacred Summit 2D rendering and player-confirmed
+  menu open/close; not fresh-boot, all-new-scene, 3D or hardware certification.
+- Act 2 and the game remain incomplete. Context-dependent text/order, parade
+  presentation, some asynchronous/style-specific paths, songs, wider source
+  coverage and gameplay testing remain open. 0.8.7 is unchanged.
+
 ## 0.8.7 — October 22, 2026 (experimental)
 
 - Restored further scoped regional dialogue in Heliodor/Last Bastion,
