@@ -1,5 +1,17 @@
 # Changelog
 
+## 0.8.9 — October 26, 2026 (experimental Act 2 progress)
+
+- Further scoped full-English dialogue and layout fixes in Puerto Valor,
+  Gondolia, Gallopolis and Last Bastion, including Derk, Faris and palace
+  residents; battle description and defeat-message corrections.
+- 1,082 targets: 1,065 unchanged, 15 updated and two added since 0.8.8.
+- Exact builder, clean-source, embedded package and independent reconstruction
+  checks passed. No fresh gameplay smoke test has been performed; many scenes
+  and service handoffs need human testing. Act 2 and the game remain incomplete.
+- Standard timing only; case-specific reporter-confirmed lute fix preserved.
+  The startup credit screen is not included. Previous releases remain intact.
+
 ## 0.8.8 — October 24, 2026 (experimental Act 2 progress)
 
 - Additional full paired-English dialogue and page/caller corrections in scoped

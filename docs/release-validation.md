@@ -1,5 +1,16 @@
 # Release validation
 
+## 0.8.9 — October 26, 2026
+
+The candidate contains 1,082 targets: 1,065 unchanged, 15 updated and two
+added since 0.8.8. Two exact release-builder reconstructions, one clean-source
+builder reconstruction, independent Python reconstruction, an embedded
+patch-only audit and 37 repository tests passed. No fresh gameplay smoke test
+was performed; individual dialogue and service paths still require ordinary
+gameplay testing. These checks do not establish Act 2, whole-game or hardware
+completion. Standard timing and the reporter-confirmed case-specific lute fix
+are preserved; the startup credit screen is not included.
+
 ## 0.8.8 — October 24, 2026
 
 The exact current installed authority and independent receipt define the

@@ -2,8 +2,8 @@ $ErrorActionPreference='Stop'
 $repoDir=$PSScriptRoot
 $nativeDir=Join-Path $repoDir 'tools/native'
 $releaseDir=Join-Path $repoDir 'release'
-if((Get-FileHash -LiteralPath (Join-Path $releaseDir 'manifest.json')).Hash.ToLowerInvariant()-ne'ed67d513fa3c5068613c4557ffebb5d0d5320d09c2078d23b7a6ed759fa4c6b0'){throw 'Frozen 0.8.8 manifest pin mismatch'}
-if(@(Get-ChildItem -LiteralPath $releaseDir -File).Count-ne1081){throw 'Unexpected patch package files'}
+if((Get-FileHash -LiteralPath (Join-Path $releaseDir 'manifest.json')).Hash.ToLowerInvariant()-ne'9b8bc9d658ebd445f334f96475a62e0278584ffcd145826fc045ad7948bfad46'){throw 'Frozen 0.8.9 manifest pin mismatch'}
+if(@(Get-ChildItem -LiteralPath $releaseDir -File).Count-ne1083){throw 'Unexpected patch package files'}
 $compiler=Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319/csc.exe'
 if(!(Test-Path -LiteralPath $compiler)){throw 'Windows .NET Framework 4.8 x64 compiler required'}
 $buildDir=Join-Path $repoDir ('build/native-'+[Guid]::NewGuid().ToString('N'))

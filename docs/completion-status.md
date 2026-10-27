@@ -1,5 +1,14 @@
 # Scoped completion checklist
 
+## 0.8.9 — Act 2 remains incomplete
+
+This experimental snapshot adds scoped dialogue and layout corrections beyond
+0.8.8. Individual batches passed source, caller, page-flow, rendering and local
+inventory checks, but many require human gameplay checks. Act 2 and whole-game
+coverage are not established by file counts or review counts. A fresh gameplay
+smoke test for this release has not been performed. The startup credit screen
+is not included.
+
 ## Current scope for 0.8.8 — Act 2 first, still incomplete
 
 The cumulative snapshot has 1,080 targets: 982 identical to 0.8.7, 60 updated

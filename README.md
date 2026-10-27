@@ -5,6 +5,16 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 
 ## Project status
 
+**0.8.9 is an unfinished experimental Act 2 progress update.** It adds scoped
+dialogue and layout corrections, including Derk, Gondolia, Prince Faris and
+Gallopolis palace conversations. It contains 1,082 targets: 1,065 unchanged,
+15 updated and two added since 0.8.8. These are file counts, not a completion
+percentage. The latest package has not had a fresh gameplay smoke test; many
+individual conversations still need gameplay checks. Standard timing only;
+no 60 FPS addon. The startup credit screen is not included in this build.
+
+## Earlier 0.8.8 release
+
 **This project is not complete. I will be updating it as I can.** There is no
 fixed release schedule. Expect untranslated Japanese, rough translations, and
 layout issues. Back up your saves before trying it.
