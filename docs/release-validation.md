@@ -1,5 +1,35 @@
 # Release validation
 
+## 0.8.10 — November 1, 2026
+
+The release is frozen from the independently read-back 1,121-file installed
+inventory. It contains 1,029 unchanged, 53 updated and 39 added targets versus
+0.8.9. Original input hashes, all patch payloads and every reconstructed output
+are checked. Published content is restricted to delta patches, executable IPS,
+source/build instructions, the Windows builder and its checksum; no original
+ROMs, extracted reference assets, private dialogue CSVs, keys or saves.
+
+Release checks cover independent Python reconstruction, a strict embedded
+patch-only audit, two complete builds using the release executable, a third
+from the clean public source recipe and all 37 repository tests. The exact
+committed recipe is rebuilt and checked again before publication. Builder
+self-tests create its GUI; this is not a claim of a fresh game playthrough.
+
+The Vince fix passed native window, font-fit, dismissal and storage checks for
+125 corrected dialogue strings in both screen modes with two player-name
+lengths. The latest Celestial Sands full-wording passages passed eight current/
+candidate, mode/name menu profiles, including actual automatic speaker
+selection, native page flow, fonts, continuation and read marks. These are
+bounded software checks, not ordinary story gameplay or hardware certificates.
+
+No fresh full-game gameplay smoke test is claimed for this release. Act 2,
+whole-game coverage and the complete reported surrounding-area set remain
+unfinished. Saves/settings and the installed test build are not changed by
+release preparation. Standard timing only; the integrated lute repair retains
+its original case-specific confirmation. Historical releases remain unchanged.
+The five pre-existing local native-source line-ending changes are preserved
+outside the release commit; the public builder uses the frozen repository code.
+
 ## 0.8.9 — October 26, 2026
 
 The candidate contains 1,082 targets: 1,065 unchanged, 15 updated and two

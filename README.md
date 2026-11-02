@@ -5,6 +5,26 @@ edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
 
 ## Project status
 
+**0.8.10 is an unfinished experimental progress update.** It packages the
+latest verified local translation, pagination and UI fixes, including the Vince
+name-consistency correction and further full-English Act 2 party dialogue.
+There are 1,121 cumulative targets: 1,029 unchanged, 53 updated and 39 added
+since 0.8.9; none removed. These counts do not measure game completion.
+
+Act 2 and the whole game remain incomplete. The reported inn, Dundrasil,
+restless-knight, floating-voice and Irwin-memory issues and their surrounding
+areas are not claimed collectively gameplay-verified. Individual scenes and
+the newest fixes still need ordinary gameplay checks in both screen modes.
+
+Standard timing only; no 60 FPS addon. The integrated Tickington lute fix is
+preserved with its case-specific reporter confirmation, not universal hardware
+certification. All historical releases, including 0.8.7, remain unchanged.
+Use this cumulative build on its own and test from a fresh launch with a normal
+in-game save. See [validation](docs/release-validation.md) and
+[remaining work](docs/completion-status.md).
+
+## Earlier 0.8.9 release
+
 **0.8.9 is an unfinished experimental Act 2 progress update.** It adds scoped
 dialogue and layout corrections, including Derk, Gondolia, Prince Faris and
 Gallopolis palace conversations. It contains 1,082 targets: 1,065 unchanged,

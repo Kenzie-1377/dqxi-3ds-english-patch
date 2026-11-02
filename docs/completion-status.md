@@ -1,5 +1,25 @@
 # Scoped completion checklist
 
+## 0.8.10 — Act 2 first, still incomplete
+
+The current cumulative release contains 1,121 verified installed targets.
+The Vince name correction and newest full-English Celestial Sands party
+passages are included. Further Act 2 story dialogue, regional NPCs, party
+conversation, quests, choices and layout coverage remain under review using
+actual story states and callers. Review counts, file counts, a lack of Japanese
+or a zero lead count do not establish completion.
+
+The complete reported inn/Dundrasil/restless-knight/floating-voice/Irwin-memory
+set and its surrounding work are not collectively verified ready. Pending
+screenshots, ordinary gameplay checks and choice-input/outcome checks remain
+open. The Vince correction also awaits tester confirmation in the reported
+child and tournament-announcer scenes. Bounded source/native/window checks
+are distinguished from full story playthroughs, GPU or hardware verification.
+
+Only completed, admitted local fixes are included. Private proposals and
+unfinished verification candidates are excluded. Full-English source-version
+and actual-consumer holds remain; later game work follows Act 2 priority.
+
 ## 0.8.9 — Act 2 remains incomplete
 
 This experimental snapshot adds scoped dialogue and layout corrections beyond

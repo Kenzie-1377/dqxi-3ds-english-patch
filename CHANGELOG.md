@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.8.10 — November 1, 2026 (experimental progress update)
+
+- Packages all currently verified installed changes since 0.8.9: 1,121 targets,
+  with 1,029 unchanged, 53 updated and 39 added; none removed.
+- Corrects Humphrey to Vince in 125 active dialogue entries across Octagonia
+  regional/inn dialogue and associated party dialogue, preserving wording,
+  page breaks, controls, choices and rewards. Both text modes were checked.
+- Includes further full paired-English Act 2 dialogue and pagination fixes.
+  The latest Sylvando and Hendrik Celestial Sands passages expand from four
+  shortened pages to nine full-wording pages, with native automatic speaker,
+  page-flow, font, continuation and read-mark checks.
+- Includes accumulated scoped regional, story, quest, text-layout and UI fixes
+  present in the verified installation. This is not Act 2 or game completion.
+- Standard timing only. Existing lute, shop, rendering and UI repairs retained;
+  no FPS addon, ROMs, original extracted assets, private references or saves.
+- Newest scenes still require ordinary gameplay confirmation. Existing
+  releases and tags, including 0.8.7, remain untouched.
+
 ## 0.8.9 — October 26, 2026 (experimental Act 2 progress)
 
 - Further scoped full-English dialogue and layout fixes in Puerto Valor,
