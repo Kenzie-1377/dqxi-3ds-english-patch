@@ -41,8 +41,9 @@ A full Windows CIA rebuild was verified using real original game content in a
 synthetic outer container; that is not a console-installation test.
 
 The Linux command-line package includes the same patch set and verified official
-x86_64 tool-download pins. Actual Linux runtime testing remains pending. The
-Windows-hosted shared-engine checks do not substitute for that platform test.
+x86_64 tool-download pins. Linux CI passed all 44 automated tests, CLI startup,
+and execution checks for both pinned helper tools. A full game rebuild on Linux
+has not been verified.
 
 The frozen patch set, exact Windows executable, Linux archive contents, and
 matching checksums passed the release-package checks. All 44 automated tests pass.

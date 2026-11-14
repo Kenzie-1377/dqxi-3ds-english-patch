@@ -91,8 +91,9 @@ its folder, and run one of these commands with your own decrypted game:
 ```
 
 Use `--output-format mod` for mod folders. See the [Linux guide](docs/linux.md)
-for requirements and local-tool options. Linux runtime testing remains pending;
-Windows-hosted Python checks alone do not verify a Linux installation.
+for requirements and local-tool options. Linux CI passed the 44 automated tests,
+CLI startup, and execution checks for both pinned native tools. A full Linux game
+rebuild and real-console CIA installation remain unverified.
 
 ## Install or update
 

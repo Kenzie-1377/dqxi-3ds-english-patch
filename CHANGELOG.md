@@ -1,6 +1,6 @@
 # Changelog
 
-## Version 1.0 â€” local release preparation
+## Version 1.0 — local release preparation
 
 The translation is considered substantially complete. This release brings the
 verified translation, dialogue pagination, 3D wrapping and spacing, English title
@@ -12,11 +12,12 @@ as well as cartridge and mod-folder output. A Python 3 command-line package is
 also prepared for Linux, with pinned native extraction/rebuilding tools.
 
 Targeted Azahar tests passed for the latest title screens and badge fix. Broader
-playthrough coverage, actual Linux runtime testing, and console installation of
-newly rebuilt CIAs remain open.
+playthrough coverage, full Linux game-rebuild testing, and console installation of
+newly rebuilt CIAs remain open. Linux CI passed all 44 tests, CLI startup, and
+both native-helper execution checks.
 
 
-## 0.8.10 â€” November 1, 2026 (experimental progress update)
+## 0.8.10 — November 1, 2026 (experimental progress update)
 
 - Packages all currently verified installed changes since 0.8.9: 1,121 targets,
   with 1,029 unchanged, 53 updated and 39 added; none removed.
@@ -34,7 +35,7 @@ newly rebuilt CIAs remain open.
 - Newest scenes still require ordinary gameplay confirmation. Existing
   releases and tags, including 0.8.7, remain untouched.
 
-## 0.8.9 â€” October 26, 2026 (experimental Act 2 progress)
+## 0.8.9 — October 26, 2026 (experimental Act 2 progress)
 
 - Further scoped full-English dialogue and layout fixes in Puerto Valor,
   Gondolia, Gallopolis and Last Bastion, including Derk, Faris and palace
@@ -46,7 +47,7 @@ newly rebuilt CIAs remain open.
 - Standard timing only; case-specific reporter-confirmed lute fix preserved.
   The startup credit screen is not included. Previous releases remain intact.
 
-## 0.8.8 â€” October 24, 2026 (experimental Act 2 progress)
+## 0.8.8 — October 24, 2026 (experimental Act 2 progress)
 
 - Additional full paired-English dialogue and page/caller corrections in scoped
   early Act 2 / Last Bastion sequences; Angri-La departure and Rab-rejoining
@@ -68,7 +69,7 @@ newly rebuilt CIAs remain open.
   presentation, some asynchronous/style-specific paths, songs, wider source
   coverage and gameplay testing remain open. 0.8.7 is unchanged.
 
-## 0.8.7 â€” October 22, 2026 (experimental)
+## 0.8.7 — October 22, 2026 (experimental)
 
 - Restored further scoped regional dialogue in Heliodor/Last Bastion,
   Gondolia, Gallopolis, Lonalulu, Nautica, Cobblestone and Puerto Valor.
@@ -85,7 +86,7 @@ newly rebuilt CIAs remain open.
 - 1,042 cumulative targets: 1,029 unchanged and 13 updated since 0.8.6;
   none added or removed. Translation and whole-game testing remain unfinished.
 
-## 0.8.6 â€” October 21, 2026 (experimental)
+## 0.8.6 — October 21, 2026 (experimental)
 
 - Further restored book-world and regional conversations, including scoped
   Hotto, Dundrasil, Zwaardsrust, Cobblestone/refugee-camp and Gallopolis text.
@@ -102,7 +103,7 @@ newly rebuilt CIAs remain open.
 - Translation, broader dialogue/quest-state testing and whole-game regression
   remain unfinished. Prior cumulative fixes retained; no completion percentage.
 
-## 0.8.5 â€” October 20, 2026 (experimental)
+## 0.8.5 — October 20, 2026 (experimental)
 
 - Further scoped Last Fort/lookout dialogue and full priest paging, preserving
   church services, choices, full wording and previous fixes.
@@ -124,7 +125,7 @@ newly rebuilt CIAs remain open.
   none added or removed. Prior shop, Heliodor, Stats/font and Labyrinth fixes
   remain. Back up saves; whole-game and hardware tests remain unfinished.
 
-## 0.8.4 â€” October 19, 2026 (experimental)
+## 0.8.4 — October 19, 2026 (experimental)
 
 - Repairs the reported Heliodor entrance item-shop Buy/repeated-purchase crash.
   The UI allocation repair handles pressure in the original shared pool and
@@ -149,7 +150,7 @@ held journal contexts, captions/notifications and broader gameplay/hardware
 regression are still open. Unrelated intermittent 2D crashes are not declared
 fixed. Back up saves; historical releases and tags remain unchanged.
 
-## 0.8.3 â€” October 18, 2026 (experimental)
+## 0.8.3 — October 18, 2026 (experimental)
 
 Includes all 0.8.2 translation work, with no removed targets. Repairs the
 reported Heliodor road/city rendering regression through shared-archive
@@ -164,7 +165,7 @@ Azahar for Heliodor, Stats, Labyrinth and the quest journal. This is not a
 completed translation, whole-game/hardware certification, or a general fix
 for unrelated intermittent 2D crashes. Back up saves.
 
-## 0.8.2 â€” October 15, 2026 (experimental)
+## 0.8.2 — October 15, 2026 (experimental)
 
 ## Translation and readability update
 
@@ -189,7 +190,7 @@ This experimental release includes the installed translation work and menu fixes
 The repository completion checklist distinguishes completed scoped work from outstanding work; no reliable whole-game completion percentage is claimed. Back up saves and avoid mixing old overrides with a newly built patch. The download is an unsigned Windows patch builder, not a ROM or a bundle of original game files.
 
 
-## 0.8.1 â€” October 14, 2026 (experimental dialogue and journal update)
+## 0.8.1 — October 14, 2026 (experimental dialogue and journal update)
 
 - Adds bounded initial-mansion dialogue and further Kiefer/Roamer, Chateau
   Felix, Jessica/Rosalind, Quester's Rest, Go Fygger, Galapagone and Rebirth
@@ -211,7 +212,7 @@ The repository completion checklist distinguishes completed scoped work from out
   completed translation, whole-world certification or stability fix. Historical
   releases and tags are preserved.
 
-## 0.8.0 â€” October 12, 2026 (experimental Tickington and book-world update)
+## 0.8.0 — October 12, 2026 (experimental Tickington and book-world update)
 
 - Corrects bounded Tickington opening, return, first-altar, guild and elder dialogue against actual paired PC 2D resources, including speaker names.
 - Adds bounded dialogue, book, quest and continuation passes for Damdara, Galenholm, Tantegel, Moonahan, Cannock, Erdrick's Home, Rose's Room, Whealbrook, Weaver's Peak and Alltrades Abbey. Includes Academy acquisition and the separate quest74 successor/return scope; no whole-world completion claim.
@@ -221,7 +222,7 @@ The repository completion checklist distinguishes completed scoped work from out
 - Initial mansion/rehearsal work, remaining hub/book worlds, earlier returns and held fields remain incomplete. Notifications4816/5008 and secondary129944 stay unchanged.
 - Known intermittent 2D battle/map crashes remain unresolved; human ending and regional gameplay checks remain pending.
 
-## 0.7.0 â€” October 11, 2026 (experimental regional and ending update)
+## 0.7.0 — October 11, 2026 (experimental regional and ending update)
 
 - Includes the installed regional passes for Phnom Nonh, Sniflheim, Arboria and
   surrounding areas, Angri-La/Mount Pang Lai, Havens Above, Battleground/Fortress,
@@ -243,11 +244,11 @@ The repository completion checklist distinguishes completed scoped work from out
 - **Known issue:** the previously reported intermittent 2D battle/map crash
   remains deferred and unresolved; this release does not claim to fix it.
 
-## 0.6.0 â€” October 9, 2026 (experimental regional dialogue and Memories update)
+## 0.6.0 — October 9, 2026 (experimental regional dialogue and Memories update)
 
 - Packages the current installed translation progress since 0.5.3: regional
   story/NPC/book/party work covering Puerto Valor, Lonalulu, Nautica and
-  L'AcadÃ©mie, plus related earlier-scene corrections. This is not a claim that
+  L'Académie, plus related earlier-scene corrections. This is not a claim that
   these regions or all their alternate states are complete.
 - Retains full English dialogue in the repaired scopes, using matched PC text
   where available and documented faithful Japanese fallback for 3DS-only lines.
@@ -280,7 +281,7 @@ The repository completion checklist distinguishes completed scoped work from out
   are retained; their earlier limited passes do not certify this new version.
   The translation and school NPC/book/quest/party pass are still incomplete.
 
-## 0.5.3 â€” October 7, 2026 (experimental dialogue, UI and rendering update)
+## 0.5.3 — October 7, 2026 (experimental dialogue, UI and rendering update)
 
 - Includes 175 recently installed translated dialogue fields across 38 cutscene
   packs. Eight previously private translations in the Sinderella/Whambelina
@@ -311,7 +312,7 @@ The repository completion checklist distinguishes completed scoped work from out
   layouts, comprehensive translation and clean-host compatibility are not
   certified. Original ROMs, saves and private references are not distributed.
 
-## 0.5.2 â€” October 4, 2026 (experimental Heliodor rendering repair)
+## 0.5.2 — October 4, 2026 (experimental Heliodor rendering repair)
 
 **Not tested on real hardware.** This is an emulator-tested, scoped repair,
 not a stable or fully translated release.
@@ -337,7 +338,7 @@ not a stable or fully translated release.
   Python execution failures remain unexplained. Avoid old external overrides
   when testing the newly built ROM; preserve saves and recoverable backups.
 
-## 0.5.1 â€” October 4, 2026 (experimental hardware-crash hotfix)
+## 0.5.1 — October 4, 2026 (experimental hardware-crash hotfix)
 
 Focused bridge-crash repair, not a whole-game stability or rendering fix.
 
@@ -376,7 +377,7 @@ Focused bridge-crash repair, not a whole-game stability or rendering fix.
   leftover external patch files is pending. This hotfix does not claim to repair
   that rendering issue.
 
-## 0.5.0 â€” October 2, 2026 (experimental prerelease)
+## 0.5.0 — October 2, 2026 (experimental prerelease)
 
 Not fully translated, not stable, and not a hardware-crash repair. The frozen
 candidate passed packaged-builder verification; the player reported it was
@@ -434,7 +435,7 @@ independently observed or comprehensive gameplay/visual validation.
   Azahar. Its cause is unconfirmed; no renderer/settings/cache repair is claimed.
 - Existing patch-only hardware diagnostic controls are separate from this release.
 
-## 0.4.0 â€” October 1, 2026 (experimental prerelease)
+## 0.4.0 — October 1, 2026 (experimental prerelease)
 
 Translation progress, UI improvements and character-name repair. **This is
 not a complete translation or a hardware-crash repair.** The frozen package
@@ -442,7 +443,7 @@ contains **733 patch targets**, versus 577 in 0.3.2: 156 added targets, 56 updat
 targets and 521 unchanged targets. No previous target was removed. Target counts
 are files, not dialogue lines or a completion percentage.
 
-### Character-name repair â€” player confirmed
+### Character-name repair — player confirmed
 
 - Restored the final letters of Veronica and Sylvando on the player's tested
   menu/battle screens. The original runtime name field stores only seven UTF-16
@@ -506,7 +507,7 @@ decrypted Japanese game. No ROM, full game archives, saves, keys or emulator
 are distributed. This unsigned builder produces a new ROM or mod folder;
 it does not modify your original ROM or saves.
 
-## 0.3.2 â€” September 30, 2026 (experimental; hardware crash confirmed)
+## 0.3.2 — September 30, 2026 (experimental; hardware crash confirmed)
 
 This updates the public builder to the latest locally installed translation
 snapshot: **577 patch targets** (575 archive deltas, one Hotto location-image
@@ -529,7 +530,7 @@ candidate references outside that audit after excluding 270 false pointers
 embedded in other strings. This newer scan includes local work after 0.3.2;
 the counts are not confirmed active dialogue. Keep backups of saves and mod files.
 
-## 0.3.1 â€” September 29, 2026 (experimental, hardware-unverified prerelease)
+## 0.3.1 — September 29, 2026 (experimental, hardware-unverified prerelease)
 
 This is a **translation-progress update, not a crash fix**. It has **575 patch
 targets** (574 archive deltas and one executable IPS payload), versus 566 in
@@ -566,7 +567,7 @@ runtime visibility are not comprehensively resolved. Tickington and wider
 gameplay/fit checks remain open. No ROM, complete game archive or save is
 distributed.
 
-## 0.3.0 â€” September 29, 2026 (experimental prerelease)
+## 0.3.0 — September 29, 2026 (experimental prerelease)
 
 This patch has **566 targets** (565 archive deltas and one executable IPS
 payload), up from 518 in 0.2.0. It is still a partial translation.
@@ -608,7 +609,7 @@ Use your own supported decrypted Japanese game. Back up saves and load a normal
 in-game save instead of an old save state. No ROM, complete game archive,
 emulator or save is distributed.
 
-## 0.2.0 â€” September 20, 2026 (experimental prerelease)
+## 0.2.0 — September 20, 2026 (experimental prerelease)
 
 This release updates the translation data, not just the builder. It contains
 518 patch targets, compared with 379 in 0.1.1. The game is **not fully translated**.
@@ -661,7 +662,7 @@ Use your own supported decrypted Japanese ROM. Back up saves, use a normal
 in-game save rather than an old save state, and do not mix versions of mod files.
 No ROM, full game archive, emulator or save is distributed.
 
-## 0.1.1 â€” Builder compatibility fix
+## 0.1.1 — Builder compatibility fix
 
 - Handle decrypted ROMs with stale encryption flags.
 - Improve rebuild logging and verification tests.

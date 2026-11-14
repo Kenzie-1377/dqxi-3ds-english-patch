@@ -38,7 +38,7 @@ were checked before publication. The source suite passed all 44 tests.
 The final Windows executable has passed clean-recipe compilation, GUI/payload self-tests,
 all 1,256 reconstructed-output checks, and an embedded patch-only audit.
 The full source suite has 44 passing tests. CIA-container and Windows full-rebuild
-checks passed; real-console installation and actual Linux runtime checks remain open.
+checks passed; real-console installation and a full Linux game rebuild remain open.
 A local installation pass does not certify an older published builder or a
 future rebuilt executable.
 
@@ -54,8 +54,9 @@ CIAs must be decrypted and match the expected Japanese game. Rebuilt CIAs are
 modified and require a compatible custom-firmware installation workflow.
 
 Linux tool archives and ELF64 x86_64 binaries were inspected and checksummed.
-The shared Python engine reconstructed all 1,256 targets on Windows. No Linux
-host is available in this session, so Linux execution remains a separate test.
+The shared Python engine reconstructed all 1,256 targets on Windows. Ubuntu CI
+passed all 44 tests, CLI startup, and execution checks for both pinned native tools.
+A full game rebuild on Linux remains unverified.
 
 ## Gameplay limits
 
