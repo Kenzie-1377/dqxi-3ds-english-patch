@@ -9,7 +9,7 @@ using System.Threading;
 
 public sealed class BuildOptions {
     public string Rom, Extracted, Output, Release, WorkRoot, CtrTool, RebuildTool;
-    public bool DownloadTools, RomOutput;
+    public bool DownloadTools, RomOutput, CiaOutput;
 }
 public sealed class ReleaseRow {
     public string path, source, kind, payload, source_sha256, target_sha256, payload_sha256;
@@ -20,7 +20,7 @@ public sealed class ReleaseManifest {
     public ReleaseRow[] files;
 }
 public sealed class ReleaseData : IDisposable {
-    public const string ManifestHash = "68c041c92ccd11e0f5695085ed1b5050dee490fc8e45951247de4556d2541473";
+    public const string ManifestHash = "4741611e17ddd792d394ca61183a19afc4f67519836f22e687f9f1ffd758e4f7";
     string folder;
     Stream stream;
     ZipArchive archive;
@@ -40,7 +40,7 @@ public sealed class ReleaseData : IDisposable {
         var raw = Read("manifest.json");
         if (BuildSupport.Hash(raw) != ManifestHash) throw new InvalidDataException("Patch manifest checksum mismatch");
         Manifest = new JavaScriptSerializer().Deserialize<ReleaseManifest>(System.Text.Encoding.UTF8.GetString(raw));
-        if (Manifest == null || Manifest.format != "dqxi-translation-deltas-v1" || Manifest.title_id != "0004000000199200" || Manifest.version != "0.8.10" || Manifest.files == null || Manifest.files.Length != 1121)
+        if (Manifest == null || Manifest.format != "dqxi-translation-deltas-v1" || Manifest.title_id != "0004000000199200" || Manifest.version != "1.0" || Manifest.files == null || Manifest.files.Length != 1256)
             throw new InvalidDataException("Unsupported patch package");
     }
     public byte[] Read(string name) {
@@ -85,21 +85,23 @@ public static class BuildEngine {
         if (options.RomOutput && String.IsNullOrEmpty(options.Rom)) throw new ArgumentException("A cartridge ROM is required for .3ds output");
         if (!String.IsNullOrEmpty(options.Rom) && !String.IsNullOrEmpty(options.Extracted)) throw new ArgumentException("Choose exactly one input");
         string extracted;
-        notify("Checking the frozen 0.8.10 patch package...",0);
+        notify("Checking the frozen 1.0 patch package...",0);
         using (var data = new ReleaseData(options.Release)) {
             if (!String.IsNullOrEmpty(options.Rom)) {
                 string rom = Path.GetFullPath(options.Rom);
                 BuildSupport.NoReparse(rom);
                 string ext = Path.GetExtension(rom).ToLowerInvariant();
-                if (!File.Exists(rom) || (ext != ".3ds" && ext != ".cci" && ext != ".cxi" && ext != ".app")) throw new ArgumentException("Select a decrypted .3ds, .cci, .cxi or .app file");
+                if (!File.Exists(rom) || (ext != ".3ds" && ext != ".cci" && ext != ".cxi" && ext != ".app" && ext != ".cia")) throw new ArgumentException("Select a decrypted .3ds, .cci, .cxi, .app or .cia file");
                 if (options.RomOutput) RomBuilder.ValidateCartridge(rom);
+                if(options.CiaOutput && ext!=".cia")throw new ArgumentException("CIA output requires original CIA input to preserve its metadata");
                 Directory.CreateDirectory(work);
                 string tool = options.DownloadTools ? BuildSupport.FetchTool(BuildSupport.CtrUrl, BuildSupport.CtrSha, "ctrtool.exe", Path.Combine(work,"ctrtool-"+Guid.NewGuid().ToString("N")),cancel) : options.CtrTool;
                 if (String.IsNullOrEmpty(tool) || !File.Exists(tool)) throw new IOException("A verified extractor download or local CTRTool is required");
                 extracted = Path.Combine(work,"e-"+Guid.NewGuid().ToString("N").Substring(0,12));
                 BuildSupport.CreateExclusiveDirectory(extracted);
+                string toolInput=ext==".cia"?CiaContainer.ExtractGame(rom,Path.Combine(extracted,"source-game.cxi"),cancel):rom;
                 notify("Extracting your game into a separate private folder...",8);
-                BuildSupport.RunTool(tool,new string[]{"-p","-n","0","--romfsdir="+Path.Combine(extracted,"romfs"),"--exefsdir="+Path.Combine(extracted,"exefs"),rom},extracted,Path.Combine(extracted,"extractor.log"),cancel);
+                BuildSupport.RunTool(tool,new string[]{"-p","-n","0","--romfsdir="+Path.Combine(extracted,"romfs"),"--exefsdir="+Path.Combine(extracted,"exefs"),toolInput},extracted,Path.Combine(extracted,"extractor.log"),cancel);
             } else {
                 if (String.IsNullOrEmpty(options.Extracted)) throw new ArgumentException("An input is required");
                 extracted = Path.GetFullPath(options.Extracted);
@@ -119,7 +121,7 @@ public static class BuildEngine {
                 else if (row.kind != "ips" || row.path != "exefs/code.ips" || row.source != "exefs/code.bin") throw new InvalidDataException("Unsupported patch type");
                 if (BuildSupport.Hash(source) != row.source_sha256) throw new InvalidDataException("Game version/input mismatch: "+row.source);
                 if (BuildSupport.Hash(data.Read(row.payload)) != row.payload_sha256) throw new InvalidDataException("Damaged payload: "+row.payload);
-                if ((i+1)%10==0 || i+1==data.Manifest.files.Length) notify("Checking game version: "+(i+1)+"/1121",15+30*(i+1)/1121);
+                if ((i+1)%10==0 || i+1==data.Manifest.files.Length) notify("Checking game version: "+(i+1)+"/1256",15+30*(i+1)/1256);
             }
             cancel.ThrowIfCancellationRequested();
             BuildSupport.CreateExclusiveDirectory(output);
@@ -143,10 +145,10 @@ public static class BuildEngine {
                 Directory.CreateDirectory(Path.GetDirectoryName(dest));
                 BuildSupport.WriteNew(dest,result);
                 if (BuildSupport.HashFile(dest) != row.target_sha256 || new FileInfo(dest).Length != row.target_size) throw new IOException("Output readback failed");
-                if ((i+1)%10==0 || i+1==1121) notify("Building and verifying: "+(i+1)+"/1121",45+(options.RomOutput?20:55)*(i+1)/1121);
+                if ((i+1)%10==0 || i+1==1256) notify("Building and verifying: "+(i+1)+"/1256",45+((options.RomOutput||options.CiaOutput)?20:55)*(i+1)/1256);
             }
         }
-        string completed = options.RomOutput ? RomBuilder.Build(Path.GetFullPath(options.Rom),extracted,output,notify,cancel,options.RebuildTool) : output;
+        string completed = options.CiaOutput ? CiaRebuilder.Build(Path.GetFullPath(options.Rom),extracted,output,notify,cancel,options.RebuildTool) : options.RomOutput ? RomBuilder.Build(Path.GetFullPath(options.Rom),extracted,output,notify,cancel,options.RebuildTool) : output;
         notify("Complete. Separate verified output created; original ROM and saves unchanged.",100);
         return completed;
     }

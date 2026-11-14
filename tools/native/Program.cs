@@ -37,11 +37,11 @@ public static class Program {
             string result=null;
             if(get("--rom")!=null || get("--extracted")!=null) {
                 string mode=get("--output-format")??"mod";
-                if(mode!="rom" && mode!="mod") throw new ArgumentException("Unknown output format");
-                result=BuildEngine.Build(new BuildOptions {Rom=get("--rom"),Extracted=get("--extracted"),Output=get("--output"),Release=get("--release"),WorkRoot=get("--work-root"),CtrTool=get("--ctrtool"),RebuildTool=get("--rebuild-tool"),DownloadTools=options.ContainsKey("--download-tools"),RomOutput=mode=="rom"},delegate(string message,int p) { Console.WriteLine(p+"% "+message); },CancellationToken.None);
+                if(mode!="rom" && mode!="mod" && mode!="cia") throw new ArgumentException("Unknown output format");
+                result=BuildEngine.Build(new BuildOptions {Rom=get("--rom"),Extracted=get("--extracted"),Output=get("--output"),Release=get("--release"),WorkRoot=get("--work-root"),CtrTool=get("--ctrtool"),RebuildTool=get("--rebuild-tool"),DownloadTools=options.ContainsKey("--download-tools"),RomOutput=mode=="rom",CiaOutput=mode=="cia"},delegate(string message,int p) { Console.WriteLine(p+"% "+message); },CancellationToken.None);
             } else if(!self) throw new ArgumentException("Choose --rom or --extracted");
             if(get("--report")!=null) {
-                var report=new { version="0.8.10",engine="Windows .NET Framework; no Python",gui_created=gui,payloads=1121,completed_output=result,utc=DateTime.UtcNow.ToString("o"),scope="Bounded builder checks only; not gameplay/whole-game certification" };
+                var report=new { version="1.0",engine="Windows .NET Framework; no Python",gui_created=gui,payloads=1256,completed_output=result,utc=DateTime.UtcNow.ToString("o"),scope="Bounded builder checks only; not gameplay/whole-game certification" };
                 BuildSupport.WriteNew(Path.GetFullPath(get("--report")),System.Text.Encoding.UTF8.GetBytes(new JavaScriptSerializer().Serialize(report)));
             }
             return 0;

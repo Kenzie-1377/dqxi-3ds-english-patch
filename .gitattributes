@@ -6,3 +6,5 @@
 *.dqdelta binary
 *.patchdata binary
 release/manifest.json -text
+
+*.sh text eol=lf

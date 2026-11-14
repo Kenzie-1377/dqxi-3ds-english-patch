@@ -15,6 +15,7 @@ public sealed class BuilderForm : Form
     private readonly TextBox output = new TextBox();
     private readonly TextBox ctrtool = new TextBox();
     private readonly RadioButton romOutput = new RadioButton();
+    private readonly RadioButton ciaOutput = new RadioButton();
     private readonly RadioButton modOutput = new RadioButton();
     private readonly CheckBox download = new CheckBox();
     private readonly Label status = new Label();
@@ -31,7 +32,7 @@ public sealed class BuilderForm : Form
 
     public BuilderForm()
     {
-        Text = "DQXI 3DS — English Translation Builder 0.8.10 (experimental)";
+        Text = "DQXI 3DS — English Translation Builder 1.0";
         Font = new Font("Segoe UI", 9F);
         AutoScaleMode = AutoScaleMode.Dpi;
         ClientSize = new Size(830, 710);
@@ -54,9 +55,9 @@ public sealed class BuilderForm : Form
             Font = new Font("Segoe UI", 20F, FontStyle.Bold), Margin = new Padding(0, 0, 0, 6)
         });
         AddText(layout, "DRAGON QUEST XI • Japanese Nintendo 3DS edition", 12);
-        AddText(layout, "Experimental, incomplete translation. Heliodor fix passed a limited emulator test; NOT hardware tested.\r\nYour original ROM and saves are never modified. No automatic installation.", 16);
+        AddText(layout, "Substantially complete translation. Report major gameplay issues on GitHub. Full playthrough and hardware testing remain open.\r\nYour original ROM and saves are never modified. No automatic installation.", 16);
 
-        AddPath(layout, "1. Your decrypted Japanese game (.3ds, .cci, .cxi, .app)", rom, PickRom);
+        AddPath(layout, "1. Your decrypted Japanese game (.3ds, .cci, .cia, .cxi, .app)", rom, PickRom);
         output.Text = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "DQXI Translation Builds");
         AddPath(layout, "2. Output parent folder (each build creates a unique new subfolder)", output, PickOutput);
 
@@ -67,12 +68,16 @@ public sealed class BuilderForm : Form
         modOutput.Text = "Mod folders (romfs + exefs)";
         modOutput.AutoSize = true;
         modes.Controls.Add(romOutput);
+        ciaOutput.Text="Translated .cia file (CIA input)";ciaOutput.AutoSize=true;
+        modes.Controls.Add(ciaOutput);
+        inputControls.Add(ciaOutput);
         modes.Controls.Add(modOutput);
+        rom.TextChanged+=delegate {try {string ext=Path.GetExtension(rom.Text).ToLowerInvariant();if(ext==".cia")ciaOutput.Checked=true;else if(ext==".3ds"||ext==".cci")romOutput.Checked=true;else if(ext==".cxi"||ext==".app")modOutput.Checked=true;}catch(ArgumentException){}};
         inputControls.Add(romOutput);
         inputControls.Add(modOutput);
         AddRow(layout, modes);
 
-        download.Text = "Download verified tools from GitHub (ROM output also needs 3dstool)";
+        download.Text = "Download verified tools from GitHub (ROM/CIA output also needs 3dstool)";
         download.AutoSize = true;
         download.Checked = true;
         download.Margin = new Padding(0, 4, 0, 8);
@@ -147,7 +152,7 @@ public sealed class BuilderForm : Form
         using (OpenFileDialog dialog = new OpenFileDialog())
         {
             dialog.Title = "Select your decrypted Japanese game";
-            dialog.Filter = "Decrypted 3DS game (*.3ds;*.cci;*.cxi;*.app)|*.3ds;*.cci;*.cxi;*.app";
+            dialog.Filter = "Decrypted 3DS game (*.3ds;*.cci;*.cia;*.cxi;*.app)|*.3ds;*.cci;*.cia;*.cxi;*.app";
             dialog.CheckFileExists = true;
             if (dialog.ShowDialog(this) == DialogResult.OK) rom.Text = dialog.FileName;
         }
@@ -186,8 +191,8 @@ public sealed class BuilderForm : Form
         {
             string input = Path.GetFullPath(rom.Text.Trim());
             string extension = Path.GetExtension(input).ToLowerInvariant();
-            if (!File.Exists(input) || (extension != ".3ds" && extension != ".cci" && extension != ".cxi" && extension != ".app"))
-                throw new ArgumentException("Choose your decrypted Japanese .3ds, .cci, .cxi or .app game file.");
+            if (!File.Exists(input) || (extension != ".3ds" && extension != ".cci" && extension != ".cxi" && extension != ".app" && extension != ".cia"))
+                throw new ArgumentException("Choose your decrypted Japanese .3ds, .cci, .cia, .cxi or .app game file.");
             if (String.IsNullOrWhiteSpace(output.Text)) throw new ArgumentException("Choose an output parent folder.");
             string parent = Path.GetFullPath(output.Text.Trim());
             if (File.Exists(parent)) throw new ArgumentException("The output parent must be a folder, not a file.");
@@ -195,7 +200,8 @@ public sealed class BuilderForm : Form
             if (!download.Checked && (localTool == null || !File.Exists(localTool) || !String.Equals(Path.GetExtension(localTool), ".exe", StringComparison.OrdinalIgnoreCase)))
                 throw new ArgumentException("Select a local ctrtool.exe, or enable the verified download.");
             if (romOutput.Checked && extension != ".3ds" && extension != ".cci")
-                throw new ArgumentException("Translated .3ds output requires a .3ds/.cci cartridge image. Choose mod folders for .cxi/.app input.");
+                throw new ArgumentException("Translated .3ds output requires a .3ds/.cci cartridge image. Select CIA output for CIA input, or mod folders for .cxi/.app.");
+            if(ciaOutput.Checked && extension!=".cia")throw new ArgumentException("CIA output requires CIA input to retain its original ticket and metadata.");
             if (romOutput.Checked && MessageBox.Show(this,
                 "Create a new translated .3ds file? The builder may download verified 3dstool. Allow at least 20 GB free.\r\n\r\nYour original ROM stays unchanged. Heliodor fix passed a limited emulator test; NOT hardware tested. This does not confirm whole-game stability.",
                 "Build a translated .3ds?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) != DialogResult.Yes) return;
@@ -207,7 +213,7 @@ public sealed class BuilderForm : Form
                 Rom = input, Extracted = null, Output = destination, Release = null,
                 WorkRoot = Path.Combine(parent, ".dqxi-private"),
                 CtrTool = download.Checked ? null : localTool, RebuildTool = null,
-                DownloadTools = download.Checked, RomOutput = romOutput.Checked
+                DownloadTools = download.Checked, RomOutput = romOutput.Checked, CiaOutput = ciaOutput.Checked
             };
         }
         catch (Exception error)

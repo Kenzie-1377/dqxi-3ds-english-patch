@@ -17,13 +17,14 @@ def main():
     parser.add_argument('--base', type=Path, required=True, help='Folder containing original romfs/ and exefs/code.bin')
     parser.add_argument('--mod', type=Path, required=True, help='Existing mod folder containing romfs/ and exefs/')
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--version',default='1.0')
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=False)
     rows = []
     # Standalone BCH textures (for example localized area-title artwork) use
     # the same verified delta path as PACK archives.
     romfs_files = sorted(p for p in (args.mod/'romfs').rglob('*')
-                         if p.is_file() and p.suffix.lower() in {'.pack', '.bch'})
+                         if p.is_file() and p.suffix.lower() in {'.pack', '.bch', '.bffnt'})
     mod_files = [args.mod/'exefs/code.ips', *romfs_files]
     for mod in mod_files:
         if not mod.is_file():
@@ -36,7 +37,7 @@ def main():
             kind = 'ips'
             name = 'code.patchdata'
             source_rel = 'exefs/code.bin'
-        elif rel.startswith('romfs/') and mod.suffix.lower() in {'.pack', '.bch'}:
+        elif rel.startswith('romfs/') and mod.suffix.lower() in {'.pack', '.bch', '.bffnt'}:
             source_rel = rel
             source = normalize((args.base/rel).read_bytes())
             if source == target:
@@ -55,7 +56,7 @@ def main():
         if len(rows) % 100 == 0:
             print('Verified', len(rows), 'files', flush=True)
     manifest = dict(format='dqxi-translation-deltas-v1', title_id='0004000000199200',
-                    status='Incomplete; updated as the maintainer can.', files=rows)
+                    version=args.version,status='Substantially complete; report major gameplay issues on GitHub.', files=rows)
     (args.output/'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n', encoding='utf8')
     print('Release verified:', len(rows), 'files;', sum(p.stat().st_size for p in args.output.iterdir()), 'bytes')
 

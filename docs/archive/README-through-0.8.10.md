@@ -1,0 +1,502 @@
+> Historical documentation through release 0.8.10. For current guidance, see the [main page](../../README.md).
+
+# DQXI 3DS English Patch
+
+An experimental, unofficial English translation for the Japanese Nintendo 3DS
+edition of Dragon Quest XI. Maintained by **Kenzie-1377**.
+
+## Project status
+
+**0.8.10 is an unfinished experimental progress update.** It packages the
+latest verified local translation, pagination and UI fixes, including the Vince
+name-consistency correction and further full-English Act 2 party dialogue.
+There are 1,121 cumulative targets: 1,029 unchanged, 53 updated and 39 added
+since 0.8.9; none removed. These counts do not measure game completion.
+
+Act 2 and the whole game remain incomplete. The reported inn, Dundrasil,
+restless-knight, floating-voice and Irwin-memory issues and their surrounding
+areas are not claimed collectively gameplay-verified. Individual scenes and
+the newest fixes still need ordinary gameplay checks in both screen modes.
+
+Standard timing only; no 60 FPS addon. The integrated Tickington lute fix is
+preserved with its case-specific reporter confirmation, not universal hardware
+certification. All historical releases, including 0.8.7, remain unchanged.
+Use this cumulative build on its own and test from a fresh launch with a normal
+in-game save. See [validation](../../docs/release-validation.md) and
+[remaining work](../../docs/completion-status.md).
+
+## Earlier 0.8.9 release
+
+**0.8.9 is an unfinished experimental Act 2 progress update.** It adds scoped
+dialogue and layout corrections, including Derk, Gondolia, Prince Faris and
+Gallopolis palace conversations. It contains 1,082 targets: 1,065 unchanged,
+15 updated and two added since 0.8.8. These are file counts, not a completion
+percentage. The latest package has not had a fresh gameplay smoke test; many
+individual conversations still need gameplay checks. Standard timing only;
+no 60 FPS addon. The startup credit screen is not included in this build.
+
+## Earlier 0.8.8 release
+
+**This project is not complete. I will be updating it as I can.** There is no
+fixed release schedule. Expect untranslated Japanese, rough translations, and
+layout issues. Back up your saves before trying it.
+
+The **0.8.8 experimental prerelease** is an **Act 2 progress update, not Act 2
+completion**. It restores more scoped early Act 2 / Last Bastion dialogue,
+Angri-La departure and Rab-rejoining continuation, and Sylvando's parade,
+arrival, childhood, Rodrigo/Hendrik meeting, father-reunion and farewell
+conversations. Gonzalez's nine speeches span 18 pages; Dave's five span 13.
+Affected caller, story-state, native page-flow and rendering paths were checked;
+the newest scenes still need ordinary gameplay confirmation in both modes.
+
+There are 1,080 cumulative targets: 982 unchanged, 60 updated and 38 added
+since 0.8.7, with none removed. These are file counts, not a completion percentage.
+All previous translation, UI, shop and rendering fixes are retained, including
+the integrated Tickington lute fix. Its original reporter confirmation remains
+case-specific, not universal hardware or memory-headroom certification.
+Release 0.8.7 remains unchanged.
+
+**Standard timing only: no 60 FPS addon is provided for 0.8.8.**
+Do not layer older FPS or diagnostic patches over this cumulative build.
+The FPS experiment is on hold after uneven menu/movement timing was reported.
+Back up saves, replace old mod output, and load a normal in-game save after a
+fresh launch. This remains unfinished; see [validation](../../docs/release-validation.md)
+and [remaining work](../../docs/completion-status.md).
+
+The historical **0.8.6 experimental prerelease** adds further restored regional and
+book-world dialogue, scoped quest-flow/page-reference repairs and menu fixes
+reported during Azahar testing. These include key-item messages, Weather
+Forecast, dual-wield stats, Tactics names, Stats subsections, item drops,
+record headings, active rules, Forge labels and Skill Builder captions/prompts.
+Skill descriptions now use readable proportions; all 559 mapped player
+description fields pass static font-width checks. Shared hidden-panel hints
+are reflowed, but the newest font/hint changes still need final visual testing.
+The package contains 1,042 targets: 1,006 unchanged from 0.8.5, 34 updated and
+two added, none removed. This is not whole-game completion or certification.
+
+For historical 0.8.6 only, standard timing remains the default. Use only the matching **0.8.6 optional
+experimental 60 FPS addon** with this release's Azahar mod output; it includes
+standard-timing rollback. No new FPS/timing or hardware certification is claimed.
+See the [release validation](../../docs/release-validation.md),
+[remaining work](../../docs/completion-status.md) and [FPS guide](../../docs/experimental-60fps.md).
+
+The historical **0.8.5 experimental prerelease** adds scoped Last Fort/lookout dialogue,
+priest paging, speaker-name corrections, whole-word enemy/action label wrapping,
+item quantity/menu repairs, Forge headings and further caption fixes. It also
+translates 104 additional enemy-action name fields: 72 evidence-backed names
+and 32 direct Japanese-source translations, not all official localization names.
+All prior translation scopes and rendering, shop, Stats/font and Labyrinth
+fixes are retained. The package has 1,040 targets: 1,028 unchanged from 0.8.4
+and 12 updated, with no additions or removals. Translation remains unfinished.
+
+**Standard timing remains the default.** A separate optional experimental FPS
+addon targets 60 FPS with matching 0.8.5 Azahar mod output. One player reported
+good private-test results; numerical FPS, all animation/cutscene timing, a full
+playthrough and real hardware have not been verified. The addon includes
+instructions and a standard-timing rollback patch. Use 100% emulator speed,
+back up saves and revert if game speed or timing is abnormal. See the
+[FPS addon guide](../../docs/experimental-60fps.md),
+[validation and test limits](../../docs/release-validation.md) and
+[remaining work](../../docs/completion-status.md). Several newest captions/paging
+changes and the latest 32 names still need specific gameplay confirmation.
+
+The historical **0.8.4 experimental prerelease** repairs the reported crash when selecting
+Buy or repeatedly purchasing items at the Heliodor entrance item shop. It keeps
+the full translated item text and prior rendering, font, menu and Labyrinth
+fixes. The player passed 10 purchases, shop exit/re-entry and 10 more purchases
+in the private test copy, then confirmed no crashes and good text in normal
+Azahar. The private combined build also passed Heliodor, English entry banner,
+Stats subsections, Labyrinth and quest-journal regression checks.
+
+This update also includes the installed Act 2 opening dialogue and paging
+work, both reported opening scenes, Emerald Coast warning/follow-up text and
+a scoped Sylvando-arrival speech. Full wording is retained; this is not a
+claim that all Act 2 or book-world dialogue is complete. The cumulative
+package has 1,040 targets: 1,014 unchanged from 0.8.3, ten updated and 16 added,
+with no removals. Whole-game and real-hardware testing remain unfinished.
+See the [completion checklist](../../docs/completion-status.md) and
+[release validation](../../docs/release-validation.md). Back up saves and replace
+old mod output instead of mixing diagnostic files with this package.
+
+The historical **0.8.3 experimental prerelease** retains all 0.8.2 translation work and
+repairs the reported road-to-Heliodor and Heliodor City rendering regression.
+It reduces shared-archive storage without shortening wording, avoids duplicate
+embedded fonts, and restores text in the Stats subsections. The English entry
+banners, menu readability repairs and Labyrinth entrance fix remain included.
+
+The final cumulative build passed player checks in Azahar for Heliodor, Stats,
+Timeless Labyrinth and the quest journal. Earlier targeted tests also covered
+entry banners and item special-effects text. No full-game or real-hardware
+certification is claimed. The package has 1,024 targets: 1,019 unchanged from
+0.8.2, four updated and one added, with no removals. Translation work remains
+unfinished; see the [completion checklist](../../docs/completion-status.md) and
+[release validation](../../docs/release-validation.md). Back up saves before testing.
+
+The historical **0.8.2 experimental prerelease** includes installed book-world
+translation and readability repairs for journals, item/recipe descriptions,
+records, item effects/outfits and status menus. The player confirmed the
+Timeless Labyrinth entrance and re-entry now work, with journal, Stats and
+Spells checks also passing in Azahar. This is not a general 2D crash fix.
+
+The package contains 1,023 active targets: 15 updated, four added and 1,004
+unchanged since 0.8.1, with no removals. All previous cumulative native fixes
+remain. Remaining book-world/return-state audits, context-dependent journals,
+conditional/shared text, captions/notifications and whole-game/hardware tests
+are unfinished. The newest three full request captions still need in-game
+readability testing. See the [completion checklist](../../docs/completion-status.md)
+and [release validation](../../docs/release-validation.md). Back up saves.
+
+The historical **0.8.1 experimental prerelease** adds further independently file-verified
+book-world dialogue, speaker names, return dialogue and full-word journal
+corrections. It includes bounded initial-mansion dialogue; Kiefer/Roamer,
+Chateau Felix, Jessica/Rosalind, Quester's Rest, Go Fygger, Galapagone and
+Rebirth Rebuffed scopes; Imperial Pantry dialogue/journals; and a checked
+subset of the For Eliza village/return dialogue. Full applicable PC wording
+and original choices/mechanics are retained within the stated scopes.
+
+It contains 1,019 active patch targets: seven updated, five added and 1,007
+unchanged from 0.8.0, with no removals. All 551 quarantined files and private
+uninstalled work are excluded. The cumulative IPS fixes are unchanged.
+**This is not a completed-game release.** Remaining book worlds and earlier
+returns, rehearsal/conditional routes, shared held text, captions/notifications
+and human gameplay testing remain unfinished. In particular, 53 For Eliza
+fields affected by an unresolved native dialogue-context boundary remain
+unchanged; partial progress is not a whole-quest completion claim. The known
+intermittent 2D battle/map crashes remain unresolved. Back up saves.
+
+The historical **0.8.0 experimental prerelease** adds installed Tickington corrections and
+bounded book-world dialogue, book, quest and continuation passes for Damdara,
+Galenholm, Tantegel, Moonahan, Cannock, Erdrick's Home, Rose's Room, Whealbrook,
+Weaver's Peak and Alltrades Abbey, including Academy book acquisition and a
+separate quest74 successor/return scope. Full applicable PC English is retained
+with reviewed extra pages and original choices/gameplay controls. Native-only
+or differing mechanics retain documented faithful wording.
+
+The package contains 1,014 active patch targets: 13 updated, 18 added and 983
+unchanged from 0.7.0, with no removals. All 551 quarantined files and uninstalled
+preparations are excluded. The cumulative battle formatter fixes are retained;
+this update also repairs the native notification loader's 90-to-108 row check.
+These are bounded reviewed scopes, not whole-world completion claims. Other
+hub/book-world actors, the initial mansion/rehearsal pass, earlier-town returns
+and shared held text remain unfinished. Offline checks are not a live gameplay
+or real-hardware certification. Ending caption pacing, choices and save/return
+paths still need human testing.
+
+The historical **0.7.0 experimental prerelease** includes the installed Phnom Nonh,
+Sniflheim, Arboria and surrounding areas, Angri-La/Mount Pang Lai, Havens Above,
+Battleground/Fortress, Fallen Haven, Tower of Lost Time, Drustan trials, Radiant
+Expanse and final-ending scene passes. Full matched PC English is retained where
+available; documented faithful fallback covers native-only differences.
+It also includes the player-confirmed battle formatter repair for Veronica and
+Sylvando. Regional build checks are not whole-game or hardware certification.
+The package contains 996 patch targets: 224 updated, 209 added and 563 unchanged
+payloads retained from 0.6.0, with no removals. All 551 quarantined files and
+uninstalled preparations are excluded.
+Tickington/book worlds, earlier-town return-state audits and shared held text
+remain unfinished. The ending movie's added caption timing and ending
+choices/save/return paths still need human gameplay testing.
+
+The historical **0.6.0 experimental prerelease** packages the installed translation
+progress, including regional dialogue, extra-page call repairs in 2D and 3D,
+mini-medal/menu fixes, localized area-title artwork and the remaining Memories
+titles. It has 787 patch targets: 72 updated, 54 added and 661 payloads unchanged
+from 0.5.3. All 888 scene-title fields and 53 chapter headings have reviewed
+English; exact PC title counterparts replace earlier manual wording where
+available. The player reports that the latest Memories fixes work in Azahar.
+
+**Unresolved crashes were reported during 2D battles and map movement. This is
+not a fix for those crashes.** Translation, regional NPC/book/quest/party audits,
+all replay paths and whole-game stability remain unfinished. This exact version
+has not been tested on real hardware. Back up saves and do not mix old external
+overrides with a newly built ROM. See the [changelog](../../CHANGELOG.md),
+[completion scope](../../docs/completion-status.md) and
+[verification scope](../../docs/release-validation.md).
+
+The historical **0.5.3 experimental prerelease** adds recently reviewed dialogue and UI
+repairs and an Octagonia rendering repair. It packages 733 targets, with 42
+updated and 691 payloads unchanged from 0.5.2. The player reports that Octagonia
+and Heliodor render correctly in Azahar with the repaired shared archive.
+The Church crash fix has a separate user-reported hardware pass on **0.5.2**;
+the new 0.5.3 archive has not been hardware tested. The full Octagonia dialogue
+audit, whole-game stability and comprehensive rendered text fit remain unfinished.
+See the [changelog](../../CHANGELOG.md) and [verification scope](../../docs/release-validation.md).
+
+The earlier **0.5.0 experimental prerelease** substantially expands regional
+dialogue and speaker-name coverage while retaining the player-confirmed
+Veronica/Sylvando final-letter repair. It packages 733 patch targets: 111 updated
+and 622 unchanged from 0.4.0. The regional translation pass converted 7,588
+fields, with original-data, archive and conservative text-fit checks.
+Japanese and ambiguous text remain, and image/executable text, rendered layouts
+and real-hardware gameplay are not fully audited. This is neither fully
+translated nor stable. The frozen candidate passed builder verification and the
+player reported it was good to go after the requested limited spot check. See the
+[changelog](../../CHANGELOG.md) and [scoped completion checklist](../../docs/completion-status.md)
+for changes, completed audited scopes and work still to do.
+
+**Historical 0.5.2 release-time status (later Church hardware pass noted above):** Compacts
+the item-text storage in `syscmn.pack`, preserving the existing English item
+names and descriptions, resource strings and original gameplay values. The
+player reports that the compact variant renders Heliodor correctly in Azahar;
+the previous translated item entry reproduced the problem in controlled tests.
+The exact graphics failure mechanism is not diagnosed. **This version has not
+been tested on real hardware.** The 0.5.1 bridge repair remains included, but its
+earlier limited hardware pass does not validate 0.5.2. The Church exit crash,
+other reported crashes and whole-game validation remain unresolved. Back up
+saves and avoid mixing older external patch overrides with the new build.
+
+**0.5.1 experimental hardware bridge-crash hotfix:** Four enemy-category values in
+`gamecmn.pack` were accidentally relocated as if they were text pointers.
+The fix restores those original numeric values, changing only eight bytes from
+0.5.0 and retaining its English translation. The player reports the diagnostic
+ROM passed the previously crashing real-hardware bridge/walking test.
+This does not establish whole-game stability or fix the separate Church exit
+report. The Heliodor rendering error may have returned: a hardware photo shows
+similar corruption, but confirmation awaits a clean-install test without
+leftover external patch files. A Windows-native C#/.NET Framework 4.8 builder
+replaces the old Python engine, whose failure cause remains unknown. The exact
+native candidate passed repeated complete builds and independent cartridge
+verification. See the [0.5.1 changelog](../../CHANGELOG.md)
+for scope and remaining limits.
+
+**Historical New 3DS hardware reports through 0.5.0:** A hardware tester confirms
+that **0.3.2 still crashes** in 3D mode when crossing the bridge toward
+Heliodor, and also crashes when leaving the Church of Guidance. The tester
+reports that the earlier Heliodor rendering error is no longer visible in
+0.3.2; that improvement has not been broadly validated. Removing the
+translated `romfs/gamecmn.pack` and using an original-data PACK control
+allowed an earlier bridge/Heliodor test to pass. A compact translated variant
+crossed the bridge in Azahar, but that did not predict hardware behavior.
+**Do not treat 0.3.2 as a crash repair.**
+**0.4.0 is also not a crash repair and has not been validated on real hardware.**
+**0.5.0 likewise makes no hardware-crash repair claim.**
+Back up your saves and mod files. See [issue #1](https://github.com/Kenzie-1377/dqxi-3ds-english-patch/issues/1)
+and the [0.3.2 patch-only original-data control](../../diagnostics/bridge_0_3_2/README.md).
+The older [0.3.0 diagnostics](../../diagnostics/bridge_0_3_0/README.md) reject a
+0.3.2 input. Diagnostic files are not a release or a permanent workaround.
+
+This repository now includes the **translation differences and tools needed to
+build an installable mod from your own supported game files**. It contains no ROM,
+complete extracted game archives, encryption keys, saves, or emulator.
+The patch cannot be used by itself without matching original inputs.
+
+## What you need
+
+- Your own **decrypted Japanese game**, title ID `0004000000199200`.
+- Windows x64 with .NET Framework 4.8. **The EXE does not require or bundle Python.**
+- Allow at least 25 GB free for ROM rebuilding, or several GB for mod-folder output.
+- An emulator with compatible LayeredFS and ExeFS IPS mod support.
+
+The builder checks every required source file's SHA-256. A different revision,
+an already-patched input, or an incompatible update will be rejected. Do not
+bypass the checks. No ROM downloader, encryption keys, or decryption service is
+included.
+
+## Standalone Windows app — no Python required
+
+Use `DQXI-English-Translation-Builder.exe` from the **0.8.8 experimental release**
+assets. It includes the interface and translation patches and
+uses Windows' installed .NET Framework 4.8. Source ZIPs do not contain the EXE.
+Clean-host and Windows 8 compatibility are unverified.
+
+1. Open the EXE and choose your decrypted Japanese ROM.
+2. Choose an output folder and select **Translated .3ds file** (default), or **Mod folders**.
+3. Leave the verified extractor download enabled, or select your own CTRTool. ROM output also asks permission to download the pinned 3dstool rebuilder.
+4. Click **Build translation** and watch the progress.
+5. When verification succeeds, click **Open output folder**. For ROM output, open **DQXI-English.3ds** directly in your emulator. For mod folders, follow **Installation help**.
+
+Single-ROM output requires a genuine decrypted `.3ds`/`.cci` cartridge image,
+not a renamed `.app`/`.cxi`. The original cartridge's other partitions are
+preserved and verified. The original ROM is never overwritten. Rebuilt ROMs are
+decrypted/unsigned and require compatible emulators or custom-firmware workflows.
+The 0.5.1 ROM matched the player's limited hardware bridge diagnostic byte for
+byte, not a comprehensive hardware playthrough. Do not distribute rebuilt ROMs.
+Older external LayeredFS/IPS overrides can change their behavior.
+
+Decrypted cartridges with a stale encryption flag are handled automatically:
+the builder verifies the plaintext hashes, then corrects only its private
+working copy. It does not decrypt encrypted ROMs or change your original file.
+
+The app supports safe cancellation and displays build errors in the window.
+It creates a new mod subfolder; it does not replace your ROM or saves. Private
+extracted files are kept under `.dqxi-private` beside the generated mod folders.
+Do not share that private folder or the generated mod.
+
+The executable is unsigned, so Windows may show an unrecognized-app warning.
+Do not disable security software; use only the maintainer's trusted download.
+
+## Run the native builder from source (Windows developers)
+
+Run `Build-Windows-Exe.ps1` using PowerShell and the Windows .NET Framework 4.8
+compiler, then open `Build-Translation.cmd`. The source is in `tools/native/`.
+Source builds are not automatically certified as the separately verified release
+asset. For native command-line builds, supply a fresh output directory:
+
+```text
+dist/DQXI-English-Translation-Builder.exe --rom "YOUR_GAME.cci" --download-tools --output "NEW_FOLDER"
+dist/DQXI-English-Translation-Builder.exe --rom "YOUR_GAME.cci" --download-tools --output-format rom --output "NEW_FOLDER"
+dist/DQXI-English-Translation-Builder.exe --extracted "YOUR_EXTRACTED_FOLDER" --output "NEW_FOLDER"
+```
+
+Use `--ctrtool PATH` instead of `--download-tools` for a local extractor;
+`--rebuild-tool PATH` supplies the pinned local ROM rebuilder. The GUI defaults
+to `.3ds` output; the command line defaults to mod folders.
+
+## Historical Python developer tools (not the native release engine)
+
+The following older tools remain for maintainer reference. They are not the
+recommended builder; their execution-failure cause has not been diagnosed.
+`Build-Translation.cmd` now launches the compiled native builder instead.
+
+1. Download this repository using **Code → Download ZIP**, then extract it.
+2. Install Python from [python.org](https://www.python.org/downloads/) if needed.
+3. Run `python tools/build_gui.py` from the repository folder.
+4. Select your decrypted `.3ds`, `.cci`, `.cxi`, or `.app` file.
+5. Approve the download of the pinned official CTRTool extractor.
+6. Wait for the successful verification message.
+
+The builder creates a new folder under `output/` containing `romfs/` and
+`exefs/code.ips`. It never rewrites your ROM or saves and does not automatically
+overwrite an existing mod installation.
+
+The source GUI now defaults to a single translated `.3ds`. Command-line builds
+retain the original mod-folder default; add `--output-format rom` to rebuild a
+cartridge. Temporary and generated game data remain private and Git-ignored.
+
+**CIA input is not supported by this launcher.** Supply the decrypted game
+application/content file or use the extracted-files option below.
+
+### Command-line alternatives
+
+From the repository root:
+
+```sh
+python tools/build_translation.py --rom "YOUR_GAME.cci" --download-ctrtool
+```
+
+To produce a translated cartridge file:
+
+```sh
+python tools/build_translation.py --rom "YOUR_GAME.cci" --download-ctrtool --output-format rom
+```
+
+The rebuilding helper is downloaded from the
+[official 3dstool v1.2.6 release](https://github.com/dnasdw/3dstool/releases/tag/v1.2.6)
+and verified against a pinned SHA-256. Only the executable is installed; optional
+upstream key databases are not installed or used. `--rebuild-tool PATH` can supply
+a local executable instead.
+
+To use your own CTRTool executable instead of downloading it:
+
+```sh
+python tools/build_translation.py --rom "YOUR_GAME.cci" --ctrtool "PATH_TO_CTRTOOL"
+```
+
+If you already have extracted originals, arrange them as
+`YOUR_EXTRACTED_FOLDER/romfs/` and `YOUR_EXTRACTED_FOLDER/exefs/code.bin`:
+
+```sh
+python tools/build_translation.py --extracted "YOUR_EXTRACTED_FOLDER"
+```
+
+Use `--output "NEW_FOLDER"` for another build. Existing output directories are
+refused to avoid accidental overwrites. The `.app` extraction path and extracted
+inputs were tested locally; other accepted containers require matching extracted
+hashes and have not all been tested.
+
+## Install the generated mod
+
+With the game closed, back up any existing mod and your saves. For the Azahar
+mod-folder layout, put the generated `romfs` and `exefs` folders under:
+
+```text
+load/mods/0004000000199200/
+  romfs/
+  exefs/
+    code.ips
+```
+
+Use the emulator's game-specific Mods Location menu to find the correct user
+directory. Do not place the repository or the `release/` folder there.
+Restart the emulator, then load a normal save rather than a save state.
+
+See the [mod layout reference maintained by the Azahar team](https://citra.azahar-emu.org/help/feature/game-modding/).
+This is an archived Citra reference; menu labels can vary by emulator version.
+Hardware workflows vary; only the reported limited bridge diagnostic was tested,
+not every installation method or hardware configuration.
+
+## Known issues
+
+- This is a partial translation, not the official English localization.
+- Some names can remain cached in existing saves (for example Ruki/Sandy).
+  These tools do not modify saves.
+- Dialogue wrapping uses conservative limits, but long-message pagination still
+  needs gameplay testing.
+- Version hashes validate reconstruction, not the quality of every translation
+  or the correctness of every game event.
+- Do not combine with other mods touching the same files without reviewing them.
+
+## Privacy and sharing
+
+`release/` contains delta patches and a hash manifest, not ready-to-run game
+archives. Only share the repository/patches, **not** generated `output/` or
+extracted `private/` folders. Those local folders contain game-derived files.
+They are ignored by Git. Original game files, working mods, and saves are not
+deleted by these tools.
+
+The extractor is fetched from the
+[official CTRTool v1.3.0 release](https://github.com/3DSGuy/Project_CTR/releases/tag/ctrtool-v1.3.0)
+and checked against a pinned SHA-256. Its upstream license and notices remain
+with that tool; it is not relicensed by this repository.
+
+## Current progress
+
+The current 0.8.8 package contains 1,080 cumulative patch targets. Act 2 is the
+current priority and remains incomplete across story, regional NPC, party,
+quest, choice and text-layout coverage. Specific installed restorations are
+ready to test, not proof that their entire region or act is complete.
+
+The existing-session Sacred Summit 2D rendering and player menu open/close
+smoke check passed. New scenes, including Dave, still need ordinary gameplay
+confirmation; no fresh-boot, 3D, hardware or whole-game playthrough is claimed.
+See the [changelog](../../CHANGELOG.md), [remaining scope](../../docs/completion-status.md)
+and [validation notes](../../docs/release-validation.md). Saves are not rewritten;
+some names can remain cached in old saves. No completion percentage is claimed.
+
+## Development
+
+Original Python source is included for archive handling, guarded text edits,
+word wrapping, delta generation, and installation. Python's standard library is
+sufficient; no machine-translation model is downloaded.
+
+```sh
+python -m unittest discover -s tests -v
+```
+
+To build the current standalone Windows EXE, run `Build-Windows-Exe.ps1` with
+the Windows .NET Framework 4.8 x64 compiler installed. The current builder is
+native C#/.NET Framework and does not bundle or require Python or PyInstaller.
+Source builds are not automatically the separately verified release asset.
+The executable is attached to the GitHub release rather than stored in Git.
+Third-party notices are included under `licenses/`.
+
+Maintainers can regenerate a release from their own originals and reviewed mod:
+
+```sh
+python tools/make_release.py --base "ORIGINAL_FOLDER" --mod "MOD_FOLDER" --output "NEW_RELEASE_FOLDER"
+```
+
+The original folder must contain `romfs/` and `exefs/code.bin`. The generator
+uses only the mod's active `romfs/` tree and `exefs/code.ips`, not backup trees.
+Each delta is reconstructed and verified before the manifest is written.
+
+See [CONTRIBUTING.md](../../CONTRIBUTING.md) and [text patch notes](../../docs/patching.md).
+Development has included AI assistance. Review and test contributions.
+
+## License
+
+Original code and documentation are MIT licensed; see [LICENSE](../../LICENSE).
+That license does not grant rights to underlying game content, translations of
+third-party material, trademarks, or assets. The patch data is provided separately
+from the original code license. Dragon Quest XI and related names belong to their
+respective owners. This is an unofficial project, not endorsed by its developers
+or publishers.

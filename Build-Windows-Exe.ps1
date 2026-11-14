@@ -2,8 +2,8 @@ $ErrorActionPreference='Stop'
 $repoDir=$PSScriptRoot
 $nativeDir=Join-Path $repoDir 'tools/native'
 $releaseDir=Join-Path $repoDir 'release'
-if((Get-FileHash -LiteralPath (Join-Path $releaseDir 'manifest.json')).Hash.ToLowerInvariant()-ne'68c041c92ccd11e0f5695085ed1b5050dee490fc8e45951247de4556d2541473'){throw 'Frozen 0.8.10 manifest pin mismatch'}
-if(@(Get-ChildItem -LiteralPath $releaseDir -File).Count-ne1122){throw 'Unexpected patch package files'}
+if((Get-FileHash -LiteralPath (Join-Path $releaseDir 'manifest.json')).Hash.ToLowerInvariant()-ne'4741611e17ddd792d394ca61183a19afc4f67519836f22e687f9f1ffd758e4f7'){throw 'Frozen 1.0 manifest pin mismatch'}
+if(@(Get-ChildItem -LiteralPath $releaseDir -File).Count-ne1257){throw 'Unexpected patch package files'}
 $compiler=Join-Path $env:WINDIR 'Microsoft.NET/Framework64/v4.0.30319/csc.exe'
 if(!(Test-Path -LiteralPath $compiler)){throw 'Windows .NET Framework 4.8 x64 compiler required'}
 $buildDir=Join-Path $repoDir ('build/native-'+[Guid]::NewGuid().ToString('N'))
@@ -16,7 +16,7 @@ New-Item -ItemType Directory -Path $dist -Force|Out-Null
 $output=Join-Path $dist 'DQXI-English-Translation-Builder.exe'
 if(Test-Path -LiteralPath $output){throw 'Existing executable retained; move it aside before compiling another build'}
 $arguments=@('/nologo','/target:winexe','/platform:x64','/optimize+','/checked-','/langversion:5',"/out:$output",'/reference:System.dll','/reference:System.Core.dll','/reference:System.Windows.Forms.dll','/reference:System.Drawing.dll','/reference:System.Web.Extensions.dll','/reference:System.IO.Compression.dll','/reference:System.IO.Compression.FileSystem.dll',"/resource:$bundle,DQXI.release.zip",("/win32manifest:"+(Join-Path $nativeDir 'app.manifest')))
-foreach($source in @('Program.cs','AssemblyInfo.cs','GUI.cs','BuildEngine.cs','BuildSupport.cs','Codecs.cs','CodecTests.cs','SupportTests.cs','RomBuilder.cs')){$arguments+=(Join-Path $nativeDir $source)}
+foreach($source in @('Program.cs','AssemblyInfo.cs','GUI.cs','BuildEngine.cs','BuildSupport.cs','Codecs.cs','CodecTests.cs','SupportTests.cs','RomBuilder.cs','CiaContainer.cs','CiaRebuilder.cs')){$arguments+=(Join-Path $nativeDir $source)}
 & $compiler @arguments
 if($LASTEXITCODE-ne0){throw 'Native builder compilation failed'}
 $testReport=Join-Path $buildDir 'self-test.json'

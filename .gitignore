@@ -37,3 +37,6 @@ Thumbs.db
 /build/
 *.spec
 *.exe
+
+# Approved public README artwork and gameplay screenshots
+!/docs/images/*.png

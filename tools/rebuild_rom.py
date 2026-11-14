@@ -13,20 +13,8 @@ TOOL_SHA = '481e20f445eb2f0f506d0d88cd750385bc8377670d681d6f66f584a176027806'
 
 
 def fetch_tool(folder):
-    folder.mkdir(parents=True, exist_ok=True)
-    with urllib.request.urlopen(TOOL_URL, timeout=60) as response:
-        data = response.read(32*1024*1024+1)
-    if hashlib.sha256(data).hexdigest() != TOOL_SHA:
-        raise ValueError('ROM rebuilding tool checksum mismatch')
-    import io
-    with zipfile.ZipFile(io.BytesIO(data)) as archive:
-        names = [n for n in archive.namelist() if Path(n).name.lower() == '3dstool.exe']
-        if len(names) != 1:
-            raise ValueError('Unexpected rebuilding tool package')
-        executable = folder/'3dstool.exe'
-        executable.write_bytes(archive.read(names[0]))
-    # Only the executable is installed, not optional upstream key databases.
-    return executable
+    from platform_tools import fetch
+    return fetch('3dstool',folder)
 
 
 def apply_ips(data, patch):
